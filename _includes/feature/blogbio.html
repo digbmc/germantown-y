@@ -1,0 +1,27 @@
+{% comment %}
+
+    Bootstrap Alert, https://getbootstrap.com/docs/5.1/components/alerts/
+
+    E.G. --> {% include feature/blogbio.html link="https://katethornhill.carrd.co/" bio="Kate Thornhill holds the position of Public Scholarship Librarian and Associate Librarian at the University of Oregon since 2018, where she specializes in the development and implementation of digital humanities research and classroom projects and holds a track record in community and civic outreach." img="/images/blog/biopics/image01.jpg" name="Kate Thornhill" %}
+
+    Options: 
+    - "name" = name for person
+    - "link" = link to person's site
+    - "img" = image for person -- download this and put it in "/images/blog/biopics/" then make a relative to link to it like in the above
+    - "bio" = text for bio
+    - "color" = a Bootstrap color (primary, secondary, success, danger, warning, info, light, dark)
+    - "align" = text alignment (center, right, left)
+
+{%- endcomment -%}
+<div class="alert alert-{{ include.color | default: 'primary' }} feature-alert {% if include.align %}text-{{ include.align }}{% endif %}" role="alert">
+    <div class="row">
+        {% if include.img %}<div class="col-4 col-sm-3 col-md-2">
+            <img class="img-fluid py-0 px-2 my-auto" src="{{ include.img }}" style="max-height: 200px;"/>
+        </div>{% endif %}
+        <div class="col">
+            <p class="h4 my-0">{% if include.link %}<a href="{{ include.link }}" target="_blank">{{ include.name }}</a>{% else %}{{ include.name }}{% endif %} </p>
+            <p class="mt-1 mb-0 small">{{ include.bio }} {% if include.link %}... <a href="{{ include.link }}" target="_blank">Learn More</a>  {% endif %} </p>
+        </div>
+    </div>
+
+</div>

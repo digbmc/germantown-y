@@ -1,0 +1,13 @@
+<div class="row">
+{% for p in site.data.us %}
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <img src="{{p.image}}" alt="picture of {{p.name}}" height="160px">
+        <br>
+            <div class="h4"><strong>{{p.name}}</strong></div>
+        <p class="mb-5">
+            {{p.role}}<br>
+            <small><em>{{ p.title }}</em></small>
+        </p>
+    </div>
+{% endfor %}
+</div>

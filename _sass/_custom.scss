@@ -1,0 +1,110 @@
+/* base */
+body{
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.text-dark{
+    color:black;
+}
+div.highlighter-rouge {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: .25em;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* header */
+#cb-nav-brand {
+    :hover { text-decoration: none; }
+    img { max-height:45px; }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #343a40 !important;
+}
+#lib-static-lobster {
+    max-width: 400px;
+}
+/* docs layout */
+#docs-sidebar-nav {
+    @media (min-width: 768px) { 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+        height: 100vh;
+        z-index: 1000;
+        -ms-flex-order: 0;
+        order: 0;
+        overflow-y: auto;
+    }
+    .dropdown-toggle {
+        white-space: normal;
+    }
+    .spy-item .active {
+        font-weight: bold;
+    }
+}
+.docs-content {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+
+/* About */
+/* Narrowed About Page Conents */
+
+.workshop-contents > {
+
+    
+    h1, h2, h3, h4, h5, h6,{
+        max-width: 650px;
+        margin: 1.5rem auto 1rem;
+    }
+    
+    p, .about-narrowed-content, .footnotes, ol, ul{
+      margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;}
+    
+    .card-header, .card-text {
+    margin: 0 !important;
+    }
+    }
+
+    #item-nav {
+        a { 
+            position: absolute;
+            top:500px;
+            opacity:.3;
+            &:hover{opacity:1}
+            @include media-query($on-palm) {
+                top:200px; 
+            }
+        }
+        .previous { left:10px; }
+        .next{ right:10px; }
+    }
+
+@media(max-width: 1280px) {
+    .alert-full-width {
+        width: 100% !important; 
+    }
+}
+
+/* narrow text block for page-narrow layout */
+.page-narrow {
+    max-width: 900px;
+}
+
+.blog-post hr {
+    max-width: 100%;
+    border-width: 0.1rem;
+    border-radius: 0.1875rem;
+    border-color: #d3d3d3;
+  }

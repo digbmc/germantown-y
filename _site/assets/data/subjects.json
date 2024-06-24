@@ -1,0 +1,26 @@
+{ "subjects": [
+    { "subject": "american football", "count": 1, "link": "http://localhost:4000/browse.html#american%20football" },
+    { "subject": "becker, devin", "count": 1, "link": "http://localhost:4000/browse.html#becker,%20devin" },
+    { "subject": "bjornn, t.c.", "count": 1, "link": "http://localhost:4000/browse.html#bjornn,%20t.c." },
+    { "subject": "buildings", "count": 1, "link": "http://localhost:4000/browse.html#buildings" },
+    { "subject": "campuses", "count": 1, "link": "http://localhost:4000/browse.html#campuses" },
+    { "subject": "county courthouses", "count": 1, "link": "http://localhost:4000/browse.html#county%20courthouses" },
+    { "subject": "failure", "count": 1, "link": "http://localhost:4000/browse.html#failure" },
+    { "subject": "fisheries management", "count": 1, "link": "http://localhost:4000/browse.html#fisheries%20management" },
+    { "subject": "forestry", "count": 1, "link": "http://localhost:4000/browse.html#forestry" },
+    { "subject": "frank b. robinson", "count": 1, "link": "http://localhost:4000/browse.html#frank%20b.%20robinson" },
+    { "subject": "material abundance", "count": 1, "link": "http://localhost:4000/browse.html#material%20abundance" },
+    { "subject": "pacific photo co.", "count": 1, "link": "http://localhost:4000/browse.html#pacific%20photo%20co." },
+    { "subject": "picture postcards", "count": 2, "link": "http://localhost:4000/browse.html#picture%20postcards" },
+    { "subject": "poetry", "count": 1, "link": "http://localhost:4000/browse.html#poetry" },
+    { "subject": "public buildings", "count": 1, "link": "http://localhost:4000/browse.html#public%20buildings" },
+    { "subject": "reischel, t.s.", "count": 1, "link": "http://localhost:4000/browse.html#reischel,%20t.s." },
+    { "subject": "robinson, frank b.", "count": 1, "link": "http://localhost:4000/browse.html#robinson,%20frank%20b." },
+    { "subject": "spokane post card co.", "count": 1, "link": "http://localhost:4000/browse.html#spokane%20post%20card%20co." },
+    { "subject": "success", "count": 1, "link": "http://localhost:4000/browse.html#success" },
+    { "subject": "thompson, j. b.", "count": 1, "link": "http://localhost:4000/browse.html#thompson,%20j.%20b." },
+    { "subject": "trees", "count": 1, "link": "http://localhost:4000/browse.html#trees" },
+    { "subject": "universities", "count": 1, "link": "http://localhost:4000/browse.html#universities" },
+    { "subject": "vandal athletics", "count": 1, "link": "http://localhost:4000/browse.html#vandal%20athletics" }
+]
+}

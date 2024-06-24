@@ -1,0 +1,49 @@
+{
+    "facets": [ 
+        {
+            "field": "subject",
+            "terms": { 
+                "american football": 1,
+                "buildings": 1,
+                "campuses": 1,
+                "county courthouses": 1,
+                "failure": 1,
+                "fisheries management": 1,
+                "forestry": 1,
+                "frank b. robinson": 1,
+                "material abundance": 1,
+                "picture postcards": 2,
+                "poetry": 1,
+                "public buildings": 1,
+                "success": 1,
+                "trees": 1,
+                "universities": 1
+            }
+        },
+        {
+            "field": "creator",
+            "terms": { 
+                "becker, devin": 1,
+                "bjornn, t.c.": 1,
+                "pacific photo co.": 1,
+                "reischel, t.s.": 1,
+                "robinson, frank b.": 1,
+                "spokane post card co.": 1,
+                "thompson, j. b.": 1,
+                "vandal athletics": 1
+            }
+        },
+        {
+            "field": "format",
+            "terms": { 
+                "application/pdf": 1,
+                "audio/mp3": 1,
+                "image/jpeg": 1,
+                "image/jpg": 1,
+                "record": 1,
+                "video/mp4": 2
+            }
+        }
+        
+    ]
+}

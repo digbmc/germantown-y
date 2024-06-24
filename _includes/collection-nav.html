@@ -11,7 +11,8 @@
         </span>{% endif %}
         
         <div class="collapse navbar-collapse" id="page-nav">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav me-auto text-light" >
+                <h1 >GERMANTOWN YWCA</h1>
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
                 {% for nav in navItems %}
                 {% if nav.stub %}
@@ -33,7 +34,7 @@
                 {%- endfor -%}
             </ul>
             
-            {% include nav-search-lunr.html %}
+           <!-- {% include nav-search-lunr.html %} -->
             
         </div>
     </div>

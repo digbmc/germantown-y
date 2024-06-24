@@ -4,13 +4,13 @@ layout: page
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
 <div class="row">
-  <div class="col-md-8">
-
+  <div class="col-md-12">
+    
     {% include index/description.html %}
     {% include index/carousel.html title="Sample Items" height="300" %}
   
   </div>
-  <div class="col-md-4">  
+  <!--<div class="col-md-4">  
 
     {% include index/time.html %}
 
@@ -20,10 +20,14 @@ layout: page
 
     {% include index/objects.html %}
 
+  </div>-->
+  <div class = "col-md-12">
+    {% include index/site-previews.html title="Page Previews" height="300" %}
   </div>
   <div class="col-md-12">
 
-    {% include index/data-download.html %}
+    <!--{% include index/data-download.html %}-->
 
   </div>
+  
 </div>

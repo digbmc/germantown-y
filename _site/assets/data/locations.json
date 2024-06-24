@@ -1,0 +1,26 @@
+{ "locations": [
+    { "location" : "american football", "count" : 1, "link" : "http://localhost:4000/browse.html#american%20football" },
+    { "location" : "becker, devin", "count" : 1, "link" : "http://localhost:4000/browse.html#becker,%20devin" },
+    { "location" : "bjornn, t.c.", "count" : 1, "link" : "http://localhost:4000/browse.html#bjornn,%20t.c." },
+    { "location" : "buildings", "count" : 1, "link" : "http://localhost:4000/browse.html#buildings" },
+    { "location" : "campuses", "count" : 1, "link" : "http://localhost:4000/browse.html#campuses" },
+    { "location" : "county courthouses", "count" : 1, "link" : "http://localhost:4000/browse.html#county%20courthouses" },
+    { "location" : "failure", "count" : 1, "link" : "http://localhost:4000/browse.html#failure" },
+    { "location" : "fisheries management", "count" : 1, "link" : "http://localhost:4000/browse.html#fisheries%20management" },
+    { "location" : "forestry", "count" : 1, "link" : "http://localhost:4000/browse.html#forestry" },
+    { "location" : "frank b. robinson", "count" : 1, "link" : "http://localhost:4000/browse.html#frank%20b.%20robinson" },
+    { "location" : "material abundance", "count" : 1, "link" : "http://localhost:4000/browse.html#material%20abundance" },
+    { "location" : "pacific photo co.", "count" : 1, "link" : "http://localhost:4000/browse.html#pacific%20photo%20co." },
+    { "location" : "picture postcards", "count" : 2, "link" : "http://localhost:4000/browse.html#picture%20postcards" },
+    { "location" : "poetry", "count" : 1, "link" : "http://localhost:4000/browse.html#poetry" },
+    { "location" : "public buildings", "count" : 1, "link" : "http://localhost:4000/browse.html#public%20buildings" },
+    { "location" : "reischel, t.s.", "count" : 1, "link" : "http://localhost:4000/browse.html#reischel,%20t.s." },
+    { "location" : "robinson, frank b.", "count" : 1, "link" : "http://localhost:4000/browse.html#robinson,%20frank%20b." },
+    { "location" : "spokane post card co.", "count" : 1, "link" : "http://localhost:4000/browse.html#spokane%20post%20card%20co." },
+    { "location" : "success", "count" : 1, "link" : "http://localhost:4000/browse.html#success" },
+    { "location" : "thompson, j. b.", "count" : 1, "link" : "http://localhost:4000/browse.html#thompson,%20j.%20b." },
+    { "location" : "trees", "count" : 1, "link" : "http://localhost:4000/browse.html#trees" },
+    { "location" : "universities", "count" : 1, "link" : "http://localhost:4000/browse.html#universities" },
+    { "location" : "vandal athletics", "count" : 1, "link" : "http://localhost:4000/browse.html#vandal%20athletics" }
+]
+}

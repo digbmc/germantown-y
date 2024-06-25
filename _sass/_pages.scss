@@ -74,6 +74,9 @@
 
 /* About */
 .about-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     line-height: 1.5em; 
     z-index: 10;
 }

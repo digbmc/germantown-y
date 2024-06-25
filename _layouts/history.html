@@ -1,0 +1,17 @@
+---
+# default "About" page layout
+layout: default
+---
+<div class = "container">
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1LG3Gq8yflx7W8T-hVuQLRga0CdV0DaQIFi0SNNsdGmE&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div>
+<div class="container my-4 about-contents">
+    <div class = "row">
+        <div class = "col-lg-3 col-md-6 col-sm-12">
+            {% include feature/nav-menu.html sections="About the Collection; About Germantownn" %}
+        </div>
+        <div class = "col-lg-9 col-md-6 col-sm-12">
+            {{ content }}
+        </div>
+    </div>
+</div>

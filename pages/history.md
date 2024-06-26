@@ -2,6 +2,7 @@
 title: history
 layout: history
 permalink: history.html
+toc: true
 ---
 
 ## About the Collection

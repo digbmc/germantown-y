@@ -1,6 +1,6 @@
 ---
 title: credits
-layout: about
+layout: page
 permalink: credits.html
 # include CollectionBuilder info at bottom
 credits: true
@@ -8,20 +8,16 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
+## About the Project 
 
-{% include feature/nav-menu.html sections="About the Collection;About the About Page" %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam dignissim diam quis enim. Sagittis vitae et leo duis ut diam quam nulla porttitor. Etiam sit amet nisl purus in. Augue eget arcu dictum varius duis at consectetur. Mauris augue neque gravida in. Interdum consectetur libero id faucibus nisl. Aliquet nibh praesent tristique magna sit. Turpis egestas maecenas pharetra convallis posuere morbi. Justo eget magna fermentum iaculis eu. At consectetur lorem donec massa sapien faucibus et. Quis enim lobortis scelerisque fermentum. In fermentum et sollicitudin ac orci. Vel pharetra vel turpis nunc eget lorem. Facilisi etiam dignissim diam quis enim lobortis. Velit dignissim sodales ut eu sem. Pulvinar proin gravida hendrerit lectus a. Ullamcorper a lacus vestibulum sed. Sit amet tellus cras adipiscing enim eu turpis egestas.
 
-## About the Collection
+Feugiat in ante metus dictum at tempor commodo. Pellentesque nec nam aliquam sem et tortor consequat id porta. Velit laoreet id donec ultrices tincidunt arcu. Id diam maecenas ultricies mi eget mauris pharetra. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Quis imperdiet massa tincidunt nunc pulvinar sapien et. Molestie at elementum eu facilisis sed odio morbi quis. At volutpat diam ut venenatis tellus in metus. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Facilisi morbi tempus iaculis urna. Nulla pharetra diam sit amet nisl suscipit adipiscing.
 
-This site is generated using [CollectionBuilder-GH](https://collectionbuilding.github.io/gh/), a project to create a free and simple digital collection using [GitHub Pages](https://pages.github.com/) from: 
+## Site Development
 
-- a CSV of collection metadata
-- a folder of JPG images or PDF documents
+Sagittis orci a scelerisque purus semper eget. Iaculis nunc sed augue lacus viverra vitae congue. Lectus arcu bibendum at varius vel pharetra. Nunc lobortis mattis aliquam faucibus purus in. Donec enim diam vulputate ut. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Egestas quis ipsum suspendisse ultrices gravida dictum. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. At varius vel pharetra vel turpis nunc eget lorem. Purus sit amet volutpat consequat mauris.
 
-The template repository features four objects from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital). 
+Tincidunt arcu non sodales neque sodales ut etiam sit amet. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Congue eu consequat ac felis donec et. Enim ut tellus elementum sagittis vitae et leo duis ut. Aliquet nibh praesent tristique magna sit amet purus. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Non blandit massa enim nec dui nunc mattis. Imperdiet dui accumsan sit amet. Lectus quam id leo in vitae turpis massa sed elementum.
 
-For full details of creating your own collection site, visit [CollectionBuilder Documentation](https://collectionbuilder.github.io/cb-docs/)!
-
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
-{% include cb/about_the_about.md %} 
+## Additional Credits

@@ -12,7 +12,8 @@
     
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav me-auto text-light" >
-                <h1 >GERMANTOWN YWCA</h1>
+                
+                <h1> Germantown YWCA</h1>
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
                 {% for nav in navItems %}
                 {% if nav.stub %}

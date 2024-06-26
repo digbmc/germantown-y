@@ -8,7 +8,9 @@ layout: default
 <div class="container my-4 about-contents">
     <div class = "row">
         <div class = "col-lg-3 col-md-6 col-sm-12">
-            {% include feature/nav-menu.html sections="About the Collection; About Germantownn" %}
+            <h3>Table of Contents</h3>
+            {{ content | toc_only }}
+           
         </div>
         <div class = "col-lg-9 col-md-6 col-sm-12">
             {{ content }}

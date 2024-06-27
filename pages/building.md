@@ -1,5 +1,5 @@
 ---
 title: Building Plans
-layout: about 
+layout: building 
 permalink: building.html
 ---

@@ -1,17 +1,8 @@
 ---
 # Default leaflet map page
-layout: default
+layout: leaflet-2
 custom-foot: js/map-js.html
 ---
 
-<div class = "container my-4">
-    <div class="col-md-12">
-        <h2>{{ page.title }}</h2>
-        {% include index/description.html %}
-        
-      </div>
+
     <div id="map"></div>
-    <div class="col-md-12">
-        {{ content }}
-    </div>
-</div>

@@ -1,9 +1,12 @@
 display_name,stub,dropdown_parent
-Home,/
-History,/history.html
-Exibits,/exibits.html,
-Map,/map.html
-Building,/building.html
-Archive,/archive.html
-Data,/data.html
-Credits,/credits.html
+Home,/,
+History,/history.html,
+Exibits,,
+Exibit page,/exibits.html,Exibits
+Example 1,/exhibit-1,Exibits
+Example 2,/example-dropdown.html,Exibits
+Map,/map.html,
+Building,/building.html,
+Archive,/archive.html,
+Data,/data.html,
+Credits,/credits.html,

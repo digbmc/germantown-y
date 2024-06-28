@@ -2,7 +2,7 @@
 title: example page
 layout: exibit-page
 img: demo_001
-permalink: exibit-1.html
+permalink: exhibit-1
 ---
 
 # HELLO?

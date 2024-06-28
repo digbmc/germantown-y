@@ -1,7 +1,7 @@
 ---
-title: Building Plans
-layout: leaflet-b
+title: building
+layout: leaflet
 permalink: building.html
+carousel: true
 ---
-## Building plans....
-[interact]({{ site.baseurl }}/plans-js.html)
+

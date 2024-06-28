@@ -3,6 +3,7 @@ title: history
 layout: history
 permalink: history.html
 toc: true
+descripton: timeline, interactive
 ---
 
 ## About the Collection

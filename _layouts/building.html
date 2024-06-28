@@ -1,19 +1,11 @@
 ---
 # Default leaflet map page
-layout: default
-custom-foot: js/map-js.html
+layout: leaflet-frame
+custom-foot: js/arch-plan-js.html
 ---
 
-<div class = "container my-4">
-    <div class="col-md-12">
-        <h2>{{ page.title }}</h2>
-        {% include index/description.html %}
-        
-      </div>
+
     <div id="map"></div>
-    <div class="col-md-12">
-        {{% include index/carousel.html %}}
-    </div>
-</div>
+ 
 
 <!-- this doesn't seem to work well...-->

@@ -1,7 +1,6 @@
 ---
 title: Building Plans
-layout: leaflet 
+layout: leaflet-b
 permalink: building.html
 ---
 ## Building plans....
-{% include index/carousel.html title="Sample Items" height="300" %}

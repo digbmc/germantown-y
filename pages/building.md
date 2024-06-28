@@ -1,6 +1,9 @@
 ---
-title: Building Plans
-layout: about 
+title: building
+layout: leaflet
 permalink: building.html
-descripton: interactive floor plans
+
+carousel: true
 ---
+
+

@@ -6,17 +6,17 @@ permalink: example-2.html
 
 This is another example exhibit page :)
 
-![Apple Pie](_includes\pics\apple.png)
+![Apple Pie](assets\pics\apple.png)
 * Introduces the letters A to Z while following the fortunes of an apple pie
 
-![Three Litlle Pigs](_includes\pics\pigs.png)
+![Three Litlle Pigs](assets\pics\pigs.png)
 * story of the three little pigs
 
-![Humpty Dumpty sat on a wall](_includes\pics\humpty.png)
+![Humpty Dumpty sat on a wall](assets\pics\humpty.png)
 
-![Peter Rabbit](_includes\pics\peter.png)
+![Peter Rabbit](assets\pics\peter.jpg)
 * Peter Rabbit reminds me of vegetable gardens
 
-![King Arthur](_includes\pics\arthur.png) 
+![King Arthur](assets\pics\arthur.jpg) 
 
-![Jack and the Beanstalk](_includes\pics\jack.png)
+![Jack and the Beanstalk](assets\pics\jack.jpg)

@@ -3,10 +3,12 @@ title: history
 layout: history
 permalink: history.html
 toc: true
-descripton: timeline, interactive
+description: This is an interactive timeline following the history of Germantown's YWCA building. Click the arrows to move through it. 
 ---
 
 ## About the Collection
+
+{{ page.description }}
 
 This site is generated using [CollectionBuilder-GH](https://collectionbuilding.github.io/gh/), a project to create a free and simple digital collection using [GitHub Pages](https://pages.github.com/) from: 
 

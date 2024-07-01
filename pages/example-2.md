@@ -1,6 +1,6 @@
 ---
 title: Children's Books
-layout: page
+layout: exibit-page
 permalink: example-2.html
 ---
 

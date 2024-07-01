@@ -113,29 +113,20 @@
 }
 
 .card-img-top {
-    max-width: 650px 
+    max-width: 550px 
 }
 
-.first-exhibit{
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    height:200px;
-    width: 300px
-}
 
-.vertical{
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    height:300px;
-    width: 5700px
-}
-
-.bird{
-    max-height: 400px
-}
-
-.apple{
-    max-height: 400px
-}
+.column {
+    float: left;
+    width:33%;
+    padding: 5px;
+    text-align: center
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

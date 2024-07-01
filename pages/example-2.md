@@ -1,7 +1,7 @@
 ---
 title: example page
 layout: page
-permalink: example-dropdown.html
+permalink: example-2.html
 ---
 
 hi

@@ -22,30 +22,6 @@ It started with the Cities Department and Praxis Program holding courses related
 ## Site Development
 What technologies were used 
 
-## Additional Credits
-
-#### Friends of Germantown YWCA
-* Ann Doley
-
-#### Cities Department
-* Min Kyung Lee – Project Director
-
-#### Praxis Program
-* Liv Raddatz
-
-#### LITS Department
-* Alice McGrath - Senior Digital Scholarship Specialist
-* Cameron Boucher – Research Coordinator, Web Advisor, & EAST Assistant
-* Sean Keenan – Project Manager & Educational Technology Specialist
-* Stella Fritzell – DSGA and Assistant Director of DSSF
-
-#### Digital Scholarship Summer Fellows
-* Anna Nguyen
-* Emma Dermansky
-* Fiona Shen
-* Nada Elshafey
-* Isbah Ameer
-
 ## References
 Author Last Name, First Name. "Title of Web Page." *Title of Website*, Publisher, Date published, URL. Accessed Day Month Year.
 AuthorLastName, AuthorFirstName. itle of Book. Publisher, Year.

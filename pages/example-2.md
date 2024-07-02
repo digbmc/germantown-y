@@ -1,22 +1,23 @@
 ---
 title: Children's Books
-layout: page
+layout: example2
 permalink: example-2.html
 ---
 
 This is another example exhibit page :)
 
-![Apple Pie](assets\pics\apple.png)
+<img src="assets\pics\apple.png" alt="A is for Apple picture" width="400px"/>
 * Introduces the letters A to Z while following the fortunes of an apple pie
 
-![Three Litlle Pigs](assets\pics\pigs.png)
+<img src="assets\pics\pigs.png" alt="Three little pigs" width="500px" align:left/>
 * story of the three little pigs
 
-![Humpty Dumpty sat on a wall](assets\pics\humpty.png)
+<img src="assets\pics\humpty.png" alt="Humpty Dumpty sat on a wall" width="500px" position="center"/>
+* story of an egg
 
-![Peter Rabbit](assets\pics\peter.jpg)
+<img src="assets\pics\peter.jpg" alt="Peter Rabbit" width="150px"/>
 * Peter Rabbit reminds me of vegetable gardens
 
-![King Arthur](assets\pics\arthur.jpg) 
+<img src="assets\pics\arthur.jpg" alt="King Aurthor" width="150px"/>
 
-![Jack and the Beanstalk](assets\pics\jack.jpg)
+<img src="assets\pics\jack.jpg" alt="Jack and the beanstalk" width="150px"/>

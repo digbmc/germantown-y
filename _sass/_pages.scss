@@ -2,6 +2,12 @@
     pages - style tweaks related to individual CB pages
     although most presentation is controlled by Bootstrap classes, these styles are necessary for default visualization pages to function correctly
 */
+
+$lapis-lazuli: #255B77ff;
+$old-rose: #B2827Cff;
+$dun: #C9BDA2ff;
+$carolina-blue: #8BB1C4ff;
+$air-force-blue: #507E96ff;
 /* index */
 .carousel-item-title {
     background-color: rgba(37, 36, 36, 0.72);
@@ -14,7 +20,7 @@
     cursor: pointer;
 }
 #item-nav {
-    a { 
+    a {
         position: absolute;
         top:500px;
     }
@@ -32,12 +38,12 @@
 }
 // compound object big modal class
 @media (min-width:576px){
-    .modal-xxl{ max-width:90%; } 
+    .modal-xxl{ max-width:90%; }
 }
 @media (min-width:992px){
-    .modal-xxl{ max-width:90%; } 
+    .modal-xxl{ max-width:90%; }
 }
-@media (min-width:1200px){ 
+@media (min-width:1200px){
     .modal-xxl{ max-width: 90%;  }
 }
 
@@ -77,22 +83,22 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    line-height: 1.5em; 
+    line-height: 1.5em;
     z-index: 10;
 }
-/* creating a narrow text column */ 
+/* creating a narrow text column */
 .about-contents > {
     h2 {
         font-weight: bold;
         padding-top: 100px;
         border-top: 1px dotted black;
     }
-    
+
     h1, h2, h3, h4, h5, h6 {
         max-width: 650px;
         margin: 1.5rem auto 1rem;
     }
-    
+
     p, .about-narrowed-content, .footnotes, ol, ul, blockquote {
         margin-left: auto;
         margin-right: auto;
@@ -111,3 +117,22 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.card-img-top {
+    max-width: 550px
+}
+
+
+.column {
+    float: left;
+    width:33%;
+    padding: 5px;
+    text-align: center
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

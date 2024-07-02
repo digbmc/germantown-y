@@ -24,10 +24,7 @@
 
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav me-auto text-light" >
-                <div class = "nav-title mr-3">
-                    <h1 class="display-4">{{ site.title }}</h1>
-                    {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
-                </div>
+                
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                 {% for nav in navItems %}
                 {% if nav.stub %}

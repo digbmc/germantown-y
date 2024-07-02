@@ -6,7 +6,7 @@
     <div class = "nav-title">
         <h1 class="display-4">{{ site.title }}</h1>
         {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
-    </div> 
+    </div>
     </div>
 </div>
 <nav class="col-lg-6 navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }}">
@@ -21,11 +21,14 @@
                 <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
             </a>
         </span>{% endif %}
-    
+
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav me-auto text-light" >
-                
-                {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
+                <div class = "nav-title mr-3">
+                    <h1 class="display-4">{{ site.title }}</h1>
+                    {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+                </div>
+                {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                 {% for nav in navItems %}
                 {% if nav.stub %}
                 <li class="nav-item">
@@ -45,9 +48,9 @@
                 {% endif %}
                 {%- endfor -%}
             </ul>
-            
+
            <!-- {% include nav-search-lunr.html %} -->
-            
+
         </div>
     </div>
 </nav>

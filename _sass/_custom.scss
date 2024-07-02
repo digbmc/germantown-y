@@ -1,5 +1,5 @@
 /* 
-    Put your custom SCSS here! 
+    Put your custom SCSS here!
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
 $lapis-lazuli: #255B77ff;
@@ -25,6 +25,3 @@ $primary: $carolina-blue;
 
 /* boostrap style sheets */
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
-

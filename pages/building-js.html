@@ -2,11 +2,10 @@
 title:  building JS
 permalink: /building-js.html
 ---
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Non Geographic Map</title>
+    <title>Germantown YWCA Building plans</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
@@ -70,12 +69,14 @@ permalink: /building-js.html
     // Style for the polygons
     var polygonStyle = {
         color: 'black',
+        opacity:0,
         fillColor: 'white',
         fillOpacity: 0,
         weight: 2,
     };
     var highlight = {
         color: 'black',
+        opacity:1,
         fillColor: 'red',
         fillOpacity: .5,
         weight: 2,
@@ -87,7 +88,8 @@ permalink: /building-js.html
     var L2footprint = '{{site.baseurl}}/objects/floor2.png';
     var L3footprint = '{{site.baseurl}}/objects/floor3.png';
     var L4footprint = '{{site.baseurl}}/objects/floor4.png';
-        // Create image overlays with correct bounds
+
+    // Create image overlays with correct bounds
     var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
 
     var L0 = L.imageOverlay(L0footprint, bounds);
@@ -139,7 +141,7 @@ permalink: /building-js.html
             polygon.setStyle(polygonStyle);
         }).on('click', function (e) {
             sidebar.show();
-            sidebar.setContent('<h1>' + name + ' Information</h1>' + '<p>Details about the ' + name.toLowerCase() + ' go here.</p>');
+            sidebar.setContent('<h1>' + name + '</h1>' + '<p>Details about the ' + name.toLowerCase() + ' go here.</p>');
         });
         layerGroup.addLayer(polygon);
     }
@@ -151,12 +153,10 @@ permalink: /building-js.html
     var L4Group = L.layerGroup([L4]);
 
     // Add polygons to L1
-    addPolygon('Room', [[300, 10], [300, 100], [420, 100], [420, 10]], L1Group);
-    addPolygon('Office', [[100, 10], [100, 60], [200, 60], [200, 10]], L1Group);
-    addPolygon('Dressing', [[150, 100], [150, 150], [250, 150], [250, 100]], L1Group);
-    addPolygon('Gym', [[300, 200], [300, 250], [400, 250], [400, 200]], L1Group);
-    addPolygon('Pool', [[450, 300], [450, 350], [550, 350], [550, 300]], L1Group);
-
+    addPolygon('Gym', [[660, 10], [660, 185], [420,185], [420, 10]], L1Group);
+    addPolygon('Office', [[420, 185], [380, 185], [380, 134], [420, 134]], L1Group);
+    addPolygon('Hallway', [[80, 98], [80, 134], [420, 134], [420, 98]], L1Group);
+    addPolygon('Lobby', [[118, 10], [118, 98], [200, 98], [200, 10]], L1Group);
     // Add polygons to L2
     addPolygon('Room', [[310, 20], [310, 110], [430, 110], [430, 20]], L2Group);
     addPolygon('Office', [[110, 20], [110, 70], [210, 70], [210, 20]], L2Group);
@@ -241,9 +241,10 @@ permalink: /building-js.html
     window.addEventListener('resize', adjustMapView);
 
     function adjustMapView() {
+        var sidebarWidth = document.querySelector('.leaflet-sidebar').offsetWidth;
         if (window.innerWidth < 768) {
             if (sidebar.isVisible()) {
-                map.setView([500, 100], map.getZoom());
+                map.setView([500, 100 - sidebarWidth / 10], map.getZoom());
             } else {
                 map.setView([500, 9.5], map.getZoom());
             }
@@ -251,6 +252,10 @@ permalink: /building-js.html
             map.setView([500, 9.5], map.getZoom());
         }
     }
+</script>
+</body>
+</html>
+
 </script>
 </body>
 </html>

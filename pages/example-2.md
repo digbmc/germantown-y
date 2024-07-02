@@ -6,17 +6,32 @@ permalink: example-2.html
 
 This is another example exhibit page :)
 
-![Apple Pie](assets\pics\apple.png)
+&emsp;&emsp;&emsp;<img src="assets\pics\apple.png" alt="A is for Apple picture" width="400px"/>
 * Introduces the letters A to Z while following the fortunes of an apple pie
 
-![Three Litlle Pigs](assets\pics\pigs.png)
+<br>
+
+<img src="assets\pics\pigs.png" alt="Three little pigs" width="500px" align:left/>
 * story of the three little pigs
 
-![Humpty Dumpty sat on a wall](assets\pics\humpty.png)
+<br>
 
-![Peter Rabbit](assets\pics\peter.jpg)
+<img src="assets\pics\humpty.png" alt="Humpty Dumpty sat on a wall" width="500px" position="center"/>
+* story of an egg
+
+<br>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\peter.jpg" alt="Peter Rabbit" width="150px"/>
 * Peter Rabbit reminds me of vegetable gardens
 
-![King Arthur](assets\pics\arthur.jpg) 
+<br>
 
-![Jack and the Beanstalk](assets\pics\jack.jpg)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\arthur.jpg" alt="King Aurthor" width="150px"/>
+* story of a king
+
+<br>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\jack.jpg" alt="Jack and the beanstalk" width="150px"/>
+* story of a boy
+
+<br>

@@ -2,6 +2,12 @@
     pages - style tweaks related to individual CB pages
     although most presentation is controlled by Bootstrap classes, these styles are necessary for default visualization pages to function correctly
 */
+
+$lapis-lazuli: #255B77ff;
+$old-rose: #B2827Cff;
+$dun: #C9BDA2ff;
+$carolina-blue: #8BB1C4ff;
+$air-force-blue: #507E96ff;
 /* index */
 .carousel-item-title {
     background-color: rgba(37, 36, 36, 0.72);
@@ -111,3 +117,5 @@
     margin-left: auto;
     margin-right: auto;
 }
+/* nav bar */
+

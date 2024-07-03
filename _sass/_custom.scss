@@ -2,6 +2,7 @@
     Put your custom SCSS here!
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
 $lapis-lazuli: #255B77ff;
 $old-rose: #B2827Cff;
 $dun: #C9BDA2ff;
@@ -10,7 +11,15 @@ $air-force-blue: #507E96ff;
 
 
 
-
+/* $font-family-monospace: Menlo; */
+/*
+body {
+    $font-family: monospace;
+} */
+/*
+body {
+    font-family: "Menlo", monospace;
+} */
 /* custom colors */
 
 $lapis-lazuli: #255B77ff;
@@ -19,10 +28,20 @@ $dun: #C9BDA2ff;
 $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
-$info: $lapis-lazuli;
-$primary: $carolina-blue;
-$danger: $old-rose;
-$link-color: $lapis-lazuli;
 
-/* boostrap style sheets */
-@import "../node_modules/bootstrap/scss/bootstrap";
+$dark: $lapis-lazuli;
+$primary: $old-rose;
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.blue {
+    background-color: $lapis-lazuli !important;
+}
+
+.light-blue {
+    background-color: $carolina-blue !important;
+}
+
+
+

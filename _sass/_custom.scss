@@ -29,8 +29,8 @@ $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
 
-$dark: $lapis-lazuli;
-$primary: $old-rose;
+
+
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -39,9 +39,38 @@ body {
     background-color: $lapis-lazuli !important;
 }
 
+
+
 .light-blue {
     background-color: $carolina-blue !important;
 }
+.rose {
+    background-color: $old-rose;
+    color: white;
+}
+.dun {
+    background-color: $dun;
+    color: black;
+}
 
+/* toc */
+.toc-link {
+    a {
+        color: $lapis-lazuli !important;
+    }
+    a:hover {
+        font-style: italic;
+    }
+}
 
-
+.blue-outline {
+    color: $lapis-lazuli !important;
+}
+.btn-primary {
+    background-color:$air-force-blue;
+    border-color: $air-force-blue;
+    outline-color: $air-force-blue;
+  }
+.btn-primary:active {
+    background-color: $carolina-blue;
+}

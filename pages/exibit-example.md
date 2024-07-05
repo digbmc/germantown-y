@@ -1,6 +1,6 @@
 ---
 title: Example 1
-layout: exibit-page
+layout: exhibit-page
 img: demo_001
 permalink: exhibit-1
 ---

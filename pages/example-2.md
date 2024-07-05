@@ -1,9 +1,9 @@
 ---
 title: Children's Books
-layout: exibit-page
+layout: exhibit-page
 permalink: example-2.html
 description: children's book exibits
-img: floor1
+img: arc_001
 ---
 
 This is another example exhibit page :)

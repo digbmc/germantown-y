@@ -38,6 +38,15 @@ body {
 .blue {
     background-color: $lapis-lazuli !important;
 }
+.toc-link {
+    a {
+        color: $lapis-lazuli !important;
+    }
+    a:hover {
+        font-style: italic;
+    }
+}
+
 
 .light-blue {
     background-color: $carolina-blue !important;
@@ -45,3 +54,4 @@ body {
 
 
 
+/* toc */

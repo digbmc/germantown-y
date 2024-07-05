@@ -26,4 +26,4 @@ permalink: people.html
 * Nada Elshafey
 * Isbah Ameer
 
-![Dssf Team](assets\pics\Image.png)
+![Dssf Team](assets\pics\Image.jpeg)

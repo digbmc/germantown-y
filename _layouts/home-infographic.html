@@ -21,54 +21,57 @@ home: true
         
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title">Description</h5>
+            
             <p class="card-text">{{ site.description }}</p>
             {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
             {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
           </div>
         </div>
-        
+
         {% include index/carousel.html title="Sample Items" height="300" %}
       </div>
     </div>
     <div class = "row gx-4">
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="assets\pics\timeline.png" alt="History">
             <div class="card-body">
               <h5 class="card-title">History</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn light-blue text-dark btn-primary">Go somewhere</a>
+              <p class="card-text">Shows a timeline of the building and more information about the history of the YWCA</p>
+              <a href="{{ site.baseurl }}/history.html" class="btn light-blue text-dark btn-primary">History Page</a>
             </div>
           </div>
         </div>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="assets\pics\exhibit.png" alt="Exhibits">
             <div class="card-body">
               <h5 class="card-title">Exhibits</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn light-blue text-dark btn-primary">Go somewhere</a>
+              <p class="card-text">Stories and features about the Germantown YWCA Building
+              </p>
+              <a href="{{ site.baseurl }}/exhibits.html'" class="btn light-blue text-dark btn-primary">Exhibits Page</a>
             </div>
           </div>
         </div>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="assets\pics\map.jpg" alt="Maps">
             <div class="card-body">
-              <h5 class="card-title">Maps</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn light-blue text-dark btn-primary">Go somewhere</a>
+              <h5 class="card-title">Map</h5>
+              <p class="card-text">Web map displays pins marking the locations of significant buildings
+              </p>
+              <a href="exhibits.html/map.html" class="btn light-blue text-dark btn-primary">Map Page</a>
             </div>
           </div>
         </div>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="assets\pics\buildings.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Buildings</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn light-blue text-dark btn-primary">Go somewhere</a>
+              <h5 class="card-title">Building</h5>
+              <p class="card-text">Includes an interactive floor plan that allows users to view how rooms were set up and an image carousel that 
+                allows users to look through architectural plans of the building</p>
+              <a href="{{ site.baseurl }}/building.html" class="btn light-blue text-dark btn-primary">Buildings Page</a>
             </div>
         </div>
     </div>

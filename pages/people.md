@@ -24,5 +24,3 @@ permalink: people.html
 * Fiona Shen
 * Nada Elshafey
 * Isbah Ameer
-
-- 

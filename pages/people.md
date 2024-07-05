@@ -4,14 +4,17 @@ layout: page
 permalink: people.html
 ---
 
-#### Friends of Germantown YWCA
-* Ann Doley
+# Project Team
 
-#### Cities Department
+## Friends of Germantown YWCA
+* Ann Doley
+* René Cunningham
+
+## Bryn Mawr College
 * Min Kyung Lee – Project Director
 
 #### Praxis Program
-* Liv Raddatz
+* Liv Raddatz - Director of Praxis
 
 #### LITS Department
 * Alice McGrath - Senior Digital Scholarship Specialist
@@ -26,4 +29,4 @@ permalink: people.html
 * Nada Elshafey
 * Isbah Ameer
 
-![Dssf Team](assets\pics\Image.png)
+- 

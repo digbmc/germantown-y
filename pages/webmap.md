@@ -7,4 +7,3 @@ description: important buildings...
 ---
 
 
-{{content}}

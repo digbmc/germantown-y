@@ -109,7 +109,7 @@ permalink: /webmap-js.html
         addDataToLayers(building-info);
         */
         // Add the GeoJSON data to the layers
-            fetch('../_data/building-info.json')
+            fetch('assets/data/building-info.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');

@@ -1,0 +1,357 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1682975,
+                    40.03345768
+                ]
+            },
+            "properties": {
+                "title": "Home of Elizabeth P. Smith",
+                "description": "In 1869, a meeting was called at her home by Elizabeth P. Smith. This is where the Germantown YWCA began under the name of Women's Christian Association.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17082333,
+                    40.03367399
+                ]
+            },
+            "properties": {
+                "title": "YWCA Living Space",
+                "description": "In 1870, following the first meeting of the Women's Christian Association rooms were built here to give young women industry workers a place to rest and socialise in the evenings.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.16061843,
+                    40.02755013
+                ]
+            },
+            "properties": {
+                "title": "Pine Cottage",
+                "description": "Six rooms were rented here for use by the association. Two of these were accomodations for female industry workers and two were fitted with desks to be used as a school.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17246944,
+                    40.03452411
+                ]
+            },
+            "properties": {
+                "title": "Germantown Association First Boarding Home",
+                "description": "In 1874, the Germantown Association bought a house near what is now Market Square. Initially it was used as a boarding house, and later used as a space for programming. It was reluctantly given up in 1941.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17186602,
+                    40.03436826
+                ]
+            },
+            "properties": {
+                "title": "Harkness House",
+                "description": "The main YWCA Germantown building from 1879 to 1915-18. Here, the organization supported welfare needs for the community. The building had a nursing agency, an employment bureau, free baths, educational programmes, and a physical training department.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.19073134,
+                    40.00759801
+                ]
+            },
+            "properties": {
+                "title": "Falls of Schuykill Branch",
+                "description": "\"Great industries employing women were located in the Falls of Schulkill, and so the Germantown Association established in 1905 the Falls of Schuylkill Branch.\" Carner. \"hanging conditions in the mills and neighborhood and a lack of cooperation by the churches in this section made it neccesary to discontinue the Branch in June 1928\"",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17651294,
+                    40.03688676
+                ]
+            },
+            "properties": {
+                "title": "The Germantown YWCA Building",
+                "description": "This is the most recent building used by the Germantown YWCA Association, the 50th anniversary celebration of the association was the first programme held here. It was used in the years following 1916 up until the early 2000s. It is unclear exactly when programming stopped in the building. (Sold in 2006 to Germantown Settlement)",
+                "image": "",
+                "relevance": "very-high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17978712,
+                    40.04103407
+                ]
+            },
+            "properties": {
+                "title": "Colored Branch",
+                "description": "Established in 1918, this branch was opened so Black women were given the same facilities and resources that were available to white women through the YWCA. This segregation was not due to law but due to social attitdes. Unlike the main YWCA building, this building did not have a swimming pool. It started integrating in 1946, and closed in 1952. ",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3018824,
+                    39.87481784
+                ]
+            },
+            "properties": {
+                "title": "Camp Tinicum",
+                "description": "Bought by the association in 1925. \"The camp was used enthusiastically by all age groups in the summer, and enjoyed for brief periods even in winter. But because of the shortage of materials and transportation during the summers of World War I, it proved difficult to administer the camp, and in the following years the Camp was not sufficiently used by adults to warrant its continuation. In 1948, Camp Tinicum was reluctantly sold.\" (Carner)",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17577428,
+                    40.03695238
+                ]
+            },
+            "properties": {
+                "title": "Center in the Park",
+                "description": "Previously the site of the Free Library of Philadelphia, Germantown Branch. The building has been used as a senior citizens center by the non-profit Center in the Park since 1986.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17584048,
+                    40.03689272
+                ]
+            },
+            "properties": {
+                "title": "Vernon Park",
+                "description": "Vernon Park is host to monuments commemorating the Battle of Germantown, the battle was faught nearby in 1777. The Founders\u2019 Monument is inscribed with the first documented protest against slavery in Philadelphia. The Center in the Park is also located in Vernon Park.",
+                "image": "",
+                "relevance": "high"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.15085623,
+                    40.03342898
+                ]
+            },
+            "properties": {
+                "title": "Wakefield Mills",
+                "description": "The YWCA was first established to help female workers from mills to find rest and recereation in the evenings. The first knitting mill in the US, Taylor Building at Main & Lincoln Streets in Wakefield. Owned by the Fisher family of Wakefield, the mills stopped operating in the 1880s. ",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1489,
+                    39.9526
+                ]
+            },
+            "properties": {
+                "title": "Collins Manufacturing Company",
+                "description": "The Young Women's Christian Association was created for female workers from industries like this one\"In 1917, YWCA centers were organized in the North American Lace Company at 1001 Glenwood Avenue and at the A. M. Collins Manufacturing Company at 226 Columbia, with classes, recreation, etc., and in each case with a YWCA Secretary whose salary was paid by the management. In 1920 the Association at the Collins plant was given up and the girls encouraged to participate as regular members of the Germantown industrial department. The North American Lace Company Association became affiliated with the YWCA of Philadelphia.\" (Carner)",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17312317,
+                    40.03435515
+                ]
+            },
+            "properties": {
+                "title": "National Bank of Germantown",
+                "description": "One of Philadelphia's 27 Obsolete Banks that issued Obsolete Bank Notes during the Obsolete Bank Note Era (1782-1866). Merged with the Girard Trust Corn Exchange Bank taking that name, September 11, 1953",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3139829,
+                    40.02428497
+                ]
+            },
+            "properties": {
+                "title": "Bryn Mawr College",
+                "description": "In 1823 women industrial workers who were members of the YWCA were sent to Summer School for Industrial Workers in Bryn Mawr",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1764913,
+                    40.03573742
+                ]
+            },
+            "properties": {
+                "title": "Germantown Branch of the Free Library",
+                "description": "One of the 25 branches of the Free Library that were built from 1904 to 1930 with help from a $1.5 million grant from the Carnegie Corporation.",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17733154,
+                    40.03840737
+                ]
+            },
+            "properties": {
+                "title": "Germantown Town Hall",
+                "description": "Designed by architect Napoleon LeBrun with the goal to establish Germantown's indepence from Philadelphia, the building never actually served as the town hall. Over the years the building had many uses, including serving as a hospital during the Civil War. In 1920, it was declared structally unsound and demolished with a new town hall built at the site.",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.18388431,
+                    40.04966955
+                ]
+            },
+            "properties": {
+                "title": "Church of the Brethren",
+                "description": "In 1969 housed the table on which the first protest in America against slavery was signed in 1688.",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17441109,
+                    40.03793922
+                ]
+            },
+            "properties": {
+                "title": "St. Vincent's Roman Catholic Church",
+                "description": " ",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.19152905,
+                    40.0402388
+                ]
+            },
+            "properties": {
+                "title": "Germantown Unitarian",
+                "description": " ",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1719817,
+                    40.03230676
+                ]
+            },
+            "properties": {
+                "title": "Germantown Friends Meeting",
+                "description": " ",
+                "image": "",
+                "relevance": "low"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17096381,
+                    40.03381523
+                ]
+            },
+            "properties": {
+                "title": "St. Lukes' Episcopal",
+                "description": " ",
+                "image": "",
+                "relevance": "low"
+            }
+        }
+    ]
+}

@@ -74,3 +74,8 @@ body {
 .btn-primary:active {
     background-color: $carolina-blue;
 }
+
+/* nav */
+.nav-gutter{
+--bs-gutter-x: 0rem;
+}

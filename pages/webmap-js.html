@@ -54,16 +54,32 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
 
-        .high-relevance {
-            filter: hue-rotate(120deg);
+        .other {
+            filter: hue-rotate(0deg); //blue
         }
 
-        .low-relevance {
-            filter: hue-rotate(0deg);
+        .branch {
+            filter: hue-rotate(60deg); 
         }
 
-        .very-high-relevance {
-            filter: hue-rotate(144deg) saturate(1.5);
+        .industry {
+            filter: hue-rotate(120deg); 
+        }
+
+        .landmark {
+            filter: hue-rotate(180deg); 
+        }
+
+        .lodgings {
+            filter: hue-rotate(240deg); 
+        }
+
+        .main-building {
+            filter: hue-rotate(300deg); 
+        }
+
+        .ywca {
+            filter: hue-rotate(360deg); 
         }
     </style>
 </head>
@@ -109,12 +125,13 @@ permalink: /webmap-js.html
         .catch(error => {
         console.error('Error loading GeoJSON data:', error);
         });
-        // Define GeoJSON layers for different relevance levels
-        var veryHighRelevanceLayer = L.geoJSON(null, {
+
+        // Define GeoJSON layers for different categories
+        var otherLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
                 marker.on('add', function () {
-                    marker._icon.classList.add("very-high-relevance");
+                    marker._icon.classList.add("other");
                 });
                 return marker;
             },
@@ -127,11 +144,11 @@ permalink: /webmap-js.html
             }
         });
 
-        var highRelevanceLayer = L.geoJSON(null, {
+        var branchLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
                 marker.on('add', function () {
-                    marker._icon.classList.add("high-relevance");
+                    marker._icon.classList.add("branch");
                 });
                 return marker;
             },
@@ -144,11 +161,79 @@ permalink: /webmap-js.html
             }
         });
 
-        var lowRelevanceLayer = L.geoJSON(null, {
+        var industryLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
                 marker.on('add', function () {
-                    marker._icon.classList.add("low-relevance");
+                    marker._icon.classList.add("industry");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
+
+        var landmarkLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("landmark");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
+
+        var lodgingsLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("lodgings");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
+
+        var mainBuildingLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("main-building");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
+
+        var ywcaLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("ywca");
                 });
                 return marker;
             },
@@ -164,22 +249,34 @@ permalink: /webmap-js.html
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
             data.features.forEach(function (feature) {
-                if (feature.properties && feature.properties.relevance) {
-                    var relevance = feature.properties.relevance.toLowerCase();
-                    if (relevance === 'very-high') {
-                        veryHighRelevanceLayer.addData(feature);
-                    } else if (relevance === 'high') {
-                        highRelevanceLayer.addData(feature);
-                    } else if (relevance === 'low') {
-                        lowRelevanceLayer.addData(feature);
+                if (feature.properties && feature.properties.category) {
+                    var category = feature.properties.category.toLowerCase();
+                    if (category === 'other') {
+                        otherLayer.addData(feature);
+                    } else if (category === 'branch') {
+                        branchLayer.addData(feature);
+                    } else if (category === 'industry') {
+                        industryLayer.addData(feature);
+                    } else if (category === 'landmark') {
+                        landmarkLayer.addData(feature);
+                    } else if (category === 'lodgings') {
+                        lodgingsLayer.addData(feature);
+                    } else if (category === 'main-building') {
+                        mainBuildingLayer.addData(feature);
+                    } else if (category === 'ywca') {
+                        ywcaLayer.addData(feature);
                     }
                 }
             });
         }
         
-        veryHighRelevanceLayer.addTo(map);
-        highRelevanceLayer.addTo(map);
-        lowRelevanceLayer.addTo(map);
+        otherLayer.addTo(map);
+        branchLayer.addTo(map);
+        industryLayer.addTo(map);
+        landmarkLayer.addTo(map);
+        lodgingsLayer.addTo(map);
+        mainBuildingLayer.addTo(map);
+        ywcaLayer.addTo(map);
 
         // Add boundary line
         var germantownBoundary = L.polyline([
@@ -207,20 +304,10 @@ permalink: /webmap-js.html
                 '<p>This map displays the location of the Germantown YWCA building and other buildings associated with its history.</p>' +
                 '<h2>How to Use</h2>' +
                 '<p>Click on a marker to learn more about a landmark.</p>';
-            //'<p>Click anywhere to place a pin with an annotation</p>';
             return div;
         };
 
         descrip.addTo(map);
-        /* Add annotation feature
-        map.on('click', function(e) {
-        var annotation = prompt("Enter your annotation:");
-        if (annotation) {
-            var marker = L.marker(e.latlng).addTo(map);
-            marker.bindPopup(annotation).openPopup();
-        }
-        });
-        */
 
         // Show description box on map load
         descrip.getContainer().classList.add('visible');
@@ -242,7 +329,7 @@ permalink: /webmap-js.html
         var triggerZone = document.querySelector('.trigger-zone');
         triggerZone.addEventListener('mouseenter', showDescriptionBox);
 
-        //Add a mouseleave event to hide the description box once the mouse leaves it
+        // Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
         
         var basicLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
@@ -265,9 +352,13 @@ permalink: /webmap-js.html
 
         var overlayLayers = {
             "Germantown Boundary": germantownBoundary,
-            //"YWCA Building": veryHighRelevanceLayer,
-            "High Relevance": highRelevanceLayer,
-            "Low Relevance": lowRelevanceLayer
+            "Others": otherLayer,
+            "Branch": branchLayer,
+            "Industry": industryLayer,
+            "Landmark": landmarkLayer,
+            "Lodgings": lodgingsLayer,
+            "Main Building": mainBuildingLayer,
+            "YWCA": ywcaLayer
         };
 
         L.control.layers(baseLayers, overlayLayers).addTo(map);

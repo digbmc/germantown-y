@@ -93,7 +93,11 @@ permalink: /webmap-js.html
 	    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	    ext: 'png'
         });
-	*/
+	    */
+        var plainBackground = L.tileLayer('https://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+                attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL.'
+            }).addTo(map);
+        
 
         // Initialize the map
         var map = L.map("map", {
@@ -101,16 +105,10 @@ permalink: /webmap-js.html
             zoom: 15,
             layers: [googleStreets] // default layer
         });
-        /* Access the GeoJSON data from the script tag
-        var geojsonScript = document.getElementById('map-info');
-        var geojsonData = JSON.parse(geojsonScript.textContent);
-        */
-        /* Add the GeoJSON data to the layers
-        addDataToLayers(building-info);
-        */
+
         // Add the GeoJSON data to the layers
-            fetch('assets/data/building-info.json')
-    .then(response => {
+        fetch('assets/data/building-info.json')
+        .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -260,6 +258,7 @@ permalink: /webmap-js.html
 
         // Layer controls
         var baseLayers = {
+            "Water Color Map": plainBackground,
             "Google Streets": googleStreets,
             "Google Satellite": googleSat
         };

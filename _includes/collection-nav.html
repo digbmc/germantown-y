@@ -1,17 +1,17 @@
 
 
 
-<div class = "row">
-<div class = " col-lg-6 text-light bg-dark blue p-3">
+<div class = "row nav-gutter">
+<div class = " col-lg-6 col-md-10 text-light bg-dark blue p-3">
 
-    <div class = "container">
+    <div class = "container-fluid">
     <div class = "nav-title">
         <h1 class="display-4">{{ site.title }}</h1>
         {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
     </div>
     </div>
 </div>
-<nav class="col-lg-6 blue navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }}">
+<nav class="col-lg-6 col-md-2 blue navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }}">
     <div class="container">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
         </span>{% endif %}
 
         <div class="collapse navbar-collapse" id="page-nav">
-            <ul class="navbar-nav me-auto text-light" >
+            <ul class="nav-font navbar-nav me-auto text-light" >
                 
                 {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                 {% for nav in navItems %}

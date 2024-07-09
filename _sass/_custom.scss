@@ -74,3 +74,22 @@ body {
 .btn-primary:active {
     background-color: $carolina-blue;
 }
+
+.nav-font {
+    font-size: 1.5vw;
+}
+
+.nav-gutter {
+    --bs-gutter-x: 0rem;
+}
+.navbar-toggler {
+    margin: 15px;
+}
+
+/* media query changes font once links are in dropdown mode */
+@media only screen and (max-width: 991px) {
+    .nav-font {
+      font-size: 1rem;
+      padding: 15px;
+    }
+}

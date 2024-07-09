@@ -320,13 +320,13 @@ permalink: /webmap-js.html
             attribution: 'Tiles &copy; Esri',
             maxZoom: 18
         }).addTo(map);
+        map.addLayer(esriStreetMapLayer); //make esri the default layer
         
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
         
-        map.addLayer(esriStreetMapLayer); //make esri the default layer
         
         // Layer controls
         var baseLayers = {

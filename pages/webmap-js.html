@@ -245,15 +245,15 @@ permalink: /webmap-js.html
         //Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
         
-        var plainBackground = L.tileLayer('https://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', { 
-            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL.',
-            maxZoom: 16,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        
+        var basicLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri',
+            maxZoom: 18
         }).addTo(map);
         
         // Layer controls
         var baseLayers = {
-            "Water Color Map": plainBackground,
+            "Esri Street Map": basicLayer,
             "Google Streets": googleStreets,
             "Google Satellite": googleSat
         };

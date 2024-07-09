@@ -244,16 +244,30 @@ permalink: /webmap-js.html
 
         //Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
-        
+        var highContrastMap = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+            attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+            maxZoom: 18
+        }).addTo(map);
         
         var basicLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
             maxZoom: 18
         }).addTo(map);
         
+        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        var waterColorMap = L.tileLayer('http://c.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+            attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+            maxZoom: 16
+        }).addTo(map);
         // Layer controls
         var baseLayers = {
             "Esri Street Map": basicLayer,
+            "Open Street Map": openStreetMap,
+            "High Contrast Map": highContrastMap,
+            "Water Color Map": waterColorMap,s
             "Google Streets": googleStreets,
             "Google Satellite": googleSat
         };

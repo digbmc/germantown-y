@@ -88,12 +88,6 @@ permalink: /webmap-js.html
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
 
-        var plainBackground = L.tileLayer('https://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', { 
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL.',
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        }).addTo(map);
-
         // Initialize the map
         var map = L.map("map", {
             center: [40.03270207250667, -75.17665301048476],
@@ -250,7 +244,13 @@ permalink: /webmap-js.html
 
         //Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
-
+        
+        var plainBackground = L.tileLayer('https://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', { 
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL.',
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        }).addTo(map);
+        
         // Layer controls
         var baseLayers = {
             "Water Color Map": plainBackground,

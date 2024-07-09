@@ -54,32 +54,32 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
 
-        .attraction {
-            filter: hue-rotate(0deg); /* Red */
+        .other {
+            filter: hue-rotate(0deg); //blue
         }
 
         .branch {
-            filter: hue-rotate(60deg); /* Yellow */
+            filter: hue-rotate(60deg); 
         }
 
         .industry {
-            filter: hue-rotate(120deg); /* Green */
+            filter: hue-rotate(120deg); 
         }
 
         .landmark {
-            filter: hue-rotate(180deg); /* Cyan */
+            filter: hue-rotate(180deg); 
         }
 
         .lodgings {
-            filter: hue-rotate(240deg); /* Blue */
+            filter: hue-rotate(240deg); 
         }
 
         .main-building {
-            filter: hue-rotate(300deg); /* Magenta */
+            filter: hue-rotate(300deg); 
         }
 
         .ywca {
-            filter: hue-rotate(360deg); /* Red again or back to original */
+            filter: hue-rotate(360deg); 
         }
     </style>
 </head>
@@ -127,11 +127,11 @@ permalink: /webmap-js.html
         });
 
         // Define GeoJSON layers for different categories
-        var attractionLayer = L.geoJSON(null, {
+        var otherLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
                 marker.on('add', function () {
-                    marker._icon.classList.add("attraction");
+                    marker._icon.classList.add("other");
                 });
                 return marker;
             },
@@ -251,8 +251,8 @@ permalink: /webmap-js.html
             data.features.forEach(function (feature) {
                 if (feature.properties && feature.properties.category) {
                     var category = feature.properties.category.toLowerCase();
-                    if (category === 'attraction') {
-                        attractionLayer.addData(feature);
+                    if (category === 'other') {
+                        otherLayer.addData(feature);
                     } else if (category === 'branch') {
                         branchLayer.addData(feature);
                     } else if (category === 'industry') {
@@ -270,7 +270,7 @@ permalink: /webmap-js.html
             });
         }
         
-        attractionLayer.addTo(map);
+        otherLayer.addTo(map);
         branchLayer.addTo(map);
         industryLayer.addTo(map);
         landmarkLayer.addTo(map);
@@ -352,7 +352,7 @@ permalink: /webmap-js.html
 
         var overlayLayers = {
             "Germantown Boundary": germantownBoundary,
-            "Attraction": attractionLayer,
+            "Others": otherLayer,
             "Branch": branchLayer,
             "Industry": industryLayer,
             "Landmark": landmarkLayer,

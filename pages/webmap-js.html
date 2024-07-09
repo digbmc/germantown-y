@@ -53,27 +53,26 @@ permalink: /webmap-js.html
             height: 100px;
             z-index: 1000;
         }
-
-        .ywca {
-            filter: hue-rotate(144deg) saturate(1.5); //red
-        }
-        .main-building {
-            filter: hue-rotate(300deg); //green
-        }
-        .branch {
-            filter: hue-rotate(60deg); //purple
-        }
-        .lodgings {
-            filter: hue-rotate(240deg); //green
-        }
-        .industry {
-            filter: hue-rotate(120deg); //pink
+        .other {
+            filter: hue-rotate(0deg); //blue
         }
         .landmark {
             filter: hue-rotate(180deg); //brown
         }
-        .other {
-            filter: hue-rotate(0deg); //blue
+        .industry {
+            filter: hue-rotate(120deg); //pink
+        }
+        .lodgings {
+            filter: hue-rotate(240deg); //green
+        }
+        .branch {
+            filter: hue-rotate(60deg); //purple
+        }
+        .main-building {
+            filter: hue-rotate(300deg); //green
+        }
+        .ywca {
+            filter: hue-rotate(144deg) saturate(1.5); //red
         }
     </style>
 </head>
@@ -86,6 +85,11 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
+        // Initialize the map
+        var map = L.map("map", {
+            center: [40.03270207250667, -75.17665301048476],
+            zoom: 15
+        });
         // Define tile layers
         var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             maxZoom: 20,
@@ -97,13 +101,7 @@ permalink: /webmap-js.html
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
 
-        // Initialize the map
-        var map = L.map("map", {
-            center: [40.03270207250667, -75.17665301048476],
-            zoom: 15
-        });
-
-        // Add the GeoJSON data to the layers
+        // Add the GeoJSON data
         fetch('assets/data/building-info.json')
         .then(response => {
         if (!response.ok) {
@@ -135,41 +133,6 @@ permalink: /webmap-js.html
                 }
             }
         });
-
-        var branchLayer = L.geoJSON(null, {
-            pointToLayer: function (feature, latlng) {
-                var marker = L.marker(latlng);
-                marker.on('add', function () {
-                    marker._icon.classList.add("branch");
-                });
-                return marker;
-            },
-            onEachFeature: function (feature, layer) {
-                if (feature.properties && feature.properties.title && feature.properties.description) {
-                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
-                        '<p>' + feature.properties.description + '</p>';
-                    layer.bindPopup(popupContent);
-                }
-            }
-        });
-
-        var industryLayer = L.geoJSON(null, {
-            pointToLayer: function (feature, latlng) {
-                var marker = L.marker(latlng);
-                marker.on('add', function () {
-                    marker._icon.classList.add("industry");
-                });
-                return marker;
-            },
-            onEachFeature: function (feature, layer) {
-                if (feature.properties && feature.properties.title && feature.properties.description) {
-                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
-                        '<p>' + feature.properties.description + '</p>';
-                    layer.bindPopup(popupContent);
-                }
-            }
-        });
-
         var landmarkLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
@@ -186,7 +149,22 @@ permalink: /webmap-js.html
                 }
             }
         });
-
+        var industryLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("industry");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
         var lodgingsLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
@@ -203,7 +181,22 @@ permalink: /webmap-js.html
                 }
             }
         });
-
+        var branchLayer = L.geoJSON(null, {
+            pointToLayer: function (feature, latlng) {
+                var marker = L.marker(latlng);
+                marker.on('add', function () {
+                    marker._icon.classList.add("branch");
+                });
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties && feature.properties.title && feature.properties.description) {
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                        '<p>' + feature.properties.description + '</p>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
         var mainBuildingLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
@@ -220,8 +213,7 @@ permalink: /webmap-js.html
                 }
             }
         });
-
-        var ywcaLayer = L.geoJSON(null, {
+         var ywcaLayer = L.geoJSON(null, {
             pointToLayer: function (feature, latlng) {
                 var marker = L.marker(latlng);
                 marker.on('add', function () {
@@ -237,7 +229,7 @@ permalink: /webmap-js.html
                 }
             }
         });
-
+        
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
             data.features.forEach(function (feature) {
@@ -263,10 +255,10 @@ permalink: /webmap-js.html
         }
         
         otherLayer.addTo(map);
-        branchLayer.addTo(map);
-        industryLayer.addTo(map);
         landmarkLayer.addTo(map);
+        industryLayer.addTo(map);
         lodgingsLayer.addTo(map);
+        branchLayer.addTo(map);
         mainBuildingLayer.addTo(map);
         ywcaLayer.addTo(map);
 
@@ -333,7 +325,9 @@ permalink: /webmap-js.html
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
+        
         map.addLayer(esriStreetMapLayer); //make esri the default layer
+        
         // Layer controls
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
@@ -344,9 +338,9 @@ permalink: /webmap-js.html
 
         var overlayLayers = {
             "YWCA": ywcaLayer,
+            "Main Buildings": mainBuildingLayer,
             "YWCA Branches": branchLayer,
             "YWCA Provided Lodgings": lodgingsLayer,
-            "Main Buildings": mainBuildingLayer,
             "Industries": industryLayer,
             "Landmarks": landmarkLayer,
             "Others": otherLayer

@@ -90,7 +90,6 @@ permalink: /webmap-js.html
     <!-- Include Leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <!-- <script id= "map-info" type="application/json" src="/Users/mac/Desktop/addingJSON/map-info.geoJSON"></script>-->
 
     <script>
         // Define tile layers
@@ -108,7 +107,7 @@ permalink: /webmap-js.html
         var map = L.map("map", {
             center: [40.03270207250667, -75.17665301048476],
             zoom: 15,
-            layers: [googleStreets] // default layer
+            layers: [esriStreetMapLayer] // default layer
         });
 
         // Add the GeoJSON data to the layers

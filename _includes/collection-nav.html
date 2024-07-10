@@ -36,13 +36,13 @@
                     <a class="nav-link{% if page.url == nav.stub %} active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
                 </li>
                 {%- else -%}
-                <li class="nav-item dropdown">
+                <li class="nav-item  dropdown">
                     {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
                     {%- assign childStubs = navChildren | map: 'stub' -%}
-                    <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
+                    <div class="  bg-light dropdown-menu">
                         {% for c in navChildren %}
-                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}" href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
+                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}"  class = "light-blue" href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
                         {% endfor %}
                     </div>
                 </li>

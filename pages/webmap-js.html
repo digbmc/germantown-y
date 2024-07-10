@@ -110,6 +110,14 @@ permalink: /webmap-js.html
             maxZoom: 19
         }).addTo(map);
         */
+        var map = L.map('map').setView([51.505, -0.09], 13); // Initialize Leaflet map
+
+// Add ArcGIS tile layer
+var tileLayerUrl = 'https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}';
+var historicMap = L.tileLayer(tileLayerUrl, {
+    attribution: 'Philadelphia Geo History' // Add appropriate attribution
+}).addTo(map);
+
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
             maxZoom: 18
@@ -334,7 +342,7 @@ permalink: /webmap-js.html
         // Layer controls
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
-            //"Open Street Map": openStreetMap,
+            "Historic Map": historicMap,
             //"Stadia Watercolor": stadiaWatercolor, fix authentication
             "Google Streets": googleStreets,
             "Google Satellite": googleSat

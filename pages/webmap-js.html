@@ -12,6 +12,10 @@ permalink: /webmap-js.html
     <!-- To avoid unwanted scaling -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
+
+
     <style>
         body {
             padding: 0;
@@ -83,7 +87,7 @@ permalink: /webmap-js.html
     <!-- Include Leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster-src.js"></script>
     <script>
         // Initialize the map
         var map = L.map("map", {
@@ -123,6 +127,14 @@ permalink: /webmap-js.html
         }).addTo(map);
         map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
         
+        // Create marker cluster groups
+        var otherLayer = L.markerClusterGroup();
+        var landmarkLayer = L.markerClusterGroup();
+        var industryLayer = L.markerClusterGroup();
+        var lodgingsLayer = L.markerClusterGroup();
+        var branchLayer = L.markerClusterGroup();
+        var mainBuildingLayer = L.markerClusterGroup();
+        var ywcaLayer = L.markerClusterGroup();
         // Add the GeoJSON data
         fetch('assets/data/building-info.json')
         .then(response => {

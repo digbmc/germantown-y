@@ -90,17 +90,26 @@ permalink: /webmap-js.html
             center: [40.03270207250667, -75.17665301048476],
             zoom: 15
         });
+        
         // Define tile layers
-        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-            maxZoom: 20,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });
-
         var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
-
+        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        });
+        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri',
+            maxZoom: 18
+        }).addTo(map);
+        map.addLayer(esriStreetMapLayer); //make esri the default layer
+        
         // Add the GeoJSON data
         fetch('assets/data/building-info.json')
         .then(response => {
@@ -316,18 +325,6 @@ permalink: /webmap-js.html
         // Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
         
-        var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri',
-            maxZoom: 18
-        }).addTo(map);
-        map.addLayer(esriStreetMapLayer); //make esri the default layer
-        
-        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-            maxZoom: 19
-        }).addTo(map);
-        
-        
         // Layer controls
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
@@ -335,7 +332,6 @@ permalink: /webmap-js.html
             "Google Streets": googleStreets,
             "Google Satellite": googleSat
         };
-
         var overlayLayers = {
             "YWCA": ywcaLayer,
             "Main Buildings": mainBuildingLayer,
@@ -345,7 +341,7 @@ permalink: /webmap-js.html
             "Landmarks": landmarkLayer,
             "Others": otherLayer
         };
-
+        
         var boundries = {
             "Germantown Boundary": germantownBoundary
         };

@@ -114,7 +114,7 @@ permalink: /webmap-js.html
             attribution: 'Tiles &copy; Esri',
             maxZoom: 18
         }).addTo(map);
-        map.addLayer(esriStreetMapLayer); //make esri the default layer
+        map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
         
         // Add the GeoJSON data
         fetch('assets/data/building-info.json')

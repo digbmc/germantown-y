@@ -128,13 +128,8 @@ permalink: /webmap-js.html
         map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
         
         // Create marker cluster groups
-        var otherLayer = L.markerClusterGroup();
-        var landmarkLayer = L.markerClusterGroup();
-        var industryLayer = L.markerClusterGroup();
-        var lodgingsLayer = L.markerClusterGroup();
-        var branchLayer = L.markerClusterGroup();
-        var mainBuildingLayer = L.markerClusterGroup();
-        var ywcaLayer = L.markerClusterGroup();
+        var markerClusterGroup = L.markerClusterGroup().addTo(map);
+        
         // Add the GeoJSON data
         fetch('assets/data/building-info.json')
         .then(response => {
@@ -161,7 +156,7 @@ permalink: /webmap-js.html
             },
             onEachFeature: function (feature, layer) {
                 if (feature.properties && feature.properties.title && feature.properties.description) {
-                    var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                    var popupContent = '<h3>' + feature.properties.title + '</h3>' + 
                         '<p>' + feature.properties.description + '</p>';
                     layer.bindPopup(popupContent);
                 }

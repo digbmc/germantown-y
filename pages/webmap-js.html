@@ -100,6 +100,10 @@ permalink: /webmap-js.html
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
+        var stadiaWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
+            maxZoom: 16,
+            attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
+        }).addTo(map);
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
@@ -329,6 +333,7 @@ permalink: /webmap-js.html
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
             "Open Street Map": openStreetMap,
+            "Stadia Watercolor": stadiaWatercolor,
             "Google Streets": googleStreets,
             "Google Satellite": googleSat
         };

@@ -258,53 +258,6 @@ permalink: /webmap-js.html
                 }
             }
         });
-        // Function to convert CSV to GeoJSON
-function csvToGeoJSON(csvData) {
-    const geojson = {
-        type: 'FeatureCollection',
-        features: []
-    };
-
-    csvData.forEach(row => {
-        const feature = {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [parseFloat(row.longitude), parseFloat(row.latitude)]
-            },
-            properties: row
-        };
-        geojson.features.push(feature);
-    });
-
-    return geojson;
-}
-
-// Event listener for file input
-document.getElementById('upload-csv').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    Papa.parse(file, {
-        header: true,
-        complete: function(results) {
-            const geojson = csvToGeoJSON(results.data);
-            L.geoJSON(geojson, {
-                pointToLayer: function (feature, latlng) {
-                    var marker = L.marker(latlng);
-                    // Customize markers based on properties if needed
-                    return marker;
-                },
-                onEachFeature: function (feature, layer) {
-                    if (feature.properties && feature.properties.title && feature.properties.description) {
-                        var popupContent = '<h3>' + feature.properties.title + '</h3>' +
-                            '<p>' + feature.properties.description + '</p>';
-                        layer.bindPopup(popupContent);
-                    }
-                }
-            }).addTo(map);
-        }
-    });
-});
-
         
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {

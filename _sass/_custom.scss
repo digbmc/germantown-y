@@ -95,3 +95,21 @@ body {
     }
 }
 
+/* nav bar dropdown customization */
+.dropdown-item {
+    font-size: 1vw;
+}
+.dropdown-item:active , .dropdown-item:hover{
+    background-color: $dun;
+    color: black;
+    
+}
+.dropdown-menu {
+    .active {
+        background-color: $dun; 
+        color: black;
+    }
+    
+    
+}
+

@@ -12,10 +12,7 @@ permalink: /webmap-js.html
     <!-- To avoid unwanted scaling -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
-
-
+    
     <style>
         body {
             padding: 0;
@@ -58,25 +55,25 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
         .other {
-            filter: hue-rotate(0deg); //blue
+            filter: hue-rotate(0deg); /*blue*/
         }
         .landmark {
-            filter: hue-rotate(180deg); //brown
+            filter: hue-rotate(180deg); /*brown*/
         }
         .industry {
-            filter: hue-rotate(120deg); //pink
+            filter: hue-rotate(120deg); /*pink*/
         }
         .lodgings {
-            filter: hue-rotate(240deg); //green
+            filter: hue-rotate(240deg); /*green*/
         }
         .branch {
-            filter: hue-rotate(60deg); //purple
+            filter: hue-rotate(60deg); /*purple*/
         }
         .main-building {
-            filter: hue-rotate(300deg); //green
+            filter: hue-rotate(300deg); /*green*/
         }
         .ywca {
-            filter: hue-rotate(144deg) saturate(1.5); //red
+            filter: hue-rotate(144deg) saturate(1.5); /*red*/
         }
     </style>
 </head>
@@ -87,7 +84,6 @@ permalink: /webmap-js.html
     <!-- Include Leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster-src.js"></script>
     <script>
         // Initialize the map
         var map = L.map("map", {
@@ -108,7 +104,7 @@ permalink: /webmap-js.html
             maxZoom: 16,
             attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
         }).addTo(map);
-        */ //fix authentication
+        */ //fix authentication, 401 auth error
         /*var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
@@ -126,9 +122,6 @@ permalink: /webmap-js.html
             maxZoom: 18
         }).addTo(map);
         map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
-        
-        // Create marker cluster groups
-        var markerClusterGroup = L.markerClusterGroup().addTo(map);
         
         // Add the GeoJSON data
         fetch('assets/data/building-info.json')
@@ -316,7 +309,8 @@ permalink: /webmap-js.html
                 '<h1>About this Map</h1><hr>' +
                 '<p>This map displays the location of the Germantown YWCA building and other buildings associated with its history.</p>' +
                 '<h2>How to Use</h2>' +
-                '<p>Click on a marker to learn more about a landmark.</p>';
+                '<p>Click on a marker to learn more about a building.</p>'+
+                '<p>Switch between base maps and categories of buildings you want displayed using the side bar in the top right corner.</p>';
             return div;
         };
 
@@ -367,7 +361,7 @@ permalink: /webmap-js.html
             "Germantown Boundary": germantownBoundary
         };
             
-        L.control.layers(baseLayers, overlayLayers, boundries).addTo(map);
+        L.control.layers(baseLayers, overlayLayers, boundries /*boundary layer not showing in sidebar*/).addTo(map);
 
     </script>
 </body>

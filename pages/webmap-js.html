@@ -143,7 +143,7 @@ permalink: /webmap-js.html
         map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
 
         // Load CSV and convert to JSON
-        Papa.parse('building-info.csv', {
+        Papa.parse('assets/data/building-info.csv', {
             download: true,
             header: true,
             complete: function (results) {

@@ -125,11 +125,11 @@ permalink: /webmap-js.html
             attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
         }).addTo(map);
         */ 
-        /*var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
-        */
+        
 
         // Add historic map layers
         var LandUse1942 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', {
@@ -156,8 +156,6 @@ permalink: /webmap-js.html
             attribution: 'Tiles &copy; Esri',
         }).addTo(map);
         
-        map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
-
         // Load CSV and convert to JSON
         Papa.parse('assets/data/building-info.csv', {
             download: true,

@@ -115,10 +115,10 @@ permalink: /webmap-js.html
         }).addTo(map);
         */
 
-        // Add ArcGIS tile layer
+        // Add 1942 Land Use Map layer
         var tileLayerUrl = 'https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}';
         var historicMap = L.tileLayer(tileLayerUrl, {
-            attribution: 'Philadelphia Geo History' // Add appropriate attribution
+            attribution: 'Raster layer provided by Philadelphia Geo History owned by the City of Philadelphia' // Add appropriate attribution
         }).addTo(map);
 
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {

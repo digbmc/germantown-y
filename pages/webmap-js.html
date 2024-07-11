@@ -119,27 +119,43 @@ permalink: /webmap-js.html
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
 
-        /*var stadiaWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
+        /*//fix authentication, 401 auth error
+        var stadiaWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
             maxZoom: 16,
             attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
         }).addTo(map);
-        */ //fix authentication, 401 auth error
+        */ 
         /*var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
         */
 
-        // Add 1942 Land Use Map layer
-        var tileLayerUrl = 'https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}';
-        var historicMap = L.tileLayer(tileLayerUrl, {
-            attribution: 'Raster layer provided by Philadelphia Geo History owned by the City of Philadelphia' // Add appropriate attribution
+        // Add historic map layers
+        var LandUse1942 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; The Athenaeum of Philadelphia' // Add appropriate attribution
         }).addTo(map);
+        
+        var gmHopkinsAtlas1875 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
+        }).addTo(map);;
 
+        var bromleyAtlas1895 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
+        }).addTo(map);;
+
+        var bromleyAtlas1910 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', {       
+            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
+        }).addTo(map);;
+
+        var landUse1962 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
+        }).addTo(map);;
+        
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
-            maxZoom: 18
         }).addTo(map);
+        
         map.addLayer(esriStreetMapLayer); //make esri the default layer//not working
 
         // Load CSV and convert to JSON
@@ -293,7 +309,11 @@ permalink: /webmap-js.html
 
         // Layer controls
         var baseLayers = {
-            "1942 Philadelphia Historic Map": historicMap,
+            "1875 GMHopkins Atlas": gmHopkinsAtlas1875,
+            "1895 Bromley Atlas": bromleyAtlas1895,
+            "1910 Bromley Atlas": bromleyAtlas1910,
+            "1942 Philadelphia Land Use": LandUse1942,
+            "1962 Philadelphia Land Use": landUse1962,
             "Esri Street Map": esriStreetMapLayer,
             //"Stadia Watercolor": stadiaWatercolor, fix authentication
             "Google Streets": googleStreets,

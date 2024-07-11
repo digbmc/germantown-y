@@ -132,7 +132,7 @@ permalink: /webmap-js.html
         
 
         // Add historic map layers
-        var LandUse1942 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', {
+        var landUse1942 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; The Athenaeum of Philadelphia' // Add appropriate attribution
         }).addTo(map);
         
@@ -310,7 +310,7 @@ permalink: /webmap-js.html
             //"1875 GMHopkins Atlas": gmHopkinsAtlas1875,
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
-            "1942 Philadelphia Land Use": LandUse1942,
+            "1942 Philadelphia Land Use": landUse1942,
             "1962 Philadelphia Land Use": landUse1962,
             "Esri Street Map": esriStreetMapLayer,
             //"Stadia Watercolor": stadiaWatercolor, fix authentication

@@ -1,8 +1,7 @@
 ---
 title: The Women of Germantown
 description: Learn about the figures featured in David McShane's 2001 mural.
-
-author: 
+author: Emma
 img: arc_008
 
 ---

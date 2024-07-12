@@ -1,8 +1,9 @@
 ---
 title: Children's Books
-layout: exhibit-page
-permalink: example-2.html
+
+author: 
 description: children's book exibits
+
 img: arc_001
 ---
 

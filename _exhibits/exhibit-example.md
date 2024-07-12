@@ -1,9 +1,10 @@
 ---
 title: The Women of Germantown
 description: Learn about the figures featured in David McShane's 2001 mural.
-layout: exhibit-page
+
+author: 
 img: arc_008
-permalink: exhibit-1
+
 ---
 
 Learn more about the figures featured in David McShane's "Women of Germantown" mural, completed in 2001.

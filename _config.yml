@@ -66,3 +66,14 @@ sass:
 
 plugins:
   - jekyll-toc
+
+collections: 
+  exhibits:
+    output: true 
+    permalink: :collection/:name
+defaults:
+  - scope:
+      path: ""
+      type: "exhibits"
+    values:
+      layout: "exhibit-page"

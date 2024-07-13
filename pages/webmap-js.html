@@ -13,7 +13,7 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
-
+    <link href="https://unpkg.com/mapbox-gl/dist/mapbox-gl.css" rel="stylesheet" />
     <style>
         body {
             padding: 0;
@@ -90,8 +90,11 @@ permalink: /webmap-js.html
             filter: hue-rotate(144deg) saturate(1.5);
             /*red*/
         }
+
         /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
     </style>
+
+
 </head>
 
 <body>
@@ -100,90 +103,85 @@ permalink: /webmap-js.html
     <!-- Include Leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <!-- Include PapaParse, a javascript library to parse csv files -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
+    <script src="https://unpkg.com/mapbox-gl/dist/mapbox-gl.js"></script>
+
+
     <script>
+
         // Initialize the map
         var map = L.map("map", {
-            center: [40.03270207250667, -75.17665301048476],
-            zoom: 15
+            center: [40.0370605081441, -75.17637144783761],
+            zoom: 10
         });
 
-        // Define tile layers
-        var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            maxZoom: 20,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        var ywcaIcon = L.icon({
+            className: 'ywca',
+            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [36, 60], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [3.75, -59]
         });
+
+        // Function to create a tile layer with common settings
+        function createTileLayer(url, attribution) {
+            return L.tileLayer(url, {
+                attribution: attribution,
+                opacity: 1,
+                errorTileUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAFElEQVR42mP8z/C/HwAEBADEQAK5lR/kAAAAAElFTkSuQmCC'
+            }).on('tileerror', handleTileError);
+        }
+
+        // Create historical layers using the function
+        var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+
+        // Error handling replacing missing tiles with fallback tiles
+        function handleTileError(event) {
+            var errorTile = event.tile;
+            errorTile.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAFElEQVR42mP8z/C/HwAEBADEQAK5lR/kAAAAAElFTkSuQmCC'; // transparent 1x1 PNG
+        }
+
         var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });
 
-        /*//fix authentication, 401 auth error
-        var stadiaWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
-            maxZoom: 16,
-            attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>', 
-        }).addTo(map);
-        */ 
-        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-            maxZoom: 19
-        }).addTo(map);
-        
+        var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        });
 
-        // Add historic map layers
-        var landUse1942 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; The Athenaeum of Philadelphia' // Add appropriate attribution
-        }).addTo(map);
-        
-        /*var gmHopkinsAtlas1875 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
-        }).addTo(map);;*/
-
-        var bromleyAtlas1895 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
-        }).addTo(map);;
-
-        var bromleyAtlas1910 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', {       
-            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
-        }).addTo(map);;
-
-        var landUse1962 = L.tileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; The Athenaeum of Philadelphia'
-        }).addTo(map);;
-        
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
         }).addTo(map);
-        
-        // Load CSV and convert to JSON
-        Papa.parse('assets/data/building-info.csv', {
-            download: true,
-            header: true,
-            complete: function (results) {
-                var data = results.data;
-                addDataToLayers(data);
-            },
-            error: function (error) {
-                console.error('Error loading CSV data:', error);
-            }
-        });
+        var data = {{ site.data.germantown-y-metadata | jsonify }};
+
+        console.log("Data loaded:", data);
+
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
             data.forEach(function (feature) {
-                if (feature.category) {
+                // Check if required fields (subject, latitude, longitude) are present and not empty
+                if (feature.subject && feature.latitude && feature.longitude &&
+                    feature.subject.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
+
                     var geojsonFeature = {
                         type: "Feature",
                         properties: {
-                            title: feature.title,
-                            address: feature.address,
-                            year: feature.year,
-                            category: feature.category,
-                            description: feature.description,
-                            additionalInfo: feature['additional-info'],
-                            relevance: feature.relevance,
-                            image: feature.image,
-                            sources: feature.sources
+                            title: feature.title || "Unknown",
+                            location: feature.location || "Unknown",
+                            date: feature.date || "Unknown",
+                            subject: feature.subject,
+                            description: feature.description || "No description provided",
+                            relevance: feature.relevance || "Unknown",
+                            image: feature.image || "",
+                            sources: feature.sources || "Unknown"
                         },
                         geometry: {
                             type: "Point",
@@ -191,31 +189,38 @@ permalink: /webmap-js.html
                         }
                     };
 
-                    var category = feature.category.toLowerCase();
-                    if (category === 'other') {
+                    console.log("Processing feature:", geojsonFeature);
+
+                    var subject = feature.subject.toLowerCase();
+                    if (subject === 'other') {
                         otherLayer.addData(geojsonFeature);
-                    } else if (category === 'branch') {
+                    } else if (subject === 'branch') {
                         branchLayer.addData(geojsonFeature);
-                    } else if (category === 'industry') {
+                    } else if (subject === 'industry') {
                         industryLayer.addData(geojsonFeature);
-                    } else if (category === 'landmark') {
+                    } else if (subject === 'landmark') {
                         landmarkLayer.addData(geojsonFeature);
-                    } else if (category === 'lodgings') {
+                    } else if (subject === 'lodgings') {
                         lodgingsLayer.addData(geojsonFeature);
-                    } else if (category === 'main-building') {
+                    } else if (subject === 'main-building') {
                         mainBuildingLayer.addData(geojsonFeature);
-                    } else if (category === 'ywca') {
+                    } else if (subject === 'ywca') {
                         ywcaLayer.addData(geojsonFeature);
+                    } else {
+                        console.warn("Unexpected subject:", subject);
+                        unknownLayer.addData(geojsonFeature); // Add to the unknown layer
                     }
+                } else {
+                    console.warn("Feature missing required fields (subject, latitude, or longitude):", feature);
                 }
             });
         }
 
-        //define layers with popup content
-        function createLayer(className) {
+        // Define layers with popup content
+        function createLayer(className, customIcon) {
             return L.geoJSON(null, {
                 pointToLayer: function (feature, latlng) {
-                    var marker = L.marker(latlng);
+                    var marker = L.marker(latlng, { icon: customIcon || L.Icon.Default.prototype });
                     marker.on('add', function () {
                         marker._icon.classList.add(className);
                     });
@@ -224,31 +229,38 @@ permalink: /webmap-js.html
                 onEachFeature: function (feature, layer) {
                     if (feature.properties) {
                         var popupContent = '<h3>' + feature.properties.title + '</h3>' +
-                            '<p><b>Address:</b> ' + feature.properties.address + '</p>' +
-                            '<p><b>Description:</b> ' + feature.properties.description + '</p>' + 
-                            '<p><b>Category:</b> ' + feature.properties.category + '</p>'; //To add other information to the pop up, the same format can be followed as long as the column already exists in the csv file
+                            '<p><b>Address:</b> ' + feature.properties.location + '</p>' +
+                            '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
+                            '<p><b>Year:</b> ' + feature.properties.date + '</p>';
                         layer.bindPopup(popupContent);
+                    } else {
+                        console.warn("Feature missing properties:", feature);
                     }
                 }
-            });
+            })
         }
 
+
+        var unknownLayer = createLayer('unknown');
         var otherLayer = createLayer('other');
         var landmarkLayer = createLayer('landmark');
         var industryLayer = createLayer('industry');
         var lodgingsLayer = createLayer('lodgings');
         var branchLayer = createLayer('branch');
         var mainBuildingLayer = createLayer('main-building');
-        var ywcaLayer = createLayer('ywca');
+        var ywcaLayer = createLayer('ywca', ywcaIcon);
 
-        // Add layers to map
-        otherLayer.addTo(map);
-        landmarkLayer.addTo(map);
+
+        //Add layers to map
+        unknownLayer;
+        otherLayer;
+        landmarkLayer;
         industryLayer.addTo(map);
         lodgingsLayer.addTo(map);
         branchLayer.addTo(map);
         mainBuildingLayer.addTo(map);
         ywcaLayer.addTo(map);
+
 
         // Add boundary line
         var germantownBoundary = L.polyline([
@@ -307,15 +319,14 @@ permalink: /webmap-js.html
 
         // Layer controls
         var baseLayers = {
-            //"1875 GMHopkins Atlas": gmHopkinsAtlas1875,
+            "1875 GMHopkins Atlas": gmHopkinsAtlas1875,
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
             "1942 Philadelphia Land Use": landUse1942,
             "1962 Philadelphia Land Use": landUse1962,
-            "Esri Street Map": esriStreetMapLayer,
-            //"Stadia Watercolor": stadiaWatercolor, fix authentication
             "Google Streets": googleStreets,
-            "Google Satellite": googleSat
+            "Google Satellite": googleSat,
+            "Esri Street Map": esriStreetMapLayer
         };
         var overlayLayers = {
             "YWCA": ywcaLayer,
@@ -325,10 +336,14 @@ permalink: /webmap-js.html
             "Industries": industryLayer,
             "Landmarks": landmarkLayer,
             "Others": otherLayer,
+            "Unknown": unknownLayer,
             "Germantown Boundary Line": germantownBoundary
         };
 
         L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+        // Call function to add data to layers
+        addDataToLayers(data);
 
     </script>
 </body>

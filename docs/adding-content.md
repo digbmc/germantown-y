@@ -1,4 +1,13 @@
-Writiing is as easy as markdown [link to markdown?] but there are other ways to add things, and collectionbuilder's features make it easy...
+# Adding Content 
+This is a guide on how to add content to pages on the website
+
+## Text
+To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting languge. 
+
+[Guide to Markdown](https://www.markdownguide.org/basic-syntax/) 
+
+
+## Visual Content
 
 Collection builder uses a feature called an include, which pulls code from a programmed feature with one line. Features are includes, and you can set the parameters (ex how wide something is, what the image is, what you want the image caption to be, in the include) Examples below: 
 

@@ -130,14 +130,27 @@ permalink: /webmap-js.html
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [3.75, -59]
         });
+        // Error handling replacing missing tiles with fallback tiles
+        function handleTileError(event) {
+            var errorTile = event.tile;
+            var xhr = new XMLHttpRequest();
+            xhr.open('HEAD', errorTile.src, false);
+            xhr.send();
+
+            if (xhr.status === 404) {
+                console.error('Tile not found (404):', errorTile.src);
+                alert('Tile not found (404): ' + errorTile.src);
+            } else {
+            console.error('Tile error:', errorTile.src);
+            }
+        }
 
         // Function to create a tile layer with common settings
         function createTileLayer(url, attribution) {
             return L.tileLayer(url, {
                 attribution: attribution,
                 opacity: 1
-                //errorTileUrl: 
-            }).on('tileerror'/*replace with tile error*/, handleTileError);
+            }).on('tileerror', handleTileError);
         }
 
         // Create historical layers using the function

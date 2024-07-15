@@ -1,61 +1,84 @@
 ---
 # Default home page with boxes providing collection stats
-layout: page
+<!--layout: page-->
+title: home
+home: true
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
-
-<div class="row">
-  
-  <div class="col-md-12">
-    
-    {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" height="300" %}
-  </div>
-</div>
-<div class = "row gx-4">
-  
-    <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    {% include head/head.html %}
+  </head>
+  <body class="d-flex flex-column h-100"> 
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    {% include collection-nav.html %}
+    {% include collection-banner.html %}
+    <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
+    <div class="row">
+      
+      <div class="col-md-12">
+        
+        <div class="card mb-3">
+          <div class="card-body">
+            
+            <p class="card-text">{{ site.description }}</p>
+            {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
+            {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
+          </div>
         </div>
+
+        {% include index/carousel.html title="Sample Items" height="300" %}
       </div>
     </div>
-  
-    <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class = "row gx-4">
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
+          <div class="card">
+            <img class="card-img-top" src="assets\pics\timeline.png" alt="History">
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">Shows a timeline of the building and more information about the history of the YWCA</p>
+              <a href="{{ site.baseurl }}/history.html" class="btn light-blue text-dark btn-primary">History Page</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top" src="assets\pics\exhibit.png" alt="Exhibits">
+            <div class="card-body">
+              <h5 class="card-title">Exhibits</h5>
+              <p class="card-text">Stories and features about the Germantown YWCA Building
+              </p>
+              <a href="{{ site.baseurl }}/exhibits.html'" class="btn light-blue text-dark btn-primary">Exhibits Page</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top" src="assets\pics\map.jpg" alt="Maps">
+            <div class="card-body">
+              <h5 class="card-title">Map</h5>
+              <p class="card-text">Web map displays pins marking the locations of significant buildings
+              </p>
+              <a href="exhibits.html/map.html" class="btn light-blue text-dark btn-primary">Map Page</a>
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top" src="assets\pics\buildings.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Building</h5>
+              <p class="card-text">Includes an interactive floor plan that allows users to view how rooms were set up and an image carousel that 
+                allows users to look through architectural plans of the building</p>
+              <a href="{{ site.baseurl }}/building.html" class="btn light-blue text-dark btn-primary">Buildings Page</a>
+            </div>
         </div>
     </div>
-  
-
-</div>
-
+  </main>
+  {% include footer.html %}
+  {% include foot.html %}
+  {% include scroll-to-top.html %}
+  </body>
+</html>
   

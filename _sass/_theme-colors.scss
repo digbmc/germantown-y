@@ -6,9 +6,15 @@
 
 /* variables needed from Bootstrap */ 
 
+$lapis-lazuli: #255B77ff;
+$old-rose: #B2827Cff;
+$dun: #C9BDA2ff;
+$carolina-blue: #8BB1C4ff;
+$air-force-blue: #507E96ff;
+
 $white:    #fff !default;
 $black:    #000 !default;
-$primary:       #0d6efd !default;
+$primary:   $lapis-lazuli !default;
 
 $min-contrast-ratio:   4.5 !default;
 $color-contrast-dark:      $black !default;

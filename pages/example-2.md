@@ -2,6 +2,8 @@
 title: Thw Pool
 layout: page
 permalink: example-2.html
+description: children's book exibits
+img: arc_001
 ---
 
 This is another example exhibit page :)

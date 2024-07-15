@@ -1,7 +1,7 @@
 ---
 title: Map
-layout: map
+layout: leaflet 
 permalink: /map.html
-# see _data/config-map.csv for display options
-# do not add content to this file
+description: This map shows buildings connected to the history of the Germantown YWCA. It includes both YWCA buildings and community buildings that have played a role in its story. Explore to learn more about these important sites.
 ---
+

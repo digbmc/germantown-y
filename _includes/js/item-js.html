@@ -123,7 +123,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
         {% if stubs contains "map" %}
         /* add link to view on map */
         var itemMarker = item.parentid ? item.parentid : itemPageId;
-        var mapButton = '<a href="{{ '/map.html' | relative_url }}?location=' + item.latitude + ',' + item.longitude + '&marker=' + itemMarker +'" class="btn btn-outline-primary">View on Map</a>';
+        var mapButton = '<a href="{{ '/webmap.html' | relative_url }}?location=' + item.latitude + ',' + item.longitude + '&marker=' + itemMarker +'" class="btn btn-outline-primary">View on Map</a>';
         if (item.latitude && item.longitude) {
             /* add map link to children only if specified in theme.yml */
             {% if site.data.theme.map-child-objects == true %}

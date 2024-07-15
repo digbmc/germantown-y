@@ -1,5 +1,5 @@
 ---
-title: webmap
+title: Webmap
 layout: leaflet
 permalink: webmap.html
 carousel: false

@@ -13,7 +13,6 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
-    <link href="https://unpkg.com/mapbox-gl/dist/mapbox-gl.css" rel="stylesheet" />
     <style>
         body {
             padding: 0;
@@ -108,8 +107,6 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
-    <script src="https://unpkg.com/mapbox-gl/dist/mapbox-gl.js"></script>
-
 
     <script>
 
@@ -162,12 +159,6 @@ permalink: /webmap-js.html
         var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
         var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
         var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-
-        // Error handling replacing missing tiles with fallback tiles
-        function handleTileError(event) {
-            var errorTile = event.tile;
-            errorTile.src = openStreetMap;
-        }
 
         var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             maxZoom: 20,

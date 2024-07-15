@@ -123,4 +123,8 @@ body {
 .img-card {
     position:relative;
     right: 16px;
+    img {
+    border-radius: 0.25rem 0.2rem 0 0 !important;
+    }
+    
 }

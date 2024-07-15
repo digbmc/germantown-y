@@ -115,7 +115,13 @@ permalink: /webmap-js.html
             center: [40.0370605081441, -75.17637144783761],
             zoom: 10
         });
-
+        //base map
+        const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        
+        //custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
             iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
@@ -129,9 +135,9 @@ permalink: /webmap-js.html
         function createTileLayer(url, attribution) {
             return L.tileLayer(url, {
                 attribution: attribution,
-                opacity: 1,
-                errorTileUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAFElEQVR42mP8z/C/HwAEBADEQAK5lR/kAAAAAElFTkSuQmCC'
-            }).on('tileerror', handleTileError);
+                opacity: 1
+                //errorTileUrl: 
+            }).on('tileerror'/*replace with tile error*/, handleTileError);
         }
 
         // Create historical layers using the function
@@ -144,7 +150,7 @@ permalink: /webmap-js.html
         // Error handling replacing missing tiles with fallback tiles
         function handleTileError(event) {
             var errorTile = event.tile;
-            errorTile.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAFElEQVR42mP8z/C/HwAEBADEQAK5lR/kAAAAAElFTkSuQmCC'; // transparent 1x1 PNG
+            errorTile.src = openStreetMap;
         }
 
         var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
@@ -159,7 +165,7 @@ permalink: /webmap-js.html
 
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
-        }).addTo(map);
+        });
         var data = {{ site.data.germantown-y-metadata | jsonify }};
 
         console.log("Data loaded:", data);

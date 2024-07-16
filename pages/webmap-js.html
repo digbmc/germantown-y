@@ -107,13 +107,13 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
-
+    <script src="{{ '/assets/lib/leaflet/leaflet.markercluster.js' | relative_url }}"></script>
     <script>
 
         // Initialize the map
         var map = L.map("map", {
-            center: [40.0370605081441, -75.17637144783761],
-            zoom: 10
+            center: [40.03030807351389, -75.1761523600391],
+            zoom: 15
         });
         //base map
         const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -148,7 +148,8 @@ permalink: /webmap-js.html
         function createTileLayer(url, attribution) {
             return L.tileLayer(url, {
                 attribution: attribution,
-                opacity: 1
+                opacity: 1,
+                maxZoom: 20
             }).on('tileerror', handleTileError);
         }
 
@@ -174,7 +175,7 @@ permalink: /webmap-js.html
         });
         var data = {{ site.data.germantown-y-metadata | jsonify }};
 
-        console.log("Data loaded:", data);
+        //console.log("Data loaded:", data);
 
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
@@ -265,8 +266,8 @@ permalink: /webmap-js.html
 
         //Add layers to map
         unknownLayer;
-        otherLayer;
-        landmarkLayer;
+        otherLayer.addTo(map);
+        landmarkLayer.addTo(map);
         industryLayer.addTo(map);
         lodgingsLayer.addTo(map);
         branchLayer.addTo(map);

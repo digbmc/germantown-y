@@ -5,6 +5,6 @@ description,Description,,true,
 subject,Subject,,true,Subject
 location,Location,,true,Location
 source,Source,,true,Source
-source identifier,Source Identifier
+identifier,Source Identifier,,
 type,Type,,true,Type
 format,Format,,true,Format

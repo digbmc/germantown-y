@@ -1,0 +1,30 @@
+---
+# Default home page with boxes providing collection stats
+layout: page
+---
+<div class = "row">
+<div class="col-lg-12">
+  <h2>Exhibits</h2>
+  {% include index/description.html %}
+</div>
+</div>
+<div class = "row gx-4">
+    {% for exhibit in site.exhibits %}
+      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
+        <div class="card">
+          <div class = "rounded-top img-card">
+          {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
+          </div>
+        
+          <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
+          <div class="card-body">
+            <h2 class="card-title">{{ exhibit.title }}</h2>
+            <p class="card-text"> {{ exhibit.description }} </p>
+            <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-danger text-light ">Read</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+      
+</div>
+

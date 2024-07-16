@@ -1,8 +1,8 @@
 ---
-title: Children's Books
+title: The YWCA organization
 
 author: 
-description: children's book exibits
+description: History of the YWCA organization
 
 img: arc_001
 ---

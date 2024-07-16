@@ -60,7 +60,8 @@ More information: about this field. Like the Object ID, the filename should be a
 
 If commas are messing with the formatting, you will need to wait until you upload the CSV file onto GitHub or your local repository (which is a later step). There you can replace the semicolons in the uplaoded CSV file with commas. Then you must add quotation marks to the beginning of the value and end so that the whole value gets read in as one string. The input should look something ```like this: “WHYY photographer, Bob, John, Sugar, Cain”.```
 
-**Date:** the date should be formatted like this: YYYY-DD-MM. An example would look ```like this: 2012-21-06.```
+**Date:** the date should be formatted like this: YYYY-DD-MM. An example would look ```like this: 2012-21-06.``` 
+If the month and day are not known it is okay to just put the year.
 
 **Description**: This field is used to talk about the file you specified in filename. Insert context about the file in this field.
 

@@ -14,6 +14,8 @@ title: Metadata Documentation
 This tutorial assumes you have cloned the germantown-y repository (the repository is where all website files are located) onto a code editor such as Visual Studio Code or have access to edit files on the repository.
 
 ## Setting up the Metadata for Editing
+If there is already a metadata spreadsheet set up where everyone is working, use that one to maintain continuity. This ensures the flow of adding items to the spreadsheet isn't interrupted and that object IDs remain unique. If there isn't an existing spreadsheet, you can create one by following these steps.
+
 On our repository, there should be a CSV file located in the _data folder called **germantown-y-metadata.csv** This file contains all the metadata for each item on our website. The first line of the CSV file lists the metadata fields in the order** the values are presented in the file.
 
 Here is an example:

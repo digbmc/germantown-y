@@ -8,18 +8,18 @@ home: true
   <head prefix="og: http://ogp.me/ns#">
     {% include head/head.html %}
   </head>
-  <body class="d-flex flex-column h-100"> 
+  <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
     {% include collection-nav.html %}
     {% include collection-banner.html %}
     <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
     <div class="row">
-      
+
       <div class="col-md-12">
-        
+
         <div class="card mb-3">
           <div class="card-body">
-            
+
             <p class="card-text">{{ site.description }}</p>
             {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
             {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
@@ -32,11 +32,11 @@ home: true
     <div class = "row gx-4">
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
           <div class="card">
-            <img class="card-img-top" src="assets\pics\timeline.png" alt="History">
+            <img class="card-img-top" src="assets\pics\timeline.png" alt="History" style="width:300px;">
             <div class="card-body">
-              <h2 class="card-title">History</h2>
+              <h5 class="card-title">History</h5>
               <p class="card-text">Shows a timeline of the building and more information about the history of the YWCA</p>
-              <a href="{{ site.baseurl }}/history.html" class="btn light-blue text-dark btn-primary">History Page</a>
+              <a href="#" class="btn light-blue text-dark btn-primary">History Page</a>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ home: true
             <img class="card-img-top" src="assets\pics\buildings.png" alt="Card image cap">
             <div class="card-body">
               <h2 class="card-title">Building</h2>
-              <p class="card-text">Includes an interactive floor plan that allows users to view how rooms were set up and an image carousel that 
+              <p class="card-text">Includes an interactive floor plan that allows users to view how rooms were set up and an image carousel that
                 allows users to look through architectural plans of the building</p>
               <a href="{{ site.baseurl }}/building.html" class="btn light-blue text-dark btn-primary">Buildings Page</a>
             </div>
@@ -79,4 +79,3 @@ home: true
   {% include scroll-to-top.html %}
   </body>
 </html>
-  

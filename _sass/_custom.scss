@@ -113,3 +113,18 @@ body {
     
 }
 
+.card {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+.img-card {
+    position:relative;
+    right: 16px;
+    img {
+    border-radius: 0.25rem 0.2rem 0 0 !important;
+    }
+    
+}

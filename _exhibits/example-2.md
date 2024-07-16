@@ -1,8 +1,9 @@
 ---
-title: Thw Pool
-layout: page
-permalink: example-2.html
-description: children's book exibits
+title: The YWCA organization
+
+author:
+description: History of the YWCA organization
+
 img: arc_001
 ---
 

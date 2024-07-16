@@ -1,10 +1,10 @@
 field,display_name,btn,hidden,sort_name
 creator,Creator,,,Creator
 date,Date,,,Date
-description,Description,,true,Description
+description,Description,,true,
 subject,Subject,,true,Subject
 location,Location,,true,Location
 source,Source,,true,Source
-source identifier,Source Identifier,,true,Source Identifier
+identifier,Source Identifier,,
 type,Type,,true,Type
 format,Format,,true,Format

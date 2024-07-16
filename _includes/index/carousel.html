@@ -20,7 +20,7 @@
 {%- assign image-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.format contains 'image'" -%}
 {%- assign youtube-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.youtubeid" -%}
 {%- if youtube-items -%}{%- assign carousel-items = image-items | concat: youtube-items -%}{%- else -%}{%- assign carousel-items = image-items -%}{% endif %}
-
+<!-- assign carousel-items = carousel-items | where--> for loop
 {% if site.data.theme.carousel-child-objects == true %}
 {%- assign carousel-items = carousel-items | where_exp: 'item','item.title != nil' -%}
 {% else %}

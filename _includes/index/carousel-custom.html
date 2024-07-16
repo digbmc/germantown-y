@@ -17,21 +17,15 @@
     
 {%- endcomment -%}
 
-{%- assign image-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.format contains 'image'" -%}
-{%- assign youtube-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.youtubeid" -%}
-{%- if youtube-items -%}{%- assign carousel-items = image-items | concat: youtube-items -%}{%- else -%}{%- assign carousel-items = image-items -%}{% endif %}
-{% assign carousel-items = ""%}
-{% for i in gallery%}
-   {% assign new-items = site.data[site.metadata ] | where: 'item.objectid’ %} 
-   {% assign carousel-times = carousel-items | push: this-item %}
+{% for i in page.gallery %}
+    {% if forloop.first %}
+        {% assign carousel-items = site.data[site.metadata ]| where_exp: 'item', 'item.objectid == i' %}
+    {% else %}
+        {% assign this-item = site.data[site.metadata ]| where_exp: 'item', 'item.objectid == i' | first %}
+        {% assign carousel-items = carousel-items | push: this-item %}
+    {% endif %}
 {% endfor %}
-
-{% if site.data.theme.carousel-child-objects == true %}
-{%- assign carousel-items = carousel-items | where_exp: 'item','item.title != nil' -%}
-{% else %}
-{%- assign carousel-items = carousel-items | where_exp: 'item','item.parentid == nil' -%}
-{% endif %}
-
+ 
 {%- assign carousel-max = include.max | default: 9 -%}
 {%- assign btn-color = include.btn-color | default: "primary" -%}
 {%- assign btn-text = include.btn-text | default: "View Item" -%}

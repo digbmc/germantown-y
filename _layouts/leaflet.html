@@ -1,6 +1,11 @@
 ---
 title: leaflet
 layout: default 
+gallery: 
+    - arch_001
+    - arch_002
+    - arch_003
+
 ---
 
 <div class = "container my-4">
@@ -15,7 +20,7 @@ layout: default
     </div>
     <div class="col-md-12">
         {% if page.carousel == true %}
-            {% include index/carousel.html %}
+            {% include index/carousel-custom.html %}
         {% endif %}
     </div>
     <div class="col-md-12">

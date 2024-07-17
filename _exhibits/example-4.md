@@ -1,8 +1,8 @@
 ---
-title: Another, another example 
+title: Maps
 
 author: Emma 
-description: eeeeeeeeeeek
+description: About the historical maps around Germantown.
 
-img: arc_002
+img: arc_003
 ---

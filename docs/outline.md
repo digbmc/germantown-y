@@ -63,9 +63,3 @@ author: fiona
 ### Adding Metadata
 ### Uploading Content Files
 ## Metadata of the Archive
-
-
-
-
-
-

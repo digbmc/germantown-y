@@ -173,7 +173,7 @@ permalink: /webmap-js.html
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
         });
-        var data = {{ site.data.germantown-y-metadata | jsonify }};
+        var data = {{ site.data.building-info | jsonify }};
 
         //console.log("Data loaded:", data);
 

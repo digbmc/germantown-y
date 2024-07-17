@@ -1,5 +1,26 @@
 # Getting started 
 
+
+Before you start working on the Germantown-YWCA website, here are the major tools used on the site. 
+- [Git](https://git-scm.com/) is an open-source version control tool that allows people to work with different versions of a project together.  
+- [Github](https://github.com/) is a platform for hosting projects that use Git. The Germantown YWCA Website is hosted and deployed using Github
+- [Jekyll](https://jekyllrb.com/) is a static site generator that works with Github to generate the site. 
+- [CollectionBuilder](https://collectionbuilder.github.io/) is a Jekyll-based framework for hosting digital achives. It's used as the template for this site. 
+
+This guide will set up with all the software you need to start working with the site. For content editing, working on Github will be easier. For more advanced work, you'll never to work with the repository stored on your computer. 
+
+## Terms to know 
+
+Technical terms can be a lot. Here are some that you may see in our documentation.
+
+- Open-source: Software that is free to use, with accessible source code. 
+- Hosting: Where files are stored. A text file on your computer is hosted locally. A google doc is hosted on Google's servers. The Germantown YWCA site is hosted on Github
+- Deployment: To make a site live. Github uses Github pages/actions to deploy (explain this better)
+- Static-Site: A static site is one with pages that don't change depending on the user (get a better definition). Static sites load faster, and are more eviormentally friendly than dynamic sites (define dynamic!)
+- Remote: The repoisotry stored on Github
+- Local: The repository stored on your computer
+
+
 Before you start working on the Germantown YWCA, you'll need a github account. To do that [Sign up for a Github Account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 
 Once you have an account, open up the [germantown-y repository](https://github.com/digbmc/germantown-y). It looks like this 
@@ -35,57 +56,3 @@ Note: The pull request page will load with the files you're trying to change and
 
 
 
-## The guide for interns and other people who want to work with the source code
-
-Before you start working on the Germantown-YWCA website, here are the major tools used on the site. 
-- [Git](https://git-scm.com/) is an open-source version control tool that allows people to work with different versions of a project together.  
-- [Github](https://github.com/) is a platform for hosting projects that use Git. The Germantown YWCA Website is hosted and deployed using Github
-- [Jekyll](https://jekyllrb.com/) is a static site generator that works with Github to generate the site. 
-- [CollectionBuilder](https://collectionbuilder.github.io/) is a Jekyll-based framework for hosting digital achives. It's used as the template for this site. 
-
-This guide will set up with all the software you need to start working with the site. 
-
-## Terms to know 
-
-Technical terms can be a lot. Here are some that you may see in our documentation.
-
-- Open-source: Software that is free to use, with accessible source code. 
-- Hosting: Where files are stored. A text file on your computer is hosted locally. A google doc is hosted on Google's servers. The Germantown YWCA site is hosted on Github
-- Deployment: To make a site live. Github uses Github pages/actions to deploy (explain this better)
-- Static-Site: A static site is one with pages that don't change depending on the user (get a better definition). Static sites load faster, and are more eviormentally friendly than dynamic sites (define dynamic!)
-- Remote: The repoisotry stored on Github
-- Local: The repository stored on your computer
-
-## Software to install 
-
-- [Create a Github Account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). You need a Github account to add and edit riles on the remote repository. 
-
-- [Download VSCode](https://code.visualstudio.com/). VS code is a text editor that will allow you to edit and create files for the site. You can use another text editor, but VS Code is useful because of the active support and extensive library of add-ons.
-
-- VSCode Extensions 
-    - 
-
-- [Install Git](https://collectionbuilder.github.io/cb-docs/docs/software/git/) Git will allow you to communicate with the remote repository (explain better)
-
-- [Install Ruby](https://collectionbuilder.github.io/cb-docs/docs/software/ruby/). You need to have Ruby downloaded to run
-
-- [Install ImageMagick and Ghostscript](https://collectionbuilder.github.io/cb-docs/docs/software/optional/). This software processes files in the archive
-
-
-## Creating your local repository
-
-To create your local repository, we're going to be using VS Code's interface. You can also do this in terminal. 
-
-### Using VS Code
-1. Open an empty VS Code Window 
-2. Under the start menu, select "Clone Git Repository" 
-3. In the bar asking for a link to the remote repository, copy and paste this link: https://github.com/digbmc/germantown-y.git
-4. When prompted, decide where you want to store your repository. 
-
-### Using terminal
-1. Open your terminal (Git Bash on Windows/Linux, Terminal for Mac) 
-2. Navigate to folder you want to keep your local copy of the repository in. For example, if you wanted to store the site in your documents folder you would enter in the terminal...
-``` cd Documents ```
-cd stands for "change directory" 
-3. Once in that folder, input ``` git clone https://github.com/digbmc/germantown-y.git ``` and press enter
-4. Now in documents, there will be a folder titled germantown-y. Open it in VSCode 

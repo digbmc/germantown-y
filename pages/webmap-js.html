@@ -13,6 +13,8 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css">
+
     <style>
         body {
             padding: 0;
@@ -90,10 +92,11 @@ permalink: /webmap-js.html
             /*red*/
         }
         /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
-    .leaflet-tile {
-            background-color: transparent !important;
+        
+        .esriMatchContainer .esriMatchOptions .esriReviewContainer .esriAGORendererColor .toolsLabel:hover{
+            color: transparent !important;
         }
-    /*setting background to transparent for all layers*/
+        /*setting background to transparent for all layers*/
     </style>
 
 
@@ -107,7 +110,9 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
-    <script src="{{ '/assets/lib/leaflet/leaflet.markercluster.js' | relative_url }}"></script>
+    <script src="https://js.arcgis.com/4.30/"></script>
+    <script type="module" src="https://js.arcgis.com/map-components/4.30/arcgis-map-components.esm.js"></script>
+
     <script>
 
         // Initialize the map

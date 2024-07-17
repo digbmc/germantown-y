@@ -1,7 +1,10 @@
 ---
-title: Thw Pool
-layout: page
-permalink: example-2.html
+title: The YWCA organization
+
+author:
+description: History of the YWCA organization
+
+img: arc_001
 ---
 
 This is another example exhibit page :)

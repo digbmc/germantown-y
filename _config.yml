@@ -12,9 +12,9 @@
 #url: https://collectionbuilder.github.io 
 # baseurl is path to location on the domain if necessary e.g. /digital/hjccc
 # on GitHub Pages it is your github repository's name prefixed with a /
-#baseurl: /collectionbuilder-gh 
+baseurl: /germantown-y
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
+source-code: https://github.com/digbmc/germantown-y
 
 ##########
 # SITE SETTINGS
@@ -25,16 +25,16 @@ title: Germantown YWCA
 tagline: A Social History of a Building
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+description: The building at 5820 Germantown Avenue in Philadelphia once housed the Germantown YWCA Organization and served as a crucial community resource for nearly a century. Subsequently abandoned, it has become the site of a contentious political battle between many different interests including local residents, neighboring agencies and businesses, real estate developers and political agents. This exhibit aims to tell the histories of the building, the Germantown YWCA organization, and the community surrounding it.  
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: Bryn Mawr College Digital Scholarship
 
 ##########
 # COLLECTION SETTINGS
 #
 # Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: demo-metadata
+metadata: germantown-y-metadata
 
 ##########
 # Site/Organization Branding 
@@ -63,7 +63,17 @@ exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md,
 # compress CSS output
 sass:
   style: compressed
-kramdown:
-  parse_block_html: true
+
 plugins:
   - jekyll-toc
+
+collections: 
+  exhibits:
+    output: true 
+    permalink: :collection/:name
+defaults:
+  - scope:
+      path: ""
+      type: "exhibits"
+    values:
+      layout: "exhibit-page"

@@ -8,7 +8,7 @@ author: Fiona
 - permalink: Sets a custom URL for the page. In this case, the page will be accessible at history.html.
 - toc: Enables the table of contents for the page. This is a custom variable that is handled in your layout file. 
 
-# Table of contents
+# Table of Contents
 The table of content feeds from the markdown of the history page. The bullet points are generated from heading levels. Because the table of contents lists subheadings, the highest level of header should stay at level to (h2 in html, ## in markdown). Those headers will be in a bulleted list. Lower headers will be nested as bullet points within bullet points.
 
 ## Getting more technical 

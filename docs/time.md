@@ -2,7 +2,7 @@
 Start off by using TimelineJS to download the spreadsheet. TimelineJS is an open-source tool that enables anyone to build visually rich, interactive timelines. To creat a timeline, you can simply use a Google Spreadsheet.
 
 Here is the site to get you started 
-[TimelineJS Website URL]("https://timeline.knightlab.com/)
+[TimelineJS Website URL](https://timeline.knightlab.com/)
 
 TimelineJS has documentation which you can find here [TimelineJS Documentation]("https://timeline.knightlab.com/docs/using-spreadsheets.html)
 
@@ -18,9 +18,8 @@ TimelineJS has documentation which you can find here [TimelineJS Documentation](
 ```
 This will change the text color to blue
 - To bold text use:
-```
-<strong>text</strong>
-```
+`<strong>text</strong>`
+
 ## Images 
 - For adding images always use the image url and copy/paste it into the "Media column"
 - To input background image, copy the image url into the "Background column"

@@ -155,11 +155,11 @@ permalink: /webmap-js.html
         }
 
         // Create historical layers using the function
-        var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/11922">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1942. [Land Use / Zoning Maps]. </a>');
+        var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia| Source: <a href="https://libwww.freelibrary.org/digital/item/46178">G.M. Hopkins, C.E. - Publisher.  City Atlas of Philadelphia, 25th Ward, 1875, Map Index. [Property Atlases/Maps]</a>');
+        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://historicmapworks.com/Atlas/US/6900/">G. W. Bromley & Co. (1895). Philadelphia 1895 [Atlas]. Historic Map Works. </a>');
+        var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://www.historicmapworks.com/Atlas/US/7153/">G. W. Bromley & Co. (1910). Philadelphia 1910 [Atlas]. Historic Map Works. </a>');
+        var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/12030">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1962, Index and Legend. [Land Use / Zoning Maps].</a>');
 
         var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             maxZoom: 20,
@@ -177,7 +177,7 @@ permalink: /webmap-js.html
         });
 
         //load data and convert to json
-        var data = {{ site.data.germantown-y-metadata | jsonify }};
+        var data = {{ site.data.germantown-y-metadata | jsonify }}; //replace with building-info csv
 
         //console.log("Data loaded:", data);
 
@@ -269,7 +269,6 @@ permalink: /webmap-js.html
 
 
         //Add layers to map
-        unknownLayer;
         otherLayer.addTo(map);
         landmarkLayer.addTo(map);
         industryLayer.addTo(map);

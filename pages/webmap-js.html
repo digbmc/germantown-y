@@ -161,15 +161,15 @@ permalink: /webmap-js.html
         var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://www.historicmapworks.com/Atlas/US/7153/">G. W. Bromley & Co. (1910). Philadelphia 1910 [Atlas]. Historic Map Works. </a>');
         var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/12030">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1962, Index and Legend. [Land Use / Zoning Maps].</a>');
 
-        var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+        /*var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });
+        });*/ //may be against google ToS
 
-        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+       /* var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });
+        });*/ //may be against google ToS
 
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
@@ -334,13 +334,13 @@ permalink: /webmap-js.html
         // Layer controls
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
-            "Google Streets": googleStreets,
-            //"1875 GMHopkins Atlas": gmHopkinsAtlas1875,
+            //"Google Streets": googleStreets,
+            "1875 GMHopkins Atlas": gmHopkinsAtlas1875,
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
             "1942 Philadelphia Land Use": landUse1942,
             "1962 Philadelphia Land Use": landUse1962,
-            "Google Satellite": googleSat
+            //"Google Satellite": googleSat
             
         };
         var overlayLayers = {

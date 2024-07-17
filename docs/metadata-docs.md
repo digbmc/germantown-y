@@ -4,19 +4,24 @@ title: Metadata Documentation
 ---
 
 ## Table of Contents
-- Setting up the Metadata for Editing
-- How to Add Items to the Archive
-  - Adding Metadata
-  - Uploading the Content Files
-- Metadata of the Archive
+- [Setting up the Metadata for Editing](#setting-up-the-metadata-for-editing)
+- [How to Add Items to the Archive](#how-to-add-items-to-the-archive)
+  - [Adding Metadata](#adding-metadata)
+  - [Uploading the Content Files](#uploading-the-content-files)
+- [Metadata of the Archive](#metadata-of-the-archive)
 
-## Prerequisites
-This tutorial assumes you have cloned the germantown-y repository (the repository is where all website files are located) onto a code editor such as Visual Studio Code or have access to edit files on the repository.
+## Useful Vacabulary
+Repository: This is where code and files are stored.Our website is stored in GitHub repository!
+
+CSV file: CSV stands for comma seperated values. These files makes it easier for code to read in and parse data due to the file's formatting.
+
+vocab, change doc name to metadata, object id specify the format more put code near the csv explanation
+On our repository (where all website files are located), there should be a CSV (comma seperated value)
 
 ## Setting up the Metadata for Editing
 If there is already a metadata spreadsheet set up where everyone is working, use that one to maintain continuity. This ensures the flow of adding items to the spreadsheet isn't interrupted and that object IDs remain unique. If there isn't an existing spreadsheet, you can create one by following these steps.
 
-On our repository, there should be a CSV file located in the _data folder called **germantown-y-metadata.csv** This file contains all the metadata for each item on our website. The first line of the CSV file lists the metadata fields in the order** the values are presented in the file.
+On our repository (where all website files are located), there should be a CSV (comma seperated value) file located in the _data folder called **germantown-y-metadata.csv** This file contains all the metadata for each item on our website. The first line of the CSV file lists the metadata fields in the order** the values are presented in the file.
 
 Here is an example:
 ```
@@ -26,7 +31,7 @@ arc_001,arc_001.jpg,Germantown YWCA Upwards View From Entrance Photo,Cameron L B
 
 As we can see here the fields are Objectid,filename,title,creator,date and their respective values are Objectid = arc_001, filename=arc_001.jpg, title=Germantown YWCA Upwards View From Entrance Photo, creator=Cameron L Boucher, date=06/18/2024. Note: Values are usually all on the same line, but due to the size of this document some info may have been folded onto a second line with the rest of the values following.
 
-Now, to make changes download the csv file onto your device and head over to a spreadsheet application for editing.
+Now, to make changes download the CSV file onto your device and head over to a spreadsheet application for editing.
 
 For this example, I will be using Google Sheets. First, create a blank spreadsheet. Once the spreadsheet is created, navigate to the File button on the upper left and click on the Open option. A pop-up should appear. In the pop-up, select the 'Upload' option. Now, either browse for or drag the germantown-y-metadata.csv file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata.
 
@@ -101,48 +106,49 @@ If a second value is going to be inputted the second value should further specif
 **Image_alt_text:** Insert alt text for the image here. Alt text provides a description of the image for screen readers to use, which helps increase accessibility.
 
 Here is an example input:
+```
+Objectid: arc_007
 
-**Objectid:** arc_007
+Filename: http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg
 
-**Filename:** http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg
+Title: Germantown YWCA and the Pastorius Monument viewed from Vernon Park
 
-**Title:** Germantown YWCA and the Pastorius Monument viewed from Vernon Park
+Creator: Maule, Bradley
 
-**Creator:** Maule, Bradley
+Date: 2015
 
-**Date:** 2015
+Description: A photo of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park.
 
-**Description:** A photo of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park.
+Subjects: Young Women's Christian Association--Buildings; Community Centers; Historic Buildings
 
-**Subjects:** Young Women's Christian Association--Buildings; Community Centers; Historic Buildings
+Location: 5820 Germantown Ave, Philadelphia, PA 19144
 
-**Location:** 5820 Germantown Ave, Philadelphia, PA 19144
+Latitude: 40.036836
 
-**Latitude:** 40.036836
+Longitude: -75.176593
 
-**Longitude:** -75.176593
+Source: Hidden City Philadelphia
 
-**Source:** Hidden City Philadelphia
+Identifier:
 
-**Identifier:**
+Type: Image;StillImage
 
-**Type:** Image;StillImage
+Format: image/jpeg
 
-**Format:** image/jpeg
+Language: eng
 
-**Language:** eng
+Rights: Non Exclusive perpetual use
 
-**Rights:** Non Exclusive perpetual use
+Rights Statement: https://rightsstatements.org/page/InC/1.0/?language=en
 
-**Rights Statement:** https://rightsstatements.org/page/InC/1.0/?language=en
+Display_template: image
 
-**Display_template:** image
+object_location: http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg
 
-**object_location:** http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg
+Image_alt_text: Image of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park. The building is in poor condition.
 
-**Image_alt_text:** Image of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park. The building is in poor condition.
-
-**Object_transcript:**
+Object_transcript:
+```
 
 After finishing adding metadata, download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old germantown-y-metadata.csv file, and upload the new metadata CSV file with the same name as the one deleted.
 

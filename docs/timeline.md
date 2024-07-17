@@ -4,7 +4,7 @@ Start off by using TimelineJS to download the spreadsheet. TimelineJS is an open
 Here is the site to get you started 
 [TimelineJS Website URL](https://timeline.knightlab.com/)
 
-TimelineJS has documentation which you can find here [TimelineJS Documentation]("https://timeline.knightlab.com/docs/using-spreadsheets.html)
+TimelineJS has documentation which you can find here [TimelineJS Documentation](https://timeline.knightlab.com/docs/using-spreadsheets.html)
 
 # Working with Spreadsheet: Additional Customization Tips
 ## Dates 

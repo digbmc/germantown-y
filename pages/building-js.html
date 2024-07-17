@@ -78,7 +78,7 @@ permalink: /building-js.html
 </head>
 <body>
 <div id='map'></div>
-<div id="sidebar">
+<div id="sidebar" class="leaflet-sidebar collapsed">
     <div class="expand">[+]</div>
 </div>
 <div class="floor-info" id="floor-info">
@@ -166,6 +166,9 @@ permalink: /building-js.html
                     }
                     addPolygon(row.name, coordinates, row.description, '{{site.baseurl}}' + row.image, layerGroup);
                 });
+            },
+            error: function(error) {
+                console.error("Error loading CSV data:", error);
             }
         });
     }

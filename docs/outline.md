@@ -2,64 +2,76 @@
 title: Outline
 author: fiona
 ---
+# Table of Contents
+## Metadata
+- [Setting up the Metadata for Editing](#setting-up-the-metadata-for-editing)
+- [How to Add Items to the Archive](#how-to-add-items-to-the-archive)
+  - [Adding Metadata](#adding-metadata)
+  - [Uploading the Content Files](#uploading-the-content-files)
+- [Metadata of the Archive](#metadata-of-the-archive)
 
-# [Getting Started]("docs\background-info.md")
-### Creating a new branch
-### Merging work with site
-### Tools for guidance
-### Terms to know
-### Software to Install
-### Creating local repository
-#### using VS Code
-#### using terminal
+## [Getting Started]("docs\background-info.md")
+- Creating a new branch
+- Merging work with site
+- Tools for guidance
+- Terms to know
+- Software to Install
+- Creating local repository
+    - using VS Code
+    - using terminal
 
-# Collection Builder
+## Collection Builder
 
-# Adding Content
-### Text
-### Visuals
-### Includes 
-#### Image Options
-#### PDF Options
-#### Video Options
-#### Audio Options
-#### Include Bootstrap Features
+## Adding Content
+- Text
+- Visuals
+- Includes 
+    - Image Options
+    - PDF Options
+    - Video Options
+    - Audio Options
+    - Include Bootstrap Features
 
-# Carousel
-### Random Carousel
-### Custom Carousel
+## Carousel
+- Random Carousel
+- Custom Carousel
 
-# Changing Colors
-### Overall Theme
-### Getting Specific
-### Accessibility
+## Changing Colors
+- Overall Theme
+- Getting Specific
+- Accessibility
 
-# History 
-### Understanding Markdown
-### Table of Contents 
-### Getting More Technical
-### Navigation Bar
-#### Navigation Flow
-### Adding Content
-#### YAML Front Matter
+## History 
+- Understanding Markdown
+- Table of Contents 
+- Getting More Technical
+- Navigation Bar
+    - Navigation Flow
+- Adding Content
+    - YAML Front Matter
 
-## Timeline
-### Spreadsheet Tips
-#### Dates
-#### Text Styling
-#### Images
-#### Background Color
-### Organization
-### After working with the spreadsheet
-### Changing Font
-### Embedding Timeline
+### Timeline
+- Spreadsheet Tips
+    - Dates
+    - Text Styling
+    - Images
+    - Background Color
+- Organization
+- After working with the spreadsheet
+- Changing Font
+- Embedding Timeline
 
-## How to Create a New Exhibit
+### How to Create a New Exhibit
 
-# Metadata
-### Vocabulary
-### Setting Up
-## Add Items to Archive
-### Adding Metadata
-### Uploading Content Files
-## Metadata of the Archive
+## Webmap
+- Table of Contents
+- Prereqiusites
+- Adding items to Map
+    - Using Github
+    - Using VS code
+- Advanced Customization
+    - Modify Icon Colors
+    - Modify Layers Dispalyed Upon Page Load
+    - Add Additional Base Layers
+    - Modify Pop Ups
+    - Modify Categories

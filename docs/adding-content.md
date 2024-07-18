@@ -55,4 +55,7 @@ Additional Parameters:
 - ratio: change the size of the pdf by changing the ratio. options are "21x9", "16x9", "4x3", or "1x1". 1x1 is the default. 
 
 #### More features
-Checkout CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) for more information on features.
+Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) for more information on features.
+
+### Footnotes: 
+With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. Here's the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)

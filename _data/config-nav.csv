@@ -1,8 +1,12 @@
 display_name,stub,dropdown_parent
 Home,/
-History,/history.html
-Map,/map.html
+History,,
+Timeline,/history.html,History
+Exhibits,/exhibits.html,History
+Map,/webmap.html
 Building,/building.html
 Archive,/archive.html
 Data,/data.html,Archive
-Credits,/credits.html
+Credits,,
+About the Project,/credits.html,Credits
+People,/people.html,Credits

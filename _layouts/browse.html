@@ -11,15 +11,15 @@ custom-foot: js/browse-js.html
         <form class="" role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
             <div class="input-group input-group-lg">
                 <input type="text" class="form-control" id="filterTextBox" placeholder="Filter ... " aria-label="Search"> 
-                <button class="btn btn-success" type="submit" title="Filter items" alt="Search" id="filterButton" >Search</button>
-                <button class="btn btn-outline-secondary filter" onclick="resetFilter(); return false;" data-filter="">Reset</button>
+                <button class="btn btn-danger text-light" type="submit" title="Filter items" alt="Search" id="filterButton" >Search</button>
+                <button class="btn btn-success filter" onclick="resetFilter(); return false;" data-filter="">Reset</button>
             </div>
         </form>
         <div class="h2" id="numberOf"></div>
     </div>
     <div class="col-md-2">
         <div class="dropdown">
-            <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-info mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sort by <span class="font-weight-bold" id="sortFilter">Random</span>
             </button>
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">

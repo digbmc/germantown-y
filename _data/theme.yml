@@ -8,9 +8,9 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo (ex. /assets/img/feature.jpg), or a full url to an image elsewhere
-featured-image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.inquirer.com%2Fresizer%2FltxXuFgd7HiwE8xr5CKq9_NYen0%3D%2F760x507%2Fsmart%2Ffilters%3Aformat(webp)%2Farc-anglerfish-arc2-prod-pmn.s3.amazonaws.com%2Fpublic%2F4HKPGHD2P5DNXLPEL7S5MO6ZWQ.jpg&f=1&nofb=1&ipt=166715ae984c5d1e6e11ce706353c3a5ac6d94aed44ecdeebfad26c39228de99&ipo=images
+featured-image: arc_008
 # optional: add extra padding around collection title for a larger image feature. 
-home-title-y-padding: 10em # Default is 8em
+home-title-y-padding: 15em # Default is 8em
 # optional: change position of background image, center, top, bottom
 home-banner-image-position: # Default is center
 
@@ -85,7 +85,7 @@ search-child-objects: true # true / false - if true, child objects will appear o
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-navbar-background: bg-dark
+navbar-background: bg-info
 
 # BOOTSWATCH THEMES
 # You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
@@ -96,7 +96,7 @@ bootswatch:
 base-font-size: 1.2em
 text-color: "#191919"
 link-color: "#0d6efd"
-base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+base-font-family:  # comment out for bootstrap defaults. e.g. Roboto
 font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 # THEME ICONS [optional!]

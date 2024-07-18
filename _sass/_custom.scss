@@ -1,16 +1,25 @@
 /* 
-    Put your custom SCSS here! 
+    Put your custom SCSS here!
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
 $lapis-lazuli: #255B77ff;
 $old-rose: #B2827Cff;
 $dun: #C9BDA2ff;
 $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
-$dark: $lapis-lazuli;
 
 
+/* $font-family-monospace: Menlo; */
+/*
+body {
+    $font-family: monospace;
+} */
+/*
+body {
+    font-family: "Menlo", monospace;
+} */
 /* custom colors */
 
 $lapis-lazuli: #255B77ff;
@@ -19,15 +28,103 @@ $dun: #C9BDA2ff;
 $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
-$dark: $lapis-lazuli;
-$primary: $old-rose;
 
-
-/* boostrap style sheets */
-@import "../node_modules/bootstrap/scss/bootstrap";
 
 
 
 body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.blue {
+    background-color: $lapis-lazuli !important;
+}
+
+
+
+.light-blue {
+    background-color: $carolina-blue !important;
+}
+.rose {
+    background-color: $old-rose;
+    color: white;
+}
+.dun {
+    background-color: $dun;
+    color: black;
+}
+
+/* toc */
+.toc-link {
+    a {
+        color: $lapis-lazuli !important;
+    }
+    a:hover {
+        font-style: italic;
+    }
+}
+
+.blue-outline {
+    color: $lapis-lazuli !important;
+}
+.btn-primary {
+    background-color:$air-force-blue;
+    border-color: $air-force-blue;
+    outline-color: $air-force-blue;
+  }
+.btn-primary:active {
+    background-color: $carolina-blue;
+}
+
+
+.nav-font {
+    font-size: 1.5vw;
+}
+
+.nav-gutter {
+    --bs-gutter-x: 0rem;
+}
+.navbar-toggler {
+    margin: 15px;
+}
+
+/* media query changes font once links are in dropdown mode */
+@media only screen and (max-width: 991px) {
+    .nav-font {
+      font-size: 1rem;
+      padding: 15px;
+    }
+}
+
+/* nav bar dropdown customization */
+.dropdown-item {
+    font-size: 1vw;
+}
+.dropdown-item:active , .dropdown-item:hover{
+    background-color: $dun;
+    color: black;
+    
+}
+.dropdown-menu {
+    .active {
+        background-color: $dun; 
+        color: black;
+    }
+    
+    
+}
+
+.card {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+.img-card {
+    position:relative;
+    right: 16px;
+    img {
+    border-radius: 0.25rem 0.2rem 0 0 !important;
+    }
     
 }

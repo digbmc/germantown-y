@@ -2,11 +2,10 @@
 title:  building JS
 permalink: /building-js.html
 ---
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Non Geographic Map</title>
+    <title>Germantown YWCA Building Plans</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
@@ -50,6 +49,21 @@ permalink: /building-js.html
             z-index: 1000;
             cursor: pointer;
         }
+        .leaflet-left .leaflet-control {
+            margin-left: 0.5rem;
+        }
+        .leaflet-control-layers {
+            margin-top: 4rem;
+        }
+        .floor-info {
+            position: absolute;
+            bottom: 10rem;
+            left: 0.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
         @media (max-width: 768px) {
             .leaflet-sidebar {
                 width: 50%;
@@ -66,16 +80,22 @@ permalink: /building-js.html
 <div id="sidebar">
     <div class="expand">[+]</div>
 </div>
+<div class="floor-info" id="floor-info">
+    <h3>Floor Information</h3>
+    <p id="floor-details">Details about the selected floor will appear here.</p>
+</div>
 <script>
     // Style for the polygons
     var polygonStyle = {
         color: 'black',
+        opacity:0,
         fillColor: 'white',
         fillOpacity: 0,
         weight: 2,
     };
     var highlight = {
         color: 'black',
+        opacity:1,
         fillColor: 'red',
         fillOpacity: .5,
         weight: 2,
@@ -87,7 +107,8 @@ permalink: /building-js.html
     var L2footprint = '{{site.baseurl}}/objects/floor2.png';
     var L3footprint = '{{site.baseurl}}/objects/floor3.png';
     var L4footprint = '{{site.baseurl}}/objects/floor4.png';
-        // Create image overlays with correct bounds
+
+    // Create image overlays with correct bounds
     var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
 
     var L0 = L.imageOverlay(L0footprint, bounds);
@@ -96,40 +117,11 @@ permalink: /building-js.html
     var L3 = L.imageOverlay(L3footprint, bounds);
     var L4 = L.imageOverlay(L4footprint, bounds);
 
-    var baseMaps = {
-        "Basement": L0,
-        "1st Floor": L1,
-        "2nd Floor": L2,
-        "3rd Floor": L3,
-        "4th Floor": L4
-    };
-
-    // Define the map using a simple coordinate system
-    var map = L.map('map', {
-        crs: L.CRS.Simple,
-        maxZoom: 5,
-        minZoom: 0,
-        layers: [L0]
-    });
-
-    // Set view at center, zoom level 3
-    map.setView([500, 9.5], 0);
-
-    // Add fullscreen button
-    map.addControl(new L.Control.Fullscreen());
-
-    // Hide sidebar when floor level is changed
-    map.on('baselayerchange', function(e) {
-        sidebar.hide();
-        console.log(e);
-    });
-
-    // Initialize sidebar
-    var sidebar = L.control.sidebar('sidebar', {
-        closeButton: true,
-        position: 'right'
-    });
-    map.addControl(sidebar);
+    // Create a feature group for each layer
+    var L1Group = L.layerGroup([L1]);
+    var L2Group = L.layerGroup([L2]);
+    var L3Group = L.layerGroup([L3]);
+    var L4Group = L.layerGroup([L4]);
 
     // Function to create and add polygons to the map
     function addPolygon(name, coordinates, layerGroup) {
@@ -139,24 +131,16 @@ permalink: /building-js.html
             polygon.setStyle(polygonStyle);
         }).on('click', function (e) {
             sidebar.show();
-            sidebar.setContent('<h1>' + name + ' Information</h1>' + '<p>Details about the ' + name.toLowerCase() + ' go here.</p>');
+            sidebar.setContent('<h1>' + name + '</h1>' + '<p>Details about the ' + name.toLowerCase() + ' go here.</p><img src="img/your-image.jpg" class="imgclass" alt="' + name + '">');
         });
         layerGroup.addLayer(polygon);
     }
 
-    // Create a feature group for each layer
-    var L1Group = L.layerGroup([L1]);
-    var L2Group = L.layerGroup([L2]);
-    var L3Group = L.layerGroup([L3]);
-    var L4Group = L.layerGroup([L4]);
-
     // Add polygons to L1
-    addPolygon('Room', [[300, 10], [300, 100], [420, 100], [420, 10]], L1Group);
-    addPolygon('Office', [[100, 10], [100, 60], [200, 60], [200, 10]], L1Group);
-    addPolygon('Dressing', [[150, 100], [150, 150], [250, 150], [250, 100]], L1Group);
-    addPolygon('Gym', [[300, 200], [300, 250], [400, 250], [400, 200]], L1Group);
-    addPolygon('Pool', [[450, 300], [450, 350], [550, 350], [550, 300]], L1Group);
-
+    addPolygon('Gym', [[660, 10], [660, 185], [420,185], [420, 10]], L1Group);
+    addPolygon('Office', [[420, 185], [380, 185], [380, 134], [420, 134]], L1Group);
+    addPolygon('Hallway', [[80, 98], [80, 134], [420, 134], [420, 98]], L1Group);
+    addPolygon('Lobby', [[118, 10], [118, 98], [200, 98], [200, 10]], L1Group);
     // Add polygons to L2
     addPolygon('Room', [[310, 20], [310, 110], [430, 110], [430, 20]], L2Group);
     addPolygon('Office', [[110, 20], [110, 70], [210, 70], [210, 20]], L2Group);
@@ -178,6 +162,41 @@ permalink: /building-js.html
     addPolygon('Gym', [[300, 230], [330, 280], [430, 280], [430, 230]], L4Group);
     addPolygon('Pool', [[480, 330], [480, 380], [580, 380], [580, 330]], L4Group);
 
+    var baseMaps = {
+        "Basement": L0,
+        "1st Floor": L1Group,
+        "2nd Floor": L2Group,
+        "3rd Floor": L3Group,
+        "4th Floor": L4Group
+    };
+
+    // Define the map using a simple coordinate system
+    var map = L.map('map', {
+        crs: L.CRS.Simple,
+        maxZoom: 5,
+        minZoom: 0,
+        layers: [L1Group] // Set initial layer to 1st floor
+    });
+
+    // Set view at center, zoom level 3
+    map.setView([500, 9.5], 0);
+
+    // Add fullscreen button
+    map.addControl(new L.Control.Fullscreen());
+
+    // Hide sidebar when floor level is changed
+    map.on('baselayerchange', function(e) {
+        sidebar.hide();
+        updateFloorInfo(e.name);
+    });
+
+    // Initialize sidebar
+    var sidebar = L.control.sidebar('sidebar', {
+        closeButton: true,
+        position: 'right'
+    });
+    map.addControl(sidebar);
+
     // Update baseMaps to include the feature groups for each layer
     var updatedBaseMaps = {
         "Basement": L0,
@@ -193,7 +212,7 @@ permalink: /building-js.html
     }
 
     // Add the updated layer control
-    map.layerControl = L.control.layers(updatedBaseMaps, null, {collapsed: false}).addTo(map);
+    map.layerControl = L.control.layers(updatedBaseMaps, null, {collapsed: false, position: 'topleft',}).addTo(map);
 
     // Event listeners for sidebar visibility
     sidebar.on('show', function () {
@@ -241,9 +260,10 @@ permalink: /building-js.html
     window.addEventListener('resize', adjustMapView);
 
     function adjustMapView() {
+        var sidebarWidth = document.querySelector('.leaflet-sidebar').offsetWidth;
         if (window.innerWidth < 768) {
             if (sidebar.isVisible()) {
-                map.setView([500, 100], map.getZoom());
+                map.setView([500, 100 - sidebarWidth / 10], map.getZoom());
             } else {
                 map.setView([500, 9.5], map.getZoom());
             }
@@ -251,6 +271,18 @@ permalink: /building-js.html
             map.setView([500, 9.5], map.getZoom());
         }
     }
+
+    function updateFloorInfo(floor) {
+        var floorDetails = {
+            "Basement": "Information about the basement goes here.",
+            "1st Floor": "Information about the 1st floor goes here.",
+            "2nd Floor": "Information about the 2nd floor goes here.",
+            "3rd Floor": "Information about the 3rd floor goes here.",
+            "4th Floor": "Information about the 4th floor goes here."
+        };
+        document.getElementById('floor-details').innerText = floorDetails[floor] || "No information available for this floor.";
+    }
+
 </script>
 </body>
 </html>

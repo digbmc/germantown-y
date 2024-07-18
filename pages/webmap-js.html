@@ -176,8 +176,8 @@ permalink: /webmap-js.html
             maxZoom: 19
         });
 
-        //load data and convert to json
-        var data = {{ site.data.germantown-y-metadata | jsonify }}; //replace with building-info csv
+        var data = {{ site.data.building-info | jsonify }};
+
 
         //console.log("Data loaded:", data);
 

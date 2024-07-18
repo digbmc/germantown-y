@@ -1,8 +1,8 @@
 ---
-title: Another example 
+title: Structual Issues
 
 author: Emma 
-description: children's book exibits
+description: A deep dive into the structural problems of the building.
 
-img: arc_003
+img: arc_002
 ---

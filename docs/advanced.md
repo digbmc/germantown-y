@@ -79,12 +79,20 @@ Layouts are html files that format how pages look. They're html files. They incl
 - building.html: old - delete!!
 - cloud: layout for word cloud of metadate subjects. Not currently used.
 - data: layout for the data page (add data page to site!!)
-- default: basic page layout. Default serves as a layout for other layouts 
+- default: Outer shell layout: Default serves as a layout for other layouts 
 - exhibit-page: the layout for exhibit posts 
 - exhibits.html: layout for the exhibits landing page
 - history: layout for history page
 - home-infographic: layout for the home page
-- item.html: 
+- item.html: generates the item page in archive  
+- leaflet-frame: also delete this 
+- leaflet: for pages with leaflet maps (building and map)
+- map: also deletable
+- page-full-width.html + page-narrow: page layouts, with varying widths (not used on the site)
+- page: basic page layout
+- search.html: layout for a site search bar (not featured on the site)
+- timeline: layout for a timeline of the metadata. Not currently used. 
+- timeline-js: layout for timeline JS feature (not used currently, the timeline is just an iframe)
 
 ## Site Styling 
 To get into the style of the site, you'll need a solid understanding of [CSS](https://www.w3schools.com/Css/) and [HTML](https://www.w3schools.com/html/). Familiarity with [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) and [SASS](https://sass-lang.com/documentation/). 
@@ -109,3 +117,22 @@ However, the theme doesn't change everything. Sometimes you'll need specific cla
 ## Accessibility
 
 When it comes to making colors accessible, contrast is key. [WebAIM's contrast checker](https://webaim.org/resources/contrastchecker/) is a good tool to use. 
+
+### iframes 
+
+iFrames are used across the site for embedding leaflet maps and the timeline 
+
+#### timeline 
+The timeline on the history page is generated with an iframe. On the history layout, line 6: 
+
+```<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1cY9J-XJMjoE2zsrY107C04k1gsyULF2o-maf0OON_-w&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>```
+
+To change the timeline, copy the link from [TimelineJS](https://timeline.knightlab.com/) and put it in src 
+
+#### Maps 
+From line 13 of the leaflet layout: 
+``` <iframe src='{{ site.baseurl }}/{{page.title | downcase }}-js.html' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>```
+
+This one is a little more complicated. Because the leaflet layout is used on both the Germantown map and the building floor plans, the iframe has to work for multiple pages. The liquid `{{ site.baseurl }}/{{page.title | downcase }}-js.html` takes the page title ("Map" for example), reads it as lowercase, and looks for the -js.html at the end.
+
+If you look in pages, you'll see there are html files (webmap-js, building-js). Those are the leaflet files embedded here. If you need to change the leaflet files for webmap or building update the -js files. 

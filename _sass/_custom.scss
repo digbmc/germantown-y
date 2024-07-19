@@ -142,3 +142,18 @@ body {
     }
     
 }
+.display-card {
+    height: auto;
+    max-height: 200px;
+}
+.card-body {
+    height: auto;
+    max-height: 400px;
+}
+@media only screen and (max-width: 991px) {
+    .card-img-top {
+        height: auto;
+        max-height: 400px;
+    }
+}
+

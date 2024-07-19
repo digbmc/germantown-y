@@ -17,6 +17,7 @@ title: Metadata Documentation
 - [Editing the metadata](#editing-the-metadata)
   - [About config-metadata.csv](#about-config-metadatacsv)
   - [Adding More Fields to the Metadata](#adding-more-fields-to-the-metadata)
+  - [How to Insert Links to the Metadata](#how-to-insert-links-to-the-metadata)
 
 ## Useful Vacabulary
 Repository: This is where code and files are stored. Our website is stored in GitHub repository!
@@ -233,11 +234,7 @@ rightsstatement,Rights Statement,,true
 
 Just like germantown-y-metadata.csv, the first line indicates the order and corresponding field values are put in.
 
-With the Config-metadata.csv file, you can insert everything you can do here.
-
-
 #### Adding more fields to the metadata
-
 To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field.
 
 After you are done entering the data, [*upload the metadata*](#uploading-the-metadata). If you check the CSV file in the repository now, your new field should be there. 
@@ -245,3 +242,22 @@ After you are done entering the data, [*upload the metadata*](#uploading-the-met
 Next, go to the _data folder and locate [**config-metadata.csv**](#about-config-metadatacsv). You must also add your new field there in the row where you want it to be presented. If you are just adding a field without any specific configuration, you can fill out the field and display_name columns in config-metadata.csv. The field should be the name of the new field you added in the CSV, and the display_name is what you want it to be called on the website when it is displayed. Here is an example:
 
 >date,Date Created
+
+### How to Insert Links to the Metadata
+
+Each element of the metadata can have links. There are three different ways to add links:
+
+For links that redirect to a search on the website’s archive (such as subjects), set the browse_link value to true in the [**config-metadata.csv**](#about-config-metadatacsv)
+file for the field you want this link format for. Should look something like this:
+
+>subject,Subjects,true
+
+The field should now be a browse link!
+
+If the field will always be a clickable link to another website (such as the copyright statement field), set the external link value to true in the [**config-metadata.csv**](#about-config-metadatacsv) file. Leave the browse_link value blank and external link value to true, like so:
+
+>rightsstatement,Rights Statement,,true
+
+Lastly, to create a hyperlink in the metadata, enter the following format in the chosen field of the spreadsheet:
+
+```<a href=”**link**”> **display text**</a>```

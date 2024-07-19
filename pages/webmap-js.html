@@ -255,7 +255,7 @@ permalink: /webmap-js.html
                         ywcaLayer.addData(geojsonFeature);
                     } else {
                         console.warn("Unexpected subject:", subject);
-                        unknownLayer.addData(geojsonFeature); // Add to the unknown layer
+                        otherLayer.addData(geojsonFeature); // Add to the other layer
                     }
                 } else {
                     console.warn("Feature missing required fields (subject, latitude, or longitude):", feature);
@@ -288,7 +288,7 @@ permalink: /webmap-js.html
         }
 
 
-        var unknownLayer = createLayer('unknown');
+        
         var otherLayer = createLayer('other');
         var landmarkLayer = createLayer('landmark');
         var industryLayer = createLayer('industry');
@@ -380,8 +380,7 @@ permalink: /webmap-js.html
             "YWCA Provided Lodgings": lodgingsLayer,
             "Industries": industryLayer,
             "Landmarks": landmarkLayer,
-            "Others": otherLayer,
-            "Unknown<hr>": unknownLayer,
+            "Others<hr>": otherLayer,
             "Germantown Boundary Line": germantownBoundary
         };
 
@@ -390,6 +389,7 @@ permalink: /webmap-js.html
 
         // Open the layer control on page load
         layersControl.expand();
+        
         // Add fullscreen control to the map
         map.addControl(new L.Control.Fullscreen());
 

@@ -74,9 +74,7 @@ Jekyll also uses [liquid](https://jekyllrb.com/docs/liquid/), a templating langu
 Layouts are html files that format how pages look. They're html files. They include divs and includes that format the content of a page. All of them have a liquid `{{ content }}` element somewhere, that takes the markdown from a page and places it in the layout.  
 
 #### Site Layouts: 
-- about: probably should delete this. I don't think it's used for anything
 - browse: formatting for the archive section. 
-- building.html: old - delete!!
 - cloud: layout for word cloud of metadate subjects. Not currently used.
 - data: layout for the data page (add data page to site!!)
 - default: Outer shell layout: Default serves as a layout for other layouts 
@@ -85,7 +83,6 @@ Layouts are html files that format how pages look. They're html files. They incl
 - history: layout for history page
 - home-infographic: layout for the home page
 - item.html: generates the item page in archive  
-- leaflet-frame: also delete this 
 - leaflet: for pages with leaflet maps (building and map)
 - map: also deletable
 - page-full-width.html + page-narrow: page layouts, with varying widths (not used on the site)

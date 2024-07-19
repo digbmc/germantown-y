@@ -1,8 +1,0 @@
-polygon_id,floor,name,coordinates,description,image
-1,1,Gym,"[[660, 10], [660, 185], [420,185], [420, 10]]","Details about the gym.","/images/gym.jpg"
-2,1,Office,"[[420, 185], [380, 185], [380, 134], [420, 134]]","Details about the office.","/images/office.jpg"
-3,1,Hallway,"[[80, 98], [80, 134], [420, 134], [420, 98]]","Details about the hallway.","/images/hallway.jpg"
-4,1,Lobby,"[[118, 10], [118, 98], [200, 98], [200, 10]]","Details about the lobby.","/images/lobby.jpg"
-5,2,Room,"[[310, 20], [310, 110], [430, 110], [430, 20]]","Details about the room.","/images/room.jpg"
-6,2,Office,"[[110, 20], [110, 70], [210, 70], [210, 20]]","Details about the office.","/images/office2.jpg"
-7,2,Pool,"[[60, 200], [60, 370], [280, 370], [280, 200]]","Details about the pool.","/images/pool.jpg"

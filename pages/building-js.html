@@ -15,7 +15,6 @@ permalink: /building-js.html
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Turbo87/leaflet-sidebar/src/L.Control.Sidebar.css" />
     <script src="https://cdn.jsdelivr.net/gh/Turbo87/leaflet-sidebar/src/L.Control.Sidebar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <style>
         html, body {
             height: 100%;
@@ -27,10 +26,16 @@ permalink: /building-js.html
         }
         .imgclass {
             display: block;
-            max-width: 400px;
+            max-width: 100%;
             max-height: 400px;
             width: auto;
             height: auto;
+            margin: 0 auto;
+        }
+        .img-container {
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
         }
         .leaflet-sidebar {
             width: 30%;
@@ -78,7 +83,7 @@ permalink: /building-js.html
 </head>
 <body>
 <div id='map'></div>
-<div id="sidebar" class="leaflet-sidebar collapsed">
+<div id="sidebar">
     <div class="expand">[+]</div>
 </div>
 <div class="floor-info" id="floor-info">
@@ -98,7 +103,7 @@ permalink: /building-js.html
         color: 'black',
         opacity: 1,
         fillColor: 'red',
-        fillOpacity: .5,
+        fillOpacity: 0.5,
         weight: 2,
     };
 
@@ -118,103 +123,131 @@ permalink: /building-js.html
     var L3 = L.imageOverlay(L3footprint, bounds);
     var L4 = L.imageOverlay(L4footprint, bounds);
 
-    // Create feature groups for each layer
+    // Create a feature group for each layer
+    var L0Group = L.layerGroup([L0]);
     var L1Group = L.layerGroup([L1]);
     var L2Group = L.layerGroup([L2]);
     var L3Group = L.layerGroup([L3]);
     var L4Group = L.layerGroup([L4]);
 
-    function addPolygon(name, coordinates, description, image, layerGroup) {
-        var polygon = L.polygon(coordinates, polygonStyle)
-            .on('mouseover', function (e) {
-                this.setStyle(highlight);
-            })
-            .on('mouseout', function (e) {
-                this.setStyle(polygonStyle);
-            })
-            .on('click', function (e) {
-                sidebar.show();
-                sidebar.setContent('<h1>' + name + '</h1><p>' + description + '</p><img src="' + image + '" class="imgclass" alt="' + name + '">');
-            });
+    // Function to create and add polygons to the map
+    function addPolygon(name, coordinates, layerGroup, description, imageUrl, imageTitle) {
+        var polygon = L.polygon(coordinates, polygonStyle).on('mouseover', function (e) {
+            polygon.setStyle(highlight);
+        }).on('mouseout', function (e) {
+            polygon.setStyle(polygonStyle);
+        }).on('click', function (e) {
+            sidebar.show();
+            sidebar.setContent(
+                '<h1>' + name + '</h1>' +
+                '<div class="img-container">' +
+                '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                '</div>' +
+                '<p style="font-size: smaller;">' + imageTitle + '</p>' +
+                '<p>' + description + '</p>'
+            );
+        });
         layerGroup.addLayer(polygon);
     }
 
-    // Function to load data from CSV and create polygons
-    function loadPolygons() {
-        Papa.parse('{{site.baseurl}}/_data/polygon_data.csv', {
-            download: true,
-            header: true,
-            complete: function(results) {
-                results.data.forEach(function(row) {
-                    var coordinates = JSON.parse(row.coordinates);
-                    var layerGroup;
-                    switch (row.floor) {
-                        case '1':
-                            layerGroup = L1Group;
-                            break;
-                        case '2':
-                            layerGroup = L2Group;
-                            break;
-                        case '3':
-                            layerGroup = L3Group;
-                            break;
-                        case '4':
-                            layerGroup = L4Group;
-                            break;
-                        default:
-                            return;
-                    }
-                    addPolygon(row.name, coordinates, row.description, '{{site.baseurl}}' + row.image, layerGroup);
-                });
-            },
-            error: function(error) {
-                console.error("Error loading CSV data:", error);
-            }
-        });
-    }
+    {% assign L0 = "" %}
+    {% assign L1 = "" %}
+    {% assign L2 = "" %}
+    {% assign L3 = "" %}
+    {% assign L4 = "" %}
 
-    // Create the map
+    {% for row in site.data.floorplans %}
+        {% if row.floor == 'L0' %}
+            {% capture L0 %}
+                {{ L0 }}
+                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L0Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
+            {% endcapture %}
+        {% elsif row.floor == 'L1' %}
+            {% capture L1 %}
+                {{ L1 }}
+                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L1Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
+            {% endcapture %}
+        {% elsif row.floor == 'L2' %}
+            {% capture L2 %}
+                {{ L2 }}
+                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L2Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
+            {% endcapture %}
+        {% elsif row.floor == 'L3' %}
+            {% capture L3 %}
+                {{ L3 }}
+                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L3Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
+            {% endcapture %}
+        {% elsif row.floor == 'L4' %}
+            {% capture L4 %}
+                {{ L4 }}
+                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L4Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
+            {% endcapture %}
+        {% endif %}
+    {% endfor %}
+
+    // Add polygons to layers
+    {{ L0 }}
+    {{ L1 }}
+    {{ L2 }}
+    {{ L3 }}
+    {{ L4 }}
+
+    // Base layers for the maps
+    var baseLayers = {
+        "Basement Floor": L0Group,
+        "First Floor": L1Group,
+        "Second Floor": L2Group,
+        "Third Floor": L3Group,
+        "Fourth Floor": L4Group
+    };
+
+    // Initialize the map
     var map = L.map('map', {
+        center: [380, 118],
+        zoom: -1,
         crs: L.CRS.Simple,
-        layers: [L1Group, L2Group, L3Group, L4Group],
         fullscreenControl: true,
-        fullscreenControlOptions: {
-            position: 'topleft'
+        layers: [L0Group], // Set the initial layer to basement floor
+        maxBounds: bounds,
+        maxBoundsViscosity: 1.0,
+        zoomSnap: 0.1,
+        zoomDelta: 0.1,
+        minZoom: -3,
+        maxZoom: 2
+    });
+
+    // Add layer control to the map
+    L.control.layers(baseLayers).addTo(map);
+
+    // Add the sidebar to the map
+    var sidebar = L.control.sidebar('sidebar', {
+        position: 'right'
+    });
+    map.addControl(sidebar);
+
+    // Expand and collapse sidebar functionality
+    var expandButton = document.querySelector('.expand');
+    expandButton.addEventListener('click', function () {
+        if (sidebar.isVisible()) {
+            sidebar.hide();
+            expandButton.innerHTML = '[+]';
+        } else {
+            sidebar.show();
+            expandButton.innerHTML = '[-]';
         }
     });
 
-    // Set initial view to fit the bounds of the image
+    map.on('overlayadd', function (eventLayer) {
+        // Update floor details when layer is changed
+        var floorDetails = document.getElementById('floor-details');
+        floorDetails.innerHTML = 'Currently viewing: ' + eventLayer.name;
+    });
+
+    // Allow dragging the map within its bounds
+    map.setMaxBounds(bounds);
+
+    // Ensure the map starts with the entire view visible
     map.fitBounds(bounds);
-
-    // Sidebar setup
-    var sidebar = L.control.sidebar('sidebar', {
-        closeButton: true,
-        position: 'right'
-    }).addTo(map);
-
-    sidebar.on('hidden', function () {
-        document.querySelector('.expand').style.display = 'block';
-    });
-
-    document.querySelector('.expand').addEventListener('click', function () {
-        sidebar.show();
-        document.querySelector('.expand').style.display = 'none';
-    });
-
-    // Base layers
-    var baseMaps = {
-        "Basement": L0,
-        "Floor 1": L1Group,
-        "Floor 2": L2Group,
-        "Floor 3": L3Group,
-        "Floor 4": L4Group
-    };
-
-    // Add layer control to map
-    L.control.layers(baseMaps).addTo(map);
-
-    // Load polygons from CSV
-    loadPolygons();
 </script>
 </body>
 </html>

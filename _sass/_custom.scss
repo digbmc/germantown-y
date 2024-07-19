@@ -96,16 +96,22 @@ body {
 }
 
 /* media query changes font once links are in dropdown mode */
-@media only screen and (max-width: 991px) {
-    .nav-font {
-      font-size: 1rem;
-      padding: 15px;
-    }
-}
+
 
 /* nav bar dropdown customization */
 .dropdown-item {
     font-size: 1vw;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-font {
+      font-size: 1rem;
+      padding: 10px;
+    }
+    .dropdown-item {
+        font-size: 0.8rem;
+      padding: 10px;
+    }
 }
 .dropdown-item:active , .dropdown-item:hover{
     background-color: $dun;

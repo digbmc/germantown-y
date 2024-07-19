@@ -29,6 +29,8 @@ input the color in words or use a CSS hex color. For example, inputting “light
 
 In the end, here is what your timeline spreadsheet should look like with all the different elements ![Timeline](<timeline format.png>)
 
+**Note:** the background colors in the timeline are used from the color palette of the mural!
+
 ## Organizing 
 Using the group colummn, you can organize the slides by groups (tags). These tags will group events together and sort them into the same category. For example, the timeline displayed has 4 groups: Building, Damage, Redevelopment, and Pool. On the timeline, events with the same group will be put in the same row.
 

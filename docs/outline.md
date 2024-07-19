@@ -3,14 +3,14 @@ title: Outline
 author: fiona
 ---
 # Table of Contents
-## Metadata
-- [Setting up the Metadata for Editing](#setting-up-the-metadata-for-editing)
-- [How to Add Items to the Archive](#how-to-add-items-to-the-archive)
-  - [Adding Metadata](#adding-metadata)
-  - [Uploading the Content Files](#uploading-the-content-files)
-- [Metadata of the Archive](#metadata-of-the-archive)
+## [Metadata](docs\metadata-docs.md)
+- Setting up the Metadata for Editing
+- How to Add Items to the Archive
+  - Adding Metadata
+  - Uploading the Content Files
+- Metadata of the Archive
 
-## [Getting Started]("docs\background-info.md")
+## [Getting Started](docs\background-info.md)
 - Creating a new branch
 - Merging work with site
 - Tools for guidance
@@ -74,5 +74,4 @@ author: fiona
     - Modify Layers Dispalyed Upon Page Load
     - Add Additional Base Layers
     - Modify Pop Ups
-    - Modify Categories
-    
+    - Modify Categories   

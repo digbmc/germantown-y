@@ -74,4 +74,5 @@ author: fiona
     - Modify Layers Dispalyed Upon Page Load
     - Add Additional Base Layers
     - Modify Pop Ups
-    - Modify Categories   
+    - Modify Categories
+       

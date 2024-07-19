@@ -76,9 +76,26 @@ Layouts are html files that format how pages look. They're html files. They incl
 #### Site Layouts: 
 - about: probably should delete this. I don't think it's used for anything
 - browse: formatting for the archive section. 
-- 
+- building.html: old - delete!!
+- cloud: layout for word cloud of metadate subjects. Not currently used.
+- data: layout for the data page (add data page to site!!)
+- default: basic page layout. Default serves as a layout for other layouts 
+- exhibit-page: the layout for exhibit posts 
+- exhibits.html: layout for the exhibits landing page
+- history: layout for history page
+- home-infographic: layout for the home page
+- item.html: 
 
-# color changes 
+## Site Styling 
+To get into the style of the site, you'll need a solid understanding of [CSS](https://www.w3schools.com/Css/) and [HTML](https://www.w3schools.com/html/). Familiarity with [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) and [SASS](https://sass-lang.com/documentation/). 
+
+styling files can be found in the _sass folder. _bass.scss, _custom.scss, _pages.scss, _them-colors.scss, and _theme-utilities.scss are CollectionBuilder's stylesheets. _custom.scss overrides the other stylesheets, and it's where the styling for this site is. 
+
+
+### color changes 
+
+A big compontent of site styling is color. 
+
 This is a guide on how to change the colors of different elements on the site. It assumes you have a decent understanding of CSS, SASS, Bootstrap and HTML.
 
 ## Overall theme

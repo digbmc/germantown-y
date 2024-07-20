@@ -58,4 +58,16 @@ Additional Parameters:
 Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) for more information on features.
 
 ### Footnotes: 
-With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. Here's the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
+With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. For an example on this, checkout example-1 in exhbits: 
+
+```
+Learn more about the figures featured in David McShane's "Women of Germantown" mural, completed in 2001.[^fn1]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+[^fn1]: example footnote
+``` 
+On the site, it looks like this: 
+![screenshot of exhibit page with footnote](screenshots/adding-content-1.png)
+
+ For more information, checkout the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)

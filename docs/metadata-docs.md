@@ -208,14 +208,14 @@ The order of the the metadata and metadata in the preview of an item can be arra
 ### Additional Resources
 Additional resources can be found at the following links.
 
-**More information on the principles of creating metadata:**
+More information on the principles of creating metadata:
 - ["Introduction to Metadata" by Murtha Baca](https://www.getty.edu/publications/intrometadata/introduction/)
 
 - [UC Santa Cruz’s LibGuide](https://guides.library.ucsc.edu/c.php?g=618773&p=4306387)
 
 - [North Dakota State Library LibGuide](https://library-nd.libguides.com/digitalprojectstoolkit/metadata)
 
-**Example collections for inspiration:**
+Example collections for inspiration:
 - [Tripod](https://tripod.brynmawr.edu/discovery/search?vid=01TRI_INST:BMC)
 - [TriCollege Libraries Digital Collections](https://digitalcollections.tricolib.brynmawr.edu/)
 

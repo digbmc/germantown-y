@@ -16,8 +16,13 @@ title: Metadata Documentation
   - [Additional Resources](#additional-resources)
 - [Editing the metadata](#editing-the-metadata)
   - [About config-metadata.csv](#about-config-metadatacsv)
-  - [Adding More Fields to the Metadata](#adding-more-fields-to-the-metadata)
-  - [How to Insert Links to the Metadata](#how-to-insert-links-to-the-metadata)
+    - [Adding More Fields to the Metadata](#adding-more-fields-to-the-metadata)
+    - [How to Insert Links into the Metadata](#how-to-insert-links-into-the-metadata)
+    - [How to Change Metadata Order](#how-to-change-metadata-order)
+  - [About config-browsecsv](#about-config-browsecsv)
+    - [How to Add a Sort Category](#how-to-add-a-sort-category)
+    - [Making a Field Searchable](#making-a-field-searchable)
+    - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
 
 ## Useful Vacabulary
 Repository: This is where code and files are stored. Our website is stored in GitHub repository!
@@ -96,10 +101,13 @@ More information: about this field. Like the Object ID, the filename should be a
 **Creator**: Insert the author of the file here in this format LastName, FirstName. Then, use semicolons to separate multiple authors.
 
 If commas are messing with the formatting, you will need to wait until you upload the CSV file onto the repository (which is a later step). There you can replace the semicolons in the uplaoded CSV file with commas. Then you must add quotation marks to the beginning of the value and end so that the whole value gets read in as one string.
+
 The input should look something like this:
 >“WHYY photographer, Bob, John, Sugar, Cain”
 
-**Date:** the date should be formatted like this: YYYY-DD-MM. An example would look like this: 
+**Date:** the date should be formatted like this: YYYY-DD-MM. 
+
+An example would look like this: 
 >2012-21-06 or 2000
 
 If the month and day are not known it is okay to just put the year.
@@ -108,6 +116,7 @@ If the month and day are not known it is okay to just put the year.
 
 
 **Subject**: This field is for categorizing items in the archive. Users will be able to click on the subjects listed to see other content that have the same subject/tag. Tags must be separated by semicolons. 
+
 Like this: 
 >Philadelphia (Pa.)--Maps; United States--Pennsylvania
 
@@ -124,6 +133,7 @@ Lastly, keep the headings simple and have no more than three.
 
 **Type:** The type specifies what kind of file the object is. This field can be a one or two value input and should follow the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2003-02-12/). 
 If a second value is going to be inputted the second value should further specify the file type and should be separated by a semicolon ( ; ).
+
 Like so: 
 >Image;StillImage
 
@@ -145,7 +155,6 @@ Like so:
 **Image_alt_text:** Insert alt text for the image here. Alt text provides a description of the image for screen readers to use, which helps increase accessibility.
 
 Here is an example input:
-
 > Objectid: arc_007
 >
 >Filename: http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg
@@ -213,7 +222,7 @@ Additional resources can be found at the following links.
 ## Editing the metadata
 
 ### About Config-metadata.csv
-Config-metadata.csv is a CSV file that holds the formatting and settings for the display of the metadata. It looks like this:
+Config-metadata.csv is a CSV file that holds the formatting and settings for the display of the metadata. The file is located in the repository inside the _data folder. The file looks like this:
 ```
 field,display_name,browse_link,external_link
 title,Title,
@@ -232,32 +241,99 @@ rights,Rights,
 rightsstatement,Rights Statement,,true
 ```
 
-Just like germantown-y-metadata.csv, the first line indicates the order and corresponding field values are put in.
+Just like germantown-y-metadata.csv, the first line indicates the order and corresponding field values are put in. 
+
+config-metadata.csv is used in these tutorials:
+  - [Adding More Fields to the Metadata](#adding-more-fields-to-the-metadata)
+  - [How to Insert Links into the Metadata](#how-to-insert-links-into-the-metadata)
+  - [How to Change Metadata Order](#how-to-change-metadata-order)
 
 #### Adding more fields to the metadata
 To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field.
 
-After you are done entering the data, [*upload the metadata*](#uploading-the-metadata). If you check the CSV file in the repository now, your new field should be there. 
+After you are done entering the data, [*upload the metadata*](#uploading-the-metadata). If you check the CSV file in the repository now, your new field should be there in the top line and all the values of the field should be in the spot indicated by the top line within each row. 
 
-Next, go to the _data folder and locate [**config-metadata.csv**](#about-config-metadatacsv). You must also add your new field there in the row where you want it to be presented. If you are just adding a field without any specific configuration, you can fill out the field and display_name columns in config-metadata.csv. The field should be the name of the new field you added in the CSV, and the display_name is what you want it to be called on the website when it is displayed. Here is an example:
+Next, go to the _data folder and locate [**config-metadata.csv**](#about-config-metadatacsv). You must also add your new field there in the row where you want it to be presented. If you are just adding a field without any specific configuration, you can fill out the field and display_name columns in config-metadata.csv. The field should be the name of the new field you added in the CSV, and the display_name is what you want it to be called on the website when it is displayed.
 
+Here is an example:
 >date,Date Created
 
-### How to Insert Links to the Metadata
+#### How to Insert Links into the Metadata
 
-Each element of the metadata can have links. There are three different ways to add links:
+Each element of the metadata can have links. There are three different ways to add links.
 
 For links that redirect to a search on the website’s archive (such as subjects), set the browse_link value to true in the [**config-metadata.csv**](#about-config-metadatacsv)
-file for the field you want this link format for. Should look something like this:
+file for the field you want this link format for. 
 
+Should look something like this:
 >subject,Subjects,true
 
 The field should now be a browse link!
 
-If the field will always be a clickable link to another website (such as the copyright statement field), set the external link value to true in the [**config-metadata.csv**](#about-config-metadatacsv) file. Leave the browse_link value blank and external link value to true, like so:
+If the field will always be a clickable link to another website (such as the copyright statement field), set the external link value to true in the [**config-metadata.csv**](#about-config-metadatacsv) file. Leave the browse_link value blank and external link value to true.
 
+like so:
 >rightsstatement,Rights Statement,,true
 
 Lastly, to create a hyperlink in the metadata, enter the following format in the chosen field of the spreadsheet:
 
 ```<a href=”**link**”> **display text**</a>```
+
+#### How to Change Metadata Order
+The metadata can be rearranged by simply moving the rows to the desired order for display in the [**config-metadata.csv**](#about-config-metadatacsv) file.
+
+For example, if the initial order was this:
+```
+title,Title,
+creator,Creator,
+description,Description,
+```
+And it was changed to this:
+```
+title,Title,
+description,Description,
+creator,Creator,
+```
+Now the description will appear before the creator in the metadata.
+
+### About config-browse.csv
+**Config-browse.csv** is a CSV file that holds the formatting and settings for the display of the metadata in the preview. The file is located in the repository inside the _data folder. 
+
+The file looks like this:
+```
+field,display_name,btn,hidden,sort_name
+creator,Creator,,,Creator
+date,Date,,,Date
+description,Description,,true,
+subject,Subject,,true,Subject
+location,Location,,true,Location
+source,Source,,true,Source
+identifier,Source Identifier,,
+type,Type,,true,Type
+format,Format,,true,Format
+```
+Just like germantown-y-metadata.csv, the first line indicates the order and corresponding field values are put in.
+
+config-browse.csv is used in these tutuorials:
+  - [How to Add a Sort Category](#how-to-add-a-sort-category)
+  - [Making a Field Searchable](#making-a-field-searchable)
+  - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
+
+#### How to Add a Sort Category
+In the [**config-browse.csv**](#about-config-browsecsv) file, a sort category can be added by entering a value for field, hidden, and sort_name. The field value is the name of the field in the metadata CSV and the sort name will be the sort category appearing on the site. To hide the field so that it won't appear on the preview of each item in the archive the hidden value should be set to true.
+
+Here is an example:
+```
+field,display_name,btn,hidden,sort_name
+creator,Creator,,,Creator
+date,Date,,,Date
+description,Description,,true,
+subject,,,true,Subject
+```
+In this example, creator, date, and description will appear on the preview box and have a sort category, while the subject will only appear as a sort category.
+
+#### Making a Field Searchable
+Any Field put in the  [**config-browse.csv**](#about-config-browsecsv) will become searchable!
+
+#### Rearranging the order of the Elements in the Preview
+This process is similar to [*How to Change Metadata Order*](#how-to-change-metadata-order). Follow the directions there for rearranging the preview elements.

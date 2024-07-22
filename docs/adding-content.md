@@ -1,213 +1,97 @@
-# Adding Content 
-This is a guide on how to add content to pages on the website
 
-## Text
-To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting languge. 
 
-[Guide to Markdown](https://www.markdownguide.org/basic-syntax/) 
+# Adding Content
+Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide). Every md file has two parts: the front matter and the content.
 
 
-## Visual Content
+[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure.
 
-Collection builder uses a feature called an include, which pulls code from a programmed feature with one line. Features are includes, and you can set the parameters (ex how wide something is, what the image is, what you want the image caption to be, in the include) Examples below: 
 
-from collection builder...
+Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page
+```
+---
+title: archive
+layout: browse
+permalink: browse.html
+---
+```
 
-## Feature *Includes* Bonanza page
 
-Check all the includes. Steal Code! 
+Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title.
 
-### Image Options
 
-#### Image from Collection (auto caption)
+## Creating pages
+If you need to create a page outside of Exhibits, create a markdown file in the _posts folder. The naming convention for pages is lowercase with dashes between words.
 
-{% include feature/image.html objectid="demo_001" width="75" %}
 
+## Working on existing pages
+Exhibit files can be found in the _exhibts folder, the rest of the pages are in _posts. To edit the content of the page, work below the front matter. Everything in that section of the file will be pulled when the site generates content.
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}`
 
+### Text
+To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting language.
 
-#### Image from Collection (with a caption)
 
-{% include feature/image.html objectid="demo_001" width="75" caption="an image" %}
+[Guide to Markdown](https://www.markdownguide.org/basic-syntax/)
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" caption="an image" %}{% endraw %}`
 
+### Features
+Features are snippets of code that can be added to pages with a single line. CollectionBuilder has several features designed to make adding content easier. They're a great tool for adding visual content, especially from the archive.
 
-#### Multiple Images from the Collection (auto caption)
 
-{% include feature/image.html objectid="demo_001;demo_004;demo_005"  %}
+#### Images
+to add images to a page, add this line of code to your markdown file: `{% include feature/image.html objectid="demo_001" %}`
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_001;demo_004;demo_005"  %}{% endraw %}`
 
+Objectid is a parameter: here you would put the image you want to use. This can either be an objectid from the meta data, a url to an external image, or a relative link to a picture in the assets folder. Replace "demo_001" with the source of your image.
 
-#### Multiple Images from the Collection (with captions)
 
-{% include feature/image.html objectid="demo_001;demo_004;demo_005" width="75" caption="demo1;nother" %}
+Parameters allow you to customize the way the feature loads.
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="demo_001;demo_004;demo_005" width="75" caption="demo1;nother" %}{% endraw %}`
 
+Other parameters include...
 
-#### External Image (without a caption)
 
-{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg" width="75" alt="Frank B. Robinson at the Organ" %}
+- alt = alternative text describing the image, essential for screen readers
+- caption = if you don't add a caption, and you use an object id, the caption below the image  vwill be the description from the metadata. use the caption tag if you want a custom caption, or add `caption:false` to remove it
+- link = if you want to change the link that the image goes to when you click on the image. If you don't include the link parameter the url will automatically be the image source
+ - width = will use responsive sizing to set the % size on desktop (will be 100% on mobile), choose from "25", "50", "75", or "100" (optional)
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg" width="75" alt="Frank B. Robinson at the Organ" %}{% endraw %}`
 
+#### PDFs
+You can include a pdf with `{% include feature/pdf.html objectid="demo_002" %}`
 
-#### External Image (with a caption)
 
-{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg" width="75" alt="Frank B. Robinson at the Organ" caption="This guy is good!"%}
+Like with the image feature, the objectid can be an objectid, a link to an external pdf, or a link to an internal pdf.
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg" width="75" alt="Frank B. Robinson at the Organ" caption="This guy is good!"%}{% endraw %}`
 
+Additional Parameters:
+- caption
+- width
+- ratio: change the size of the pdf by changing the ratio. options are "21x9", "16x9", "4x3", or "1x1". 1x1 is the default.
 
-#### Multiple External Images (with captions and a link)
 
-{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg;https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_psychiana_photographs_010.jpg" caption="this guy!;(was nothing without these women!)" link="https://www.lib.uidaho.edu/digital/psychiana/items/psychiana519.html;https://www.lib.uidaho.edu/digital/psychiana/items/psychiana547.html" alt="Frank B. Robinson at the Organ;Women staff members of Psychiana lined up outside the Psychiana headquarters" %}
+#### More features
+Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) for more information on features.
 
-Example Code --> `{% raw %}{% include feature/image.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_photographs_01.jpg;https://www.lib.uidaho.edu/collectionbuilder/demo-objects/mg101_b6_psychiana_photographs_010.jpg" caption="this guy!;(was nothing without these women!)" link="https://www.lib.uidaho.edu/digital/psychiana/items/psychiana519.html;https://www.lib.uidaho.edu/digital/psychiana/items/psychiana547.html" alt="Frank B. Robinson at the Organ;Women staff members of Psychiana lined up outside the Psychiana headquarters" %}{% endraw %}`
 
+### Footnotes:
+With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. For an example on this, checkout example-1 in exhibits:
 
-### PDF Options
 
-#### PDF from Collection (auto caption)
+```
+Learn more about the figures featured in David McShane's "Women of Germantown" mural, completed in 2001.[^fn1]
 
-{% include feature/pdf.html objectid="demo_002" width="50" %}
 
-Example Code --> `{% raw %}{% include feature/pdf.html objectid="demo_002" width="50" %}{% endraw %}`
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-#### PDF from the Collection (with a caption)
+[^fn1]: example footnote
+```
+On the site, it looks like this:
+![screenshot of exhibit page with footnote](screenshots/adding-content-1.png)
 
-{% include feature/pdf.html objectid="demo_002" width="50" caption="a pdf from the collection" %}
 
-Example Code --> `{% raw %}{% include feature/pdf.html objectid="demo_002" width="50" caption="a pdf from the collection" %}{% endraw %}`
+ For more information, checkout the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
 
 
-#### External PDF (without a caption)
-
-{% include feature/pdf.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/uiext21768.pdf" width="50" %}
-
-Example Code --> `{% raw %}{% include feature/pdf.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/uiext21768.pdf" width="50" %}{% endraw %}`
-
-
-#### External PDF (with a caption)
-
-{% include feature/pdf.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/uiext21768.pdf" width="50" caption="Safe Chainsawing is Important!" %}
-
-Example Code --> `{% raw %}{% include feature/pdf.html objectid="https://www.lib.uidaho.edu/collectionbuilder/demo-objects/uiext21768.pdf" width="50" caption="Safe Chainsawing is Important!" %}{% endraw %}`
-
-
-### Video Options
-
-#### Video from Collection (auto caption)
-
-{% include feature/video.html objectid="demo_004" width="75" %}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="demo_004" width="75" %}{% endraw %}`
-
-
-#### Video from the Collection (with a caption)
-
-{% include feature/video.html objectid="demo_004" width="50" caption="a video from the collection" %}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="demo_004" width="50" caption="a video from the collection" %}{% endraw %}`
-
-
-#### External Video File (without a caption)
-
-{% include feature/video.html objectid="https://cdil.lib.uidaho.edu/storying-extinction/objects/trailcams/videos/ballcreek-cedarrub-birdonpath.mp4" width="50"%}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="https://cdil.lib.uidaho.edu/storying-extinction/objects/trailcams/videos/ballcreek-cedarrub-birdonpath.mp4" width="50"%}{% endraw %}`
-
-
-#### External Video File (with a caption)
-
-{% include feature/video.html objectid="https://cdil.lib.uidaho.edu/storying-extinction/objects/trailcams/videos/ballcreek-cedarrub-birdonpath.mp4" caption="Bears are Important!" width="50" %}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="https://cdil.lib.uidaho.edu/storying-extinction/objects/trailcams/videos/ballcreek-cedarrub-birdonpath.mp4" caption="Bears are Important!" width="50" %}{% endraw %}`
-
-
-#### External Vimeo Video
-
-{% include feature/video.html objectid="https://vimeo.com/464555587" width="50" caption="vimeo caption" %}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="https://vimeo.com/464555587" width="50" caption="vimeo caption" %}{% endraw %}`
-
-
-#### External Youtube Video
-
-{% include feature/video.html objectid="https://www.youtube.com/watch?v=dbKNr3wuiuQ" width="50" caption="youtube caption"  %}
-
-Example Code --> `{% raw %}{% include feature/video.html objectid="https://www.youtube.com/watch?v=dbKNr3wuiuQ" width="50" caption="youtube caption"  %}{% endraw %}`
-
-
-### Audio Options
-
-#### Audio from Collection (auto caption)
-
-{% include feature/audio.html objectid="demo_003" width="50" %}
-
-Example Code --> `{% raw %}{% include feature/audio.html objectid="demo_003" width="50" %}{% endraw %}`
-
-
-#### Audio from the Collection (with a caption)
-
-{% include feature/audio.html objectid="demo_003" width="50" caption="a mp3 from the collection" %}
-
-Example Code --> `{% raw %}{% include feature/audio.html objectid="demo_003" width="50" caption="a mp3 from the collection" %}{% endraw %}`
-
-
-#### External Audio (without a caption)
-
-{% include feature/audio.html objectid="https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3" %}
-
-Example Code --> `{% raw %}{% include feature/audio.html objectid="https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3" %}{% endraw %}`
-
-
-#### External Audio (with a caption)
-
-{% include feature/audio.html objectid="https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3" width="50" caption="Clouds are Important!" %}
-
-Example Code --> `{% raw %}{% include feature/audio.html objectid="https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3" width="50" caption="Clouds are Important!" %}{% endraw %}`
-
-#### Cloud Include
-
-{% include feature/cloud.html fields="subject" min="1" background="dark" button="outline-warning" %}
-
-Example Code --> `{% raw %}{% include feature/cloud.html fields="subject" min="1" background="dark" button="outline-warning"  %}{% endraw %}`
-
-
-#### TimelineJS
-
-{% include feature/timelinejs.html  %}
-
-Example Code --> `{% raw %}{% include feature/timelinejs.html  %}{% endraw %}`
-
-
-### Include [Bootstrap](https://getbootstrap.com/) Features
-
-#### Include a Card
-
-- Card -- > `{% raw %}{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo004" width="25" centered=true %}{% endraw %}`
-
-{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo_001" width="25" centered=true %}
-
-#### Include a Button 
-
-- Buttons -- > `{% raw %}{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" %}{% endraw %}`
-
-{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" centered=true %}
-  
-#### Include an Alert
-
-- Alerts -- > `{% raw %}{% include feature/alert.html text="this is an *alert* that 'warns' a user" color="warning" align="center" %}{% endraw %}`
-
-{% include feature/alert.html text="This is an *alert* that 'warns' a user with centrally aligned text." color="warning" align="center"  %}
-
-#### Include a Modal
-
-- Modals -- > `{% raw %}{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="when clicked:" text="A Modal will pop out a box with some more information" color="primary"  %}{% endraw %}`
-
-{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="When clicked:" text="A Modal will pop out a box with some more information" color="primary"  %} 

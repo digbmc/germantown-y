@@ -5,6 +5,7 @@ author: Emma
 description: A deep dive into the structural problems of the building.
 
 img: arc_002
+
 ---
 
 **Note:** content is placeholder content for reference! It will be replaced.
@@ -18,4 +19,5 @@ img: arc_002
 {% include feature/image.html objectid="objects/arc_001.jpg" width="8" caption="YWCA Building front perspective" %}
 
 {% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
+
 

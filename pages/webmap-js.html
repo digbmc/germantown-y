@@ -14,13 +14,20 @@ permalink: /webmap-js.html
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
 
+    
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
     <style>
         body {
             padding: 0;
             margin: 0;
         }
 
-        html, body, #map {
+
+        html,
+        body,
+        #map {
+
             height: 100%;
             width: 100%;
         }
@@ -55,14 +62,43 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
 
-        .other {filter: hue-rotate(0deg);/*blue*/}
-        .landmark {filter: hue-rotate(180deg);/*brown*/}
-        .industry {filter: hue-rotate(120deg); /*pink*/ }
-        .lodgings {filter: hue-rotate(240deg); /*green*/}
-        .branch {filter: hue-rotate(60deg);/*purple*/}
-        .main-building {filter: hue-rotate(300deg);/*green*/ }
-        .ywca {filter: hue-rotate(144deg) saturate(1.5);/*red*/}
-/* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
+
+        .other {
+            filter: hue-rotate(0deg);
+            /*blue*/
+        }
+
+        .landmark {
+            filter: hue-rotate(180deg);
+            /*brown*/
+        }
+
+        .industry {
+            filter: hue-rotate(120deg);
+            /*pink*/
+        }
+
+        .lodgings {
+            filter: hue-rotate(240deg);
+            /*green*/
+        }
+
+        .branch {
+            filter: hue-rotate(60deg);
+            /*purple*/
+        }
+
+        .main-building {
+            filter: hue-rotate(300deg);
+            /*green*/
+        }
+
+        .ywca {
+            filter: hue-rotate(144deg) saturate(1.5);
+            /*red*/
+        }
+
+        /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
 
     </style>
 </head>
@@ -75,6 +111,8 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 
     <script>
         // Initialize the map
@@ -166,10 +204,12 @@ permalink: /webmap-js.html
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         });*/ //may be against google ToS
 
-       /* var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-            maxZoom: 20,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });*/ //may be against google ToS
+
+        /* var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+             maxZoom: 20,
+             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+         });*/ //may be against google ToS
+
 
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
@@ -341,7 +381,7 @@ permalink: /webmap-js.html
             "1942 Philadelphia Land Use": landUse1942,
             "1962 Philadelphia Land Use": landUse1962,
             //"Google Satellite": googleSat
-            
+
         };
         var overlayLayers = {
             "YWCA": ywcaLayer,
@@ -355,7 +395,15 @@ permalink: /webmap-js.html
             "Germantown Boundary Line": germantownBoundary
         };
 
-        L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+        // Create the layer control and add the layers
+        var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+        // Open the layer control on page load
+        layersControl.expand();
+        // Add fullscreen control to the map
+        map.addControl(new L.Control.Fullscreen());
+
 
         // Call function to add data to layers
         addDataToLayers(data);

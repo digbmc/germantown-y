@@ -141,4 +141,23 @@ body {
     border-radius: 0.25rem 0.2rem 0 0 !important;
     }
     
+
 }
+.display-card {
+    height: auto;
+    max-height: 200px;
+}
+.card-body {
+    height: auto;
+    max-height: 400px;
+}
+@media only screen and (max-width: 991px) {
+    .card-img-top {
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+.contact {
+    color: white; 
+    text-decoration: underline;

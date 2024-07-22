@@ -136,6 +136,7 @@ permalink: /webmap-js.html
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
         });
+        var dynamicLayers = {};
 
         //extending leaflet's tile layer class to create custom tiles  with transparent background instead of grey
         L.TileLayer.Canvas = L.TileLayer.extend({
@@ -223,79 +224,82 @@ permalink: /webmap-js.html
 
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
-            data.forEach(function (feature) {
-                // Check if required fields (subject, latitude, longitude) are present and not empty
-                if (feature.subject && feature.latitude && feature.longitude &&
-                    feature.subject.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
+    data.forEach(function (feature) {
+        if (feature.subject && feature.latitude && feature.longitude &&
+            feature.subject.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
 
-                    var geojsonFeature = {
-                        type: "Feature",
-                        properties: {
-                            title: feature.title || "Unknown",
-                            location: feature.location || "Unknown",
-                            date: feature.date || "Unknown",
-                            subject: feature.subject,
-                            description: feature.description || "No description provided",
-                            relevance: feature.relevance || "Unknown",
-                            image: feature.image || "",
-                            sources: feature.sources || "Unknown"
-                        },
-                        geometry: {
-                            type: "Point",
-                            coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
-                        }
-                    };
-
-                    //console.log("Processing feature:", geojsonFeature); //to check that each feature loaded
-
-                    var subject = feature.subject.toLowerCase();
-                    if (subject === 'other') {
-                        otherLayer.addData(geojsonFeature);
-                    } else if (subject === 'branch') {
-                        branchLayer.addData(geojsonFeature);
-                    } else if (subject === 'industry') {
-                        industryLayer.addData(geojsonFeature);
-                    } else if (subject === 'landmark') {
-                        landmarkLayer.addData(geojsonFeature);
-                    } else if (subject === 'lodgings') {
-                        lodgingsLayer.addData(geojsonFeature);
-                    } else if (subject === 'main-building') {
-                        mainBuildingLayer.addData(geojsonFeature);
-                    } else if (subject === 'ywca') {
-                        ywcaLayer.addData(geojsonFeature);
-                    } else {
-                        console.warn("Unexpected subject:", subject);
-                        unknownLayer.addData(geojsonFeature); // Add to the unknown layer
-                    }
-                } else {
-                    console.warn("Feature missing required fields (subject, latitude, or longitude):", feature);
+            var geojsonFeature = {
+                type: "Feature",
+                properties: {
+                    title: feature.title || "Unknown",
+                    location: feature.location || "Unknown",
+                    date: feature.date || "Unknown",
+                    subject: feature.subject,
+                    description: feature.description || "No description provided",
+                    relevance: feature.relevance || "Unknown",
+                    image: feature.image || "",
+                    sources: feature.sources || "Unknown"
+                },
+                geometry: {
+                    type: "Point",
+                    coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
                 }
-            });
+            };
+
+            var subject = feature.subject.toLowerCase();
+
+            if (subject === 'other') {
+                otherLayer.addData(geojsonFeature);
+            } else if (subject === 'branch') {
+                branchLayer.addData(geojsonFeature);
+            } else if (subject === 'industry') {
+                industryLayer.addData(geojsonFeature);
+            } else if (subject === 'landmark') {
+                landmarkLayer.addData(geojsonFeature);
+            } else if (subject === 'lodgings') {
+                lodgingsLayer.addData(geojsonFeature);
+            } else if (subject === 'main-building') {
+                mainBuildingLayer.addData(geojsonFeature);
+            } else if (subject === 'ywca') {
+                ywcaLayer.addData(geojsonFeature);
+            } else {
+                if (!dynamicLayers[subject]) {
+                    dynamicLayers[subject] = createLayer(subject);
+                    dynamicLayers[subject].addTo(map);
+                    layersControl.addOverlay(dynamicLayers[subject], subject.charAt(0).toUpperCase() + subject.slice(1));
+                }
+                dynamicLayers[subject].addData(geojsonFeature);
+            }
+        } else {
+            console.warn("Feature missing required fields (subject, latitude, or longitude):", feature);
         }
+    });
+}
+
 
         //Create geoJSON layer 
         function createLayer(className, customIcon) {
-            return L.geoJSON(null, {
-                pointToLayer: function (feature, latlng) {
-                    var marker = L.marker(latlng, { icon: customIcon || L.Icon.Default.prototype });
-                    marker.on('add', function () {
-                        marker._icon.classList.add(className);
-                    });
-                    return marker;
-                },
-                onEachFeature: function (feature, layer) {
-                    if (feature.properties) {
-                        var popupContent = '<h3>' + feature.properties.title + '</h3>' +
-                            '<p><b>Address:</b> ' + feature.properties.location + '</p>' +
-                            '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
-                            '<p><b>Year:</b> ' + feature.properties.date + '</p>';
-                        layer.bindPopup(popupContent);
-                    } else {
-                        console.warn("Feature missing properties:", feature);
-                    }
-                }
-            })
+    return L.geoJSON(null, {
+        pointToLayer: function (feature, latlng) {
+            var marker = L.marker(latlng, { icon: customIcon || L.Icon.Default.prototype });
+            marker.on('add', function () {
+                marker._icon.classList.add(className);
+            });
+            return marker;
+        },
+        onEachFeature: function (feature, layer) {
+            if (feature.properties) {
+                var popupContent = '<h3>' + feature.properties.title + '</h3>' +
+                    '<p><b>Address:</b> ' + feature.properties.location + '</p>' +
+                    '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
+                    '<p><b>Year:</b> ' + feature.properties.date + '</p>';
+                layer.bindPopup(popupContent);
+            } else {
+                console.warn("Feature missing properties:", feature);
+            }
         }
+    });
+}
 
 
         var unknownLayer = createLayer('unknown');
@@ -391,13 +395,13 @@ permalink: /webmap-js.html
             "Industries": industryLayer,
             "Landmarks": landmarkLayer,
             "Others": otherLayer,
-            "Unknown<hr>": unknownLayer,
             "Germantown Boundary Line": germantownBoundary
         };
 
 
         // Create the layer control and add the layers
         var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);
+
 
         // Open the layer control on page load
         layersControl.expand();

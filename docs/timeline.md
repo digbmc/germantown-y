@@ -1,15 +1,15 @@
 # TimelineJS
 ## Table of Contents
 - [Getting Started](#getting-started)
-- [Working with the Spreadsheet](#working-with-the-spreadsheet)
+- [Working with the Spreadsheet](#working-with-the-spreadsheet:additional customization tips)
     - [Dates](#dates)
     - [Text Styling](#text-styling)
     - [Adding Images](#adding-images)
     - [Background Color](#background-color)
     - [Understanding Groups](#understanding-groups)
-    - [After Working with Spreadsheet](#after-working-with-spreadsheet)
+    - [After Working with Spreadsheet](#after-working-with-the-spreadsheet)
     - [Changing Font](#changing-font)
-- [How to Input Timeline into Site](#how-to-input-timeline-into-site)
+- [How to Input Timeline into Site](#how-to-input-the-timeline-into-site)
 
 # Getting Started
 Start off by using TimelineJS to download the spreadsheet. TimelineJS is an open-source tool that enables anyone to build visually rich, interactive timelines. To creat a timeline, you can simply use a Google Spreadsheet.

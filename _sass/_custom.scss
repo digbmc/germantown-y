@@ -59,7 +59,7 @@ body {
         color: $lapis-lazuli !important;
     }
     a:hover {
-        font-style: italic;
+        font-style: italic !important;
     }
 }
 
@@ -162,3 +162,4 @@ body {
     color: white; 
     text-decoration: underline;
 }
+

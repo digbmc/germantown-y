@@ -8,7 +8,7 @@ author: Fiona
     - [Getting More Technical](#getting-more-technical)
 - [Navigation Bar](#navigation-bar)
     - [Navigation Flow](#navigation-flow)
-    
+
 # Understanding Markdown Files
 - title: Sets the title of the page. This will be used as the page title and can also be displayed in various parts of the site depending on the template.
 - layout: Specifies that the page should use a certain layout. For example in the history file, the layout displayed is the "history" layout. This should then correspond to a layout file named history.html in the _layouts directory.
@@ -48,6 +48,5 @@ So then there is the structure of parent, url, children
 ## Navigation Flow 
 - From the Home page (/), you can navigate to History (/history.html).
 - The Credits menu item includes two subpages: About (/credits.html) and People (/people). These will appear as a dropdown menu when you click on credits in the navigation bar. 
-
 
     

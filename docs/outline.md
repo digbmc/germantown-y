@@ -51,4 +51,3 @@ author: fiona
 - Accessibility
 
 ## [Advanced Documentation for More Information](./advanced.md)
-       

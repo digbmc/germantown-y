@@ -1,9 +1,10 @@
 
+# Adding Content
+Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide). Every md file has two parts: the front matter and the content.
 
-# Adding Content 
-Most of the content being added to the site will be files for the exhibit page. (link to the exhibits guide). Every markdown file has two components: the front matter and the content. 
 
-[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure. 
+[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure.
+
 
 Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page
 ```
@@ -14,60 +15,81 @@ permalink: browse.html
 ---
 ```
 
-Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Check out the [advanced documentation](advanced.md) for more on layouts. The permalink is also important here: it specifies the location of the page. Keep it short, and similar to the title. 
 
-## creating pages
-If you need to create a page outside of Exhibits, create a markdown file in the _posts folder. The naming convention for pages is lowercase with dashes between words. 
+Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title.
 
-## working on existing pages
-Exhibit files can be found in the _exhibts folder, the rest of the pages are in _posts. To edit the content of the page, work below the front matter. Everything in that section of the file will be pulled when the site generates content. 
+
+## Creating pages
+If you need to create a page outside of Exhibits, create a markdown file in the _posts folder. The naming convention for pages is lowercase with dashes between words.
+
+
+## Working on existing pages
+Exhibit files can be found in the _exhibts folder, the rest of the pages are in _posts. To edit the content of the page, work below the front matter. Everything in that section of the file will be pulled when the site generates content.
+
 
 ### Text
-To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting language. 
+To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting language.
 
-[Guide to Markdown](https://www.markdownguide.org/basic-syntax/) 
 
-### Features 
+[Guide to Markdown](https://www.markdownguide.org/basic-syntax/)
+
+
+### Features
 Features are snippets of code that can be added to pages with a single line. CollectionBuilder has several features designed to make adding content easier. They're a great tool for adding visual content, especially from the archive.
 
-#### Images 
+
+#### Images
 to add images to a page, add this line of code to your markdown file: `{% include feature/image.html objectid="demo_001" %}`
 
-Objectid is a parameter: here you would put the image you want to use. This can either be an objectid from the metadata, a URL to an external image, or a relative link to a picture in the assets folder. Replace "demo_001" with the source of your image.
+
+Objectid is a parameter: here you would put the image you want to use. This can either be an objectid from the meta data, a url to an external image, or a relative link to a picture in the assets folder. Replace "demo_001" with the source of your image.
+
 
 Parameters allow you to customize the way the feature loads.
 
-Other parameters include... 
+
+Other parameters include...
+
 
 - alt = alternative text describing the image, essential for screen readers
-- caption = if you don't add a caption, and you use an object id, the caption below the image will be the description from the metadata. use the caption tag if you want a custom caption, or add `caption:false` to remove it
-- link = if you want to change the link that the image goes to when you click on the image. If you don't include the link parameter the URL will automatically be the image source
+- caption = if you don't add a caption, and you use an object id, the caption below the image  vwill be the description from the metadata. use the caption tag if you want a custom caption, or add `caption:false` to remove it
+- link = if you want to change the link that the image goes to when you click on the image. If you don't include the link parameter the url will automatically be the image source
  - width = will use responsive sizing to set the % size on desktop (will be 100% on mobile), choose from "25", "50", "75", or "100" (optional)
 
-#### PDFs 
+
+#### PDFs
 You can include a pdf with `{% include feature/pdf.html objectid="demo_002" %}`
 
-Like with the image feature, the objectid can be an objectid, a link to an external pdf, or a link to an internal pdf. 
+
+Like with the image feature, the objectid can be an objectid, a link to an external pdf, or a link to an internal pdf.
+
 
 Additional Parameters:
 - caption
-- width 
-- ratio: change the size of the pdf by changing the ratio. options are "21x9", "16x9", "4x3", or "1x1". 1x1 is the default. 
+- width
+- ratio: change the size of the pdf by changing the ratio. options are "21x9", "16x9", "4x3", or "1x1". 1x1 is the default.
+
 
 #### More features
 Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) for more information on features.
 
-### Footnotes: 
-With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. For an example of this, visit example-1 in exhibits: 
+
+### Footnotes:
+With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. For an example on this, checkout example-1 in exhibits:
+
 
 ```
 Learn more about the figures featured in David McShane's "Women of Germantown" mural, completed in 2001.[^fn1]
 
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
 [^fn1]: example footnote
-``` 
-On the site, it looks like this: 
+```
+On the site, it looks like this:
 ![screenshot of exhibit page with footnote](screenshots/adding-content-1.png)
 
- For more information, check the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
+
+ For more information, checkout the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
+

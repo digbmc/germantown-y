@@ -1,4 +1,17 @@
 # TimelineJS
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Working with the Spreadsheet](#working-with-the-spreadsheet)
+    - [Dates](#dates)
+    - [Text Styling](#text-styling)
+    - [Adding Images](#adding-images)
+    - [Background Color](#background-color)
+    - [Understanding Groups](#understanding-groups)
+    - [After Working with Spreadsheet](#after-working-with-spreadsheet)
+    - [Changing Font](#changing-font)
+- [How to Input Timeline into Site](#how-to-input-timeline-into-site)
+
+# Getting Started
 Start off by using TimelineJS to download the spreadsheet. TimelineJS is an open-source tool that enables anyone to build visually rich, interactive timelines. To creat a timeline, you can simply use a Google Spreadsheet.
 
 Here is the site to get you started 
@@ -6,7 +19,7 @@ Here is the site to get you started
 
 TimelineJS has documentation which you can find here [TimelineJS Documentation](https://timeline.knightlab.com/docs/using-spreadsheets.html)
 
-# Working with Spreadsheet: Additional Customization Tips
+# Working with the Spreadsheet: Additional Customization Tips
 ## Dates 
 - Only use numbers 
 - To use words like 'January', input text into the Display Date column
@@ -20,7 +33,7 @@ This will change the text color to blue
 - To bold text use:
 `<strong>text</strong>`
 
-## Images 
+## Adding Images 
 - For adding images always use the image url and copy/paste it into the "Media column"
 - To input background image, copy the image url into the "Background column"
 
@@ -31,7 +44,7 @@ In the end, here is what your timeline spreadsheet should look like with all the
 
 **Note:** the background colors in the timeline are used from the color palette of the mural!
 
-## Organizing 
+## Understanding Groups 
 Using the group colummn, you can organize the slides by groups (tags). These tags will group events together and sort them into the same category. For example, the timeline displayed has 4 groups: Building, Damage, Redevelopment, and Pool. On the timeline, events with the same group will be put in the same row.
 
 ## After working with the spreadsheet

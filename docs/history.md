@@ -6,7 +6,7 @@ author: Fiona
 - [Undestanding Markdown Files](#understanding-markdown-files)
 - [Understanding the Table of Contents](#table-of-contents-1)
     - [Getting More Technical](#getting-more-technical)
-- [Navigation Bar](#navigation-bar)
+- [Navigation Bar](#the-navigation-bar)
     - [Navigation Flow](#navigation-flow)
 
 # Understanding Markdown Files

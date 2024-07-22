@@ -10,6 +10,6 @@ subject,Subjects,true
 identifier,Source Identifier,,
 type,Type,
 format,Format,
-source,Source
+source,Source,
 rights,Rights,
 rightsstatement,Rights Statement,,true

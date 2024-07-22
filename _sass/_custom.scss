@@ -74,3 +74,71 @@ body {
 .btn-primary:active {
     background-color: $carolina-blue;
 }
+
+
+.nav-font {
+    font-size: 1.5vw;
+}
+
+.nav-gutter {
+    --bs-gutter-x: 0rem;
+}
+.navbar-toggler {
+    margin: 15px;
+}
+.nav-title-link {
+    color: white;
+
+}
+.nav-title-link:hover {
+    color: white;
+    
+}
+
+/* media query changes font once links are in dropdown mode */
+
+
+/* nav bar dropdown customization */
+.dropdown-item {
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-font {
+      font-size: 1rem;
+      padding: 10px;
+    }
+    .dropdown-item {
+        font-size: 0.8rem;
+      padding: 10px;
+    }
+}
+.dropdown-item:active , .dropdown-item:hover{
+    background-color: $dun;
+    color: black;
+    
+}
+.dropdown-menu {
+    .active {
+        background-color: $dun; 
+        color: black;
+    }
+    
+    
+}
+
+.card {
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+.img-card {
+    position:relative;
+    right: 16px;
+    img {
+    border-radius: 0.25rem 0.2rem 0 0 !important;
+    }
+    
+}

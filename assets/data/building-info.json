@@ -1,0 +1,866 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17651294,
+                    40.03688676
+                ]
+            },
+            "properties": {
+                "title": "New YWCA Building",
+                "description": "This is the most recent building used by the Germantown YWCA Association, the 50th anniversary celebration of the association was the first programme held here. It was used in the years following 1916 up until the early 2000s. It is unclear exactly when programming stopped in the building. (Sold in 2006 to Germantown Settlement",
+                "address": "5820 Germantown Avenue",
+                "year": "1915-early 2000s",
+                "additional_info": "could add mural picture",
+                "category": "ywca",
+                "relevance": "very-high",
+                "image": "",
+                "sources": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17577428,
+                    40.03695238
+                ]
+            },
+            "properties": {
+                "title": "Center in the Park",
+                "description": "Previously the site of the Free Library of Philadelphia, Germantown Branch. The building has been used as a senior citizens center by the non-profit Center in the Park since 1986.",
+                "address": "5801-5827 Germantown Ave, Philadelphia, PA 19144",
+                "year": "1986-present",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "high",
+                "image": "",
+                "sources": "https://www.loc.gov/item/pa4070/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17584048,
+                    40.03689272
+                ]
+            },
+            "properties": {
+                "title": "Vernon Park",
+                "description": "Vernon Park is host to monuments commemorating the Battle of Germantown, the battle was faught nearby in 1777. The Founders\u2019 Monument is inscribed with the first documented protest against slavery in Philadelphia. The Center in the Park is also located in Vernon Park.",
+                "address": "5800 Germantown Ave, Philadelphia, PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "high",
+                "image": "",
+                "sources": "https://friendsofvernonpark.org/about/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1764913,
+                    40.03573742
+                ]
+            },
+            "properties": {
+                "title": "Germantown Branch of the Free Library",
+                "description": "One of the 25 branches of the Free Library built from 1904 to 1930 from a $1.5 million grant from the Carnegie Corporation.",
+                "address": "5710 Germantown, Philadelphia, PA 19144",
+                "year": "1907-1978",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://www.loc.gov/item/pa4070/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3139829,
+                    40.02428497
+                ]
+            },
+            "properties": {
+                "title": "Bryn Mawr College",
+                "description": "In 1823 women industrial workers who were members of the YWCA were sent to Summer School for Industrial Workers in Bryn Mawr",
+                "address": "140 Morris Ave, Bryn Mawr, PA 19010",
+                "year": "1885",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://digitalcollections.tricolib.brynmawr.edu/collections/summer-school-women-workers-industry"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.18388431,
+                    40.04966955
+                ]
+            },
+            "properties": {
+                "title": "Church of the Brethren",
+                "description": "In 1969 housed the table on which the first protest in America against slavery was signed in 1688.",
+                "address": "6601 Germantown Ave, Philadelphia, PA 19119",
+                "year": "1723",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17441109,
+                    40.03793922
+                ]
+            },
+            "properties": {
+                "title": "St. Vincent's Roman Catholic Church",
+                "description": "",
+                "address": "101 E Price St, Philadelphia, PA 19144",
+                "year": "1851",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1719817,
+                    40.03230676
+                ]
+            },
+            "properties": {
+                "title": "Germantown Friends Meeting",
+                "description": "",
+                "address": "47 W Coulter St, Philadelphia, PA 19144",
+                "year": "1693",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.19152905,
+                    40.0402388
+                ]
+            },
+            "properties": {
+                "title": "Germantown Unitarian",
+                "description": "",
+                "address": "6511 Lincoln Dr, Philadelphia, PA 19119",
+                "year": "1867",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17096381,
+                    40.03381523
+                ]
+            },
+            "properties": {
+                "title": "St. Lukes' Episcopal",
+                "description": "",
+                "address": "5427 Germantown Ave, Philadelphia, PA 19144",
+                "year": "1811",
+                "additional_info": "",
+                "category": "Other",
+                "relevance": "low",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1682975,
+                    40.03345768
+                ]
+            },
+            "properties": {
+                "title": "Home of Elizabeth P. Smith",
+                "description": "In 1869, a meeting was called at her home by Elizabeth P. Smith. This is where the Germantown YWCA began under the name of Women's Christian Association.",
+                "address": "45 East Penn Street",
+                "year": "1869",
+                "additional_info": "",
+                "category": "main-building",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17186602,
+                    40.03436826
+                ]
+            },
+            "properties": {
+                "title": "Harkness House",
+                "description": "Supported welfare needs for the community 1879 onwards, had a nursing agency, employment bureau,  free baths, educational programmes, surprisingly also had a physical training dept in educational programe.",
+                "address": "5503 Germantown Ave",
+                "year": "1879 to 1915-18",
+                "additional_info": "Germantown Association building.",
+                "category": "main-building",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.16061843,
+                    40.02755013
+                ]
+            },
+            "properties": {
+                "title": "Pine Cottage",
+                "description": "First boarding home operated by the Germantown Association. (Carner)",
+                "address": "4777 Germantown Avenue",
+                "year": "",
+                "additional_info": "Page 11 of Carner has a list of buildings that were around when the YWCA was founded",
+                "category": "Lodgings",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17082333,
+                    40.03367399
+                ]
+            },
+            "properties": {
+                "title": "YWCA Living Space",
+                "description": "In 1870, rooms were built here to give young women workers something to do in the evenings for \"social pleasures, classes and Bible Readings\". (Carner)",
+                "address": "5413 Germantown Avenue",
+                "year": "1870",
+                "additional_info": "",
+                "category": "Lodgings",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17260975,
+                    40.03438122
+                ]
+            },
+            "properties": {
+                "title": "YWCA Boarding Home",
+                "description": "In 1874, the Germantown Association acquired a house on the N. E. corner of Mill and Main Srtreets (now Market Square). It was first used as a Boarding House then became the center for various programmes. It was reluctantly given up in 1941. (Carner)",
+                "address": "Market Square, Germantown Ave, Philadelphia, PA 19144",
+                "year": "1874-1941",
+                "additional_info": "Pictured on page 8 of Carner's The first One Hundred Years, this is an approximate location",
+                "category": "Lodgings",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17733154,
+                    40.03840737
+                ]
+            },
+            "properties": {
+                "title": "Germantown Town Hall",
+                "description": "Designed by architect Napoleon LeBrun, the building never actually served as the town hall. Over the years the building has had many uses",
+                "address": "Germantown Av &, W Haines St, Philadelphia, PA 19144",
+                "year": "built 1854",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://hiddencityphila.org/2011/11/8317/    https://vimeo.com/63831952"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17312317,
+                    40.03435515
+                ]
+            },
+            "properties": {
+                "title": "National Bank of Germantown",
+                "description": "One of Philadelphia's 27 Obsolete Banks that issued Obsolete Bank Notes during the Obsolete Bank Note Era (1782-1866). Merged with the Girard Trust Corn Exchange Bank taking that name, September 11, 1953",
+                "address": "5500 Germantown Ave, Philadelphia, PA 19144",
+                "year": "1864",
+                "additional_info": "Page 11 of Carner has a list of buildings that were around when the YWCA was founded",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://banknotehistory.spmc.org/wiki/National_Bank_of_Germantown,_Philadelphia,_PA_(Charter_546)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1489,
+                    39.9526
+                ]
+            },
+            "properties": {
+                "title": "Collins Manufacturing Company",
+                "description": "One of the Industries \"In 1917, YWCA centers were organized in the North American Lace Company at 1001 Glenwood Avenue and at the A. M. Collins Manufacturing Company at 226 Columbia, with classes, recreation, etc., and in each case with a YWCA Secretary whose salary was paid by the management. In 1920 the Association at the Collins plant was given up and the girls encouraged to participate as regular members of the Germantown industrial department. The North American Lace Company Association became affiliated with the YWCA of Philadelphia.\" (Carner)",
+                "address": "525-559 Arch St, Philadelphia, PA 19106",
+                "year": "1857",
+                "additional_info": "",
+                "category": "Industry",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://www.philadelphiabuildings.org/pab/app/pj_display.cfm/474461    https://libwww.freelibrary.org/digital/item/4051"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.15085623,
+                    40.03342898
+                ]
+            },
+            "properties": {
+                "title": "Wakefield Mills",
+                "description": "The first knitting mill in the US, Taylor Building at Main & Lincoln Streets in Wakefield. Owned by the Fisher family of Wakefield, the mills stopped operating in the 1880s. The YWCA was first established to help female workers from mills to find rest and recereation in the evenings",
+                "address": "5239-5299 Ogontz Ave, Philadelphia, PA",
+                "year": "1826-57",
+                "additional_info": "",
+                "category": "Industry",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://artgallery.yale.edu/collections/objects/47550       https://digital.librarycompany.org/islandora/object/digitool%3A65459"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.19073134,
+                    40.00759801
+                ]
+            },
+            "properties": {
+                "title": "Falls of Schuykill Branch",
+                "description": "\"Falls of Schulkill Branch. Great industries employing women were located in the Falls of Schulkill, and so the Germantown Association established in 1905 the Falls of Schuylkill Branch.\" Carner. \"hanging conditions in the mills and neighborhood and a lack of cooperation by the churches in this section made it neccesary to discontinue the Branch in June 1928\"",
+                "address": "4052 Ridge Avenue, Philadelphia, PA 19129",
+                "year": "1905-1928",
+                "additional_info": "\"By 1870 Germantown was so largely a mill town and the women workers in the mills were the chief concern of founders of YWCA.\" (Carner) \n1843\nFULL TITLE PAGE:\nA Map of the County of Philadelphia From Actual Survey Made the direction of Charles Ellet, Jr. Civil Engineer, and in accordance with the Act of Assembly passed June 30th, 1839. Philadelphia: Published by Charles Ellet, Junr. Surveyor D. H. Kennedy. Draughtsman, C. Cramer. Engraver J. H. Young. Entered . . . 1843 by Charles Ellet, Jr. . . . Eastern District of Pennsylvania.",
+                "category": "Branch",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3018824,
+                    39.87481784
+                ]
+            },
+            "properties": {
+                "title": "Camp Tinicum",
+                "description": "Bought by the association in 1925. \"The camp was used enthusiastically by all age groups in the summer, and enjoyed for brief periods even in winter. But because of the shortage of materials and transportation during the summers of World War I, it proved difficult to administer the camp, and in the following years the Camp was not sufficiently used by adults to warrant its continuation. In 1948, Camp Tinicum was reluctantly sold.\" (Carner)",
+                "address": "Tinicum Township, Pennsylvania",
+                "year": "1925",
+                "additional_info": "pg 42 and 43 have pictures",
+                "category": "Branch",
+                "relevance": "high",
+                "image": "",
+                "sources": "Carner"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17978712,
+                    40.04103407
+                ]
+            },
+            "properties": {
+                "title": "Colored Branch",
+                "description": "Established in 1918 and started integrating in 1946, closed in 1952. ",
+                "address": " 6128 Germantown Avenue",
+                "year": "1918",
+                "additional_info": "page  81 has a list of organizations that are linked to YWCA Germantown",
+                "category": "Branch",
+                "relevance": "high",
+                "image": "",
+                "sources": "https://digital.library.temple.edu/digital/custom/ywcaphiladelphia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17546,
+                    40.03698
+                ]
+            },
+            "properties": {
+                "title": "Aces Museum",
+                "description": "",
+                "address": "5801 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.169283,
+                    40.048216
+                ]
+            },
+            "properties": {
+                "title": "Awbury Arboretum",
+                "description": "",
+                "address": "1 Awbury Rd Philadelphia PA 19138",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17668,
+                    40.03572
+                ]
+            },
+            "properties": {
+                "title": "Black Writers Museum",
+                "description": "",
+                "address": "5800 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1838695,
+                    40.0472268
+                ]
+            },
+            "properties": {
+                "title": "Cliveden of the National Trust",
+                "description": "",
+                "address": "6401 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.181042,
+                    40.04401
+                ]
+            },
+            "properties": {
+                "title": "Concord School House",
+                "description": "",
+                "address": "6309 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1858055,
+                    40.0382012
+                ]
+            },
+            "properties": {
+                "title": "Ebenezer Maxwell Mansion",
+                "description": "",
+                "address": "200 W Tulpehocken St Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.174031,
+                    40.0343439
+                ]
+            },
+            "properties": {
+                "title": "Germantown Historical Society",
+                "description": "",
+                "address": "5501 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.183649,
+                    40.038918
+                ]
+            },
+            "properties": {
+                "title": "Germantown Mennonite Historic Trust",
+                "description": "",
+                "address": "6133 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.17576217,
+                    40.0344442
+                ]
+            },
+            "properties": {
+                "title": "Germantown White House",
+                "description": "",
+                "address": "5512 Germantown Ave Philadelphia PA 19144",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1706612,
+                    40.0320526
+                ]
+            },
+            "properties": {
+                "title": "Grumblethorpe",
+                "description": "",
+                "address": "5267 Germantown Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1461237,
+                    39.9968876
+                ]
+            },
+            "properties": {
+                "title": "Historic Fair Hill",
+                "description": "",
+                "address": "2910 Germantown Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1927623,
+                    40.0296926
+                ]
+            },
+            "properties": {
+                "title": "Historic RittenhouseTown",
+                "description": "",
+                "address": "208 Lincoln Dr",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.16202,
+                    40.028954
+                ]
+            },
+            "properties": {
+                "title": "Hood Cemetery",
+                "description": "",
+                "address": "4901 Germantown Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1834396,
+                    40.0433432
+                ]
+            },
+            "properties": {
+                "title": "Johnson House",
+                "description": "",
+                "address": "6306 Germantown Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.15614,
+                    40.040298
+                ]
+            },
+            "properties": {
+                "title": "La Salle University Art Museum",
+                "description": "",
+                "address": "1900 W Olney Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.171967,
+                    40.034019
+                ]
+            },
+            "properties": {
+                "title": "Lest We Forget Slavery Museum",
+                "description": "",
+                "address": "5501 Germantown Avenue",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1557998,
+                    40.025
+                ]
+            },
+            "properties": {
+                "title": "Stenton",
+                "description": "",
+                "address": "4601 N 18th St",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.178628,
+                    40.040002
+                ]
+            },
+            "properties": {
+                "title": "Wyck",
+                "description": "",
+                "address": "6026 Germantown Ave",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1644871,
+                    40.0227091
+                ]
+            },
+            "properties": {
+                "title": "The Colored Girls Museum",
+                "description": "",
+                "address": "4613 Newhall Street",
+                "year": "",
+                "additional_info": "",
+                "category": "Landmark",
+                "relevance": "low",
+                "image": "",
+                "sources": "https://historicgermantownpa.org/Landmarks-map/"
+            }
+        }
+    ]
+}

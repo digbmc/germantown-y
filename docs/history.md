@@ -48,5 +48,4 @@ So then there is the structure of parent, url, children
 ## Navigation Flow 
 - From the Home page (/), you can navigate to History (/history.html).
 - The Credits menu item includes two subpages: About (/credits.html) and People (/people). These will appear as a dropdown menu when you click on credits in the navigation bar. 
-
     

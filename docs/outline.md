@@ -34,7 +34,7 @@ author: fiona
 
 ### [How to Create a New Exhibit](./exhbit-creation.md)
 
-### [Floorplan Map]
+### [Floorplan Map](./Floorplan-map.md)
 
 ### [Webmap](./web-map-docs.md)
 - Adding items to the Map

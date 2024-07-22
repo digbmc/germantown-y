@@ -1,7 +1,7 @@
 # TimelineJS
 ## Table of Contents
 - [Getting Started](#getting-started)
-- [Working with the Spreadsheet](#working-with-the-spreadsheet-additional customization tips)
+- [Working with the Spreadsheet](#working-with-the-spreadsheet: additional-customization-tips)
     - [Dates](#dates)
     - [Text Styling](#text-styling)
     - [Adding Images](#adding-images)

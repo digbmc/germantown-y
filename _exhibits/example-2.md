@@ -19,5 +19,3 @@ Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to 
 {% include feature/image.html objectid="objects/arc_001.jpg" width="8" caption="YWCA Building front perspective" %}
 
 {% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
-
-

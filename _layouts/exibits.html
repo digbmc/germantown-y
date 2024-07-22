@@ -2,70 +2,29 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-
-<div class="row gx-4">
-  
+<div class = "row">
+<div class="col-lg-12">
+  <h2>Exhibits</h2>
   {% include index/description.html %}
 </div>
+</div>
 <div class = "row gx-4">
-  
+    {% for exhibit in site.exhibits %}
       <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
         <div class="card">
-          <img class="card-img-top" src="assets\pics\loteria.png" alt="Lottery Game in Spanish> 
+          <div class = "rounded-top img-card">
+          {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
+          </div>
+        
+          <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
           <div class="card-body">
-            <h5 class="card-title">First exhibit</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="{{ site.baseurl }}/exhibit-1.html" class="btn btn-primary">example 1</a>
+            <h2 class="card-title">{{ exhibit.title }}</h2>
+            <p class="card-text"> {{ exhibit.description }} </p>
+            <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-danger text-light ">Read</a>
           </div>
         </div>
       </div>
-      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card">
-        <div class="card">
-          <img class="card-img-top" src="assets\pics\oz.png" alt="Children's Books">
-          <div class="card-body">
-            <h5 class="card-title">Second exhibit</h5>
-            <p class="card-text">Children's books we've read as a kid.</p>
-            <a href="{{ site.baseurl }}/example-2.html" class="btn btn-primary">example 2</a>
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card">
-        <div class="card">
-          <img class="card-img-top" src="assets\pics\collage.png" alt=""Birds">
-          <div class="card-body">
-            <h5 class="card-title">Third Exhibit</h5>
-            <p class="card-text">Collection of birds and poetry.</p>
-            <a href="{{ site.baseurl }}/example-3.html" class="btn btn-primary">example 3</a>
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card">
-        <div class="card">
-          <img class="card-img-top" src="assets\pics\fireworks.png" alt="Fourth of July">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card">
-        <div class="card">
-          <img class="card-img-top" src="assets\pics\cherry.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card">
-        <div class="card">
-          <img class="card-img-top" src="assets\pics\hotel.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-      </div>
+    {% endfor %}
+      
 </div>
+

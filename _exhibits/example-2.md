@@ -1,40 +1,23 @@
 ---
-title: The YWCA organization
 
-author:
-description: History of the YWCA organization
-
+title: The YWCA Organization
+author: 
+description: History of the YWCA Organization
 img: arc_001
 ---
 
-This is another example exhibit page :)
+**Note:** content is placeholder content for reference! It will be replaced.
 
-&emsp;&emsp;&emsp;<img src="assets\pics\pool_opening_1915.png" alt="Pool Flyer" width="400px"/>
-* Flyer of the pool opening
+Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-<br>
+{% include feature/image.html objectid="objects/arc_002.jpg" width="75" caption="an image" %}
 
-<img src="assets\pics\swimming.jpg" alt="Swimming " width="500px" align:left/>
-* Swimming at the YWCA
+{% include feature/image.html objectid="objects/arc_008.jpg" width="55" %}
 
-<br>
+<p>This showcases the Mural on the side of the building of significant women. 
+Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
 
-<img src="assets\pics\plan.jpg" alt="Pool Plan" width="500px" position="center"/>
-* Plan of Pool
+{% include feature/image.html objectid="objects/arc_001.jpg" width="8" caption="YWCA Building front perspective" %}
 
-<br>
+{% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
 
-&emsp;&emsp;&emsp;<img src="assets\pics\pool_opening_1915.png" alt="Pool Flyer" width="400px"/>
-* Flyer of the pool opening
-
-<br>
-
-<img src="assets\pics\swimming.jpg" alt="Swimming " width="500px" align:left/>
-* Swimming at the YWCA
-
-<br>
-
-<img src="assets\pics\plan.jpg" alt="Pool Plan" width="500px" position="center"/>
-* Plan of Pool
-
-<br>

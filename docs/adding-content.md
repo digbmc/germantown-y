@@ -1,4 +1,5 @@
 
+
 # Adding Content
 Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide). Every md file has two parts: the front matter and the content.
 
@@ -92,4 +93,5 @@ On the site, it looks like this:
 
 
  For more information, checkout the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
+
 

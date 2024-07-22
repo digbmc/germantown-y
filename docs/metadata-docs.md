@@ -25,11 +25,11 @@ title: Metadata Documentation
     - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
 
 ## Useful Vacabulary
-Repository: This is where code and files are stored. Our website is stored in GitHub repository!
+Repository: This is where code and files are stored. Our website repository is hosted on GitHub!
 
-Metadata: Metadata shows information about data such as title, creator, date. Basically, data about data.
+Metadata: Information about data such as title, creator, date. Basically, data about data.
 
-CSV file: CSV stands for comma seperated values. These files makes it easier for code to read in and parse data due to the file's formatting.
+CSV file: CSV stands for comma separated values. These files makes it easier for code to read in and parse data due to the file's formatting.
 
 ## How to Add Items to the Archive
 Before we begin, it is important to note that these instructions are based on the [CollectionBuilder's GitHub walkthrough](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/). You may refer to the CollectionBuilder Github website for additional information.
@@ -38,10 +38,10 @@ There are two components to the archive:
 - Metadata (which is a CSV file created from a spreadsheet application)
 - Content/media (e.g images, videos, audios)
 
-You will need to upload the Metadata spreadsheet and the media files inorder to add to the archive.
+You will need to upload the Metadata spreadsheet and the media files in order to add to the archive.
 
 ### Uploading the Metadata
-After finishing adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
+After adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
 
 ### Uploading the Media Files
 Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidlines [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
@@ -100,7 +100,7 @@ More information: about this field. Like the Object ID, the filename should be a
 
 **Creator**: Insert the author of the file here in this format LastName, FirstName. Then, use semicolons to separate multiple authors.
 
-If commas are messing with the formatting, you will need to wait until you upload the CSV file onto the repository (which is a later step). There you can replace the semicolons in the uplaoded CSV file with commas. Then you must add quotation marks to the beginning of the value and end so that the whole value gets read in as one string.
+If commas are messing with the formatting, you will need to wait until you upload the CSV file onto the repository (which is a later step). There you can replace the semicolons in the uploaded CSV file with commas. Then you must add quotation marks to the beginning of the value and end so that the whole value gets read in as one string.
 
 The input should look something like this:
 >“WHYY photographer, Bob, John, Sugar, Cain”
@@ -203,7 +203,7 @@ The metadata schema we are using is [Dublin Core](https://www.dublincore.org/res
 Generally, the title, description, identifier, and rights information (if available) for each item are crucial. However, some content may be difficult to find information on and might need to be left blank. If unsure whether a specific field can be left blank, ask a specialist, as elements such as rights information need to be known and approved before making it publicly available online. Though some elements are not mandatory, providing more information, such as date, creator, and subject, is beneficial.
 
 ### Display of the Metadata
-The order of the the metadata and metadata in the preview of an item can be arranged in any way. However, for consistency with other sites, our website follows the order mentioned in this [LibGuide](https://libguides.csudh.edu/DigitalCollectionProjectBestPractices/metadata). The guide shows the order that most sites follow for metadata. For the metadata in the preview, we chose to include the title, creator, date, and source identifier. The preview and order of the metadata may be changed in the future if deemed useful.
+The order of the metadata and metadata in the preview of an item can be arranged in any way. However, for consistency with other sites, our website follows the order mentioned in this [LibGuide](https://libguides.csudh.edu/DigitalCollectionProjectBestPractices/metadata). The guide shows the order that most sites follow for metadata. For the metadata in the preview, we chose to include the title, creator, date, and source identifier. The preview and order of the metadata may be changed in the future if deemed useful.
 
 ### Additional Resources
 Additional resources can be found at the following links.
@@ -314,7 +314,7 @@ format,Format,,true,Format
 ```
 Just like germantown-y-metadata.csv, the first line indicates the order and corresponding field values are put in.
 
-config-browse.csv is used in these tutuorials:
+config-browse.csv is used in these tutorials:
   - [How to Add a Sort Category](#how-to-add-a-sort-category)
   - [Making a Field Searchable](#making-a-field-searchable)
   - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)

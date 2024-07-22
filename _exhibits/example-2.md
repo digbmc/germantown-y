@@ -1,40 +1,23 @@
 ---
-title: The YWCA organization
 
+title: The YWCA Organization
 author: 
-description: History of the YWCA organization
-
+description: History of the YWCA Organization
 img: arc_001
 ---
 
-This is another example exhibit page :)
+**Note:** content is placeholder content for reference! It will be replaced.
 
-&emsp;&emsp;&emsp;<img src="assets\pics\apple.png" alt="A is for Apple picture" width="400px"/>
-* Introduces the letters A to Z while following the fortunes of an apple pie
+Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-<br>
+{% include feature/image.html objectid="objects/arc_002.jpg" width="75" caption="an image" %}
 
-<img src="assets\pics\pigs.png" alt="Three little pigs" width="500px" align:left/>
-* story of the three little pigs
+{% include feature/image.html objectid="objects/arc_008.jpg" width="55" %}
 
-<br>
+<p>This showcases the Mural on the side of the building of significant women. 
+Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
 
-<img src="assets\pics\humpty.png" alt="Humpty Dumpty sat on a wall" width="500px" position="center"/>
-* story of an egg
+{% include feature/image.html objectid="objects/arc_001.jpg" width="8" caption="YWCA Building front perspective" %}
 
-<br>
+{% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\peter.jpg" alt="Peter Rabbit" width="150px"/>
-* Peter Rabbit reminds me of vegetable gardens
-
-<br>
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\arthur.jpg" alt="King Aurthor" width="150px"/>
-* story of a king
-
-<br>
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<img src="assets\pics\jack.jpg" alt="Jack and the beanstalk" width="150px"/>
-* story of a boy
-
-<br>

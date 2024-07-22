@@ -13,19 +13,26 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
+
+    
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
     <style>
         body {
             padding: 0;
             margin: 0;
         }
 
+
         html,
         body,
         #map {
+
             height: 100%;
             width: 100%;
         }
 
+        /*description box styling*/
         .descrip {
             width: 250px;
             font-size: 16px;
@@ -54,6 +61,7 @@ permalink: /webmap-js.html
             height: 100px;
             z-index: 1000;
         }
+
 
         .other {
             filter: hue-rotate(0deg);
@@ -89,14 +97,10 @@ permalink: /webmap-js.html
             filter: hue-rotate(144deg) saturate(1.5);
             /*red*/
         }
+
         /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
-    .leaflet-tile {
-            background-color: transparent !important;
-        }
-    /*setting background to transparent for all layers*/
+
     </style>
-
-
 </head>
 
 <body>
@@ -107,73 +111,113 @@ permalink: /webmap-js.html
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
-    <script src="{{ '/assets/lib/leaflet/leaflet.markercluster.js' | relative_url }}"></script>
-    <script>
 
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+    <script>
         // Initialize the map
         var map = L.map("map", {
             center: [40.03030807351389, -75.1761523600391],
             zoom: 15
         });
-        //base map
-        const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+
+        //Base layer
+        var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
-        
-        //custom icon for the main YWCA building
+
+        // Custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
             iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
             iconSize: [36, 60], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
-            popupAnchor: [3.75, -59]
+            popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
         });
-        // Error handling replacing missing tiles with fallback tiles
-        function handleTileError(event) {
-            var errorTile = event.tile;
-            var xhr = new XMLHttpRequest();
-            xhr.open('HEAD', errorTile.src, false);
-            xhr.send();
 
-            if (xhr.status === 404) {
-                console.error('Tile not found (404):', errorTile.src);
-            } else {
-            console.error('Tile error:', errorTile.src);
+        //extending leaflet's tile layer class to create custom tiles  with transparent background instead of grey
+        L.TileLayer.Canvas = L.TileLayer.extend({
+            createTile: function (coords, done) {
+                var tile = document.createElement('canvas');
+                var size = this.getTileSize();
+                tile.width = size.x;
+                tile.height = size.y;
+
+                // Get the 2D rendering context for the canvas
+                var context = tile.getContext('2d');
+                // Disable image smoothing for pixel-perfect rendering
+                context.imageSmoothingEnabled = false;
+
+                var tileImage = new Image();
+                tileImage.crossOrigin = '';
+                tileImage.onload = function () {
+                    context.drawImage(tileImage, 0, 0, size.x, size.y);
+                    var imageData = context.getImageData(0, 0, size.x, size.y);
+                    var data = imageData.data;
+
+                    // Replace grey background (RGB: 0x44, 0x44, 0x44) with transparency
+                    for (var i = 0; i < data.length; i += 4) {
+                        if (data[i] === 0x44 && data[i + 1] === 0x44 && data[i + 2] === 0x44) {
+                            data[i + 3] = 0; // Set alpha channel to 0
+                        } else if (data[i] > 0x44 - 10 && data[i] < 0x44 + 10 &&
+                            data[i + 1] > 0x44 - 10 && data[i + 1] < 0x44 + 10 &&
+                            data[i + 2] > 0x44 - 10 && data[i + 2] < 0x44 + 10) {
+                            data[i + 3] = 0;
+                        }
+                    }
+
+                    context.putImageData(imageData, 0, 0);
+                    done(null, tile);
+                };
+
+                tileImage.onerror = function () {
+                    done(new Error('Tile load error'));
+                };
+
+                tileImage.src = this.getTileUrl(coords);
+                return tile;
             }
-        }
+        });
 
-        // Function to create a tile layer with common settings
+        L.tileLayer.canvas = function (url, options) {
+            return new L.TileLayer.Canvas(url, options);
+        };
+        //helper function for creating layers with tiles and attribution
         function createTileLayer(url, attribution) {
-            return L.tileLayer(url, {
+            return L.tileLayer.canvas(url, {
                 attribution: attribution,
-                opacity: 1,
                 maxZoom: 20
-            }).on('tileerror', handleTileError);
+            });
         }
 
         // Create historical layers using the function
-        var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
-        var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; The Athenaeum of Philadelphia');
+        var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/11922">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1942. [Land Use / Zoning Maps]. </a>');
+        var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia| Source: <a href="https://libwww.freelibrary.org/digital/item/46178">G.M. Hopkins, C.E. - Publisher.  City Atlas of Philadelphia, 25th Ward, 1875, Map Index. [Property Atlases/Maps]</a>');
+        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://historicmapworks.com/Atlas/US/6900/">G. W. Bromley & Co. (1895). Philadelphia 1895 [Atlas]. Historic Map Works. </a>');
+        var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://www.historicmapworks.com/Atlas/US/7153/">G. W. Bromley & Co. (1910). Philadelphia 1910 [Atlas]. Historic Map Works. </a>');
+        var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/12030">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1962, Index and Legend. [Land Use / Zoning Maps].</a>');
 
-        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        /*var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });
+        });*/ //may be against google ToS
 
-        var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            maxZoom: 20,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });
+
+        /* var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+             maxZoom: 20,
+             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+         });*/ //may be against google ToS
+
 
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
+            maxZoom: 19
         });
+
         var data = {{ site.data.building-info | jsonify }};
+
 
         //console.log("Data loaded:", data);
 
@@ -202,7 +246,7 @@ permalink: /webmap-js.html
                         }
                     };
 
-                    console.log("Processing feature:", geojsonFeature);
+                    //console.log("Processing feature:", geojsonFeature); //to check that each feature loaded
 
                     var subject = feature.subject.toLowerCase();
                     if (subject === 'other') {
@@ -229,7 +273,7 @@ permalink: /webmap-js.html
             });
         }
 
-        // Define layers with popup content
+        //Create geoJSON layer 
         function createLayer(className, customIcon) {
             return L.geoJSON(null, {
                 pointToLayer: function (feature, latlng) {
@@ -265,7 +309,6 @@ permalink: /webmap-js.html
 
 
         //Add layers to map
-        unknownLayer;
         otherLayer.addTo(map);
         landmarkLayer.addTo(map);
         industryLayer.addTo(map);
@@ -299,7 +342,7 @@ permalink: /webmap-js.html
             div.innerHTML =
                 '<h1>How to Use</h1><hr>' +
                 '<p>Click on a marker to learn more about a building.</p>' +
-                '<p>Switch between base maps and categories of buildings you want displayed using the side bar in the top right corner.</p>'; 
+                '<p>Switch between base maps and categories of buildings you want displayed using the side bar in the top right corner.</p>';
             return div;
         };
 
@@ -330,14 +373,15 @@ permalink: /webmap-js.html
 
         // Layer controls
         var baseLayers = {
+            "Esri Street Map": esriStreetMapLayer,
+            //"Google Streets": googleStreets,
             "1875 GMHopkins Atlas": gmHopkinsAtlas1875,
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
             "1942 Philadelphia Land Use": landUse1942,
             "1962 Philadelphia Land Use": landUse1962,
-            "Google Streets": googleStreets,
-            "Google Satellite": googleSat,
-            "Esri Street Map": esriStreetMapLayer
+            //"Google Satellite": googleSat
+
         };
         var overlayLayers = {
             "YWCA": ywcaLayer,
@@ -347,11 +391,19 @@ permalink: /webmap-js.html
             "Industries": industryLayer,
             "Landmarks": landmarkLayer,
             "Others": otherLayer,
-            "Unknown": unknownLayer,
+            "Unknown<hr>": unknownLayer,
             "Germantown Boundary Line": germantownBoundary
         };
 
-        L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+        // Create the layer control and add the layers
+        var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+        // Open the layer control on page load
+        layersControl.expand();
+        // Add fullscreen control to the map
+        map.addControl(new L.Control.Fullscreen());
+
 
         // Call function to add data to layers
         addDataToLayers(data);

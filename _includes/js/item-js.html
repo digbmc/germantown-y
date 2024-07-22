@@ -2,7 +2,7 @@
 {% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
 {% assign icons = cb_icons.icons %}{%- endif -%}
 {%- assign fields = site.data.config-metadata -%}
-{%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
+{%- assign stubs = site.data.config-nav | join: ';' -%}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <script>
 /* add item data */

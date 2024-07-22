@@ -294,7 +294,7 @@ title,Title,
 description,Description,
 creator,Creator,
 ```
-Now the description will appear before the creator in the metadata.
+Now, the description will appear before the creator in the metadata.
 
 ### About config-browse.csv
 **Config-browse.csv** is a CSV file that holds the formatting and settings for the display of the metadata in the preview. The file is located in the repository inside the _data folder. 

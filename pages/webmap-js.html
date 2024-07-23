@@ -225,16 +225,16 @@ permalink: /webmap-js.html
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
             data.forEach(function (feature) {
-                if (feature.subject && feature.latitude && feature.longitude &&
-                    feature.subject.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
+                if (feature.category && feature.latitude && feature.longitude &&
+                    feature.category.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
 
                     var geojsonFeature = {
                         type: "Feature",
                         properties: {
                             title: feature.title || "Unknown",
-                            location: feature.location || "Unknown",
+                            address: feature.address || "Unknown",
                             date: feature.date || "Unknown",
-                            subject: feature.subject,
+                            category: feature.category,
                             description: feature.description || "No description provided",
                             relevance: feature.relevance || "Unknown",
                             image: feature.image || "",
@@ -246,32 +246,32 @@ permalink: /webmap-js.html
                         }
                     };
 
-                    var subject = feature.subject.toLowerCase();
+                    var category = feature.category.toLowerCase();
 
-                    if (subject === 'other') {
+                    if (category === 'other') {
                         otherLayer.addData(geojsonFeature);
-                    } else if (subject === 'branch') {
+                    } else if (category === 'branch') {
                         branchLayer.addData(geojsonFeature);
-                    } else if (subject === 'industry') {
+                    } else if (category === 'industry') {
                         industryLayer.addData(geojsonFeature);
-                    } else if (subject === 'landmark') {
+                    } else if (category === 'landmark') {
                         landmarkLayer.addData(geojsonFeature);
-                    } else if (subject === 'lodgings') {
+                    } else if (category === 'lodgings') {
                         lodgingsLayer.addData(geojsonFeature);
-                    } else if (subject === 'main-building') {
+                    } else if (category === 'main-building') {
                         mainBuildingLayer.addData(geojsonFeature);
-                    } else if (subject === 'ywca') {
+                    } else if (category === 'ywca') {
                         ywcaLayer.addData(geojsonFeature);
                     } else {
-                        if (!dynamicLayers[subject]) {
-                            dynamicLayers[subject] = createLayer(subject);
-                            dynamicLayers[subject].addTo(map);
-                            layersControl.addOverlay(dynamicLayers[subject], subject.charAt(0).toUpperCase() + subject.slice(1));
+                        if (!dynamicLayers[category]) {
+                            dynamicLayers[category] = createLayer(category);
+                            dynamicLayers[category].addTo(map);
+                            layersControl.addOverlay(dynamicLayers[category], category.charAt(0).toUpperCase() + category.slice(1));
                         }
-                        dynamicLayers[subject].addData(geojsonFeature);
+                        dynamicLayers[category].addData(geojsonFeature);
                     }
                 } else {
-                    console.warn("Feature missing required fields (subject, latitude, or longitude):", feature);
+                    console.warn("Feature missing required fields (category, latitude, or longitude):", feature);
                 }
             });
         }
@@ -302,7 +302,7 @@ permalink: /webmap-js.html
                             }
                         }
 
-                        popupContent += '<p><b>Address:</b> ' + feature.properties.location + '</p>' +
+                        popupContent += '<p><b>Address:</b> ' + feature.properties.address + '</p>' +
                             '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
                             '<p><b>Year:</b> ' + feature.properties.date + '</p>';
 

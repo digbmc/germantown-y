@@ -5,15 +5,7 @@ This website is design to share the history of the Germantown YWCA building...[w
 ## Documentation 
 Interested in working on the site? Check out our documentation.
 
-
-## [Metadata](docs\metadata-docs.md)
-- Setting up the Metadata for Editing
-- How to Add Items to the Archive
-  - Adding Metadata
-  - Uploading the Content Files
-- Metadata of the Archive
-
-## [Getting Started](docs\background-info.md)
+## [Getting Started](./docs/background-info.md)
 - Creating a new branch
 - Merging work with site
 - Tools for guidance
@@ -23,59 +15,41 @@ Interested in working on the site? Check out our documentation.
     - using VS Code
     - using terminal
 
-## Collection Builder
+## [Collection Builder](./docs/cb-docs.md)
 
-## Adding Content
-- Text
-- Visuals
-- Includes 
-    - Image Options
-    - PDF Options
-    - Video Options
-    - Audio Options
-    - Include Bootstrap Features
+## [Adding Images/Objects to Archives](./docs/metadata-docs.md)
+- Setting up the Metadata (data within date) for Editing
 
-## Carousel
+## [Adding Content](./docs/adding-content.md)
+## [Carousel](./docs/carousel.md)
 - Random Carousel
 - Custom Carousel
 
-## Changing Colors
-- Overall Theme
-- Getting Specific
-- Accessibility
-
-## History 
+## [History](./docs/history.md)
 - Understanding Markdown
-- Table of Contents 
-- Getting More Technical
 - Navigation Bar
-    - Navigation Flow
-- Adding Content
-    - YAML Front Matter
 
-### Timeline
+### [Timeline](./docs/timeline.md)
 - Spreadsheet Tips
-    - Dates
-    - Text Styling
-    - Images
-    - Background Color
-- Organization
-- After working with the spreadsheet
-- Changing Font
+- Understanding Grouping
 - Embedding Timeline
 
-### How to Create a New Exhibit
+### [How to Create a New Exhibit](./docs/exhbit-creation.md)
 
-## Webmap
-- Table of Contents
-- Prereqiusites
-- Adding items to Map
-    - Using Github
-    - Using VS code
+### [Floorplan Map](./docs/Floorplan-map.md)
+
+### [Webmap](./docs/web-map-docs.md)
+- Adding items to the Map
 - Advanced Customization
     - Modify Icon Colors
     - Modify Layers Dispalyed Upon Page Load
     - Add Additional Base Layers
     - Modify Pop Ups
     - Modify Categories
-       
+
+## [Changing Colors](./docs/changing-colors.md)
+- Overall Theme
+- Getting Specific
+- Accessibility
+
+## [Advanced Documentation for More Information](./docs/advanced.md)

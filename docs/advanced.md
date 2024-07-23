@@ -134,3 +134,31 @@ From line 13 of the leaflet layout:
 This one is a little more complicated. Because the leaflet layout is used on both the Germantown map and the building floor plans, the iframe has to work for multiple pages. The liquid `{{ site.baseurl }}/{{page.title | downcase }}-js.html` takes the page title ("Map" for example), reads it as lowercase, and looks for the -js.html at the end.
 
 If you look at pages, you'll see there are html files (webmap-js, building-js). Those are the leaflet files embedded here. If you need to change the leaflet files for webmap or building update the -js files. 
+
+## Editing The Navigation Bar 
+To create a nav bar to change the items listed in a nav bar, edit the config-nav.csv file 
+```
+display_name,stub,dropdown_parent
+Home,/,
+History,/history.html,
+Exibits,,
+Exhibit page,/exibits.html,Exibits
+Example 1,/exhibit-1,Exibits
+Example 2,/example-2.html,Exibits
+Map,/map.html,
+Building,/building.html,
+Archive,/archive.html,
+Data,/data.html,
+Credits,,
+About,/credits.html,Credits
+People,/people,Credits
+```
+- The format shows as follws: parent,/ url, children
+- Parent: Indicates the menu item or section under which the current page is nested.
+- URL: The path used to access the page.
+- Children: Indicates pages or sections that are nested under the current page. 
+So then there is the structure of parent, url, children
+
+### Navigation Flow 
+- From the Home page (/), you can navigate to History (/history.html).
+- The Credits menu item includes two subpages: About (/credits.html) and People (/people). These will appear as a dropdown menu when you click on credits in the navigation bar. 

@@ -5,7 +5,7 @@ This website is design to share the history of the Germantown YWCA building...[w
 ## Documentation 
 Interested in working on the site? Check out our documentation.
 
-## [Getting Started](./background-info.md)
+## [Getting Started](./docs/background-info.md)
 - Creating a new branch
 - Merging work with site
 - Tools for guidance
@@ -15,30 +15,30 @@ Interested in working on the site? Check out our documentation.
     - using VS Code
     - using terminal
 
-## [Collection Builder](./cb-docs.md)
+## [Collection Builder](./docs/cb-docs.md)
 
-## [Adding Images/Objects to Archives](./metadata-docs.md)
+## [Adding Images/Objects to Archives](./docs/metadata-docs.md)
 - Setting up the Metadata (data within date) for Editing
 
-## [Adding Content](./adding-content.md)
-## [Carousel](./carousel.md)
+## [Adding Content](./docs/adding-content.md)
+## [Carousel](./docs/carousel.md)
 - Random Carousel
 - Custom Carousel
 
-## [History](./history.md)
+## [History](./docs/history.md)
 - Understanding Markdown
 - Navigation Bar
 
-### [Timeline](./timeline.md)
+### [Timeline](./docs/timeline.md)
 - Spreadsheet Tips
 - Understanding Grouping
 - Embedding Timeline
 
-### [How to Create a New Exhibit](./exhbit-creation.md)
+### [How to Create a New Exhibit](./docs/exhbit-creation.md)
 
-### [Floorplan Map](./Floorplan-map.md)
+### [Floorplan Map](./docs/Floorplan-map.md)
 
-### [Webmap](./web-map-docs.md)
+### [Webmap](./docs/web-map-docs.md)
 - Adding items to the Map
 - Advanced Customization
     - Modify Icon Colors
@@ -47,9 +47,9 @@ Interested in working on the site? Check out our documentation.
     - Modify Pop Ups
     - Modify Categories
 
-## [Changing Colors](./changing-colors.md)
+## [Changing Colors](./docs/changing-colors.md)
 - Overall Theme
 - Getting Specific
 - Accessibility
 
-## [Advanced Documentation for More Information](./advanced.md)
+## [Advanced Documentation for More Information](./docs/advanced.md)

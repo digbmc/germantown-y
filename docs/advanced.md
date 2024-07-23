@@ -135,7 +135,7 @@ This one is a little more complicated. Because the leaflet layout is used on bot
 
 If you look at pages, you'll see there are html files (webmap-js, building-js). Those are the leaflet files embedded here. If you need to change the leaflet files for webmap or building update the -js files. 
 
-# Editing The Navigation Bar 
+## Editing The Navigation Bar 
 To create a nav bar to change the items listed in a nav bar, edit the config-nav.csv file 
 ```
 display_name,stub,dropdown_parent
@@ -159,6 +159,6 @@ People,/people,Credits
 - Children: Indicates pages or sections that are nested under the current page. 
 So then there is the structure of parent, url, children
 
-## Navigation Flow 
+### Navigation Flow 
 - From the Home page (/), you can navigate to History (/history.html).
 - The Credits menu item includes two subpages: About (/credits.html) and People (/people). These will appear as a dropdown menu when you click on credits in the navigation bar. 

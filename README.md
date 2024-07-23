@@ -20,7 +20,7 @@ Interested in working on the site? Check out our documentation.
 ## [Adding Images/Objects to Archives](./metadata-docs.md)
 - Setting up the Metadata (data within date) for Editing
 
-# [Adding Content](./adding-content.md)
+## [Adding Content](./adding-content.md)
 ## [Carousel](./carousel.md)
 - Random Carousel
 - Custom Carousel

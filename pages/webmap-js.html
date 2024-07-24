@@ -13,8 +13,6 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- leaflet stylesheet -->
-
-
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
         rel='stylesheet' />
 
@@ -63,6 +61,13 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
 
+        .leaflet-control-layers-list .color-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            border-radius: 10px;
+        }
 
         .other {
             filter: hue-rotate(0deg);
@@ -97,6 +102,10 @@ permalink: /webmap-js.html
         .ywca {
             filter: hue-rotate(144deg) saturate(1.5);
             /*red*/
+        }
+
+        .custom-color {
+            filter: var(--hue-rotate);
         }
 
         /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
@@ -136,6 +145,30 @@ permalink: /webmap-js.html
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
         });
+
+        //create custom icon for dynamically added layers
+        function createCustomIcon(color) {
+            return L.icon({
+                iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+                shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                tooltipAnchor: [16, -28],
+                shadowSize: [41, 41]
+            });
+        }
+        const usedColors = [];
+
+        function getUniqueColor() {
+            let hue;
+            do {
+                hue = Math.floor(Math.random() * 360);
+            } while (usedColors.includes(hue));
+            usedColors.push(hue);
+            return `hue-rotate(${hue}deg)`;
+        }
+
         var dynamicLayers = {};
 
         //extending leaflet's tile layer class to create custom tiles  with transparent background instead of grey
@@ -200,18 +233,6 @@ permalink: /webmap-js.html
         var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://www.historicmapworks.com/Atlas/US/7153/">G. W. Bromley & Co. (1910). Philadelphia 1910 [Atlas]. Historic Map Works. </a>');
         var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/12030">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1962, Index and Legend. [Land Use / Zoning Maps].</a>');
 
-        /*var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            maxZoom: 20,
-            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-        });*/ //may be against google ToS
-
-
-        /* var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-             maxZoom: 20,
-             subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-         });*/ //may be against google ToS
-
-
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
             maxZoom: 19
@@ -219,86 +240,93 @@ permalink: /webmap-js.html
 
         var data = {{ site.data.building-info | jsonify }};
 
-
-        //console.log("Data loaded:", data);
-
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
-            data.forEach(function (feature) {
-                if (feature.category && feature.latitude && feature.longitude &&
-                    feature.category.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
+    data.forEach(function (feature) {
+        if (feature.category && feature.latitude && feature.longitude &&
+            feature.category.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
 
-                    var geojsonFeature = {
-                        type: "Feature",
-                        properties: {
-                            title: feature.title || "Unknown",
-                            address: feature.address || "Unknown",
-                            date: feature.date || "Unknown",
-                            category: feature.category,
-                            description: feature.description || "No description provided",
-                            relevance: feature.relevance || "Unknown",
-                            image: feature.image || "",
-                            sources: feature.sources || "Unknown"
-                        },
-                        geometry: {
-                            type: "Point",
-                            coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
-                        }
-                    };
-
-                    var category = feature.category.toLowerCase();
-
-                    if (category === 'other') {
-                        otherLayer.addData(geojsonFeature);
-                    } else if (category === 'branch') {
-                        branchLayer.addData(geojsonFeature);
-                    } else if (category === 'industry') {
-                        industryLayer.addData(geojsonFeature);
-                    } else if (category === 'landmark') {
-                        landmarkLayer.addData(geojsonFeature);
-                    } else if (category === 'lodgings') {
-                        lodgingsLayer.addData(geojsonFeature);
-                    } else if (category === 'main-building') {
-                        mainBuildingLayer.addData(geojsonFeature);
-                    } else if (category === 'ywca') {
-                        ywcaLayer.addData(geojsonFeature);
-                    } else {
-                        if (!dynamicLayers[category]) {
-                            dynamicLayers[category] = createLayer(category);
-                            dynamicLayers[category].addTo(map);
-                            layersControl.addOverlay(dynamicLayers[category], category.charAt(0).toUpperCase() + category.slice(1));
-                        }
-                        dynamicLayers[category].addData(geojsonFeature);
-                    }
-                } else {
-                    console.warn("Feature missing required fields (category, latitude, or longitude):", feature);
+            var geojsonFeature = {
+                type: "Feature",
+                properties: {
+                    title: feature.title || "Unknown",
+                    address: feature.address || "Unknown",
+                    date: feature.date || "Unknown",
+                    category: feature.category,
+                    description: feature.description || "No description provided",
+                    relevance: feature.relevance || "Unknown",
+                    image: feature.image || "",
+                    imageAttribution: feature.imageAttribution || "",
+                    altText: feature.imageAltText || "",
+                    sources: feature.sources || "Unknown"
+                },
+                geometry: {
+                    type: "Point",
+                    coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
                 }
-            });
+            };
+
+            var category = feature.category.toLowerCase();
+
+            if (category === 'other') {
+                otherLayer.addData(geojsonFeature);
+            } else if (category === 'branch') {
+                branchLayer.addData(geojsonFeature);
+            } else if (category === 'industry') {
+                industryLayer.addData(geojsonFeature);
+            } else if (category === 'landmark') {
+                landmarkLayer.addData(geojsonFeature);
+            } else if (category === 'lodgings') {
+                lodgingsLayer.addData(geojsonFeature);
+            } else if (category === 'main-building') {
+                mainBuildingLayer.addData(geojsonFeature);
+            } else if (category === 'ywca') {
+                ywcaLayer.addData(geojsonFeature);
+            } else {
+                if (!dynamicLayers[category]) {
+                    var customColor = getUniqueColor();
+                    dynamicLayers[category] = createLayer(`dynamic-${customColor}`, createCustomIcon(customColor));
+                    dynamicLayers[category].addTo(map);
+                    
+                    // Add color indicator for the new category
+                    var colorIndicator = `<span class="color-indicator" style="filter: ${customColor}; background-color: black;"></span>${category.charAt(0).toUpperCase() + category.slice(1)}`;
+                    layersControl.addOverlay(dynamicLayers[category], colorIndicator);
+                }
+                dynamicLayers[category].addData(geojsonFeature);
+            }
+        } else {
+            console.warn("Feature missing required fields (category, latitude, or longitude):", feature);
         }
-
-
+    });
+}
 
         //Create geoJSON layer 
         function createLayer(className, customIcon) {
             return L.geoJSON(null, {
                 pointToLayer: function (feature, latlng) {
-                    var marker = L.marker(latlng, { icon: customIcon || L.Icon.Default.prototype });
-                    marker.on('add', function () {
-                        marker._icon.classList.add(className);
-                    });
+                    var markerOptions = { icon: customIcon || new L.Icon.Default() };
+                    var marker = L.marker(latlng, markerOptions);
+                    if (className.startsWith('dynamic-')) {
+                        const color = className.replace('dynamic-', '');
+                        marker.on('add', function () {
+                            marker._icon.style.filter = color;
+                        });
+                    } else {
+                        marker.on('add', function () {
+                            marker._icon.classList.add(className);
+                        });
+                    }
                     return marker;
                 },
                 onEachFeature: function (feature, layer) {
                     if (feature.properties) {
                         var popupContent = '<h3>' + feature.properties.title + '</h3>';
 
-                        // Check if there is an image property and add it under the title
                         if (feature.properties.image && feature.properties.image.trim() !== "") {
-                            popupContent += '<img src="' + feature.properties.image + '" alt="' + feature.properties.title + '" style="max-width:100%;height:auto;margin-top:10px;">';
+                            popupContent += '<img src="' + feature.properties.image + '" alt="' + feature.properties.altText + '" style="max-width:100%;height:auto;">';
 
-                            // Check if there is an image attribution and add it
                             if (feature.properties.imageAttribution && feature.properties.imageAttribution.trim() !== "") {
-                                popupContent += '<p style="font-size: smaller; color: gray;">Image: ' + feature.properties.imageAttribution + '</p>';
+                                popupContent += '<p style="font-size: smaller; color: gray;">Image by: ' + feature.properties.imageAttribution + '</p>';
                             }
                         }
 
@@ -391,30 +419,27 @@ permalink: /webmap-js.html
         // Layer controls
         var baseLayers = {
             "Esri Street Map": esriStreetMapLayer,
-            //"Google Streets": googleStreets,
-            "1875 GMHopkins Atlas": gmHopkinsAtlas1875,
+            //"1875 GMHopkins Atlas": gmHopkinsAtlas1875,
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
             "1942 Philadelphia Land Use": landUse1942,
-            "1962 Philadelphia Land Use": landUse1962,
-            //"Google Satellite": googleSat
+            "1962 Philadelphia Land Use": landUse1962
+
 
         };
         var overlayLayers = {
-            "YWCA": ywcaLayer,
-            "Main Buildings": mainBuildingLayer,
-            "YWCA Branches": branchLayer,
-            "YWCA Provided Lodgings": lodgingsLayer,
-            "Industries": industryLayer,
-            "Landmarks": landmarkLayer,
-            "Others": otherLayer,
-            "Germantown Boundary Line": germantownBoundary
+            '<span class="color-indicator" style="background-color: rgb(255, 63, 73);"></span>YWCA': ywcaLayer,
+            '<span class="color-indicator" style="background-color: rgb(0, 154, 108);"></span>Main Buildings': mainBuildingLayer,
+            '<span class="color-indicator" style="background-color: rgb(166, 96, 213);"></span>YWCA Branches': branchLayer,
+            '<span class="color-indicator" style="background-color: rgb(42, 126, 0);"></span>YWCA Provided Lodgings': lodgingsLayer,
+            '<span class="color-indicator" style="background-color: rgb(229, 86, 136);"></span>Industries': industryLayer,
+            '<span class="color-indicator" style="background-color: rgb(168, 89, 15);"></span>Landmarks': landmarkLayer,
+            '<span class="color-indicator" style="background-color: rgb(35, 108, 190);"></span>Others': otherLayer,
+            'Germantown Boundary Line': germantownBoundary
         };
-
 
         // Create the layer control and add the layers
         var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);
-
 
         // Open the layer control on page load
         layersControl.expand();

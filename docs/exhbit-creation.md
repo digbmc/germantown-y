@@ -29,3 +29,6 @@ The information is also useful for the card preview.
 This uses the same front matter, with the difference being that author is swapped for description. The description variable is where a short description/preview of your page should be put. 
 
 After you've set all that up, start adding content below the front matter (link on how to do that??)
+
+# How to Add Images the Exhibits Page 
+Go to [Adding Content](./adding-content.md) where you will find a subsection called 'images.' From there, it will guide you on how to add images like the one displayed currently. 

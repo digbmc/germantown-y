@@ -123,7 +123,7 @@ Within the ```<style>  </style>``` tags, each category has its own color for mar
            /*purple*/
        }
 ```
-This applies styling to the default icon image in the leaflet library. Since this is an image, image styling CSS can be applied to modify how these icons appear.
+This applies styling to the default icon image in the leaflet library. Since this is an image, [image styling CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images) can be applied to modify how these icons appear.
 
 ### Modify Layers Displayed Upon Page Load
 If a layer has .addTo(map), it will be displayed on page load:

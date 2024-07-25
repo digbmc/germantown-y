@@ -7,3 +7,4 @@ permalink: archive.html
 ---
 
 ## Browse Items
+Welcome to the archive! You can explore the contents in the archive using the search function, the sort buttons, or by using the [data page](data.html)

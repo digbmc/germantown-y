@@ -1,10 +1,10 @@
 
 
 # Adding Content
-Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide). Every md file has two parts: the front matter and the content.
+Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide) <!-- Which link are you using here? --> . Every md file <!--clarify briefly what an md file is --> has two parts: the front matter and the content.
 
 
-[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure.
+[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure. <-- briefly describe what YAML is here -->
 
 
 Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page
@@ -17,7 +17,7 @@ permalink: browse.html
 ```
 
 
-Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title.
+Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title. <!-- I would clarify here that the permalink is a link that can be internal or external. clarify what the different between those two are. Also clarify when you say make it short and simple that you're talking about if it's an internal link and that you mean the file name --> 
 
 
 ## Creating pages

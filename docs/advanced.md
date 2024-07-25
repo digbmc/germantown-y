@@ -71,6 +71,35 @@ Jekyll also uses [liquid](https://jekyllrb.com/docs/liquid/), a templating langu
 - .gitignored: This is where files and folders for git to ignore are listed.  It keeps version control neater and helps the site run faster.
 - 404.html: This is what loads if a link isn't found. If you want to change that page, change the 404 file. 
 
+# The Navigation Bar 
+To create a nav bar to change the items listed in a nav bar, edit the config-nav.csv file 
+```
+display_name,stub,dropdown_parent
+Home,/,
+History,/history.html,
+Exibits,,
+Exhibit page,/exibits.html,Exibits
+Example 1,/exhibit-1,Exibits
+Example 2,/example-2.html,Exibits
+Map,/map.html,
+Building,/building.html,
+Archive,/archive.html,
+Data,/data.html,
+Credits,,
+About,/credits.html,Credits
+People,/people,Credits
+```
+- The format shows as follws: parent,/ url, children
+- Parent: Indicates the menu item or section under which the current page is nested.
+- URL: The path used to access the page.
+- Children: Indicates pages or sections that are nested under the current page. 
+So then there is the structure of parent, url, children
+
+## Navigation Flow 
+- From the Home page (/), you can navigate to History (/history.html).
+- The Credits menu item includes two subpages: About (/credits.html) and People (/people). These will appear as a dropdown menu when you click on credits in the navigation bar. 
+    
+
 ### Guide to layouts
 Layouts are HTML files that format how pages look. They're HTML files. They include divs and includes that format the content of a page. All of them have a liquid `{{ content }}` element somewhere, that takes the markdown from a page and places it in the layout.  
 

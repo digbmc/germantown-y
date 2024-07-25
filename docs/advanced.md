@@ -107,16 +107,15 @@ Layouts are HTML files that format how pages look. They're HTML files. They incl
 #### Site Layouts: 
 - browse: formatting for the archive section. 
 - cloud: layout for word cloud of metadata subjects. Not currently used.
-- data: layout for the data page (add data page to site!!)
-- default: Outer shell layout: Default serves as a layout for other layouts 
+- data: layout for the data page
+- default: most basic page layout - a layout for other layouts (think Russian nesting dolls)
 - exhibit-page: the layout for exhibit posts 
 - exhibits.html: layout for the exhibits landing page
 - history: layout for history page
 - home-infographic: layout for the home page
 - item.html: generates the item pages in the archive  
 - leaflet: for pages with leaflet maps (building and map)
-- map: also deletable
-- page-full-width.html + page-narrow: page layouts, with varying widths (not used on the site)
+- page-full-width.html + page-narrow: page layouts, with varying widths. Not currently used
 - page: basic page layout
 - search.html: layout for a site search bar (not featured on the site)
 - timeline: layout for a timeline of the metadata. Not currently used. 
@@ -128,7 +127,7 @@ To get into the style of the site, you'll need a solid understanding of [CSS](ht
 Styling files can be found in the _sass folder. _bass.scss, _custom.scss, _pages.scss, _them-colors.scss, and _theme-utilities.scss are CollectionBuilder's stylesheets. _custom.scss overrides the other stylesheets, and it's where the styling for this site is. 
 
 
-### color changes 
+### Color Changes 
 
 A big component of site styling is color. 
 
@@ -146,11 +145,11 @@ However, the theme doesn't change everything. Sometimes you'll need specific cla
 
 When it comes to making colors accessible, contrast is key. [WebAIM's contrast checker](https://webaim.org/resources/contrastchecker/) is a good tool to use. 
 
-### iframes 
+### iFrames 
 
 iFrames are used across the site for embedding leaflet maps and the timeline 
 
-#### timeline 
+#### Timeline 
 The timeline on the history page is generated with an iframe. On the history layout, line 6: 
 
 ```<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1cY9J-XJMjoE2zsrY107C04k1gsyULF2o-maf0OON_-w&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>```

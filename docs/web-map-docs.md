@@ -9,8 +9,8 @@
 - [Advanced Customization](#advanced-customization)
 
 ## Prerequisites
-This tutorial assumes that you are working on your own branch. If you have not set this up, go to the [Getting Started](https://github.com/digbmc/germantown-y/docs/background-info.md) page and follow the instructions before beginning this tutorial.
-<!-- "Getting Started" link does not work -->
+This tutorial assumes that you are working on your own branch. If you have not set this up, go to the [Getting Started]([https://github.com/digbmc/germantown-y/docs/background-info.md](https://github.com/digbmc/germantown-y/blob/main/docs/background-info.md)) page and follow the instructions before beginning this tutorial.
+<!-- "Getting Started" link working now -->
 You will also need a Google account to add more content to the map:
 -   [Create a Google Account](https://support.google.com/accounts/answer/27441?hl=en). You will need to use Google Sheets to edit a file.
 ## Useful Vocab:

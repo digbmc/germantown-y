@@ -85,7 +85,7 @@ Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github
 ### Footnotes:
 With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents.
 
-A good example of footnotes can be found on [this exhbit example page](_exhibits/example-1.md)
+A good example of footnotes can be found on [this exhbit example page](_exhibits/example-1.md). Here's an exerpt from the page: 
 
 
 ```

@@ -13,10 +13,10 @@ This documentation explains how to add content to the floorplan map on the Germa
 
 ## The CSV
 
-To add or edit rooms on the floorplan map, use the `floorplans.csv` file located in the `_data` folder of the project's repository. Each row in the CSV file represents a room on the floor plans. Fill in the following information for each room:
+To add or edit rooms on the floorplan map, use the `floorplans.csv` file located in the `_data` folder of the project's repository. Each row in the CSV file represents a room on the floor plans. Fill in the following information for each room: <!-- Where is this file? I can't find floorplans.csv, I would maybe recommend linking to the file to make it easier for people to find. --> 
 
 - **name**: Title of the room. This appears in the info sidebar's header.
-- **coordinates**: Coordinates of the room. See [Finding Room Coordinates](#Finding-Room-Coordinates) for detailed instructions.
+- **coordinates**: Coordinates of the room. See [Finding Room Coordinates](#Finding-Room-Coordinates) for detailed instructions. <!-- Where is this file? or are you referencing "Finding the Coordinates for a room" below, make it more clear -->
 - **floor**: The floor where the room is located. Use L0 for the basement, L1 for the first floor, L2 for the second floor, etc.
 - **description**: Information about the room.
 - **imageurl**: URL for the image in the sidebar.

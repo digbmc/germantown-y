@@ -1,9 +1,11 @@
 # Getting started 
 
+<!-- any and all images here should have alt text attached to them -->
+
 
 Before you start working on the Germantown-YWCA website, here are the major tools used on the site. 
 - [Git](https://git-scm.com/) is an open-source version control tool that allows people to work with different versions of a project together.  
-- [GitHub](https://github.com/) is a platform for hosting projects that use Git. The Germantown YWCA Website is hosted and deployed using Github
+- [GitHub](https://github.com/) is a platform for hosting projects that use Git. The Germantown YWCA Website is hosted and deployed using Github.
 - [Jekyll](https://jekyllrb.com/) is a static site generator that works with GitHub to generate the site. 
 - [CollectionBuilder](https://collectionbuilder.github.io/) is a Jekyll-based framework for hosting digital archives. It's used as the template for this site. 
 
@@ -15,10 +17,10 @@ Technical terms can be a lot. Here are some that you may see in our documentatio
 
 - Open-source: Software that is free to use, with accessible source code. 
 - Hosting: Where files are stored. A text file on your computer is hosted locally. A Google doc is hosted on Google's servers. The Germantown YWCA site is hosted on GitHub
-- Deployment: To make a site live. GitHub has a feature called [GitHub Pages] that turns a repository into a website.
-- Static-Site: A static site is one with pages that don't change depending on the user (get a better definition). Static sites load faster and are more environmentally friendly than dynamic sites (define dynamic!)
-- Remote: The repository stored on GitHub
-- Local: The repository stored on your computer
+- Deployment: To make a site live. GitHub has a feature called [GitHub Pages] that turns a repository into a website. <!-- link to Githubs pages description -->
+- Static-Site: A static site is one with pages that don't change depending on the user (get a better definition). Static sites load faster and are more environmentally friendly than dynamic sites (define dynamic!) <!-- yes to both of these notes -->
+- Remote: The repository stored on GitHub <!-- I would define this a little more -->
+- Local: The repository stored on your computer <!-- I would define this a little more -->
 
 
 Before you start working on the Germantown YWCA, you'll need a GitHub account. To do that [Sign up for a Github Account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
@@ -27,7 +29,7 @@ Once you have an account, open up the [germantown-y repository](https://github.c
 
 ![Screenshot of germantown-y repository](screenshots/getting-started-1.png)
 
-GitHub works with a version control system called Git, which allows for project collaboration. Instead of everyone working on the same version of the project, Git has a feature called branching (link?). Branches are copies of the main branch you can work on, without affecting the main branch/site. 
+GitHub works with a version control system called Git, which allows for project collaboration. Instead of everyone working on the same version of the project, Git has a feature called branching (link?). Branches are copies of the main branch you can work on, without affecting the main branch/site.  <!-- Would add that link in -->
 
 ## Create a new branch 
 

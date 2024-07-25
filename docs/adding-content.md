@@ -17,7 +17,9 @@ permalink: browse.html
 ```
 
 
-Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title.
+Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. 
+
+A permalink can be internal (ex. _posts/exhibits.md) or external (ex. https://digbmc.github.io/germantown-y/exhibits.html). The permalink in the front matter should be internal (title + .html) because Jekyll generates the external permalink. Keep it short, and similar to the title of the file. 
 
 
 ## Creating pages

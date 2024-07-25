@@ -2,12 +2,17 @@
 title: documentation
 author: Fiona
 --- 
-# Table of Contents
+
+<!-- I would mention the above YAML is an example of how one would credit a page where they want to include a title and author --> 
+
+<!-- Also - this is great content but you may want to change the name of the actual file from history.md to two seperate markdown files -  reading-markdown.md and table-of-contents.md . You will have two short articles but it will make it easier to navigate -->
+
+# Table of Contents <!-- these anchors are not working -->
 - [Undestanding Markdown Files](#understanding-markdown-files)
 - [Understanding the Table of Contents](#table-of-contents-1)
     - [Getting More Technical](#getting-more-technical)
 
-# Understanding Markdown Files
+# Understanding Markdown Files <!-- I would add something like "The below example is taken from the history.html YAML" -->
 ```
 ---
 title: history

@@ -9,14 +9,14 @@
 - [Advanced Customization](#advanced-customization)
 
 ## Prerequisites
-This tutorial assumes that you are working on your own branch. If you have not done so, go to the [Getting Started](https://github.com/digbmc/germantown-y/docs/background-info.md) page and follow the instructions before beginning this tutorial.
-
+This tutorial assumes that you are working on your own branch. If you have not set this up, go to the [Getting Started](https://github.com/digbmc/germantown-y/docs/background-info.md) page and follow the instructions before beginning this tutorial.
+<!-- "Getting Started" link does not work -->
 You will also need a Google account to add more content to the map:
 -   [Create a Google Account](https://support.google.com/accounts/answer/27441?hl=en). You will need to use Google Sheets to edit a file.
 ## Useful Vocab:
-- CSV: Comma separated file, this can also be viewed as a table.
-- Markers: The exact point of a location on the map
-- Pop-ups: The dialogue boxes that appear when you click on a marker
+- CSV: Comma Separated Values file; this can also be viewed as a table.
+- Markers: The exact point of a location on the map.
+- Pop-ups: The dialogue boxes that appear when you click on a marker.
 - Text editor: A tool that lets you work directly with plain text files.
 ## Adding Items to the Map:
 The map uses data from the file: building-info.csv located in the _data folder. You can modify, remove or add items to the map by modifying this file. This tutorial will demonstrate how to achieve this:
@@ -52,7 +52,7 @@ The sheet has the following columns: id, title, creator, date, description, cate
 - **Address:** The address of the location. If you want a pop-up to show on the marker, this field is necessary.
 - **Latitude:** The latitude coordinate of the item. For a marker to show up on the map, this is necessary.
 - **Longitude:** The longitude coordinate of the item. For a marker to show up on the map, this is necessary.
-- **Source:** The source of the information in the description field
+- **Source:** The source of the information in the description field.
 - **Image:** The path to the image file you want to display on the pop-up.
 - **Image Attribution:** The source of the image.
 - **Image Alt Text:** Alternative text for the image should be put here. Alt text is used by screen readers to describe the image and helps make the website more accessible.
@@ -86,7 +86,7 @@ This is what the file looks like in a text editor:
 
 ![building-info csv](screenshots/webmap-docs-11.png)
 
-In the file, select all: ```CMD + A``` on your keyboard on a Mac or ```CTRL + A``` on a Windows computer. Copy: ```CMD + C``` on Mac or ```CTRL + C``` on Windows or right-clicking on your mouse and choosing copy. In a browser, go to the repository. Navigate to your branch, and go to: _data/building-info.csv. Click the edit button in the top right corner. Select all, and paste: ```CMD + V``` on Mac or ```CTRL + V``` on Windows or right-clicking and choosing paste from the drop-down. Click on commit changes once you are ready to display your changes, add your commit message in the pop-up, and choose which branch you want to commit your changes to.
+In the file, select all: `CMD + A` on your keyboard on a Mac or `CTRL + A` on a Windows computer. Copy: `CMD + C` on Mac or `CTRL + C` on Windows or right-clicking on your mouse and choosing copy. In a browser, go to the repository. Navigate to your branch, and go to: _data/building-info.csv. Click the edit button in the top right corner. Select all, and paste: `CMD + V` on Mac or `CTRL + V` on Windows or right-clicking and choosing paste from the drop-down. Click on commit changes once you are ready to display your changes, add your commit message in the pop-up, and choose which branch you want to commit your changes to.
 
 [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for your edits to show on the website.
 
@@ -116,7 +116,7 @@ JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 Go to pages/webmap-js.html in the repository to make additional changes to the map.
 
 ### Modify Icon Colors:
-Within the ```<style>  </style>``` tags, each category has its own color for marker icon. Change the value in hue rotate to change these colors in the styling class for each category, for example for the branches category:
+Within the `<style>  </style>` tags, each category has its own color for marker icon. Change the value in hue rotate to change these colors in the styling class for each category, for example for the branches category:
 ```
 .branch {
            filter: hue-rotate(60deg);
@@ -128,7 +128,6 @@ This applies styling to the default icon image in the leaflet library. Since thi
 ### Modify Layers Displayed Upon Page Load
 If a layer has .addTo(map), it will be displayed on page load:
 ```
-
 var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
            attribution: '&copy; OpenStreetMap contributors',
            Max zoom: 19

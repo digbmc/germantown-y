@@ -19,6 +19,7 @@ permalink: /building-js.html
         html, body {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         #map {
             width: 100%;
@@ -27,15 +28,15 @@ permalink: /building-js.html
         .imgclass {
             display: block;
             max-width: 100%;
-            max-height: 400px;
-            width: auto;
+            width: 100%;
             height: auto;
             margin: 0 auto;
         }
         .img-container {
             text-align: center;
-            max-width: 400px;
-            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
         }
         .leaflet-sidebar {
             width: 30%;
@@ -79,6 +80,12 @@ permalink: /building-js.html
                 width: 0;
             }
         }
+        .sidebar-content h1 {
+            font-size: 1.5em;
+        }
+        .sidebar-content p {
+            font-size: 1.2em; /* Increased font size for description */
+        }
     </style>
 </head>
 <body>
@@ -108,98 +115,83 @@ permalink: /building-js.html
     };
 
     // Define image URLs for each floor
-    var L0footprint = '{{site.baseurl}}/objects/basement.png';
-    var L1footprint = '{{site.baseurl}}/objects/floor1.png';
-    var L2footprint = '{{site.baseurl}}/objects/floor2.png';
-    var L3footprint = '{{site.baseurl}}/objects/floor3.png';
-    var L4footprint = '{{site.baseurl}}/objects/floor4.png';
+    var footprints = {
+        'L0': '{{site.baseurl}}/objects/basement.png',
+        'L1': '{{site.baseurl}}/objects/floor1.png',
+        'L2': '{{site.baseurl}}/objects/floor2.png',
+        'L3': '{{site.baseurl}}/objects/floor3.png',
+        'L4': '{{site.baseurl}}/objects/floor4.png'
+    };
 
     // Create image overlays with correct bounds
     var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
 
-    var L0 = L.imageOverlay(L0footprint, bounds);
-    var L1 = L.imageOverlay(L1footprint, bounds);
-    var L2 = L.imageOverlay(L2footprint, bounds);
-    var L3 = L.imageOverlay(L3footprint, bounds);
-    var L4 = L.imageOverlay(L4footprint, bounds);
+    var floorGroups = {};
+    Object.keys(footprints).forEach(function(floor) {
+        var overlay = L.imageOverlay(footprints[floor], bounds);
+        floorGroups[floor] = L.layerGroup([overlay]);
+    });
 
-    // Create a feature group for each layer
-    var L0Group = L.layerGroup([L0]);
-    var L1Group = L.layerGroup([L1]);
-    var L2Group = L.layerGroup([L2]);
-    var L3Group = L.layerGroup([L3]);
-    var L4Group = L.layerGroup([L4]);
+    var currentHighlighted;
 
     // Function to create and add polygons to the map
     function addPolygon(name, coordinates, layerGroup, description, imageUrl, imageTitle) {
-        var polygon = L.polygon(coordinates, polygonStyle).on('mouseover', function (e) {
-            polygon.setStyle(highlight);
-        }).on('mouseout', function (e) {
-            polygon.setStyle(polygonStyle);
-        }).on('click', function (e) {
-            sidebar.show();
-            sidebar.setContent(
-                '<h1>' + name + '</h1>' +
-                '<div class="img-container">' +
-                '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
-                '</div>' +
-                '<p style="font-size: smaller;">' + imageTitle + '</p>' +
-                '<p>' + description + '</p>'
-            );
-        });
+        var polygon = L.polygon(coordinates, polygonStyle)
+            .on('mouseover', function (e) {
+                polygon.setStyle(highlight);
+            })
+            .on('mouseout', function (e) {
+                if (polygon !== currentHighlighted) {
+                    polygon.setStyle(polygonStyle);
+                }
+            })
+            .on('click', function (e) {
+                if (currentHighlighted) {
+                    currentHighlighted.setStyle(polygonStyle);
+                }
+                currentHighlighted = polygon;
+                polygon.setStyle(highlight);
+
+                console.log(imageUrl); // Debugging line
+
+                sidebar.show();
+                sidebar.setContent(
+                    '<div class="sidebar-content">' +
+                    '<h1>' + name + '</h1>' +
+                    '<div class="img-container">' +
+                    '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                    '</div>' +
+                    '<p style="font-size: smaller;">' + imageTitle + '</p>' +
+                    '<p>' + description + '</p>' +
+                    '</div>'
+                );
+            });
         layerGroup.addLayer(polygon);
     }
 
-    {% assign L0 = "" %}
-    {% assign L1 = "" %}
-    {% assign L2 = "" %}
-    {% assign L3 = "" %}
-    {% assign L4 = "" %}
-
-    {% for row in site.data.floorplans %}
-        {% if row.floor == 'L0' %}
-            {% capture L0 %}
-                {{ L0 }}
-                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L0Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
-            {% endcapture %}
-        {% elsif row.floor == 'L1' %}
-            {% capture L1 %}
-                {{ L1 }}
-                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L1Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
-            {% endcapture %}
-        {% elsif row.floor == 'L2' %}
-            {% capture L2 %}
-                {{ L2 }}
-                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L2Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
-            {% endcapture %}
-        {% elsif row.floor == 'L3' %}
-            {% capture L3 %}
-                {{ L3 }}
-                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L3Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
-            {% endcapture %}
-        {% elsif row.floor == 'L4' %}
-            {% capture L4 %}
-                {{ L4 }}
-                addPolygon('{{ row.name }}', {{ row.coordinates | replace: '"', '' }}, L4Group, '{{ row.description }}', '{{ site.baseurl }}/{{ row.imageurl }}', '{{ row.imagetitle }}');
-            {% endcapture %}
-        {% endif %}
+    // Add polygons for each floor
+    {% assign floors = site.data.floorplans | group_by: "floor" %}
+    {% for floor in floors %}
+        {% assign floorGroup = floor.name | append: 'Group' %}
+        {% capture groupLayer %}
+            {% assign floorData = floor.items %}
+            {% for row in floorData %}
+                {% assign metadata = site.data.germantown-y-metadata | where: "objectid", row.objectid | first %}
+                addPolygon(
+                    '{{ row.name }}', 
+                    {{ row.coordinates | replace: '\"', '\\"' | replace: "\'", "\\\'" | replace: '"', '\"' | replace: "'", "\'" }}, 
+                    floorGroups['{{ floor.name }}'], 
+                    '{{ row.description | escape }}', 
+                    '{{ metadata.object_location | relative_url }}', 
+                    '{{ metadata.title | escape }}'
+                );
+            {% endfor %}
+        {% endcapture %}
+        {{ groupLayer }}
     {% endfor %}
 
-    // Add polygons to layers
-    {{ L0 }}
-    {{ L1 }}
-    {{ L2 }}
-    {{ L3 }}
-    {{ L4 }}
-
     // Base layers for the maps
-    var baseLayers = {
-        "Basement Floor": L0Group,
-        "First Floor": L1Group,
-        "Second Floor": L2Group,
-        "Third Floor": L3Group,
-        "Fourth Floor": L4Group
-    };
+    var baseLayers = floorGroups;
 
     // Initialize the map
     var map = L.map('map', {
@@ -207,7 +199,7 @@ permalink: /building-js.html
         zoom: -1,
         crs: L.CRS.Simple,
         fullscreenControl: true,
-        layers: [L0Group], // Set the initial layer to basement floor
+        layers: [floorGroups['L0']], // Set the initial layer to basement floor
         maxBounds: bounds,
         maxBoundsViscosity: 1.0,
         zoomSnap: 0.1,

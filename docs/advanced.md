@@ -11,11 +11,11 @@ If you want to work with the code for the site, you'll need some additional soft
 
 - [Download VSCode](https://code.visualstudio.com/). VS code is a text editor that will allow you to edit and create files for the site. You can use another text editor, but VS Code is useful because of the active support and extensive library of add-ons. 
 
-- [Install Git](https://collectionbuilder.github.io/cb-docs/docs/software/git/) Git is the version control that Github runs on, and you'll use it to push and pull changes to the site from your local repository, along with branch creation. (rewrite?)
+- [Install Git](https://collectionbuilder.github.io/cb-docs/docs/software/git/) Git is the version control that Github runs on, and you'll use it to push and pull changes to the site from your local repository, along with [branch creation](https://docs.github.com/en/get-started/start-your-journey/hello-world) Pushing changes means uploading the changes made in your local repository to the remote one. Pulling changes means downloading changes in the remote repository to your local one.
 
-- [Install Ruby](https://collectionbuilder.github.io/cb-docs/docs/software/ruby/). You need to have Ruby downloaded to run
+- [Install Ruby](https://collectionbuilder.github.io/cb-docs/docs/software/ruby/). You need to have Ruby downloaded to run. Make sure to download the latest version of Ruby (As of July 2024, that is version 3.3.4).
 
-- [Install ImageMagick and Ghostscript](https://collectionbuilder.github.io/cb-docs/docs/software/optional/). This software processes files in the archive
+- [Install ImageMagick and Ghostscript](https://collectionbuilder.github.io/cb-docs/docs/software/optional/). This software processes files refrenced in the [metadata](metadata-docs.md)
 
 
 ### Creating your local repository
@@ -23,18 +23,19 @@ If you want to work with the code for the site, you'll need some additional soft
 To create your local repository, we're going to be using VS Code's interface. You can also do this in the terminal. Copying an existing repository to your local computer is called cloning. For more detailed instructions, check [Collection Builder's guide on cloning a repository](https://collectionbuilder.github.io/cb-docs/docs/repository/clone/)
 
 #### Using VS Code
-1. Open an empty VS Code Window 
+1. [Open an empty VS Code Window](https://code.visualstudio.com/Docs) (File -> New Window) 
 2. Under the start menu, select "Clone Git Repository" 
 3. In the bar asking for a link to the remote repository, copy and paste this link: https://github.com/digbmc/germantown-y.git
 4. When prompted, decide where you want to store your repository. 
 
+This is a very basic run through of VS Code. Look into the [VS Code Documentation](https://code.visualstudio.com/Docs) for more information. The documenation gets into a lot of useful features like [spilt screen editing](https://code.visualstudio.com/docs/getstarted/userinterface#_side-by-side-editing) and [breadcrumbs](https://code.visualstudio.com/docs/getstarted/userinterface#_breadcrumbs).
 #### Using terminal
 1. Open your terminal (Git Bash on Windows/Linux, Terminal for Mac) 
 - if you're interested in learning more about the terminal check out this [guide to the command line](https://digbmc.github.io/command-line/)
 
 2. Navigate to the folder you want to keep your local copy of the repository. For example, if you wanted to store the site in your documents folder you would enter in the terminal `cd Documents`. The command `cd` stands for "change directory" 
 3. Once in that folder, input ``` git clone https://github.com/digbmc/germantown-y.git ``` and press enter
-4. Now in documents, there will be a folder titled germantown-y. Open it in VSCode 
+4. Now in documents, there will be a folder titled germantown-y. Open it in VSCode (File -> Open Folder...)
 
 ### Working with Git in terminal
 You can either use [VS Code source control](https://code.visualstudio.com/docs/sourcecontrol/overview) or the terminal to work with Git in VS Code. While VS Code's source control can seem easier at first, terminal can sometimes be quicker and easier. This is a [cheat sheet for git commands](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -53,14 +54,14 @@ Jekyll is a static site generator. It takes the files in the repository and turn
 Jekyll also uses [liquid](https://jekyllrb.com/docs/liquid/), a templating languge. Liquid is easy to find - every line of liquid code has {} around it. You don't need to know it in detail, but it's good to recognize, and if you need to know something about it, there's a good chance it will be in the documentation.  
 
 ### Folders 
-- _data: Data is where the metadata is stored, along with other CSV files that configure elements of the site. 
-- _exhibits: Where exhibit posts are stored
-- _includes: this is where all the [features] are stored. The subfolders are cb (information about collection builder), features, head (for including information in the `<head>` element), index (features used mostly on the homepage), and js (features that use [Javascript](https://www.w3schools.com/js/default.asp))
+- _data: data is where the metadata is stored, along with other CSV files that configure elements of the site. 
+- _exhibits: where exhibit posts are stored
+- _includes: this is where all the [features](../_includes/feature/) are stored. The subfolders are cb (information about collection builder), features, head (for including information in the `<head>` element), index (features used mostly on the homepage), and js (features that use [Javascript](https://www.w3schools.com/js/default.asp))
 - _layouts: if you look in the pages folder, most of the markdown files have a layout variable in the front matter. layouts take the content in the markdown file and format them according to different files in this folder
 - _sass: this folder contains the [SASS](https://sass-lang.com/documentation/) used for the site's styling
-- _site: this is the folder that stores the output of pages generated by Jekyll. You'll notice that the folder is less bright than the others, that's because _site is in the [.gitignore](https://git-scm.com/docs/gitignore) file. When the site builds, it doesn't track that folder. 
-- .github/workflows (look into this one...)
-- .jekyll-cache (also look into this one)
+- _site: this is the folder that stores the output of pages generated by Jekyll. You'll notice that the folder is grey instead of white: that's because _site is in the [.gitignore](https://git-scm.com/docs/gitignore) file. When the site builds, it doesn't track that folder. 
+- .github/workflows: this folder contains a .yml file github needs to deploy the site.
+- .jekyll-cache: this folder contains files that help Jekyll build the site
 - assets: various assets used to generate the site. Subfolders are css, data, img, js, lib, and pics. Aside from adding pictures that aren't in the metadata (ex. project work), there shouldn't be a reason to work in this folder.
 - docs: where documentation is stored, along with a folder for the screenshots used
 - objects: archive items that are stored locally 
@@ -101,7 +102,7 @@ So then there is the structure of parent, url, children
     
 
 ### Guide to layouts
-Layouts are HTML files that format how pages look. They're HTML files. They include divs and includes that format the content of a page. All of them have a liquid `{{ content }}` element somewhere, that takes the markdown from a page and places it in the layout.  
+Layouts are HTML files that format how pages look. They're HTML files. They include [divs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) and [includes](https://jekyllrb.com/docs/includes/) that format the content of a page. All of them have a liquid `{{ content }}` element somewhere, that takes the markdown from a page and places it in the layout.  
 
 #### Site Layouts: 
 - browse: formatting for the archive section. 

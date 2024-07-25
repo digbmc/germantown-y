@@ -1,10 +1,10 @@
 
 
 # Adding Content
-Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide). Every md file has two parts: the front matter and the content.
+Most of the content being added to the site will be files for the [exhibits page](../pages/exhibits.md). Every md (shorthand for Markdown) file has two parts: the front matter and the content.
 
 
-[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure.
+[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. YAML is a configuration langugage. It's an essential part of Jekyll's structure.
 
 
 Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page

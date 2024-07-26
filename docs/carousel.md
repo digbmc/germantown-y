@@ -18,8 +18,11 @@ Other parameters that can be included (from the Collection Builder documentation
  - "btn-color" - a bootstrap color class to theme the buttons. Can be any bootstrap template color (e.g. info, success) or outline (e.g. outline-info, outline-success), including colors created in config-theme-colors. (optional, default "primary") [Bootstrap's list of colors](https://getbootstrap.com/docs/5.0/customize/color/) have been changed. The names of the colors are the same, but the color values are different. The colors are listed in [config-theme-colors](../_data/config-theme-colors.csv)
  - "btn-text" - the label used in the link btn to view the carousel item (optional, default "View Item")
 
+ For example, If I wanted to include a carousel with a custom header, and light blue buttons, I would add these parameters: 
+ `{% include index/carousel-random.html title="Sample Items" height="300" header="new items" btn-color="secondary" %}`
+
 ## Custom Carousel
-The Carousel on the building page is a custom one. The images are specified in a list of object IDs featured in the front matter of building.md: 
+The Carousel on the building page is a custom one. The images are specified in a list of object IDs featured in the front matter of [building.md](../pages/building.md): 
 
 ``` 
 gallery:

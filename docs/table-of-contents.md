@@ -1,3 +1,8 @@
+---
+title: Table of Contents
+author: Fiona
+--- 
+
 # Table of Contents
 
 The History page has a table of contents that builds automatically from the Markdown on that page. The bullet points are generated from heading levels. Because the table of contents lists subheadings, the highest level of header in the text content of each page should be level two (h2 in HTML, ## in Markdown). Those headers will be in a bulleted list. Lower headers will be nested as bullet points within bullet points.

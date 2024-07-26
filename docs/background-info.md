@@ -15,10 +15,11 @@ Technical terms can be a lot. Here are some that you may see in our documentatio
 
 - Open-source: Software that is free to use, with accessible source code. 
 - Hosting: Where files are stored. A text file on your computer is hosted locally. A Google doc is hosted on Google's servers. The Germantown YWCA site is hosted on GitHub
-- Deployment: To make a site live. GitHub has a feature called [GitHub Pages] that turns a repository into a website.
-- Static-Site: A static site is one with pages that don't change depending on the user (get a better definition). Static sites load faster and are more environmentally friendly than dynamic sites (define dynamic!)
-- Remote: The repository stored on GitHub
-- Local: The repository stored on your computer
+- Deployment: To make a site live. GitHub has a feature called [GitHub Pages](https://pages.github.com/) that turns a repository into a website.
+- Static-Site: [A static site](https://en.wikipedia.org/wiki/Static_web_page) is built with HTML, CSS, and JavaScript. The Germantown-Y site is a static site. It regenerates when the site is updated. This is different from dynamic sites, which generate in browser every time someone opens the page. Static sites load faster and are move [environmentally friendly](https://www.websitecarbon.com/how-does-it-work/) than dynamic sites.
+- Remote: The repository stored on GitHub. A repository is a folder where all the code for a project is stored. Multiple people work on the remote repository. 
+
+- Local: The repository stored on your computer. Communicates with the remote repository using Git. A project can have multiple local repositories (for example, one for each team member), and all of those repositories collaborate with the remote repository. 
 
 
 Before you start working on the Germantown YWCA, you'll need a GitHub account. To do that [Sign up for a Github Account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
@@ -27,7 +28,7 @@ Once you have an account, open up the [germantown-y repository](https://github.c
 
 ![Screenshot of germantown-y repository](screenshots/getting-started-1.png)
 
-GitHub works with a version control system called Git, which allows for project collaboration. Instead of everyone working on the same version of the project, Git has a feature called branching (link?). Branches are copies of the main branch you can work on, without affecting the main branch/site. 
+GitHub works with a version control system called Git, which allows for project collaboration. Instead of everyone working on the same version of the project, Git has a feature called [branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging). Branches are copies of the main branch you can work on, without affecting the main branch/site. 
 
 ## Create a new branch 
 

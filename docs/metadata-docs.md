@@ -29,7 +29,7 @@ Repository: This is where code and files are stored. Our website repository is h
 
 Metadata: Information about data such as title, creator, date. Basically, data about data.
 
-CSV file: CSV stands for comma separated values. These files makes it easier for code to read in and parse data due to the file's formatting.
+CSV file: CSV stands for comma separated values. These files makes it easier for code to read in and parse data due to the file's formatting. <!--What does "read in" mean in this case?-->
 
 ## How to Add Items to the Archive
 Before we begin, it is important to note that these instructions are based on the [CollectionBuilder's GitHub walkthrough](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/). You may refer to the CollectionBuilder Github website for additional information.
@@ -44,7 +44,7 @@ You will need to upload the Metadata spreadsheet and the media files in order to
 After adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
 
 ### Uploading the Media Files
-Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidlines [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
+Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidelines click [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
 
 Additionally, ensure that the filenames in the spreadsheet match the filenames of the files you are uploading. (e.g arc_001.jpg)
 
@@ -79,7 +79,7 @@ As we can see here the fields are ```Objectid,filename,title,creator,date``` and
 
 Now, to make changes download the CSV file onto your device. If you have a spreadsheet application downloaded on your device you can click on the file within your folder and start editing from there. 
 
-If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata.
+If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata. <!-- For this one, I would include image(s) and circle the points you're discussing. -->
 
 ## Formatting the Metadata
 First, follow steps on [*Setting up the Metadata for Editing*](#setting-up-the-metadata-for-editing) if you do not already have a metadata spreadsheet. After obtaining a metadata spreadsheet, you are now ready to edit the metadata.
@@ -94,9 +94,9 @@ More information: about this field. Object Identifiers are used for identifying 
 
 **Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be an image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the image address URL if the image came from an online collection.
 
-More information: about this field. Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
+More information: about this field. <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
 
-**Title**: The title will be used to name the content/object you are adding to the archive on the website.
+**Title**: The title will be used to name the content/object you are adding to the archive on the website. <!-- -->
 
 **Creator**: Insert the author of the file here in this format LastName, FirstName. Then, use semicolons to separate multiple authors.
 

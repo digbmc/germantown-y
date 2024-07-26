@@ -1,14 +1,9 @@
 
 # Adding Content
-
-<!-- I would add a short intro here before jumping into the content. What I mean by that is - explain that this section will be covering how to add content into the repository. Content in this case covers text, images, pdfs, ect. -->
-
-<!--  ## Content Structure -->
-
-Most of the content being added to the site will be files for the exhibit page. (link to the exhbits guide) <!-- Which link are you using here? --> . Every md file <!--clarify briefly what an md file is. I know you do below but I'd just add something like md = [markup language](https://www.britannica.com/technology/markup-language) --> has two parts: the front matter and the content.
+Most of the content being added to the site will be files for the [exhibits page](../pages/exhibits.md). Every md (shorthand for [Markdown](https://www.markdownguide.org/getting-started/)) file has two parts: the front matter and the content.
 
 
-[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. Front matter is an essential part of Jekyll's structure. <-- briefly describe what YAML is here -->
+[Front matter](https://jekyllrb.com/docs/front-matter/) is a list of [YAML](https://yaml.org/)variables at the top of a page. YAML is a configuration langugage. It's an essential part of Jekyll's structure.
 
 
 Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page
@@ -21,7 +16,9 @@ permalink: browse.html
 ```
 
 
-Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page. Keep it short, and similar to the title. <!-- I would clarify here that the permalink is a link that can be internal or external. clarify what the different between what those two are. Also clarify when you say make it short and simple that you're talking about if it's an internal link and that you mean the file name --> 
+Title and layout are essential variables for new pages. If you don't need any special styling, the layout should be default. Checkout the [advanced documentation](advanced.md) for more on layouts. Permalink is also important here: it's specifies the location of the page.
+
+A permalink can be internal (ex. _posts/exhibits.md) or external (ex. https://digbmc.github.io/germantown-y/exhibits.html). The permalink in the front matter should be internal (title + .html) because Jekyll generates the external permalink. Keep it short, and similar to the title of the file.
 
 
 ## Creating pages
@@ -29,14 +26,17 @@ If you need to create a page outside of Exhibits, create a markdown file in the 
 
 <!--  add a line like "To learn how to edit pages inside of exhibits, check out [exhibit creation documentation](exhbit-creation.md). " -->
 
+For example, if I wanted to create an exhibit about the pool, I could call it "germantown-pool.md"
+
+For more on creating exhbit pages checkout the documentation om [exhbit creation](exhbit-creation.md)
 
 ## Working on existing pages
-Exhibit files can be found in the _exhibts folder, the rest of the pages are in _posts. To edit the content of the page, work below the front matter. <!-- I would explain what "work" means in this case. You could also change the word work to something like "edit the content located underneith the front matter. Click [here](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) to learn how to get into editing mode in Github. -->  Everything in that section of the file will be pulled <!--explain what pulled means--> when the site generates content.
+Exhibit files can be found in the _exhibts folder, the rest of the pages are in _posts. To edit the content of the page, edit the content underneath the front matter. (Visit [editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) for more information on GitHub's editing mode) Everything in that section of the file will be pulled when the site generates content.
 
 
 
 ### Text
-To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting language. 
+To add content to a given page, start writing below the page's front matter. All text should be written using markdown, a simple formatting language.
 
 
 [Guide to Markdown](https://www.markdownguide.org/basic-syntax/)
@@ -44,7 +44,7 @@ To add content to a given page, start writing below the page's front matter. All
 
 
 ### Features
-Features are snippets of code that can be added to pages with a single line. CollectionBuilder has several features designed to make adding content easier. They're a great tool for adding visual content, especially from the archive. 
+Features are snippets of code that can be added to pages with a single line. CollectionBuilder has several features designed to make adding content easier. They're a great tool for adding visual content, especially from the archive.
 
 
 #### Images
@@ -65,9 +65,7 @@ Other parameters include...
 - link = if you want to change the link that the image goes to when you click on the image. If you don't include the link parameter the url will automatically be the image source
  - width = will use responsive sizing to set the % size on desktop (will be 100% on mobile), choose from "25", "50", "75", or "100" (optional)
 
-   <!--Give an example of what it would look like to add parameters into the code -->
-
-
+For example, if I wanted to add an image with a caption `{% include feature/image.html objectid="demo_001 caption="image of arc" %}`
 #### PDFs
 You can include a pdf with `{% include feature/pdf.html objectid="demo_002" %}`
 
@@ -80,6 +78,7 @@ Additional Parameters:
 - width
 - ratio: change the size of the pdf by changing the ratio. options are "21x9", "16x9", "4x3", or "1x1". 1x1 is the default.
 
+If I wanted to add a pdf and change the ratio to "16x9", I would add the code `{% include feature/pdf.html objectid="demo_002" ratio="16x9" %}`
 
    <!--Give an example of what it would look like to add parameters into the code -->
 
@@ -88,9 +87,11 @@ Check out CollectionBuilder's [Feature Bonanza](https://collectionbuilder.github
 
 
 ### Footnotes:
-With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents. For an example on this, checkout example-1 in exhibits: 
+With the use of [Kramdown](https://kramdown.gettalong.org/) footnotes are easy to add to markdown documents.
 
-<!-- You should mention below that this is the example you're referencing to, it's a bit unclear --> 
+A good example of footnotes can be found on [this exhbit example page](_exhibits/example-1.md). Here's an exerpt from the page:
+
+<!-- You should mention below that this is the example you're referencing to, it's a bit unclear -->
 
 ```
 Learn more about the figures featured in David McShane's "Women of Germantown" mural, completed in 2001.[^fn1]
@@ -106,5 +107,3 @@ On the site, it looks like this:
 
 
  For more information, checkout the documentation on [adding footnotes](https://minicomp.github.io/ed/documentation/#footnotes)
-
-

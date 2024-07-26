@@ -5,8 +5,7 @@
 - [Adding More Rooms](#adding-more-rooms)
     - [Understanding Coordinates in Leaflet](#understanding-coordinates-in-leaflet)
     - [Finding the Coordinates for a Room](#finding-the-coordinates-for-a-room)
-- [Adding Pictures](#adding-pictures)
-- [Editing Floor Descriptions](#editing-floor-descriptions)
+- [Adding Pictures to Rooms](#adding-pictures-to-rooms)
 - [Advanced](#advanced)
     - [Changing the Base Map](#changing-the-base-map)
 
@@ -17,9 +16,9 @@ This documentation explains how to add content to the floorplan map on the Germa
 To work with the floorplan map, you will interact with three files:
 
 - `germantown-y/_data/floorplans.csv`
-    - Edit and add rooms.
+    - where you add rooms and edit their content such as title, description,..etc.
 - `germantown-y/_data/germantown-y-metadata.csv`
-    - Add images and detailed information about them.
+    - Where you add images and detailed information about them to display for your rooms.
 - `germantown-y/pages/building-js.html`
     - Contains the HTML, CSS, and JavaScript code for the Leaflet map.
     - Use this file if editing something in the advanced section of this documentation.
@@ -29,10 +28,12 @@ To work with the floorplan map, you will interact with three files:
 To add or edit rooms on the floorplan map, use the `floorplans.csv` file located in the `_data` folder of the project's repository. Each row in the CSV file represents a room on the floor plans. Fill in the following information for each room:
 
 - **objectid**: The assigned ID in the metadata for the displayed image. This must match the object ID in the metadata.
-- **title**: Title of the room. This appears in the info sidebar's header.
-- **coordinates**: Coordinates of the room. See [Finding Room Coordinates](#finding-the-coordinates-for-a-room) for detailed instructions.
+- **name**: Title of the room. This appears in the info sidebar's header.
+- **coordinates**: Coordinates of the room. See [Finding Room Coordinates](#finding-the-coordinates-for-a-room) for detailed instructions on what to input here.
 - **description**: Information about the room.
 - **floor**: The floor where the room is located. Use `L0` for the basement, `L1` for the first floor, `L2` for the second floor, and so on.
+
+***Tip:** Follow the demo content examples in the floorplans CSV as a guide on how to write and format your content within the CSV*
 
 ## Room Coordinates
 
@@ -46,27 +47,22 @@ In Leaflet, coordinates are given in `[y, x]` format, not the typical `[x, y]`. 
 
 To get the coordinates of a specific room, use an image mapping tool like [Image Map Generator](https://www.image-map.net/). Follow these steps to find the coordinates:
 
-1. **Get the Same Image**: Use the same image as the one in the floor plan map. Ensure the image is identical in size to the one currently used. The images are located in the `objects` folder and named `basement.png`, `floor1.png`, `floor2.png`, `floor3.png`, and `floor4.png`.
-2. **Download and Prepare the Image**: Download the image. If using the Image Map Generator, its origin point is at the top-right corner. You will need to flip the image horizontally.
-3. **Upload the Image**: Upload the prepared image to the Image Map Generator.
-4. **Draw the Polygon**: Select 'Poly' under the 'shape' tab to draw a polygon. Click to create each point around your room. To add more polygons, click 'Add New Area' and draw additional shapes.
-5. **Show Coordinates**: Once you have drawn the polygons, click 'Show me the code'.
-6. **Extract Coordinates**: The code box will display `coords` properties with x and y coordinates for each point. Convert these to `[y, x]` pairs.
-    - For example, if the coordinates are `coords="15,82,190,13,220,87,222,221,14,221"`, convert them to `[82,15], [13,190], [87,220], [221,222], [221,14]`.
+1. **Use the Same Image**: Use the same image that is being used as the base map. The images are located in the `objects` folder and named `basement.jpg`, `floor1.png`, `floor2.png`, `floor3.png`, and `floor4.png`.
+2. **Identify Origin Point**: Identify where's the origin point in the tool you are using. One way to do so is to check the coordinates at every corner of the image until you find a [0,0] coordinates. This would indicate your origin point. If, for example you found the [0,0] coordinates at the top left corner, then this tool uses the top left corner as its origin point.
+***Tip:** If you are using the Image Map Generator, its origin point is at the top-left corner.*
+3. **Prepare and Upload the Image**: Depending on the origin point, you may have to prepare your images in some way. If the origin point in your chosen tool is the bottom-left corner or can be set to be the bottom-left, you will not need to do anything in your images. If it is any other origin point, you will have to flip the image either horizontally or vertically  depending on the location of the origin point to match the Leaflet start point to the tool one by manipulating the image itself. Upload the prepared image to the Image Map Generator.
+***Tip:** If you're using the Image Map Generator, flip the image horizontally*
+4. **Draw the Polygon**: Select 'Poly' under the 'shape' tab to draw a polygon. Click to create each point that makes up the corners of your room. To add more polygons, click 'Add New Area' and draw additional shapes.
+8. **Show Coordinates**: Once you have drawn the polygons, click 'Show me the code'.
+9. **Extract Coordinates**: The code box will display `coords` property with x and y coordinates for each point. Convert these to `[y, x]` pairs.
+    - For example, if the coordinates are `coords="15,82,190,13,220,87,222,221,14,221"`, they convert into `[82,15], [13,190], [87,220], [221,222], [221,14]`.
 
-## Adding Pictures
+## Adding Pictures to Rooms
 
-To add pictures to the sidebar, you need to document every image you add to the site. Follow these steps:
+To add pictures to the sidebar, you need to add the image to the website's general archives. Follow these steps:
 
 1. **Add Image to Metadata**: Navigate to the metadata documentation and follow the steps there to add your image and information about it to the metadata CSV.
-2. **Match objectid**: Ensure you input the exact same `objectid` for the image in the metadata CSV as you use in the `floorplans.csv`.
-
-## Editing Floor Descriptions
-
-To edit the description of each floor, follow these steps:
-
-1. Navigate to the `floorplans.csv` file located in the `_data` folder.
-2. Find the floor description tab and update the title and description for each floor.
+2. **Match objectid**: Input the exact same `objectid` you used for the image you added in the `germantown-y-metadata.csv` into `floorplans.csv`.
 
 ## Advanced
 
@@ -74,7 +70,7 @@ To edit the description of each floor, follow these steps:
 
 This section guides you through the process of changing the base map images and adjusting the bounds so they fit perfectly in your Leaflet map.
 
-Please note: Although the current floorplans are oriented vertically, the vision is for the digitized floor plans to be placed horizontally for clearer viewing.
+***Please note:** Although the current floorplans are oriented vertically, the vision is for the digitized floor plans to be placed horizontally for clearer viewing.*
 
 #### Step 1: Replace Base Map Images
 
@@ -99,11 +95,10 @@ Please note: Although the current floorplans are oriented vertically, the vision
 #### Step 2: Adjust Map Bounds
 
 - **Determine Image Dimensions**
-    
     - Find out the dimensions of your new images (width and height).
-        - On Windows: Right-click the image in File Explorer, choose 'Properties', and under the 'Details' tab, find the dimensions. For instance, your new image could have dimensions of 800x600 pixels.
+        - On Windows: Right-click the image in File Explorer, choose 'Properties', and under the 'Details' tab, find the dimensions. For example, your new image could have dimensions of 800x600 pixels.
+          
 - **Update Bounds in the Code**
-    
     - Locate the `bounds` variable in your code. Update the bounds to match the dimensions of your new images.
 
 `var bounds = [[0, 0], [800, 600]]; // Adjust bounds as per your new image size`
@@ -126,8 +121,3 @@ var map = L.map('map', {
         maxZoom: 2
     });
 ```
-
-- **Ensure the Map Starts with the Entire View Visible**
-    - Call the `fitBounds` method with your updated bounds to make sure the map is correctly positioned and scaled to show the entire image initially.
-
-    `map.fitBounds(bounds);`

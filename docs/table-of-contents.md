@@ -1,5 +1,5 @@
 ---
-title: documentation
+title: Table of Contents
 author: Fiona
 --- 
 

@@ -2,7 +2,6 @@
 title: Webmap JS
 permalink: /webmap-js.html
 ---
-
 <!DOCTYPE html>
 <html>
 
@@ -15,13 +14,14 @@ permalink: /webmap-js.html
     <!-- leaflet stylesheet -->
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
         rel='stylesheet' />
-
+    <!-- mapbox for fullscreen stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <!--leaflet geocoder  stylesheet-->
     <style>
         body {
             padding: 0;
             margin: 0;
         }
-
 
         html,
         body,
@@ -61,6 +61,18 @@ permalink: /webmap-js.html
             z-index: 1000;
         }
 
+        #show-description-btn {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 1000;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #fbfbfb;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+        }
         .leaflet-control-layers-list .color-indicator {
             display: inline-block;
             width: 12px;
@@ -113,29 +125,51 @@ permalink: /webmap-js.html
 </head>
 
 <body>
-    <div id="map"></div>
-    <div class="trigger-zone"></div>
+    <div id="map">
+        <div class="trigger-zone"></div>
+        <button id="show-description-btn">How to Use Map</button>
+    </div>
     <!-- Include Leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
-
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script>
         // Initialize the map
         var map = L.map("map", {
             center: [40.03030807351389, -75.1761523600391],
             zoom: 15
         });
-
+        
         //Base layer
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
+        //the search icon can be modified
+        var searchIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/marker.png',
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+            popupAnchor: [0, -40],
+            tooltipAnchor: [20, -28] 
+        });
+        map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/location-pin" title="location pin icons">Location pin icons created by Icon Mela - Flaticon</a>');
 
+        // Add the geocoder control to the map
+        var geocoder = L.Control.geocoder({
+            defaultMarkGeocode: false
+        }).on('markgeocode', function(e) {
+            var center = e.geocode.center;
+            L.marker(center, {icon: searchIcon}).addTo(map)
+                .bindPopup(e.geocode.name)
+                .openPopup();
+
+            L.circle(center, { radius: 500, color: 'grey' }).addTo(map);
+            map.setView(center, 13);
+        }).addTo(map);
         // Custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
@@ -158,8 +192,8 @@ permalink: /webmap-js.html
                 shadowSize: [41, 41]
             });
         }
+        //initialising used colors
         const usedColors = [];
-
         function getUniqueColor() {
             let hue;
             do {
@@ -168,7 +202,7 @@ permalink: /webmap-js.html
             usedColors.push(hue);
             return `hue-rotate(${hue}deg)`;
         }
-
+        //initialising dynamic layers
         var dynamicLayers = {};
 
         //extending leaflet's tile layer class to create custom tiles  with transparent background instead of grey
@@ -242,63 +276,63 @@ permalink: /webmap-js.html
 
         // Function to add GeoJSON data to respective layers
         function addDataToLayers(data) {
-    data.forEach(function (feature) {
-        if (feature.category && feature.latitude && feature.longitude &&
-            feature.category.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
+            data.forEach(function (feature) {
+                if (feature.category && feature.latitude && feature.longitude &&
+                    feature.category.trim() !== "" && feature.latitude.trim() !== "" && feature.longitude.trim() !== "") {
 
-            var geojsonFeature = {
-                type: "Feature",
-                properties: {
-                    title: feature.title || "Unknown",
-                    address: feature.address || "Unknown",
-                    date: feature.date || "Unknown",
-                    category: feature.category,
-                    description: feature.description || "No description provided",
-                    relevance: feature.relevance || "Unknown",
-                    image: feature.image || "",
-                    imageAttribution: feature.imageAttribution || "",
-                    altText: feature.imageAltText || "",
-                    sources: feature.sources || "Unknown"
-                },
-                geometry: {
-                    type: "Point",
-                    coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
+                    var geojsonFeature = {
+                        type: "Feature",
+                        properties: {
+                            title: feature.title || "Unknown",
+                            address: feature.address || "Unknown",
+                            date: feature.date || "Unknown",
+                            category: feature.category,
+                            description: feature.description || "No description provided",
+                            relevance: feature.relevance || "Unknown",
+                            image: feature.image || "",
+                            imageAttribution: feature.imageAttribution || "",
+                            altText: feature.imageAltText || "",
+                            sources: feature.sources || "Unknown"
+                        },
+                        geometry: {
+                            type: "Point",
+                            coordinates: [parseFloat(feature.longitude), parseFloat(feature.latitude)]
+                        }
+                    };
+
+                    var category = feature.category.toLowerCase();
+
+                    if (category === 'other') {
+                        otherLayer.addData(geojsonFeature);
+                    } else if (category === 'branch') {
+                        branchLayer.addData(geojsonFeature);
+                    } else if (category === 'industry') {
+                        industryLayer.addData(geojsonFeature);
+                    } else if (category === 'landmark') {
+                        landmarkLayer.addData(geojsonFeature);
+                    } else if (category === 'lodgings') {
+                        lodgingsLayer.addData(geojsonFeature);
+                    } else if (category === 'main-building') {
+                        mainBuildingLayer.addData(geojsonFeature);
+                    } else if (category === 'ywca') {
+                        ywcaLayer.addData(geojsonFeature);
+                    } else {
+                        if (!dynamicLayers[category]) {
+                            var customColor = getUniqueColor();
+                            dynamicLayers[category] = createLayer(`dynamic-${customColor}`, createCustomIcon(customColor));
+                            dynamicLayers[category].addTo(map);
+
+                            // Add color indicator for the new category
+                            var colorIndicator = `<span class="color-indicator" style="filter: ${customColor}; background-color: black;"></span>${category.charAt(0).toUpperCase() + category.slice(1)}`;
+                            layersControl.addOverlay(dynamicLayers[category], colorIndicator);
+                        }
+                        dynamicLayers[category].addData(geojsonFeature);
+                    }
+                } else {
+                    console.warn("Feature missing required fields (category, latitude, or longitude):", feature);
                 }
-            };
-
-            var category = feature.category.toLowerCase();
-
-            if (category === 'other') {
-                otherLayer.addData(geojsonFeature);
-            } else if (category === 'branch') {
-                branchLayer.addData(geojsonFeature);
-            } else if (category === 'industry') {
-                industryLayer.addData(geojsonFeature);
-            } else if (category === 'landmark') {
-                landmarkLayer.addData(geojsonFeature);
-            } else if (category === 'lodgings') {
-                lodgingsLayer.addData(geojsonFeature);
-            } else if (category === 'main-building') {
-                mainBuildingLayer.addData(geojsonFeature);
-            } else if (category === 'ywca') {
-                ywcaLayer.addData(geojsonFeature);
-            } else {
-                if (!dynamicLayers[category]) {
-                    var customColor = getUniqueColor();
-                    dynamicLayers[category] = createLayer(`dynamic-${customColor}`, createCustomIcon(customColor));
-                    dynamicLayers[category].addTo(map);
-                    
-                    // Add color indicator for the new category
-                    var colorIndicator = `<span class="color-indicator" style="filter: ${customColor}; background-color: black;"></span>${category.charAt(0).toUpperCase() + category.slice(1)}`;
-                    layersControl.addOverlay(dynamicLayers[category], colorIndicator);
-                }
-                dynamicLayers[category].addData(geojsonFeature);
-            }
-        } else {
-            console.warn("Feature missing required fields (category, latitude, or longitude):", feature);
+            });
         }
-    });
-}
 
         //Create geoJSON layer 
         function createLayer(className, customIcon) {
@@ -393,8 +427,8 @@ permalink: /webmap-js.html
 
         descrip.addTo(map);
 
-        // Show description box on map load
-        descrip.getContainer().classList.add('visible');
+        /* Show description box on map load
+        descrip.getContainer().classList.add('visible');*/
 
         // Function to hide the description box
         function hideDescriptionBox() {
@@ -406,15 +440,21 @@ permalink: /webmap-js.html
             descrip.getContainer().classList.add('visible');
         }
 
-        // Set a timeout to hide the description box after 10 seconds
-        setTimeout(hideDescriptionBox, 10000);
+        /* Set a timeout to hide the description box after 10 seconds
+        setTimeout(hideDescriptionBox, 10000);*/
 
-        // Add a trigger zone for showing the description box on mouseenter
+        /* Add a trigger zone for showing the description box on mouseenter
         var triggerZone = document.querySelector('.trigger-zone');
-        triggerZone.addEventListener('mouseenter', showDescriptionBox);
+        triggerZone.addEventListener('mouseenter', showDescriptionBox);*/
 
         // Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
+
+        //show description box when button is clicked
+        document.getElementById('show-description-btn').addEventListener('click', showDescriptionBox);
+
+        //hide description box when clicked
+        descrip.getContainer().addEventListener('click', hideDescriptionBox);
 
         // Layer controls
         var baseLayers = {
@@ -437,19 +477,16 @@ permalink: /webmap-js.html
             '<span class="color-indicator" style="background-color: rgb(35, 108, 190);"></span>Others': otherLayer,
             'Germantown Boundary Line': germantownBoundary
         };
-
         // Create the layer control and add the layers
         var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);
 
-        // Open the layer control on page load
+        //Open the layer control on page load
         layersControl.expand();
         // Add fullscreen control to the map
         map.addControl(new L.Control.Fullscreen());
 
-
         // Call function to add data to layers
         addDataToLayers(data);
-
     </script>
 </body>
 

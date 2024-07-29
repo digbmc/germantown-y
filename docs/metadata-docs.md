@@ -79,7 +79,13 @@ As we can see here the fields are ```Objectid,filename,title,creator,date``` and
 
 Now, to make changes download the CSV file onto your device. If you have a spreadsheet application downloaded on your device you can click on the file within your folder and start editing from there. 
 
-If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata. <!-- For this one, I would include image(s) and circle the points you're discussing. -->
+If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. <!-- For this one, I would include image(s) and circle the points you're discussing. -->
+
+![Locating File picker on Google Sheets](screenshots/upload-csv1.jpg)
+
+A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata.
+
+![Upload selection on Google Sheets](screenshots/upload-csv2.jpg)
 
 ## Formatting the Metadata
 First, follow steps on [*Setting up the Metadata for Editing*](#setting-up-the-metadata-for-editing) if you do not already have a metadata spreadsheet. After obtaining a metadata spreadsheet, you are now ready to edit the metadata.
@@ -90,11 +96,11 @@ Note: Avoid adding commas in specific fields, as CSV files use commas to track d
 
 **Objectid:** In the CSV file, the object ID should follow this format: arc_001. Continue with that format for data consistency.
 
-More information: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
+More information about this field: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 
 **Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be an image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the image address URL if the image came from an online collection.
 
-More information: about this field. <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
+More information about this field: about this field. <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
 
 **Title**: The title will be used to name the content/object you are adding to the archive on the website. <!-- -->
 

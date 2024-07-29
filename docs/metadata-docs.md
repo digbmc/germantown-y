@@ -24,7 +24,7 @@ title: Metadata Documentation
     - [Making a Field Searchable](#making-a-field-searchable)
     - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
 
-## Useful Vacabulary
+## Useful Vocabulary
 Repository: This is where code and files are stored. Our website repository is hosted on GitHub!
 
 Metadata: Information about data such as title, creator, date. Basically, data about data.
@@ -96,7 +96,7 @@ More information: about this field. Object Identifiers are used for identifying 
 
 More information: about this field. <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
 
-**Title**: The title will be used to name the content/object you are adding to the archive on the website. <!-- -->
+**Title**: The title will be used to name the content/object you are adding to the archive on the website.
 
 **Creator**: Insert the author of the file here in this format LastName, FirstName. Then, use semicolons to separate multiple authors.
 
@@ -249,13 +249,13 @@ config-metadata.csv is used in these tutorials:
   - [How to Change Metadata Order](#how-to-change-metadata-order)
 
 #### Adding more fields to the metadata
-To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field.
+To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field. 
 
 After you are done entering the data, [*upload the metadata*](#uploading-the-metadata). If you check the CSV file in the repository now, your new field should be there in the top line and all the values of the field should be in the spot indicated by the top line within each row. 
 
 Next, go to the _data folder and locate [**config-metadata.csv**](#about-config-metadatacsv). You must also add your new field there in the row where you want it to be presented. If you are just adding a field without any specific configuration, you can fill out the field and display_name columns in config-metadata.csv. The field should be the name of the new field you added in the CSV, and the display_name is what you want it to be called on the website when it is displayed.
 
-Here is an example:
+Here is an example: <!-- You may want to show this example also in a screenshot of what the doc will look like with this entered -->
 >date,Date Created
 
 #### How to Insert Links into the Metadata

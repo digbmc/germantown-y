@@ -29,7 +29,7 @@ Repository: This is where code and files are stored. Our website repository is h
 
 Metadata: Information about data such as title, creator, date. Basically, data about data.
 
-CSV file: CSV stands for comma separated values. These files makes it easier for code to read in and parse data due to the file's formatting. <!--What does "read in" mean in this case?-->
+CSV file: CSV stands for comma separated values. The commas and lines in a CSV file indicate the seperation of data. These files makes it easier for code to read in and parse data due to the file's formatting. <!--What does "read in" mean in this case?-->
 
 ## How to Add Items to the Archive
 Before we begin, it is important to note that these instructions are based on the [CollectionBuilder's GitHub walkthrough](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/). You may refer to the CollectionBuilder Github website for additional information.

@@ -100,7 +100,7 @@ More information about this field: about this field. Object Identifiers are used
 
 **Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be a direct link to a file. These links end with a file extension such as a image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the direct link to a file if the file came from an online collection.
 
-More information about this field: <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
+More information about this field: <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps Collection builder find the file you want to associate with the metadata in the row and indicates what is going to be display.
 
 **Title**: The title will be used to name the content/object you are adding to the archive on the website.
 
@@ -158,7 +158,7 @@ Like so:
 
 **Display_template:** The display_template field sets the template type for the item in the archive and helps identify the representation of the item on other pages. If this field is not filled out, a default setting will be applied. Default supported options include image, pdf, video, audio, record, item, panorama, compound_object, and multiple. Templates can be viewed and created in the layout folder.
 
-**Object_location:** The Object_location field indicates where the object can be found.
+**Object_location:** The Object_location field indicates where the object can be found and is also what Collection builder uses to find the object to display.
 
 If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. 
 

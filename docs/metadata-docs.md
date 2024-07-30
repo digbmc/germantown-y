@@ -163,7 +163,7 @@ Like so:
 If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. 
 
 An example value may look like this:
->/objects/arc_008.jpg. 
+```/objects/arc_008.jpg```
 
 The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly, we insert the name of the file. Relative paths specify where a file is in a repository. 
 
@@ -175,7 +175,7 @@ If the object is pulled from a file extension URL insert the link in the Object_
 One is to directly add the transcript onto the spreadsheet, however this does not support large transcripts.The other is to add a text file (.txt or .md) in the objects folder of the website repository and then put the relative path of the text file into the Object_transcript field on the spreadsheet to indicate where the text file is. 
 
 An example value may look like this:
->/objects/transcriptname.txt.
+```/objects/transcriptname.txt```
 
  The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly we insert the name of the file.
 

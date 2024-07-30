@@ -158,12 +158,26 @@ Like so:
 
 **Display_template:** The display_template field sets the template type for the item in the archive and helps identify the representation of the item on other pages. If this field is not filled out, a default setting will be applied. Default supported options include image, pdf, video, audio, record, item, panorama, compound_object, and multiple. Templates can be viewed and created in the layout folder.
 
-**Object_location:** The Object_location field indicates where the object can be found. If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. An example value may look like this:/objects/arc_008.jpg. The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly, we insert the name of the file.
+**Object_location:** The Object_location field indicates where the object can be found.
+
+If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. 
+
+An example value may look like this:
+>/objects/arc_008.jpg. 
+
+The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly, we insert the name of the file. Relative paths specify where a file is in a repository. 
+
+If the object is pulled from a file extension URL insert the link in the Object_location.
 
 **Image_alt_text:** Insert alt text for the image here. Alt text provides a description of the image for screen readers to use, which helps increase accessibility.
 
 **Object_transcript**: This field usually is used to add transcription to video and audio files, however it can be used for any file type. There are two ways of adding the transcript.
-One is to directly add the transcript onto the spreadsheet, however this does not support large transcripts.The other is to add a text file (.txt or .md) in the objects folder of the website repository and then put the relative path ending in the filename into the Object_transcript field on the spreadsheet. An example value may look like this:/objects/transcriptname.txt. The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly we insert the name of the file.
+One is to directly add the transcript onto the spreadsheet, however this does not support large transcripts.The other is to add a text file (.txt or .md) in the objects folder of the website repository and then put the relative path of the text file into the Object_transcript field on the spreadsheet to indicate where the text file is. 
+
+An example value may look like this:
+>/objects/transcriptname.txt.
+
+ The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly we insert the name of the file.
 
 Here is an example input:
 > Objectid: arc_007

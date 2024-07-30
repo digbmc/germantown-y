@@ -41,7 +41,7 @@ There are two components to the archive:
 You will need to upload the Metadata spreadsheet and the media files in order to add to the archive.
 
 ### Uploading the Metadata
-After adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
+After adding metadata to the spreadsheet based on the instructions from [*Formatting the Metadata*](#formatting-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
 
 ### Uploading the Media Files
 Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidelines click [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
@@ -98,7 +98,7 @@ Note: Avoid adding commas in specific fields, as CSV files use commas to track d
 
 More information about this field: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 
-**Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be an image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the image address URL if the image came from an online collection.
+**Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be a direct link to a file. These links end with a file extension such as a image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the direct link to a file if the file came from an online collection.
 
 More information about this field: <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
 
@@ -158,7 +158,12 @@ Like so:
 
 **Display_template:** The display_template field sets the template type for the item in the archive and helps identify the representation of the item on other pages. If this field is not filled out, a default setting will be applied. Default supported options include image, pdf, video, audio, record, item, panorama, compound_object, and multiple. Templates can be viewed and created in the layout folder.
 
+**Object_location:** The Object_location field indicates where the object can be found. If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. An example value may look like this:/objects/arc_008.jpg. The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly, we insert the name of the file.
+
 **Image_alt_text:** Insert alt text for the image here. Alt text provides a description of the image for screen readers to use, which helps increase accessibility.
+
+**Object_transcript**: This field usually is used to add transcription to video and audio files, however it can be used for any file type. There are two ways of adding the transcript.
+One is to directly add the transcript onto the spreadsheet, however this does not support large transcripts.The other is to add a text file (.txt or .md) in the objects folder of the website repository and then put the relative path ending in the filename into the Object_transcript field on the spreadsheet. An example value may look like this:/objects/transcriptname.txt. The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly we insert the name of the file.
 
 Here is an example input:
 > Objectid: arc_007

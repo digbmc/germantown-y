@@ -1,6 +1,4 @@
 ---
-# Default home page with boxes providing collection stats
-<!--layout: page-->
 title: home
 home: true
 ---
@@ -10,71 +8,77 @@ home: true
   <head prefix="og: http://ogp.me/ns#">
     {% include head/head.html %}
   </head>
-  <body class="d-flex flex-column h-100"> 
+  <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
     {% include collection-nav.html %}
     {% include collection-banner.html %}
     <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
     <div class="row">
-      
+
       <div class="col-md-12">
-        
+
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title">Description</h5>
+
             <p class="card-text">{{ site.description }}</p>
             {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
-            {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
+            {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
           </div>
         </div>
-        
-        {% include index/carousel.html title="Sample Items" height="300" %}
+
+        {% include index/carousel-random.html title="Sample Items" height="300" %}
       </div>
     </div>
     <div class = "row gx-4">
-      
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-      
 
+            <img class="card-img-top display-card" src="http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg" alt="    A photo of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park.">
+
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">Timeline of the building and information about the history of the YWCA</p>
+              <a href="{{ site.baseurl}}/history.html" class="btn light-blue text-dark btn-primary">History Page</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top display-card" src="https://digbmc.github.io/germantown-y/objects/arc_001.jpg" alt="    A front view picture of the YWCA in Germantown looking upwards from the entance.">
+            <div class="card-body">
+
+              <h2 class="card-title">Building</h2>
+              <p class="card-text">Explore the inside of the YWCA with an interactive floor plan.</p>
+              <a href="{{ site.baseurl }}/building.html" class="btn light-blue text-dark btn-primary">Buildings Page</a>
+
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top display-card" src="assets\pics\map.jpg" alt="Maps" style="height:200px;">
+            <div class="card-body">
+              <h2 class="card-title">Map</h2>
+              <p class="card-text">Web map displays pins marking the locations of significant buildings
+              </p>
+              <a href="{{ site.baseurl }}/webmap.html" class="btn light-blue text-dark btn-primary">Map Page</a>
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
+          <div class="card">
+            <img class="card-img-top display-card" src="https://digbmc.github.io/germantown-y/objects/arc_012.jpg" alt="    A photo of the Germantown YWCA building during the fire incident. The building is surrounded by emergency vehicles as firefighters are actively working to extinguish the flames.">
+            <div class="card-body">
+
+              <h2 class="card-title">Exhibits</h2>
+              <p class="card-text">Stories and features about the Germantown YWCA Building
+              </p>
+              <a href="{{ site.baseurl }}/exhibits.html" class="btn light-blue text-dark btn-primary">Exhibits Page</a>
+
+            </div>
+          </div>
+        </div>
     </div>
   </main>
   {% include footer.html %}
@@ -82,4 +86,3 @@ home: true
   {% include scroll-to-top.html %}
   </body>
 </html>
-  

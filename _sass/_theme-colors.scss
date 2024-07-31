@@ -14,7 +14,7 @@ $air-force-blue: #507E96ff;
 
 $white:    #fff !default;
 $black:    #000 !default;
-$primary:      $lapis-lazuli !default;
+$primary:   $lapis-lazuli !default;
 
 $min-contrast-ratio:   4.5 !default;
 $color-contrast-dark:      $black !default;
@@ -122,7 +122,7 @@ $_luminance-list: .0008 .001 .0011 .0013 .0015 .0017 .002 .0022 .0025 .0027 .003
 }
 // Return opaque color
 @function opaque($background, $foreground) {
-    @return mix(rgba($foreground, 1), $background, opacity($foreground) * 100);
+    @return mix(rgba($foreground, 1), $background, opacity($foreground) * 1%);
 }
 // Return WCAG2.0 relative luminance
 @function luminance($color) {

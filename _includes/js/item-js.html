@@ -2,7 +2,7 @@
 {% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
 {% assign icons = cb_icons.icons %}{%- endif -%}
 {%- assign fields = site.data.config-metadata -%}
-{%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
+{%- assign stubs = site.data.config-nav | join: ';' -%}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <script>
 /* add item data */
@@ -123,7 +123,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
         {% if stubs contains "map" %}
         /* add link to view on map */
         var itemMarker = item.parentid ? item.parentid : itemPageId;
-        var mapButton = '<a href="{{ '/map.html' | relative_url }}?location=' + item.latitude + ',' + item.longitude + '&marker=' + itemMarker +'" class="btn btn-outline-primary">View on Map</a>';
+        var mapButton = '<a href="{{ '/webmap.html' | relative_url }}?location=' + item.latitude + ',' + item.longitude + '&marker=' + itemMarker +'" class="btn btn-outline-primary">View on Map</a>';
         if (item.latitude && item.longitude) {
             /* add map link to children only if specified in theme.yml */
             {% if site.data.theme.map-child-objects == true %}

@@ -1,12 +1,11 @@
 ---
-title:  building JS
+title: building JS
 permalink: /building-js.html
 ---
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Non Geographic Map</title>
+    <title>Germantown YWCA Building Plans</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
@@ -20,6 +19,7 @@ permalink: /building-js.html
         html, body {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         #map {
             width: 100%;
@@ -27,10 +27,16 @@ permalink: /building-js.html
         }
         .imgclass {
             display: block;
-            max-width: 400px;
-            max-height: 400px;
-            width: auto;
+            max-width: 100%;
+            width: 100%;
             height: auto;
+            margin: 0 auto;
+        }
+        .img-container {
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
         }
         .leaflet-sidebar {
             width: 30%;
@@ -41,7 +47,7 @@ permalink: /building-js.html
             width: 0;
         }
         .leaflet-sidebar .close {
-            z-index: 1000; 
+            z-index: 1000;
         }
         .leaflet-sidebar .expand {
             position: absolute;
@@ -49,6 +55,22 @@ permalink: /building-js.html
             right: 40px;
             z-index: 1000;
             cursor: pointer;
+        }
+        .leaflet-left .leaflet-control {
+            margin-left: 0.5rem;
+        }
+        .leaflet-control-layers {
+            margin-top: 4rem;
+        }
+        .floor-info {
+            position: absolute;
+            bottom: 10rem;
+            left: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
         }
         @media (max-width: 768px) {
             .leaflet-sidebar {
@@ -59,6 +81,12 @@ permalink: /building-js.html
                 width: 0;
             }
         }
+        .sidebar-content h1 {
+            font-size: 1.5em;
+        }
+        .sidebar-content p {
+            font-size: 1.2em; /* Increased font size for description */
+        }
     </style>
 </head>
 <body>
@@ -66,191 +94,153 @@ permalink: /building-js.html
 <div id="sidebar">
     <div class="expand">[+]</div>
 </div>
+<div class="floor-info" id="floor-info">
+    <h3>Floor Information</h3>
+    <p id="floor-details">Details about the selected floor will appear here.</p>
+</div>
 <script>
     // Style for the polygons
     var polygonStyle = {
         color: 'black',
+        opacity: 0,
         fillColor: 'white',
         fillOpacity: 0,
         weight: 2,
     };
     var highlight = {
         color: 'black',
+        opacity: 1,
         fillColor: 'red',
-        fillOpacity: .5,
+        fillOpacity: 0.5,
         weight: 2,
     };
 
     // Define image URLs for each floor
-    var L0footprint = '{{site.baseurl}}/objects/basement.png';
-    var L1footprint = '{{site.baseurl}}/objects/floor1.png';
-    var L2footprint = '{{site.baseurl}}/objects/floor2.png';
-    var L3footprint = '{{site.baseurl}}/objects/floor3.png';
-    var L4footprint = '{{site.baseurl}}/objects/floor4.png';
-        // Create image overlays with correct bounds
-    var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
-
-    var L0 = L.imageOverlay(L0footprint, bounds);
-    var L1 = L.imageOverlay(L1footprint, bounds);
-    var L2 = L.imageOverlay(L2footprint, bounds);
-    var L3 = L.imageOverlay(L3footprint, bounds);
-    var L4 = L.imageOverlay(L4footprint, bounds);
-
-    var baseMaps = {
-        "Basement": L0,
-        "1st Floor": L1,
-        "2nd Floor": L2,
-        "3rd Floor": L3,
-        "4th Floor": L4
+    var footprints = {
+        'L0': '{{site.baseurl}}/objects/basement.png',
+        'L1': '{{site.baseurl}}/objects/floor1.png',
+        'L2': '{{site.baseurl}}/objects/floor2.png',
+        'L3': '{{site.baseurl}}/objects/floor3.png',
+        'L4': '{{site.baseurl}}/objects/floor4.png'
     };
 
-    // Define the map using a simple coordinate system
+    // Create image overlays with correct bounds
+    var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
+
+    var floorGroups = {};
+    Object.keys(footprints).forEach(function(floor) {
+        var overlay = L.imageOverlay(footprints[floor], bounds);
+        floorGroups[floor] = L.layerGroup([overlay]);
+    });
+
+    var currentHighlighted;
+
+    // Function to create and add polygons to the map
+    function addPolygon(name, coordinates, layerGroup, description, imageUrl, imageTitle) {
+        var polygon = L.polygon(coordinates, polygonStyle)
+            .on('mouseover', function (e) {
+                polygon.setStyle(highlight);
+            })
+            .on('mouseout', function (e) {
+                if (polygon !== currentHighlighted) {
+                    polygon.setStyle(polygonStyle);
+                }
+            })
+            .on('click', function (e) {
+                if (currentHighlighted) {
+                    currentHighlighted.setStyle(polygonStyle);
+                }
+                currentHighlighted = polygon;
+                polygon.setStyle(highlight);
+
+                console.log(imageUrl); // Debugging line
+
+                sidebar.show();
+                sidebar.setContent(
+                    '<div class="sidebar-content">' +
+                    '<h1>' + name + '</h1>' +
+                    '<div class="img-container">' +
+                    '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                    '</div>' +
+                    '<p style="font-size: smaller;">' + imageTitle + '</p>' +
+                    '<p>' + description + '</p>' +
+                    '</div>'
+                );
+            });
+        layerGroup.addLayer(polygon);
+    }
+
+    // Add polygons for each floor
+    {% assign floors = site.data.floorplans | group_by: "floor" %}
+    {% for floor in floors %}
+        {% assign floorGroup = floor.name | append: 'Group' %}
+        {% capture groupLayer %}
+            {% assign floorData = floor.items %}
+            {% for row in floorData %}
+                {% assign metadata = site.data.germantown-y-metadata | where: "objectid", row.objectid | first %}
+                addPolygon(
+                    '{{ row.name }}',
+                    {{ row.coordinates | replace: '\"', '\\"' | replace: "\'", "\\\'" | replace: '"', '\"' | replace: "'", "\'" }},
+                    floorGroups['{{ floor.name }}'],
+                    '{{ row.description | escape }}',
+                    '{{ metadata.object_location | relative_url }}',
+                    '{{ metadata.title | escape }}',
+                );
+            {% endfor %}
+        {% endcapture %}
+        {{ groupLayer }}
+    {% endfor %}
+
+    // Base layers for the maps
+    var baseLayers = floorGroups;
+
+    // Initialize the map
     var map = L.map('map', {
+        center: [380, 118],
+        zoom: -1,
         crs: L.CRS.Simple,
-        maxZoom: 5,
-        minZoom: 0,
-        layers: [L0]
+        fullscreenControl: true,
+        layers: [floorGroups['L0']], // Set the initial layer to basement floor
+        maxBounds: bounds,
+        maxBoundsViscosity: 1.0,
+        zoomSnap: 0.1,
+        zoomDelta: 0.1,
+        minZoom: -3,
+        maxZoom: 2
     });
 
-    // Set view at center, zoom level 3
-    map.setView([500, 9.5], 0);
+    // Add layer control to the map
+    L.control.layers(baseLayers).addTo(map);
 
-    // Add fullscreen button
-    map.addControl(new L.Control.Fullscreen());
-
-    // Hide sidebar when floor level is changed
-    map.on('baselayerchange', function(e) {
-        sidebar.hide();
-        console.log(e);
-    });
-
-    // Initialize sidebar
+    // Add the sidebar to the map
     var sidebar = L.control.sidebar('sidebar', {
-        closeButton: true,
         position: 'right'
     });
     map.addControl(sidebar);
 
-    // Function to create and add polygons to the map
-    function addPolygon(name, coordinates, layerGroup) {
-        var polygon = L.polygon(coordinates, polygonStyle).on('mouseover', function (e) {
-            polygon.setStyle(highlight);
-        }).on('mouseout', function (e) {
-            polygon.setStyle(polygonStyle);
-        }).on('click', function (e) {
-            sidebar.show();
-            sidebar.setContent('<h1>' + name + ' Information</h1>' + '<p>Details about the ' + name.toLowerCase() + ' go here.</p>');
-        });
-        layerGroup.addLayer(polygon);
-    }
-
-    // Create a feature group for each layer
-    var L1Group = L.layerGroup([L1]);
-    var L2Group = L.layerGroup([L2]);
-    var L3Group = L.layerGroup([L3]);
-    var L4Group = L.layerGroup([L4]);
-
-    // Add polygons to L1
-    addPolygon('Room', [[300, 10], [300, 100], [420, 100], [420, 10]], L1Group);
-    addPolygon('Office', [[100, 10], [100, 60], [200, 60], [200, 10]], L1Group);
-    addPolygon('Dressing', [[150, 100], [150, 150], [250, 150], [250, 100]], L1Group);
-    addPolygon('Gym', [[300, 200], [300, 250], [400, 250], [400, 200]], L1Group);
-    addPolygon('Pool', [[450, 300], [450, 350], [550, 350], [550, 300]], L1Group);
-
-    // Add polygons to L2
-    addPolygon('Room', [[310, 20], [310, 110], [430, 110], [430, 20]], L2Group);
-    addPolygon('Office', [[110, 20], [110, 70], [210, 70], [210, 20]], L2Group);
-    addPolygon('Dressing', [[160, 110], [160, 160], [260, 160], [260, 110]], L2Group);
-    addPolygon('Gym', [[310, 210], [310, 260], [410, 260], [410, 210]], L2Group);
-    addPolygon('Pool', [[460, 310], [460, 360], [560, 360], [560, 310]], L2Group);
-
-    // Add polygons to L3
-    addPolygon('Room', [[320, 30], [320, 120], [440, 120], [440, 30]], L3Group);
-    addPolygon('Office', [[120, 30], [120, 80], [220, 80], [220, 30]], L3Group);
-    addPolygon('Dressing', [[170, 120], [170, 170], [270, 170], [270, 120]], L3Group);
-    addPolygon('Gym', [[320, 220], [320, 270], [420, 270], [420, 220]], L3Group);
-    addPolygon('Pool', [[470, 320], [470, 370], [570, 370], [570, 320]], L3Group);
-
-    // Add polygons to L4
-    addPolygon('Room', [[330, 40], [330, 130], [450, 130], [450, 40]], L4Group);
-    addPolygon('Office', [[130, 40], [130, 90], [230, 90], [230, 40]], L4Group);
-    addPolygon('Dressing', [[180, 130], [180, 180], [280, 180], [280, 130]], L4Group);
-    addPolygon('Gym', [[300, 230], [330, 280], [430, 280], [430, 230]], L4Group);
-    addPolygon('Pool', [[480, 330], [480, 380], [580, 380], [580, 330]], L4Group);
-
-    // Update baseMaps to include the feature groups for each layer
-    var updatedBaseMaps = {
-        "Basement": L0,
-        "1st Floor": L1Group,
-        "2nd Floor": L2Group,
-        "3rd Floor": L3Group,
-        "4th Floor": L4Group
-    };
-
-    // Remove the existing layer control if it exists
-    if (map.layerControl) {
-        map.removeControl(map.layerControl);
-    }
-
-    // Add the updated layer control
-    map.layerControl = L.control.layers(updatedBaseMaps, null, {collapsed: false}).addTo(map);
-
-    // Event listeners for sidebar visibility
-    sidebar.on('show', function () {
-        console.log('Sidebar will be visible.');
-        adjustMapView();
-    });
-
-    sidebar.on('shown', function () {
-        console.log('Sidebar is visible.');
-    });
-
-    sidebar.on('hide', function () {
-        console.log('Sidebar will be hidden.');
-        adjustMapView();
-    });
-
-    sidebar.on('hidden', function () {
-        console.log('Sidebar is hidden.');
-    });
-
-    L.DomEvent.on(sidebar.getCloseButton(), 'click', function () {
-        console.log('Close button clicked.');
-    });
-
-    // Expand button functionality
+    // Expand and collapse sidebar functionality
     var expandButton = document.querySelector('.expand');
-    expandButton.addEventListener('click', function() {
-        var sidebarElement = document.querySelector('.leaflet-sidebar');
-        if (sidebarElement.style.width === '80%') {
-            sidebarElement.style.width = '30%';
+    expandButton.addEventListener('click', function () {
+        if (sidebar.isVisible()) {
+            sidebar.hide();
+            expandButton.innerHTML = '[+]';
         } else {
-            sidebarElement.style.width = '80%';
+            sidebar.show();
+            expandButton.innerHTML = '[-]';
         }
-        adjustMapView();
     });
 
-    // Prevent dragging too far outside the map bounds
-    var bounds = L.latLngBounds([0, 0], [760, 237]); // Adjust as needed
+    map.on('overlayadd', function (eventLayer) {
+        // Update floor details when layer is changed
+        var floorDetails = document.getElementById('floor-details');
+        floorDetails.innerHTML = 'Currently viewing: ' + eventLayer.name;
+    });
+
+    // Allow dragging the map within its bounds
     map.setMaxBounds(bounds);
-    map.on('drag', function() {
-        map.panInsideBounds(bounds, { animate: false });
-    });
 
-    // Adjust map view when the screen is resized
-    window.addEventListener('resize', adjustMapView);
-
-    function adjustMapView() {
-        if (window.innerWidth < 768) {
-            if (sidebar.isVisible()) {
-                map.setView([500, 100], map.getZoom());
-            } else {
-                map.setView([500, 9.5], map.getZoom());
-            }
-        } else {
-            map.setView([500, 9.5], map.getZoom());
-        }
-    }
+    // Ensure the map starts with the entire view visible
+    map.fitBounds(bounds);
 </script>
 </body>
 </html>

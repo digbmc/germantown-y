@@ -1,15 +1,24 @@
 field,display_name,browse_link,external_link
 title,Title,
 creator,Creator,
+interviewer,Interviewer
+narrator,Narrator
 description,Description,
 date,Date Created,
 location,Location
+organization_building,Organization Building
 latitude,Latitude
 longitude,Longitude
 subject,Subjects,true
+personal_name,Personal Name,true
+geographic_subject,Geographic Subject,true
 identifier,Source Identifier,,
 type,Type,
 format,Format,
+original_recording_specifications,Original Recording Specifications
+digital_specifications,Digital Specifications
 source,Source,
 rights,Rights,
 rightsstatement,Rights Statement,,true
+notes,Notes
+created_by,Created by

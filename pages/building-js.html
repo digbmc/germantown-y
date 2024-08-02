@@ -19,6 +19,7 @@ permalink: /building-js.html
         html, body {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         #map {
             width: 100%;
@@ -27,15 +28,15 @@ permalink: /building-js.html
         .imgclass {
             display: block;
             max-width: 100%;
-            max-height: 400px;
-            width: auto;
+            width: 100%;
             height: auto;
             margin: 0 auto;
         }
         .img-container {
             text-align: center;
-            max-width: 400px;
-            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
         }
         .leaflet-sidebar {
             width: 30%;
@@ -46,7 +47,7 @@ permalink: /building-js.html
             width: 0;
         }
         .leaflet-sidebar .close {
-            z-index: 1000; 
+            z-index: 1000;
         }
         .leaflet-sidebar .expand {
             position: absolute;
@@ -64,11 +65,12 @@ permalink: /building-js.html
         .floor-info {
             position: absolute;
             bottom: 10rem;
-            left: 0.5rem;
+            left: 1rem;
             padding: 1rem;
             background: white;
             border-radius: 5px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
         }
         @media (max-width: 768px) {
             .leaflet-sidebar {
@@ -78,6 +80,12 @@ permalink: /building-js.html
             .leaflet-sidebar.collapsed {
                 width: 0;
             }
+        }
+        .sidebar-content h1 {
+            font-size: 1.5em;
+        }
+        .sidebar-content p {
+            font-size: 1.2em; /* Increased font size for description */
         }
     </style>
 </head>
@@ -108,84 +116,83 @@ permalink: /building-js.html
     };
 
     // Define image URLs for each floor
-    var L0footprint = '{{site.baseurl}}/objects/basement.png';
-    var L1footprint = '{{site.baseurl}}/objects/floor1.png';
-    var L2footprint = '{{site.baseurl}}/objects/floor2.png';
-    var L3footprint = '{{site.baseurl}}/objects/floor3.png';
-    var L4footprint = '{{site.baseurl}}/objects/floor4.png';
+    var footprints = {
+        'L0': '{{site.baseurl}}/objects/basement.png',
+        'L1': '{{site.baseurl}}/objects/floor1.png',
+        'L2': '{{site.baseurl}}/objects/floor2.png',
+        'L3': '{{site.baseurl}}/objects/floor3.png',
+        'L4': '{{site.baseurl}}/objects/floor4.png'
+    };
 
     // Create image overlays with correct bounds
     var bounds = [[0, 0], [760, 237]]; // Adjust bounds as per your image size and position
 
-    var L0 = L.imageOverlay(L0footprint, bounds);
-    var L1 = L.imageOverlay(L1footprint, bounds);
-    var L2 = L.imageOverlay(L2footprint, bounds);
-    var L3 = L.imageOverlay(L3footprint, bounds);
-    var L4 = L.imageOverlay(L4footprint, bounds);
+    var floorGroups = {};
+    Object.keys(footprints).forEach(function(floor) {
+        var overlay = L.imageOverlay(footprints[floor], bounds);
+        floorGroups[floor] = L.layerGroup([overlay]);
+    });
 
-    // Create a feature group for each layer
-    var L0Group = L.layerGroup([L0]);
-    var L1Group = L.layerGroup([L1]);
-    var L2Group = L.layerGroup([L2]);
-    var L3Group = L.layerGroup([L3]);
-    var L4Group = L.layerGroup([L4]);
+    var currentHighlighted;
 
     // Function to create and add polygons to the map
     function addPolygon(name, coordinates, layerGroup, description, imageUrl, imageTitle) {
-        var polygon = L.polygon(coordinates, polygonStyle).on('mouseover', function (e) {
-            polygon.setStyle(highlight);
-        }).on('mouseout', function (e) {
-            polygon.setStyle(polygonStyle);
-        }).on('click', function (e) {
-            sidebar.show();
-            sidebar.setContent(
-                '<h1>' + name + '</h1>' +
-                '<div class="img-container">' +
-                '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
-                '</div>' +
-                '<p style="font-size: smaller;">' + imageTitle + '</p>' +
-                '<p>' + description + '</p>'
-            );
-        });
+        var polygon = L.polygon(coordinates, polygonStyle)
+            .on('mouseover', function (e) {
+                polygon.setStyle(highlight);
+            })
+            .on('mouseout', function (e) {
+                if (polygon !== currentHighlighted) {
+                    polygon.setStyle(polygonStyle);
+                }
+            })
+            .on('click', function (e) {
+                if (currentHighlighted) {
+                    currentHighlighted.setStyle(polygonStyle);
+                }
+                currentHighlighted = polygon;
+                polygon.setStyle(highlight);
+
+                console.log(imageUrl); // Debugging line
+
+                sidebar.show();
+                sidebar.setContent(
+                    '<div class="sidebar-content">' +
+                    '<h1>' + name + '</h1>' +
+                    '<div class="img-container">' +
+                    '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                    '</div>' +
+                    '<p style="font-size: smaller;">' + imageTitle + '</p>' +
+                    '<p>' + description + '</p>' +
+                    '</div>'
+                );
+            });
         layerGroup.addLayer(polygon);
     }
 
-    // Add polygons to L0 (Basement)
-    addPolygon('Pool', [[460, 15], [650, 15], [650, 45], [720, 45], [720, 165], [650, 165], [650, 195], [460, 190]], L0Group, 'The Germantown YWCA pool was one of the most popular attractions within the building ever since its establishment.', 'objects/int_002.jpg', 'Betty Shreiner conducts the first swimming class for teenagers at the Germantown YWCA swimming pool for the Junior Girls Day Camp in 1947.');
-    addPolygon('Club Room', [[82, 15], [13, 190], [87, 220], [221, 222], [221, 14]], L0Group, '1973-1975: Bottom club rooms were used for the Parent Cooperative Nursery School', '', 'Parent Cooperative Nursery School');
+    // Add polygons for each floor
+    {% assign floors = site.data.floorplans | group_by: "floor" %}
+    {% for floor in floors %}
+        {% assign floorGroup = floor.name | append: 'Group' %}
+        {% capture groupLayer %}
+            {% assign floorData = floor.items %}
+            {% for row in floorData %}
+                {% assign metadata = site.data.germantown-y-metadata | where: "objectid", row.objectid | first %}
+                addPolygon(
+                    '{{ row.name }}',
+                    {{ row.coordinates | replace: '\"', '\\"' | replace: "\'", "\\\'" | replace: '"', '\"' | replace: "'", "\'" }},
+                    floorGroups['{{ floor.name }}'],
+                    '{{ row.description | escape }}',
+                    '{{ metadata.object_location | relative_url }}',
+                    '{{ metadata.title | escape }}',
+                );
+            {% endfor %}
+        {% endcapture %}
+        {{ groupLayer }}
+    {% endfor %}
 
-    // Add polygons to L1
-    addPolygon('Gym', [[660, 10], [660, 185], [420, 185], [420, 10]], L1Group, 'The YWCA gymnasium, located across two floors, has served as a venue for numerous programs over the years, including aerobics classes, dance lessons, and various special events.', 'objects/int_001.jpg', 'An exercise class at the Germantown YWCA');
-    addPolygon('Lounge', [[230, 220], [118, 220], [118, 134], [230, 134]], L1Group, 'First floor lounges were common gathering places for community members and were constantly busy with people meeting and talking.', 'objects/int_003.jpg', 'Women form an assembly line at the Germantown YWCA');
-    addPolygon('Lobby', [[118, 10], [118, 98], [200, 98], [200, 10]], L1Group, 'Description of Lobby', 'objects/int_004.jpg', 'Sailors and their sweethearts dance at the Germantown YWCA');
-    /*
-    // Add polygons to L2
-    addPolygon('Room', [[310, 20], [310, 110], [430, 110], [430, 20]], L2Group, 'Description of Room', 'img/room.jpg', 'Room');
-    addPolygon('Office', [[110, 20], [110, 70], [210, 70], [210, 20]], L2Group, 'Description of Office', 'img/office.jpg', 'Office Room');
-    addPolygon('Dressing', [[160, 110], [160, 160], [260, 160], [260, 110]], L2Group, 'Description of Dressing', 'img/dressing.jpg', 'Dressing Room');
-    addPolygon('Gym', [[310, 210], [310, 260], [410, 260], [410, 210]], L2Group, 'Description of Gym', 'img/gym.jpg', 'Gym Room');
-    addPolygon('Pool', [[460, 310], [460, 360], [560, 360], [560, 310]], L2Group, 'Description of Pool', 'img/pool.jpg', 'Pool');
-
-    // Add polygons to L3
-    addPolygon('Room', [[320, 40], [320, 120], [430, 120], [430, 40]], L3Group, 'Description of Room', 'img/room.jpg', 'Room');
-    addPolygon('Office', [[220, 20], [220, 80], [310, 80], [310, 20]], L3Group, 'Description of Office', 'img/office.jpg', 'Office Room');
-    addPolygon('Hall', [[120, 110], [120, 160], [230, 160], [230, 110]], L3Group, 'Description of Hall', 'img/hall.jpg', 'Hall');
-    addPolygon('Lobby', [[220, 210], [220, 260], [330, 260], [330, 210]], L3Group, 'Description of Lobby', 'img/lobby.jpg', 'Lobby');
-
-    // Add polygons to L4
-    addPolygon('Room', [[300, 10], [300, 90], [400, 90], [400, 10]], L4Group, 'Description of Room', 'img/room.jpg', 'Room');
-    addPolygon('Office', [[140, 30], [140, 70], [240, 70], [240, 30]], L4Group, 'Description of Office', 'img/office.jpg', 'Office Room');
-    addPolygon('Hallway', [[40, 100], [40, 140], [150, 140], [150, 100]], L4Group, 'Description of Hallway', 'img/hallway.jpg', 'Hallway');
-    addPolygon('Lobby', [[140, 200], [140, 240], [250, 240], [250, 200]], L4Group, 'Description of Lobby', 'img/lobby.jpg', 'Lobby');
-    */
     // Base layers for the maps
-    var baseLayers = {
-        "Basement Floor": L0Group,
-        "First Floor": L1Group,
-        "Second Floor": L2Group,
-        "Third Floor": L3Group,
-        "Fourth Floor": L4Group
-    };
+    var baseLayers = floorGroups;
 
     // Initialize the map
     var map = L.map('map', {
@@ -193,7 +200,7 @@ permalink: /building-js.html
         zoom: -1,
         crs: L.CRS.Simple,
         fullscreenControl: true,
-        layers: [L0Group], // Set the initial layer to basement floor
+        layers: [floorGroups['L0']], // Set the initial layer to basement floor
         maxBounds: bounds,
         maxBoundsViscosity: 1.0,
         zoomSnap: 0.1,

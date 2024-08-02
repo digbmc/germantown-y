@@ -97,11 +97,11 @@ Refer to [CollectionBuilder-GH and SHEETS Metadata](https://collectionbuilder.gi
 
 Note: Avoid adding commas in specific fields, as CSV files use commas to track data. Additional commas may disrupt how the data appears.
 
-**Objectid:** In the CSV file, the object ID should follow this format: arc_001. Continue with that format for data consistency.
+**Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency.
 
 More information about this field: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 
-**Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be a direct link to a file. These links end with a file extension such as a image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the direct link to a file if the file came from an online collection.
+**Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be an image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the image address URL if the image came from an online collection.
 
 More information about this field: <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps Collection builder find the file you want to associate with the metadata in the row and indicates what is going to be display.
 

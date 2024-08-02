@@ -23,6 +23,9 @@ title: Metadata Documentation
     - [How to Add a Sort Category](#how-to-add-a-sort-category)
     - [Making a Field Searchable](#making-a-field-searchable)
     - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
+- [Compound Objects and Multiple Objects](#compound-objects-and-multiple-objects)
+  - [Adding Compound Objects and Multiple Objects](#adding-compound-and-multiple-objects)
+  - [Oral Histories](#oral-histories)
 
 ## Useful Vocabulary
 Repository: This is where code and files are stored. Our website repository is hosted on GitHub!
@@ -221,6 +224,7 @@ Here is an example input:
 >Image_alt_text: Image of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park. The building is in poor condition.
 >
 >Object_transcript:
+
 ### Metadata of the Archive
 The metadata schema we are using is [Dublin Core](https://www.dublincore.org/resources/metadata-basics/). It includes, but is not limited to, [15 main elements](https://www.dublincore.org/specifications/dublin-core/dces/): Creator, Contributor, Publisher, Title, Date, Language, Format, Subject, Description, Identifier, Relation, Source, Type, Coverage, and Rights.
 
@@ -362,3 +366,24 @@ Any Field put in the  [**config-browse.csv**](#about-config-browsecsv) will beco
 
 #### Rearranging the order of the Elements in the Preview
 This process is similar to [*How to Change Metadata Order*](#how-to-change-metadata-order). Follow the directions there for rearranging the preview elements.
+
+### Compound Objects and Multiple Objects
+Compound objects are items in the archive that contain multiple types of files displayed together. A more in-depth tutorial on how to add this type of item can be found on [Collection Builder’s Compound Object Tutorial](https://collectionbuilder.github.io/cb-docs/docs/metadata/compound-objects/). Additionally, the tutorial explains multiple items, a type of items specifically designed for displaying image files together. Read [Adding Compound and Multiple Objects](#adding-compound-and-multiple-objects) for a brief tutorial on how to create both types of items.
+
+#### Adding Compound and Multiple Objects
+If not already done, add a column named parentid to the metadata CSV through the spreadsheet editor. We will need this since compound objects are made up of child and parent items. The parent item represents the compound object itself, while the child items are the individual pieces of content that make up the compound object.
+
+This field is filled with the object ID of the item you want to set as the parent/compound object for the current item, making the current item a child of the parent. Multiple child items can have the same parent, allowing all child items with the same parent to appear together within the same parent item. If the field is left blank, it indicates that the object has no parents. Usually, parent objects have no parents.
+
+Each child contains information describing themselves, while the parent items describe the compound object as a whole. 
+
+To get started, add the parent item and child items onto the metadata spreadsheet based on the guidelines in [*Formatting the Metadata*](#formatting-the-metadata).
+
+After adding parentid and indicating relationships within files, set the display_template or format value of the parent object to compound_object. If all items being added to the compound objects are images, set the value to multiple to create a multiple object, as they are used to display a set of images.
+
+Now that the spreadsheet is set up to contain coumpound objects, you can now start [uploading the metadata](#uploading-the-metadata) in order to see changes.
+
+#### Oral Histories
+Oral histories are audio files that can be added to the archive. These files usually come with a transcript; therefore, it is good to make them compound objects. Additionally, oral histories require more metadata fields to be filled out.
+
+the rest is TBD

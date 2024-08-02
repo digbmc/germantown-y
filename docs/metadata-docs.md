@@ -23,13 +23,16 @@ title: Metadata Documentation
     - [How to Add a Sort Category](#how-to-add-a-sort-category)
     - [Making a Field Searchable](#making-a-field-searchable)
     - [Rearranging the Order of the Elements in the Preview](#rearranging-the-order-of-the-elements-in-the-preview)
+- [Compound Objects and Multiple Objects](#compound-objects-and-multiple-objects)
+  - [Adding Compound Objects and Multiple Objects](#adding-compound-and-multiple-objects)
+  - [Oral Histories](#oral-histories)
 
-## Useful Vacabulary
+## Useful Vocabulary
 Repository: This is where code and files are stored. Our website repository is hosted on GitHub!
 
 Metadata: Information about data such as title, creator, date. Basically, data about data.
 
-CSV file: CSV stands for comma separated values. These files makes it easier for code to read in and parse data due to the file's formatting.
+CSV file: CSV stands for comma separated values. The commas and lines in a CSV file indicate the seperation of data. These files makes it easier for code to read in and parse data due to the file's formatting. <!--What does "read in" mean in this case?-->
 
 ## How to Add Items to the Archive
 Before we begin, it is important to note that these instructions are based on the [CollectionBuilder's GitHub walkthrough](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/). You may refer to the CollectionBuilder Github website for additional information.
@@ -41,10 +44,10 @@ There are two components to the archive:
 You will need to upload the Metadata spreadsheet and the media files in order to add to the archive.
 
 ### Uploading the Metadata
-After adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
+After adding metadata to the spreadsheet based on the instructions from [*Formatting the Metadata*](#formatting-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
 
 ### Uploading the Media Files
-Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidlines [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
+Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidelines click [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
 
 Additionally, ensure that the filenames in the spreadsheet match the filenames of the files you are uploading. (e.g arc_001.jpg)
 
@@ -79,7 +82,13 @@ As we can see here the fields are ```Objectid,filename,title,creator,date``` and
 
 Now, to make changes download the CSV file onto your device. If you have a spreadsheet application downloaded on your device you can click on the file within your folder and start editing from there. 
 
-If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata.
+If you do not have a spreadsheet application downloaded, head over to a browser spreadsheet application for editing. For this example, I will be using Google Sheets. First, open the file picker. It's a button shaped like a folder near the grid view button (which looks like a grid) and the sort option button (which has an A and Z on it) on the right side of the screen. <!-- For this one, I would include image(s) and circle the points you're discussing. -->
+
+![Locating File picker on Google Sheets](screenshots/upload-csv1.jpg)
+
+A pop-up should appear. In the pop-up, select the Upload option. Now, either browse for or drag the **germantown-y-metadata.csv** file from your folder into Google Sheets. Once uploaded, the cells should be filled with the metadata.
+
+![Upload selection on Google Sheets](screenshots/upload-csv2.jpg)
 
 ## Formatting the Metadata
 First, follow steps on [*Setting up the Metadata for Editing*](#setting-up-the-metadata-for-editing) if you do not already have a metadata spreadsheet. After obtaining a metadata spreadsheet, you are now ready to edit the metadata.
@@ -90,11 +99,11 @@ Note: Avoid adding commas in specific fields, as CSV files use commas to track d
 
 **Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency.
 
-More information: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
+More information about this field: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 
 **Filename:** In the CSV file, the filename should follow this format: arc_001.jpg. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency. Make sure the filename is the same as the name of the file/content you will be uploading (this will be in a later step).  The filename can also be an image address. Image addresses are URLs that direct a web browser to an image file on the internet. You can usually obtain an image address by right-clicking on an image online and selecting the Copy image address option. It is best practice to use the image address URL if the image came from an online collection.
 
-More information: about this field. Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps the Collection builder find the file you want to associate with the metadata in the row.
+More information about this field: <!-- Change to something like "More information about this field - like the..." -->  Like the Object ID, the filename should be a unique string with no special characters (dashes and underscores are fine). This field helps Collection builder find the file you want to associate with the metadata in the row and indicates what is going to be display.
 
 **Title**: The title will be used to name the content/object you are adding to the archive on the website.
 
@@ -152,7 +161,26 @@ Like so:
 
 **Display_template:** The display_template field sets the template type for the item in the archive and helps identify the representation of the item on other pages. If this field is not filled out, a default setting will be applied. Default supported options include image, pdf, video, audio, record, item, panorama, compound_object, and multiple. Templates can be viewed and created in the layout folder.
 
+**Object_location:** The Object_location field indicates where the object can be found and is also what Collection builder uses to find the object to display.
+
+If the object will be uploaded to the repository insert a relative path ending in the filename of the object into the Object_location field on the spreadsheet. Most items uploaded on to the repoitory will be in the objects folder, therefore the relative path will start with Objects. 
+
+An example value may look like this:
+```/objects/arc_008.jpg```
+
+The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly, we insert the name of the file. Relative paths specify where a file is in a repository. 
+
+If the object is pulled from a file extension URL insert the link in the Object_location.
+
 **Image_alt_text:** Insert alt text for the image here. Alt text provides a description of the image for screen readers to use, which helps increase accessibility.
+
+**Object_transcript**: This field usually is used to add transcription to video and audio files, however it can be used for any file type. There are two ways of adding the transcript.
+One is to directly add the transcript onto the spreadsheet, however this does not support large transcripts.The other is to add a text file (.txt or .md) in the objects folder of the website repository and then put the relative path of the text file into the Object_transcript field on the spreadsheet to indicate where the text file is. 
+
+An example value may look like this:
+```/objects/transcriptname.txt```
+
+ The slash (/) in the beginning indicates that we will be inputting a relative path then the folder path is inserted separated by slashes until we arrive at the folder with the file. Lastly we insert the name of the file.
 
 Here is an example input:
 > Objectid: arc_007
@@ -196,6 +224,7 @@ Here is an example input:
 >Image_alt_text: Image of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park. The building is in poor condition.
 >
 >Object_transcript:
+
 ### Metadata of the Archive
 The metadata schema we are using is [Dublin Core](https://www.dublincore.org/resources/metadata-basics/). It includes, but is not limited to, [15 main elements](https://www.dublincore.org/specifications/dublin-core/dces/): Creator, Contributor, Publisher, Title, Date, Language, Format, Subject, Description, Identifier, Relation, Source, Type, Coverage, and Rights.
 
@@ -249,13 +278,13 @@ config-metadata.csv is used in these tutorials:
   - [How to Change Metadata Order](#how-to-change-metadata-order)
 
 #### Adding more fields to the metadata
-To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field.
+To add another field to the metadata, open the metadata spreadsheet and click on a field next to where you want your new field to be. Then either right-click or go to the menu bar, select Insert, then Column, and choose to insert the column either to the right or left. At the top of the new column, enter the name of the field you want to add. You may then enter data for that field. 
 
 After you are done entering the data, [*upload the metadata*](#uploading-the-metadata). If you check the CSV file in the repository now, your new field should be there in the top line and all the values of the field should be in the spot indicated by the top line within each row. 
 
 Next, go to the _data folder and locate [**config-metadata.csv**](#about-config-metadatacsv). You must also add your new field there in the row where you want it to be presented. If you are just adding a field without any specific configuration, you can fill out the field and display_name columns in config-metadata.csv. The field should be the name of the new field you added in the CSV, and the display_name is what you want it to be called on the website when it is displayed.
 
-Here is an example:
+Here is an example: <!-- You may want to show this example also in a screenshot of what the doc will look like with this entered -->
 >date,Date Created
 
 #### How to Insert Links into the Metadata
@@ -337,3 +366,24 @@ Any Field put in the  [**config-browse.csv**](#about-config-browsecsv) will beco
 
 #### Rearranging the order of the Elements in the Preview
 This process is similar to [*How to Change Metadata Order*](#how-to-change-metadata-order). Follow the directions there for rearranging the preview elements.
+
+### Compound Objects and Multiple Objects
+Compound objects are items in the archive that contain multiple types of files displayed together. A more in-depth tutorial on how to add this type of item can be found on [Collection Builder’s Compound Object Tutorial](https://collectionbuilder.github.io/cb-docs/docs/metadata/compound-objects/). Additionally, the tutorial explains multiple items, a type of items specifically designed for displaying image files together. Read [Adding Compound and Multiple Objects](#adding-compound-and-multiple-objects) for a brief tutorial on how to create both types of items.
+
+#### Adding Compound and Multiple Objects
+If not already done, add a column named parentid to the metadata CSV through the spreadsheet editor. We will need this since compound objects are made up of child and parent items. The parent item represents the compound object itself, while the child items are the individual pieces of content that make up the compound object.
+
+This field is filled with the object ID of the item you want to set as the parent/compound object for the current item, making the current item a child of the parent. Multiple child items can have the same parent, allowing all child items with the same parent to appear together within the same parent item. If the field is left blank, it indicates that the object has no parents. Usually, parent objects have no parents.
+
+Each child contains information describing themselves, while the parent items describe the compound object as a whole. 
+
+To get started, add the parent item and child items onto the metadata spreadsheet based on the guidelines in [*Formatting the Metadata*](#formatting-the-metadata).
+
+After adding parentid and indicating relationships within files, set the display_template or format value of the parent object to compound_object. If all items being added to the compound objects are images, set the value to multiple to create a multiple object, as they are used to display a set of images.
+
+Now that the spreadsheet is set up to contain coumpound objects, you can now start [uploading the metadata](#uploading-the-metadata) in order to see changes.
+
+#### Oral Histories
+Oral histories are audio files that can be added to the archive. These files usually come with a transcript; therefore, it is good to make them compound objects. Additionally, oral histories require more metadata fields to be filled out.
+
+the rest is TBD

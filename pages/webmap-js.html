@@ -183,9 +183,9 @@ permalink: /webmap-js.html
         // Custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
-            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-            iconSize: [36, 60], // size of the icon
+            //iconSize: [36, 60], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
         });
@@ -459,12 +459,12 @@ permalink: /webmap-js.html
         const germantownWestsideCoords = convertToWGS84(germantownWestside2275);
         const germantownSouthwestCoords = convertToWGS84(germantownSouthwest2275);
         //Define polyline
-        var eastGermantownPolyline = L.polyline(eastGermantownCoords);
-        var germantownMortonPolyline =L.polyline(germantownMortonCoords);
-        var germantownWestCentralPolyline = L.polyline(germantownWestCentralCoords);
-        var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords);
-        var germantownWestsidePolyline = L.polyline(germantownWestsideCoords);
-        var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords);
+        var eastGermantownPolyline = L.polyline(eastGermantownCoords).addTo(map);;
+        var germantownMortonPolyline =L.polyline(germantownMortonCoords).addTo(map);;
+        var germantownWestCentralPolyline = L.polyline(germantownWestCentralCoords).addTo(map);;
+        var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords).addTo(map);;
+        var germantownWestsidePolyline = L.polyline(germantownWestsideCoords).addTo(map);;
+        var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords).addTo(map);;
 
         // Description box control
         var descrip = L.control({ position: 'bottomleft' });

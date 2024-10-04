@@ -118,7 +118,7 @@ permalink: /webmap-js.html
         }
 
         .ywca {
-            filter: hue-rotate(144deg) saturate(1.5);
+            filter: hue-rotate(160deg) saturate(6);
             /*red*/
         }
 
@@ -185,9 +185,9 @@ permalink: /webmap-js.html
             className: 'ywca',
             iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-            //iconSize: [36, 60], // size of the icon
+            iconSize: [20, 30], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
-            popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
         });
 
         //create custom icon for dynamically added layers

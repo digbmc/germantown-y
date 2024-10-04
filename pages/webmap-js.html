@@ -20,7 +20,6 @@ permalink: /webmap-js.html
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Turbo87/leaflet-sidebar/src/L.Control.Sidebar.css" />
-
     <style>
         body {
             padding: 0;
@@ -77,7 +76,6 @@ permalink: /webmap-js.html
             border-radius: 5px;
             cursor: pointer;
         }
-
         .leaflet-control-layers-list .color-indicator {
             display: inline-block;
             width: 12px;
@@ -153,14 +151,13 @@ permalink: /webmap-js.html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.1/proj4leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Turbo87/leaflet-sidebar/src/L.Control.Sidebar.js"></script>
-
     <script>
         // Initialize the map
         var map = L.map("map", {
             center: [40.03030807351389, -75.1761523600391],
             zoom: 15
         });
-
+        
         //Base layer
         var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri',
@@ -177,16 +174,16 @@ permalink: /webmap-js.html
             iconSize: [40, 40],
             iconAnchor: [20, 40],
             popupAnchor: [0, -40],
-            tooltipAnchor: [20, -28]
+            tooltipAnchor: [20, -28] 
         });
         //map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/location-pin" title="location pin icons">Location pin icons created by Icon Mela - Flaticon</a>');
 
         // Add the geocoder control (search) to the map
         var geocoder = L.Control.geocoder({
             defaultMarkGeocode: false
-        }).on('markgeocode', function (e) {
+        }).on('markgeocode', function(e) {
             var center = e.geocode.center;
-            L.marker(center, { icon: searchIcon }).addTo(map)
+            L.marker(center, {icon: searchIcon}).addTo(map)
                 .bindPopup(e.geocode.name)
                 .openPopup();
 
@@ -244,7 +241,7 @@ permalink: /webmap-js.html
         // Custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
-            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
+            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
             iconSize: [30, 45], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
@@ -473,7 +470,7 @@ permalink: /webmap-js.html
             [40.035219178995106, -75.1929296105513],
             [40.0459162067792, -75.18222981253187]
         ]).addTo(map);
-
+      
         //defining EPSG 2272 projection
         proj4.defs("EPSG:2272", "+proj=lcc +lat_1=40.96666666666667 +lat_2=39.93333333333333 +lat_0=39.33333333333334 +lon_0=-77.75 +x_0=600000 +y_0=0 +datum=NAD83 +units=ft +no_defs");
 
@@ -516,7 +513,7 @@ permalink: /webmap-js.html
         var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords).addTo(map);;
         var germantownWestsidePolyline = L.polyline(germantownWestsideCoords).addTo(map);;
         var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords).addTo(map);;
-
+      
         // Description box control
         var descrip = L.control({ position: 'bottomleft' });
 
@@ -564,15 +561,7 @@ permalink: /webmap-js.html
             '<span class="color-indicator" style="background-color: rgb(229, 86, 136);"></span>Industries': industryLayer,
             '<span class="color-indicator" style="background-color: rgb(168, 89, 15);"></span>Landmarks': landmarkLayer,
             '<span class="color-indicator" style="background-color: rgb(35, 108, 190);"></span>Others': otherLayer,
-            'Germantown Boundary': germantownBoundary,
-            'Germantown East Boundary': eastGermantownPolyline,
-            'Germantown Morton Boundary': germantownMortonPolyline,
-            'Germantown West Central': germantownWestCentralPolyline,
-            'Germantown Penn Knox': germantownPennKnoxPolyline,
-            'Germantown Westside': germantownWestsidePolyline,
-            'Germantown Southwest': germantownSouthwestPolyline
-
-
+            'Germantown Boundary Line': germantownBoundary
         };
         // Create the layer control and add the layers
         var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);

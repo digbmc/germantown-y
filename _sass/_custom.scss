@@ -9,8 +9,6 @@ $dun: #C9BDA2ff;
 $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
-
-
 /* $font-family-monospace: Menlo; */
 /*
 body {
@@ -29,7 +27,10 @@ $carolina-blue: #8BB1C4ff;
 $air-force-blue: #507E96ff;
 
 
-
+@font-face {
+    font-family: Teko;
+    src: url(../assets/Teko-VariableFont_wght.ttf);
+  }
 
 
 body {
@@ -94,7 +95,11 @@ body {
     color: white;
     
 }
-
+.nav-title {
+    h1 {
+        font-family: teko;
+    }
+}
 /* media query changes font once links are in dropdown mode */
 
 

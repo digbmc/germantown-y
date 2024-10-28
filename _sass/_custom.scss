@@ -2,56 +2,65 @@
     Put your custom SCSS here!
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+/* color */
+$primary: #255b77;
+$seconardy: #acd4dc;
+$success:  #f3c17b;
+$info: #bd8364;
+$danger: #c84b4e;
 
-$lapis-lazuli: #255B77ff;
-$old-rose: #B2827Cff;
-$dun: #C9BDA2ff;
-$carolina-blue: #8BB1C4ff;
-$air-force-blue: #507E96ff;
+.light-blue {
+    background-color: $secondary !important;
+    border-color: $secondary;
+    outline-color: $secondary;
+}
+.blue-outline {
+    color: $primary !important;
+}
+.blue {
+    background-color: $primary !important;
+}
+/* font */
 
-/* $font-family-monospace: Menlo; */
-/*
-body {
-    $font-family: monospace;
-} */
-/*
-body {
-    font-family: "Menlo", monospace;
-} */
-/* custom colors */
-
-$lapis-lazuli: #255B77ff;
-$old-rose: #B2827Cff;
-$dun: #C9BDA2ff;
-$carolina-blue: #8BB1C4ff;
-$air-force-blue: #507E96ff;
-
-
-@font-face {
-    font-family: Teko;
-    src: url(../assets/Teko-VariableFont_wght.ttf);
-  }
-
-
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-.blue {
-    background-color: $lapis-lazuli !important;
+
+
+h1 ,h2, h3, h4, h5 {
+    font-family: overpass;
 }
 
 
+/* general links */
+p, dd {
+    a {
+        color: $primary;
+        
+        
+    }
+    a:hover {
+        color: $info;
+        text-decoration: underline;
+   }
+}
+.field-value {
+    a {
+        color: $primary;
+        
+        
+    }
+    a:hover {
+        color: $info;
+        text-decoration: underline;
+   }
+}
 
-.light-blue {
-    background-color: $carolina-blue !important;
-}
-.rose {
-    background-color: $old-rose;
-    color: white;
-}
-.dun {
-    background-color: $dun;
-    color: black;
+
+.navbar-toggler {
+    width: 100%;
 }
 
 /* toc */
@@ -64,19 +73,23 @@ body {
     }
 }
 
-.blue-outline {
-    color: $lapis-lazuli !important;
-}
+/* button */
 .btn-primary {
-    background-color:$air-force-blue;
-    border-color: $air-force-blue;
-    outline-color: $air-force-blue;
+    background-color:$info;
+    border-color: $info;
+    outline-color: $info;
   }
-.btn-primary:active {
-    background-color: $carolina-blue;
+
+.btn-primary:active, .btn-primary:hover {
+    background-color: $danger;
+    border-color: $danger;
+}
+#browseSortButton {
+    font-size: 1.2rem;
 }
 
 
+/* nav */
 .nav-font {
     font-size: 1.5vw;
 }
@@ -97,11 +110,10 @@ body {
 }
 .nav-title {
     h1 {
-        font-family: teko;
+        font-family: Overpass;
     }
 }
 /* media query changes font once links are in dropdown mode */
-
 
 /* nav bar dropdown customization */
 .dropdown-item {
@@ -112,26 +124,32 @@ body {
     .nav-font {
       font-size: 1rem;
       padding: 10px;
+      text-align: center;
     }
     .dropdown-item {
         font-size: 0.8rem;
       padding: 10px;
     }
 }
-.dropdown-item:active , .dropdown-item:hover{
-    background-color: $dun;
+/* dropdown style */
+.dropdown-item:active {
+    background-color: $success;
     color: black;
     
 }
+.dropdown-item:hover {
+    background-color: $success;
+    color: black;
+}
 .dropdown-menu {
     .active {
-        background-color: $dun; 
+        background-color: $success; 
         color: black;
     }
     
     
 }
-
+/* card */
 .card {
     h2 {
         font-size: 1.3rem;
@@ -163,7 +181,7 @@ body {
         max-height: 400px;
     }
 }
-
+/* footer */
 .contact {
     color: white; 
     text-decoration: underline;

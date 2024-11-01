@@ -12,25 +12,28 @@ home: true
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
     {% include collection-nav.html %}
     {% include collection-banner.html %}
-    <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
-    <div class="row">
+    <main id="maincontent" role="main" class="flex-shrink-0 page container my-3">
+    <div class="row mx-2">
 
       <div class="col-md-12">
 
-        <div class="card mb-3">
-          <div class="card-body">
-
+        <div class="no-border card mb-3">
+          <div class=" card-body">
+            <h2>About the Site</h2>
             <p class="card-text">{{ site.description }}</p>
             {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
             {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
           </div>
         </div>
-
+      </div>
+      <div class = "col-md-8 text-center mx-auto">
         {% include index/carousel-random.html title="Sample Items" height="300" %}
       </div>
     </div>
-    <div class = "row gx-4">
+    <div class = "row gx-4 mx-2">
+      <h2 class="text-center">Explore the Site</h2>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
+        
           <div class="card">
 
             <img class="card-img-top display-card" src="http://hiddencityphila.org/wp-content/uploads/2015/01/gtownywca_pastorius.jpg" alt="    A photo of the Germantown YWCA building and the Pastorius Monument taken from the viewpoint in Vernon Park.">

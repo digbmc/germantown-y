@@ -28,7 +28,7 @@
            <!-- {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %} -->
         </div>
         {% unless site.data.theme.featured-image contains '/' %}
-        <div class=" bottom-0 end-0 px-2 bg-info bg-opacity-75">
+        <div class=" mural-link bottom-0 end-0 px-5 py-2 bg-info bg-opacity-100">
             <a class="text-white fs-6" href="{% if featuredItem.parentid %}{{ site.data.theme.featured-image | prepend: '#' | prepend: featuredItem.parentid | prepend: '/item.html?id=' | relative_url }}{% else %}{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}{% endif %}" title="{{ featuredItem.title | escape }}">The Mural</a>
         </div>{% endunless %}
     </div>
@@ -41,8 +41,8 @@
             {% if site.tagline %}<p>{{ site.tagline }}</p>{% endif %}
         </div>
         {% if site.organization-logo-banner %}
-        <div class="col-md-3 d-none d-lg-block text-end">
-            <a class="btn btn-outline-light" href="{{ site.organization-link }}" target="_blank" rel="noopener">
+        <div class="col-md-3  d-none d-lg-block text-end">
+            <a class=" btn btn-outline-light" href="{{ site.organization-link }}" target="_blank" rel="noopener">
                 <img class="img-fluid" src="{{ site.organization-logo-banner | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
             </a>
         </div>

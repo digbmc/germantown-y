@@ -32,10 +32,12 @@ body {
 h1 ,h2, h3, h4, h5 {
     font-family: overpass;
 }
-
+h2 {
+    font-size: 1.5rem;
+}
 
 /* general links */
-p, dd {
+p, dd, tr {
     a {
         color: $primary;
         
@@ -56,6 +58,19 @@ p, dd {
         color: $info;
         text-decoration: underline;
    }
+}
+.mural-link {
+    max-width: 200px;
+    font-family: overpass;
+    font-size: 2rem;
+    text-transform: uppercase;
+    box-shadow: 5px -5px $danger;
+    a:hover {
+        
+            text-decoration: underline;
+            
+        
+    }
 }
 
 
@@ -152,8 +167,12 @@ p, dd {
 /* card */
 .card {
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
+    
+}
+.no-border {
+    border: none;
 }
 
 

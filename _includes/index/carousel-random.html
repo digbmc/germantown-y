@@ -37,7 +37,9 @@
 <style>
     #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
+
 <div class="card no-border mb-3">
+
     {% if include.header %}<h2 class="card-header">{{ include.header }}</h2>{% endif %}
     <div class="card-body">
         {% if include.title %}<h2 class="card-title">{{ include.title }}</h2>{% endif %}

@@ -1,12 +1,16 @@
 field,display_name,browse_link,external_link
 title,Title,
 creator,Creator,
+interviewer,Interviewer
+interviewee,Interviewee
 description,Description,
 date,Date Created,
 location,Location
 latitude,Latitude
 longitude,Longitude
 subject,Subjects,true
+personal_name,Personal Name,true
+geographic_subject,Geographic Subject,true
 identifier,Source Identifier,,
 type,Type,
 format,Format,

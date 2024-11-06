@@ -17,6 +17,10 @@ permalink: /webmap-js.html
     <!-- mapbox for fullscreen stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <!--leaflet geocoder  stylesheet-->
+    <!-- sidebar
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Turbo87/leaflet-sidebar/src/L.Control.Sidebar.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    -->
     <style>
         body {
             padding: 0;
@@ -73,6 +77,7 @@ permalink: /webmap-js.html
             border-radius: 5px;
             cursor: pointer;
         }
+
         .leaflet-control-layers-list .color-indicator {
             display: inline-block;
             width: 12px;
@@ -82,45 +87,47 @@ permalink: /webmap-js.html
         }
 
         .other {
-            filter: hue-rotate(0deg);
+            filter: hue-rotate(5deg)saturate(2);
             /*blue*/
         }
 
         .landmark {
-            filter: hue-rotate(180deg);
+            filter: hue-rotate(185deg)saturate(2);
             /*brown*/
         }
 
         .industry {
-            filter: hue-rotate(120deg);
+            filter: hue-rotate(130deg) saturate(3);
             /*pink*/
         }
 
         .lodgings {
-            filter: hue-rotate(240deg);
+            filter: hue-rotate(245deg)saturate(2);
             /*green*/
         }
 
         .branch {
-            filter: hue-rotate(60deg);
+            filter: hue-rotate(65deg)saturate(6);
             /*purple*/
         }
 
         .main-building {
-            filter: hue-rotate(300deg);
+            filter: hue-rotate(305deg)saturate(2);
             /*green*/
         }
 
         .ywca {
-            filter: hue-rotate(144deg) saturate(1.5);
+            filter: hue-rotate(160deg) saturate(6);
             /*red*/
         }
 
         .custom-color {
             filter: var(--hue-rotate);
         }
-
         /* these colors can be changed by changing the number in the hue-rotate(), there must be no spaces between the number and deg, for more options see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images */
+        .leaflet-sidebar .close {
+            z-index: 1000;
+        }
     </style>
 </head>
 
@@ -128,68 +135,91 @@ permalink: /webmap-js.html
     <div id="map">
         <div class="trigger-zone"></div>
         <button id="show-description-btn">How to Use Map</button>
+        <!-- sidebar<div id="sidebar"><h1>Content</h1></div> -->
     </div>
-    <!-- Include Leaflet library -->
+    <!-- leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.5/proj4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.1/proj4leaflet.js"></script>
+    <!-- libraries to convert EPSG:2272 to standard lat long coordination systems -->
+    <!-- sidebar<script src="https://cdn.jsdelivr.net/npm/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.min.js"></script>-->
+
     <script>
-        // Initialize the map
+        //map initialization
         var map = L.map("map", {
             center: [40.03030807351389, -75.1761523600391],
             zoom: 15
         });
-        
+
         //Base layer
+        var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri',
+            maxZoom: 19
+        }).addTo(map);
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
+
         //the search icon can be modified
         var searchIcon = L.icon({
             iconUrl: '{{site.baseurl}}/assets/img/marker.png',
             iconSize: [40, 40],
             iconAnchor: [20, 40],
             popupAnchor: [0, -40],
-            tooltipAnchor: [20, -28] 
+            tooltipAnchor: [20, -28]
         });
-        map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/location-pin" title="location pin icons">Location pin icons created by Icon Mela - Flaticon</a>');
+        //map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/location-pin" title="location pin icons">Location pin icons created by Icon Mela - Flaticon</a>');
 
-        // Add the geocoder control to the map
+        // Add the geocoder control (search) to the map
         var geocoder = L.Control.geocoder({
             defaultMarkGeocode: false
-        }).on('markgeocode', function(e) {
+        }).on('markgeocode', function (e) {
             var center = e.geocode.center;
-            L.marker(center, {icon: searchIcon}).addTo(map)
+            L.marker(center, { icon: searchIcon }).addTo(map)
                 .bindPopup(e.geocode.name)
                 .openPopup();
 
             L.circle(center, { radius: 500, color: 'grey' }).addTo(map);
             map.setView(center, 13);
         }).addTo(map);
+        /*sidebar
+        var sidebar = L.control.sidebar('sidebar', {
+            closeButton: true,
+            position: 'right'
+        }).addTo(map);
+        sidebar.show();*/
+
+        var icon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
         // Custom icon for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
-            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-            iconSize: [36, 60], // size of the icon
+            iconSize: [30, 45], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
-            popupAnchor: [3.75, -59] //point of the icon corresponding to where popup appears
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
         });
 
         //create custom icon for dynamically added layers
         function createCustomIcon(color) {
             return L.icon({
-                iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+                iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
                 shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
-                popupAnchor: [1, -34],
-                tooltipAnchor: [16, -28],
-                shadowSize: [41, 41]
+                iconSize: [20, 30], // size of the icon
+                iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+                popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
             });
         }
         //initialising used colors
@@ -263,14 +293,9 @@ permalink: /webmap-js.html
         // Create historical layers using the function
         var landUse1942 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/11922">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1942. [Land Use / Zoning Maps]. </a>');
         var gmHopkinsAtlas1875 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia| Source: <a href="https://libwww.freelibrary.org/digital/item/46178">G.M. Hopkins, C.E. - Publisher.  City Atlas of Philadelphia, 25th Ward, 1875, Map Index. [Property Atlases/Maps]</a>');
-        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://historicmapworks.com/Atlas/US/6900/">G. W. Bromley & Co. (1895). Philadelphia 1895 [Atlas]. Historic Map Works. </a>');
+        var bromleyAtlas1895 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://historicmapworks.com/Atlas/US/6900/">G. W. Bromley & Co. (1895). Philadelphia 1895 [Atlas]. Historic Map Works. </a>').addTo(map);
         var bromleyAtlas1910 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://www.historicmapworks.com/Atlas/US/7153/">G. W. Bromley & Co. (1910). Philadelphia 1910 [Atlas]. Historic Map Works. </a>');
         var landUse1962 = createTileLayer('https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer/tile/{z}/{y}/{x}', 'Tiles &copy; 2024 The Athenaeum of Philadelphia | Source: <a href="https://libwww.freelibrary.org/digital/item/12030">Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania.  Philadelphia Land Use Map, 1962, Index and Legend. [Land Use / Zoning Maps].</a>');
-
-        var esriStreetMapLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri',
-            maxZoom: 19
-        });
 
         var data = {{ site.data.building-info | jsonify }};
 
@@ -376,26 +401,23 @@ permalink: /webmap-js.html
             });
         }
 
-
-        var unknownLayer = createLayer('unknown');
-        var otherLayer = createLayer('other');
-        var landmarkLayer = createLayer('landmark');
-        var industryLayer = createLayer('industry');
-        var lodgingsLayer = createLayer('lodgings');
-        var branchLayer = createLayer('branch');
-        var mainBuildingLayer = createLayer('main-building');
+        var unknownLayer = createLayer('unknown', icon);
+        var otherLayer = createLayer('other', icon);
+        var landmarkLayer = createLayer('landmark', icon);
+        var industryLayer = createLayer('industry', icon);
+        var lodgingsLayer = createLayer('lodgings', icon);
+        var branchLayer = createLayer('branch', icon);
+        var mainBuildingLayer = createLayer('main-building', icon);
         var ywcaLayer = createLayer('ywca', ywcaIcon);
 
-
         //Add layers to map
+        ywcaLayer.addTo(map);
         otherLayer.addTo(map);
         landmarkLayer.addTo(map);
         industryLayer.addTo(map);
         lodgingsLayer.addTo(map);
         branchLayer.addTo(map);
         mainBuildingLayer.addTo(map);
-        ywcaLayer.addTo(map);
-
 
         // Add boundary line
         var germantownBoundary = L.polyline([
@@ -413,6 +435,49 @@ permalink: /webmap-js.html
             [40.0459162067792, -75.18222981253187]
         ]).addTo(map);
 
+        //defining EPSG 2272 projection
+        proj4.defs("EPSG:2272", "+proj=lcc +lat_1=40.96666666666667 +lat_2=39.93333333333333 +lat_0=39.33333333333334 +lon_0=-77.75 +x_0=600000 +y_0=0 +datum=NAD83 +units=ft +no_defs");
+
+        //conversion function
+        function convertToWGS84(coords) {
+            return coords.map(coord => {
+                const [x, y] = proj4('EPSG:2272', 'EPSG:4326', [coord[0], coord[1]]);
+                return [y, x]; // Leaflet expects [lat, lng]
+            });
+        }
+
+        // Define town boundary in EPSG 2272
+        const eastGermantownCoords2272 = [
+            [2694018.964898601174355, 273613.266017526388168], [2694070.35816852748394, 273549.846853017807007], [2694057.16495344042778, 273359.319346934556961], [2694060.799460604786873, 273292.734834432601929], [2694043.271280437707901, 272921.741481930017471], [2694070.302722439169884, 272661.334850519895554], [2694050.550465360283852, 272455.938607767224312], [2694050.543247520923615, 271952.323145180940628], [2694046.592468023300171, 271893.074576020240784], [2694046.589187189936638, 271612.629926934838295], [2694034.737176775932312, 271458.582662850618362], [2694042.636111110448837, 271379.584461271762848], [2694030.784756854176521, 271265.036462023854256], [2694026.832336947321892, 271063.590342596173286], [2694018.929793685674667, 270873.994265109300613], [2694022.877620443701744, 270688.347654774785042], [2694014.974749103188515, 270443.452475264668465], [2694011.022329196333885, 270253.856069684028625], [2694019.184058278799057, 269938.731371849775314], [2694013.54496194422245, 269457.877674773335457], [2694004.546948447823524, 269300.506270349025726], [2694009.042674362659454, 269116.088988274335861], [2694004.542683362960815, 268967.655558109283447], [2693997.39866878092289, 268771.907590016722679], [2694012.040371775627136, 268618.926596775650978], [2694013.53446327149868, 268603.318688347935677], [2694009.03315994143486, 268342.435679942369461], [2694018.023299440741539, 267865.649231940507889], [2694018.01903435587883, 267539.545225352048874], [2694036.00685927271843, 267179.706706181168556], [2694085.48149785399437, 266887.337868347764015], [2694085.278414279222488, 266869.457326680421829], [2694084.149479523301125, 266770.075307607650757], [2693940.760658696293831, 266586.17902185022831], [2693887.707615196704865, 266616.016888692975044], [2693446.583825528621674, 266661.808463767170906], [2692687.973794192075729, 266735.074393346905708], [2691772.146229520440102, 266817.499097272753716], [2691167.700259938836098, 266860.237856939435005], [2690882.267103776335716, 266881.606908693909645], [2690442.670213937759399, 267003.717228770256042], [2690241.188005357980728, 267293.729115933179855], [2690245.46850860118866, 267390.343095943331718], [2690260.1134924441576, 267720.904442682862282], [2690634.521864354610443, 268381.351284518837929], [2690874.049928605556488, 269199.933308765292168], [2690892.65422211587429, 269706.895877525210381], [2690850.794725775718689, 270246.415795847773552], [2690701.961690112948418, 270767.331748768687248], [2690524.018804520368576, 271268.884879514575005], [2690369.626724854111671, 271707.248176023364067], [2690275.888723358511925, 271936.079083189368248], [2690044.623437851667404, 272234.539116188883781], [2690034.645111352205276, 272238.406234443187714], [2690045.26484078168869, 272252.501350596547127], [2690916.51900377869606, 273429.480952024459839], [2691093.659069448709488, 273667.538218691945076], [2691294.569756865501404, 273937.456970185041428], [2691691.348162770271301, 274470.84008976817131], [2691797.390929698944092, 274613.046826347708702], [2692055.841856360435486, 274977.956201523542404], [2692482.436147525906563, 274685.663807108998299], [2692778.68227419257164, 274507.918427690863609], [2693189.476728186011314, 274211.67590993642807], [2693699.019672363996506, 273840.38531394302845], [2693852.099746778607368, 273723.926557347178459], [2694018.964898601174355, 273613.266017526388168]
+        ];
+
+        const germantownMorton2272 = [
+            [2690245.46850860118866, 267390.343095943331718], [2690215.80354169011116, 267388.49237784743309], [2689942.404482185840607, 267030.952410519123077], [2689736.707387030124664, 266744.222997099161148], [2689484.613403022289276, 266423.799425348639488], [2689482.227909103035927, 266420.389327183365822], [2689238.924261853098869, 266791.13825760781765], [2689063.770084604620934, 267007.111578941345215], [2688984.937565103173256, 267120.582808688282967], [2688842.923085361719131, 267349.097115442156792], [2688622.220442771911621, 267703.620356515049934], [2688329.609479442238808, 268132.411821767687798], [2688187.548739939928055, 268309.500706434249878], [2688049.306890442967415, 268514.304102599620819], [2687942.654544696211815, 268674.839214608073235], [2687685.271529272198677, 269044.731191352009773], [2687706.915186777710915, 269073.715713441371918], [2688046.875792935490608, 269533.534347608685493], [2688546.402352944016457, 270208.25051786005497], [2688858.902712196111679, 270634.38713276386261], [2689142.993351355195045, 271008.440190434455872], [2689311.080613613128662, 271238.080479189753532], [2689763.556742772459984, 271831.955275684595108], [2689751.767068192362785, 271849.111081272363663], [2689879.128033936023712, 272032.000479266047478], [2690034.645111352205276, 272238.406234443187714], [2690044.623437851667404, 272234.539116188883781], [2690275.888723358511925, 271936.079083189368248], [2690369.626724854111671, 271707.248176023364067], [2690524.018804520368576, 271268.884879514575005], [2690701.961690112948418, 270767.331748768687248], [2690850.794725775718689, 270246.415795847773552], [2690892.65422211587429, 269706.895877525210381], [2690874.049928605556488, 269199.933308765292168], [2690634.521864354610443, 268381.351284518837929], [2690260.1134924441576, 267720.904442682862282], [2690245.46850860118866, 267390.343095943331718]
+        ];
+        const germantownWestCentral2272 = [[2687685.271529272198677, 269044.731191352009773], [2687942.654544696211815, 268674.839214608073235], [2688049.306890442967415, 268514.304102599620819], [2688187.548739939928055, 268309.500706434249878], [2688329.609479442238808, 268132.411821767687798], [2688622.220442771911621, 267703.620356515049934], [2688842.923085361719131, 267349.097115442156792], [2688984.937565103173256, 267120.582808688282967], [2689063.770084604620934, 267007.111578941345215], [2689238.924261853098869, 266791.13825760781765], [2689482.227909103035927, 266420.389327183365822], [2689483.654415443539619, 266418.215447023510933], [2689493.905379191040993, 266408.494665935635567], [2689034.214697524905205, 265779.938180267810822], [2688701.392200440168381, 265342.513858273625374], [2688365.231127351522446, 264922.312598943710327], [2688359.060207948088646, 264914.599031686782837], [2687990.815865695476532, 264410.786719098687172], [2687679.078628271818161, 263989.668138772249222], [2687339.99630118906498, 263546.673289850354195], [2687130.364174529910088, 263249.074147522449493], [2687129.146657273173332, 263248.147968277335167], [2687126.862541109323502, 263250.501310020685196], [2686948.575496107339859, 263417.693560943007469], [2686921.108359441161156, 263455.716450765728951], [2686778.09699787851423, 263597.187380012939684], [2686573.443838892038912, 263806.327975204505492], [2686362.958011265378445, 264016.355359695444349], [2686021.577618534211069, 264354.107625353790354], [2685906.151865364518017, 264477.83552043302916], [2685894.573211344890296, 264710.523174596659373], [2685924.967664164025337, 264950.658179241290782], [2685918.859098174609244, 265062.841899331193417], [2685907.001076317857951, 265139.073818668606691], [2685895.989833643194288, 265213.612171656335704], [2685882.030047290027142, 265271.146244855539408], [2685841.108648600522429, 265429.593610740674194], [2685783.594131419900805, 265707.309629724826664], [2685685.882173730991781, 266000.545174412021879], [2685592.545778683386743, 266161.136687192716636], [2685462.261137618683279, 266290.568269435199909], [2685364.820143960416317, 266365.863164608716033], [2685236.37533998535946, 266476.591340275423136], [2685134.505636311601847, 266580.675921735819429], [2685059.210355011746287, 266671.472878661646973], [2684937.679478009231389, 266848.348733666876797], [2685180.744727325160056, 267175.787760380480904], [2685528.366133286617696, 267640.760033331229351], [2685927.950660821981728, 268180.333239205763675], [2686368.568782106041908, 268823.089902356266975], [2686656.85527902841568, 269212.913925856351852], [2687050.24950535595417, 269732.837426692247391], [2687275.886193186044693, 270036.363066360354424], [2687429.807801365852356, 269642.17848727107048], [2687517.359791606664658, 269418.234709441661835], [2687586.068971768021584, 269222.511347606778145], [2687658.025520771741867, 269102.583109766244888], [2687675.614724442362785, 269058.609444439411163], [2687685.271529272198677, 269044.731191352009773]
+        ];
+        const germantownPennKnox2275 = [[2691831.059169441461563, 264713.182439774274826], [2691753.85131861269474, 264515.212035194039345], [2691668.268484517931938, 264496.193372443318367], [2691373.48265677690506, 264068.27854585647583], [2691240.353657945990562, 264163.370875358581543], [2690955.077325612306595, 263783.001885443925858], [2690755.383499279618263, 263526.253055110573769], [2690637.952631771564484, 263328.823331847786903], [2690222.867175862193108, 263611.836217269301414], [2689890.044350698590279, 263840.05721752345562], [2689623.786353021860123, 264049.260211184620857], [2688996.17802819609642, 264477.175037771463394], [2688672.864370360970497, 264705.396366104483604], [2688365.231127351522446, 264922.312598943710327], [2688701.392200440168381, 265342.513858273625374], [2689034.214697524905205, 265779.938180267810822], [2689493.905379191040993, 266408.494665935635567], [2689708.963348031044006, 266204.562002941966057], [2689728.38653752207756, 266185.138813436031342], [2689782.771599352359772, 266138.523421108722687], [2690074.798902437090874, 265923.834874108433723], [2690246.996720775961876, 265783.090404942631721], [2690668.471599608659744, 265485.909896939992905], [2691045.282853856682777, 265221.756881937384605], [2691189.995162859559059, 265151.709121763706207], [2691275.763364031910896, 265093.489750012755394], [2691520.946272611618042, 264931.809299096465111], [2691819.859060615301132, 264721.143053770065308], [2691831.059169441461563, 264713.182439774274826]
+        ];
+        const germantownWestside2275 = [[2690637.952631771564484, 263328.823331847786903], [2690392.061391279101372, 263018.531629607081413], [2689912.553492024540901, 262355.508349359035492], [2689746.79758994281292, 262130.554074853658676], [2689468.56455060839653, 261745.763505846261978], [2689054.174959436058998, 261183.3778195977211], [2689046.068676441907883, 261180.432943597435951], [2688681.289550364017487, 261576.65623252093792], [2688411.596848279237747, 261854.326937019824982], [2688196.552002772688866, 262115.447477772831917], [2687653.049808949232101, 262672.821034938097], [2687552.021139606833458, 262812.430335775017738], [2687129.146657273173332, 263248.147968277335167], [2687130.364174529910088, 263249.074147522449493], [2687339.99630118906498, 263546.673289850354195], [2687679.078628271818161, 263989.668138772249222], [2687990.815865695476532, 264410.786719098687172], [2688359.060207948088646, 264914.599031686782837], [2688365.231127351522446, 264922.312598943710327], [2688672.864370360970497, 264705.396366104483604], [2688996.17802819609642, 264477.175037771463394], [2689623.786353021860123, 264049.260211184620857], [2689890.044350698590279, 263840.05721752345562], [2690222.867175862193108, 263611.836217269301414], [2690637.952631771564484, 263328.823331847786903]
+        ];
+        const germantownSouthwest2275 = [[2693126.626788273453712, 263782.240075930953026], [2693308.225834518671036, 263613.192841857671738], [2693422.040239438414574, 263428.946491181850433], [2693557.366740435361862, 263234.415712267160416], [2693709.607577696442604, 262963.763694524765015], [2693747.666884779930115, 262807.293206930160522], [2693758.029724940657616, 262605.976352348923683], [2693861.843493685126305, 262213.127728596329689], [2693866.420912355184555, 262224.570619106292725], [2694034.690588936209679, 261810.100975602865219], [2693898.581609189510345, 261621.060671269893646], [2693701.979640185832977, 261280.78805784881115], [2693603.678655698895454, 260955.638773769140244], [2693572.224978446960449, 260834.1196598559618], [2693365.926506519317627, 260746.310780346393585], [2692704.243446692824364, 260464.671251773834229], [2692667.033547356724739, 260497.412328019738197], [2692373.205722942948341, 260375.647807776927948], [2692089.859832942485809, 260257.236627265810966], [2691624.66653761267662, 260143.05411285161972], [2691527.399015605449677, 260130.366802275180817], [2691114.848987698554993, 260050.440124854445457], [2690482.763309612870216, 259910.990600600838661], [2690305.407693192362785, 259868.763650938868523], [2690098.495377361774445, 260092.565040603280067], [2689598.973082438111305, 260618.80381752550602], [2689049.208762019872665, 261177.022845432162285], [2689046.068676441907883, 261180.432943597435951], [2689054.174959436058998, 261183.3778195977211], [2689468.56455060839653, 261745.763505846261978], [2689746.79758994281292, 262130.554074853658676], [2689912.553492024540901, 262355.508349359035492], [2690392.061391279101372, 263018.531629607081413], [2690637.952631771564484, 263328.823331847786903], [2690755.383499279618263, 263526.253055110573769], [2690955.077325612306595, 263783.001885443925858], [2691240.353657945990562, 264163.370875358581543], [2691373.48265677690506, 264068.27854585647583], [2691668.268484517931938, 264496.193372443318367], [2691753.85131861269474, 264515.212035194039345], [2691831.059169441461563, 264713.182439774274826], [2691978.309859186410904, 264608.521231770515442], [2692158.471900448203087, 264481.439464941620827], [2692301.858424693346024, 264379.820245608687401], [2692536.86057935655117, 264213.708373099565506], [2692650.734039276838303, 264130.061558768153191], [2692791.540844276547432, 264035.365882024168968], [2693084.263027861714363, 263821.676020681858063], [2693126.626788273453712, 263782.240075930953026]
+        ];
+
+        // Convert the coordinates to WGS84
+        const eastGermantownCoords = convertToWGS84(eastGermantownCoords2272);
+        const germantownMortonCoords = convertToWGS84(germantownMorton2272);
+        const germantownWestCentralCoords = convertToWGS84(germantownWestCentral2272);
+        const germantownPennKnoxCoords = convertToWGS84(germantownPennKnox2275);
+        const germantownWestsideCoords = convertToWGS84(germantownWestside2275);
+        const germantownSouthwestCoords = convertToWGS84(germantownSouthwest2275);
+        //Define polyline
+        var eastGermantownPolyline = L.polyline(eastGermantownCoords).addTo(map);;
+        var germantownMortonPolyline = L.polyline(germantownMortonCoords).addTo(map);;
+        var germantownWestCentralPolyline = L.polyline(germantownWestCentralCoords).addTo(map);;
+        var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords).addTo(map);;
+        var germantownWestsidePolyline = L.polyline(germantownWestsideCoords).addTo(map);;
+        var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords).addTo(map);;
+
         // Description box control
         var descrip = L.control({ position: 'bottomleft' });
 
@@ -424,12 +489,7 @@ permalink: /webmap-js.html
                 '<p>Switch between base maps and categories of buildings you want displayed using the side bar in the top right corner.</p>';
             return div;
         };
-
         descrip.addTo(map);
-
-        /* Show description box on map load
-        descrip.getContainer().classList.add('visible');*/
-
         // Function to hide the description box
         function hideDescriptionBox() {
             descrip.getContainer().classList.remove('visible');
@@ -439,14 +499,6 @@ permalink: /webmap-js.html
         function showDescriptionBox() {
             descrip.getContainer().classList.add('visible');
         }
-
-        /* Set a timeout to hide the description box after 10 seconds
-        setTimeout(hideDescriptionBox, 10000);*/
-
-        /* Add a trigger zone for showing the description box on mouseenter
-        var triggerZone = document.querySelector('.trigger-zone');
-        triggerZone.addEventListener('mouseenter', showDescriptionBox);*/
-
         // Add a mouseleave event to hide the description box once the mouse leaves it
         descrip.getContainer().addEventListener('mouseleave', hideDescriptionBox);
 
@@ -463,9 +515,7 @@ permalink: /webmap-js.html
             "1895 Bromley Atlas": bromleyAtlas1895,
             "1910 Bromley Atlas": bromleyAtlas1910,
             "1942 Philadelphia Land Use": landUse1942,
-            "1962 Philadelphia Land Use": landUse1962
-
-
+            "1962 Philadelphia Land Use": landUse1962,
         };
         var overlayLayers = {
             '<span class="color-indicator" style="background-color: rgb(255, 63, 73);"></span>YWCA': ywcaLayer,
@@ -475,7 +525,15 @@ permalink: /webmap-js.html
             '<span class="color-indicator" style="background-color: rgb(229, 86, 136);"></span>Industries': industryLayer,
             '<span class="color-indicator" style="background-color: rgb(168, 89, 15);"></span>Landmarks': landmarkLayer,
             '<span class="color-indicator" style="background-color: rgb(35, 108, 190);"></span>Others': otherLayer,
-            'Germantown Boundary Line': germantownBoundary
+            'Germantown Boundary': germantownBoundary,
+            'Germantown East Boundary': eastGermantownPolyline,
+            'Germantown Morton Boundary': germantownMortonPolyline,
+            'Germantown West Central': germantownWestCentralPolyline,
+            'Germantown Penn Knox': germantownPennKnoxPolyline,
+            'Germantown Westside': germantownWestsidePolyline,
+            'Germantown Southwest': germantownSouthwestPolyline
+
+
         };
         // Create the layer control and add the layers
         var layersControl = L.control.layers(baseLayers, overlayLayers).addTo(map);

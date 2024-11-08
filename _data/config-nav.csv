@@ -5,7 +5,8 @@ Timeline,/history.html,History
 Exhibits,/exhibits.html,History
 Map,/webmap.html
 Building,/building.html
-Archive,/archive.html
+Archive,,
+Archive,/archive.html,Archive
 Data,/data.html,Archive
 Credits,,
 About the Project,/credits.html,Credits

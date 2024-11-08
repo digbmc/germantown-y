@@ -30,7 +30,7 @@ body {
 
 
 h1 ,h2, h3, h4, h5 {
-    font-family: overpass;
+    font-family: overpass, sans-serif;
 }
 h2 {
     font-size: 1.5rem;
@@ -102,8 +102,10 @@ p, dd, tr {
 #browseSortButton {
     font-size: 1.2rem;
 }
-
-
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 /* nav */
 .nav-font {
     font-size: 1.5vw;

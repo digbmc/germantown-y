@@ -102,8 +102,10 @@ p, dd, tr {
 #browseSortButton {
     font-size: 1.2rem;
 }
-
-
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 /* nav */
 .nav-font {
     font-size: 1.5vw;

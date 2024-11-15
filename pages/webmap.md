@@ -19,11 +19,14 @@ description: This map displays buildings connected to the history of the Germant
 3. Bromley, W. S., & Bromley, G. W. ***Atlas of the City of Philadelphia, 35th Ward***. Philadelphia, PA: G. W. Bromley & Co. 1910.
 [Source](https://www.historicmapworks.com/Atlas/US/7153/)
 
-4. Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania. ***Philadelphia Land Use Map 1942***. Philadelphia, PA: Federal Works Progress Administration for Pennsylvania. 1942. 
+4. OpenDataPhilly. ***Philadelphia Neighborhoods GeoJSON Data.*** Philadelphia, PA: OpenDataPhilly. [Source](https://github.com/opendataphilly/open-geo-data/blob/master/philadelphia-neighborhoods/philadelphia-neighborhoods.geojson)
+
+5. Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania. ***Philadelphia Land Use Map 1942***. Philadelphia, PA: Federal Works Progress Administration for Pennsylvania. 1942. 
 [Source](https://libwww.freelibrary.org/digital/item/11922)
 
-5. Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania. ***Philadelphia Land Use Map 1962***. Philadelphia, PA: Federal Works Progress Administration for Pennsylvania. 1962. 
+6. Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania. ***Philadelphia Land Use Map 1962***. Philadelphia, PA: Federal Works Progress Administration for Pennsylvania. 1962. 
 [Source](https://libwww.freelibrary.org/digital/item/12030)
+
 <hr>
 
 

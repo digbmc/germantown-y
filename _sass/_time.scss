@@ -1,0 +1,182 @@
+/* 
+    Put your custom SCSS here! 
+    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
+*/
+
+//Slide portion
+
+//bg
+.tl-slider-container-mask {
+    box-shadow: inset 0 0 3em 0 #000000;
+}
+
+.tl-slide.tl-full-image-background {
+    box-shadow: inset 0 0 3em 0 #000000;
+}
+
+.tl-caption{
+    color: #fbfbfb !important;
+}
+
+.tl-text-content p {
+    color: #fbfbfb !important;
+}
+
+.tl-credit {
+    color: #fbfbfb !important;
+}
+
+.tl-headline-date {
+    color: #fbfbfb !important;
+}
+
+.tl-headline {
+    color: #fbfbfb !important;
+    font-family:Tahoma, Verdana, sans-serif !important;
+}
+
+// Arrow
+// .tl-slidenav-previous .tl-slidenav-icon::before,
+// .tl-slidenav-next .tl-slidenav-icon::before {
+//   color: #658684  !important;
+//   text-shadow: none !important;
+// }
+
+.tl-slidenav-previous .tl-slidenav-icon::before,
+.tl-slidenav-next .tl-slidenav-icon:hover, .tl-slidenav-previous .tl-slidenav-icon::before,
+.tl-slidenav-next .tl-slidenav-icon::before  {
+  //color: #63544c; //#658684; //#365D6C !important;
+  color: #fbfbfb;
+  text-shadow: none !important;
+}
+
+//Arrow title
+.tl-slidenav-previous .tl-slidenav-title,
+.tl-slidenav-next .tl-slidenav-title  {
+    color: #fbfbfb !important;
+    font-family: Tahoma, Verdana, sans-serif !important;
+    text-shadow: none !important;
+}
+
+.tl-slidenav-description {
+    color: #fbfbfb !important;
+    font-family: Tahoma, Verdana, sans-serif !important;
+    text-shadow: none !important;
+}
+
+
+//Arrow date
+.tl-slidenav-next .tl-slidenav-description,
+.tl-slidenav-previous .tl-slidenav-description {
+    color: #fbfbfb !important;
+    font-family: Tahoma, Verdana, sans-serif !important;
+}
+
+//Bottom portion
+
+// bg //#658684 !important;#65423f
+.tl-timenav {
+    background-color: #65423f !important; 
+}
+.tl-timegroup {
+    background-color: #5C7A77 !important; 
+}
+.tl-timegroup .tl-timegroup-message {
+    color: #D7DFDF!important;
+    text-shadow: none !important;
+}
+.tl-timegroup-alternate {
+    background-color: #516E6C!important;
+}
+
+.tl-timenav {
+    background-color: #3d5b5c !important; 
+}
+
+
+//Flags
+
+.tl-timemarker-content-container {
+    background-color: #3d5b5c !important;
+}
+
+.tl-timemarker-content-container:hover {
+    background-color: #364d4d !important;
+    height: 30px !important;
+}
+
+.tl-timemarker-active .tl-timemarker-content-container {
+    //background-color: #3a2c25 !important;
+    background-color: #2f4545 !important;
+}
+
+//headlines of flags
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+    color: #fbfbfb !important;
+    font-size: 14px !important;
+    font-family: Tahoma, Verdana, sans-serif !important;
+}
+
+.tl-timemarker .tl-timemarker-content-container:hover .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+    color: #fbfbfb !important;
+    font-size: 17px !important;
+    height: 40px;
+    line-height: 20px;
+    width:100%;
+    font-family: Tahoma, Verdana, sans-serif !important;
+    
+}
+
+.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+    color: #fbfbfb !important;
+}
+
+//Side menu bar
+.tl-menubar-button {
+    color:  #fbfbfb !important;
+    //background-color: #503e3b  !important;
+    background-color: #344f50 !important;
+}
+.tl-menubar-button:hover {
+    color: #6b6b6b !important;
+}
+
+//icons on type of file
+.tl-timemarker-media-container {
+    background-color: #ffffff  !important;
+}
+
+.tl-timemarker-content-container
+.tl-timemarker-content .tl-timemarker-media-container 
+[class^="tl-icon-"]{
+    color: #434242  !important;
+}
+
+.tl-timemarker-content-container:hover
+.tl-timemarker-content .tl-timemarker-media-container 
+[class^="tl-icon-"]{
+    color: #333  !important;
+}
+
+.tl-timeaxis-background {
+    background-color: #43342c  !important;
+}
+
+.tl-timeaxis-background {
+    background-color: #344f50  !important;
+}
+
+//Major ticks
+.tl-timeaxis-major .tl-timeaxis-tick {
+    color: #fbfbfb !important;
+    font-family: Tahoma, Verdana, sans-serif !important;
+}
+
+//Minor ticks
+.tl-timeaxis-tick {
+    color: #fbfbfb !important;
+}
+
+#administration-building-university-of-idaho-no-30-marker .tl-timemarker-content-container {    
+    background-color: red !important;
+}

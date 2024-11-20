@@ -4,11 +4,11 @@
 # current using relative_url due to jekyll bug, should be absolute_url in production!
 # to just feature parent objects of compound objects, you will want to change the where_exp below to "where_exp: 'item','item.parentid == nil'"
 ---
-{%- assign items = site.data.t | where_exp: "item","item.date" -%}
+{%- assign items = site.data.timeline | where_exp: "item","item.date" -%}
 {
   "title": {
     "media": {
-      "url": "{{ site.data.featured_item.src | relative_url }}",
+      "url": "{{ "objects/arc_008.jpg"| relative_url }}",
       "caption": {{ site.data.featured_item.title | jsonify }},
       "alt": "{% if item.alt %} {{ item.alt }} {% endif %}",
       "credit": {{ site.title | jsonify }}

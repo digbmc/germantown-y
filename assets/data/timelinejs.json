@@ -21,7 +21,7 @@
       {% if item.background contains 'http' %}
       "url": "{{ item.background }}"
       {% else %}
-      "color": "{{ item.background | default: '#255B77' }}"
+      "color": "{{ item.background | default: '#21637C' }}"
       {% endif %}
     }
   },

@@ -88,7 +88,7 @@ Refer to [CollectionBuilder-GH and SHEETS Metadata](https://collectionbuilder.gi
 
 Note: Avoid adding commas in specific fields, as CSV files use commas to track data. Additional commas may disrupt how the data appears.
 
-**Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency.
+**Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the newest file in the collection. Continue with that format for data consistency.
 
 More information: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 

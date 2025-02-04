@@ -5,4 +5,4 @@ The aim of the website is to to build a digital exhibition that tells the story 
 
 The project is designed with the goal of looking at history in new ways, and an important factor to that is collaboration. The site is designed to be added to.
 
-To get started, visit the site[Wiki](https://github.com/digbmc/germantown-y/wiki). 
+To get started, visit the site [Wiki](https://github.com/digbmc/germantown-y/wiki). 

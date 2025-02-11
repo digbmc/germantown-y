@@ -1,1 +1,1 @@
-![Fashion Show](images/fashion_show.jpeg)
+![Fashion Show](images/IMG_1761.jpeg)

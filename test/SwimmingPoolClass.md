@@ -1,1 +1,1 @@
-![Swimming Pool Photo](test/images/SwimmingPool.jpeg)
+![Swimming Pool Photo](images/SwimmingPool.jpeg)

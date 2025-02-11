@@ -1,3 +1,3 @@
 this is my test page
 
-![colored branch photo](test/images/24.27.e.jpeg)
+![colored branch photo](images/24.27.e.jpeg)

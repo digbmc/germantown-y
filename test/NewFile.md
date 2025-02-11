@@ -3,4 +3,6 @@
 
 
 Here is a picture of a dog.
+
+
 ![Picture of Dog](images/Dog.png)

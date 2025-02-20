@@ -41,7 +41,7 @@ There are two components to the archive:
 You will need to upload the Metadata spreadsheet and the media files in order to add to the archive.
 
 ### Uploading the Metadata
-After adding metadata to the spreadsheet based on the instructions from [*Formatting and Editing the Metadata*](#formatting-and-editing-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
+After adding metadata to the spreadsheet based on the instructions from [*Formatting the Metadata*](#formatting-the-metadata), download the spreadsheet as a CSV by going to the File menu in the upper left, selecting the Download option, and choosing to download it as a CSV. Then navigate to the website repository (on GitHub or your code editor), locate the _data folder, delete the old **germantown-y-metadata.csv** file, and upload the new metadata CSV file with the same name as the one deleted.
 
 ### Uploading the Media Files
 Before uploading the media files, try to compress the files to reduce space usage, since there is a limited amount of storage. Files should be around 200-500 KB. For really big files such as a video or audio, it may be better to upload them onto another platform, such as Youtube, and then add the link of the large file in the filename and location section of the metadata spreadsheet. A useful resource for compressing images is [Squoosh](https://squoosh.app/). Text files usually take up low space, so compressing them is not a concern. See more size guidlines [here](https://www.shopify.com/blog/image-sizes#1) (Feel free to look for other sources!).
@@ -88,7 +88,7 @@ Refer to [CollectionBuilder-GH and SHEETS Metadata](https://collectionbuilder.gi
 
 Note: Avoid adding commas in specific fields, as CSV files use commas to track data. Additional commas may disrupt how the data appears.
 
-**Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the oldest file in the collection. Continue with that format for data consistency.
+**Objectid:** In the CSV file, the object ID should follow this format: arc_001. The numerical part should be incremented by one for each new entry, starting from the newest file in the collection. Continue with that format for data consistency.
 
 More information: about this field. Object Identifiers are used for identifying each object on the website and will be used to create each item’s URL. Therefore, the object ID must be a unique string consisting of only lowercase characters and containing no spaces or special characters. However, dashes ( - ) and underscores ( _ ) are fine.
 

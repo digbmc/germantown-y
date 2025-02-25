@@ -200,6 +200,17 @@ function sorting(json_object, key_to_sort_by) {
     json_object.sort(sortByKey);
 };
 
+function desc(json_object, key_to_sort_by) {
+    function sortByKey(a, b) {
+        var x = a[key_to_sort_by];
+        var y = b[key_to_sort_by];
+        if (typeof x === 'string' ) { x = x.toUpperCase(); }
+        if (typeof y === 'string' ) { y = y.toUpperCase(); }
+        return ((x == null) ? -1 : (y == null) ? 1 : (x < y) ? 1 : ((x > y) ? -1 : 0));
+    }
+    json_object.sort(sortByKey);
+};
+
 /* add sort function on click of sort options */
 var sortFilter = document.querySelector("#sortFilter");
 var sortOptions = document.querySelectorAll(".browse-sort-item");
@@ -215,7 +226,11 @@ sortOptions.forEach((button) => {
     button.classList.add("active");
     sortFilter.innerHTML = display_name;
     // send to sort and filter
-    if (field != 'random') {
+    if (display_name == 'Date(descending)') {
+        desc(items, field);
+        filterItems(items, query);
+    }
+    else if (field != 'random') {
         sorting(items, field);
         filterItems(items, query);
     }

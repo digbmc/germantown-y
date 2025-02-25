@@ -64,7 +64,31 @@ permalink: /webmap-js.html
             height: 100px;
             z-index: 1000;
         }
-
+        #sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 10px;
+            overflow-y: auto;
+            display: none; /* Initially hidden */
+            z-index: 1000;
+        }
+        #sidebar.active {
+            display: block;
+        }
+        #toggleSidebar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            cursor: pointer;
+            z-index: 1100;
+        }
         #show-description-btn {
             position: fixed;
             bottom: 10px;
@@ -135,7 +159,7 @@ permalink: /webmap-js.html
     <div id="map">
         <div class="trigger-zone"></div>
         <button id="show-description-btn">How to Use Map</button>
-        <!-- sidebar<div id="sidebar"><h1>Content</h1></div> -->
+        <div id="sidebar"><h1>Content</h1></div>
     </div>
     <!-- leaflet library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -433,7 +457,9 @@ permalink: /webmap-js.html
             [40.01751540587145, -75.17201703778757],
             [40.035219178995106, -75.1929296105513],
             [40.0459162067792, -75.18222981253187]
-        ]).addTo(map);
+            ],{
+            attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
 
         //defining EPSG 2272 projection
         proj4.defs("EPSG:2272", "+proj=lcc +lat_1=40.96666666666667 +lat_2=39.93333333333333 +lat_0=39.33333333333334 +lon_0=-77.75 +x_0=600000 +y_0=0 +datum=NAD83 +units=ft +no_defs");
@@ -470,13 +496,31 @@ permalink: /webmap-js.html
         const germantownPennKnoxCoords = convertToWGS84(germantownPennKnox2275);
         const germantownWestsideCoords = convertToWGS84(germantownWestside2275);
         const germantownSouthwestCoords = convertToWGS84(germantownSouthwest2275);
-        //Define polyline
-        var eastGermantownPolyline = L.polyline(eastGermantownCoords).addTo(map);;
-        var germantownMortonPolyline = L.polyline(germantownMortonCoords).addTo(map);;
-        var germantownWestCentralPolyline = L.polyline(germantownWestCentralCoords).addTo(map);;
-        var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords).addTo(map);;
-        var germantownWestsidePolyline = L.polyline(germantownWestsideCoords).addTo(map);;
-        var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords).addTo(map);;
+            //Define polyline
+            var eastGermantownPolyline = L.polyline(eastGermantownCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+
+            var germantownMortonPolyline = L.polyline(germantownMortonCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+
+            var germantownWestCentralPolyline = L.polyline(germantownWestCentralCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+
+            var germantownPennKnoxPolyline = L.polyline(germantownPennKnoxCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+
+            var germantownWestsidePolyline = L.polyline(germantownWestsideCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+
+            var germantownSouthwestPolyline = L.polyline(germantownSouthwestCoords, {
+                attribution: 'Coordinates &copy; Open Data Philly'
+            }).addTo(map);
+        
 
         // Description box control
         var descrip = L.control({ position: 'bottomleft' });

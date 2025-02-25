@@ -12,6 +12,10 @@ permalink: people.html
 * Sean Keenan, Project Manager & Educational Technology Specialist
 * Stella Fritzell, DSGA and Assistant Director of DSSF
 
+### Friends of Germantown YWCA
+* Ann Doley
+* Renée Cunningham
+
 ### Digital Scholarship Summer Fellows
 * Anna Nguyen
 * Emma Dermansky
@@ -21,22 +25,16 @@ permalink: people.html
 
 <img src="objects\DSSF.jpg" alt="picture of the DSSF team" >
 
-### Special Thanks 
-* Grace Cipressi, Assistive Technology Specialist
-* Jessica Bright, Digital Collections and Metadata Librarian
-* Zoe Kauffman
-
-#### Friends of Germantown YWCA
-* Ann Doley
-* Barbara Dowdall
-* Renée Cunningham
-* Tuomi Forrest
-
 ### Additional Contributors
-* Friends for the Restoration of the Germantown YWCA
+* Barbara Dowdall
 * Center in the Park
-* Temple University Special Collections
+* Friends for the Restoration of the Germantown YWCA
+* Grace Cipressi, Assistive Technology Specialist
 * Historic Germantown
+* Jessica Bright, Digital Collections and Metadata Librarian
+* Temple University Special Collections
+* Tuomi Forrest
+* Zoe Kauffman
 
 #### Bryn Mawr College: 
 * Career & Civic Engagement

@@ -1,5 +1,5 @@
 ---
-title: history
+title: History
 layout: history
 permalink: history.html
 toc: true

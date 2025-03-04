@@ -19,7 +19,7 @@ permalink: people.html
 * Isbah Ameer
 * Nada Elshafey
 
-<img src="objects\DSSF.jpg" alt="picture of the DSSF team" >
+<img src="objects\DSSF.jpg" alt="picture of the DSSF team" class="">
 
 ### Special Thanks 
 * Grace Cipressi, Assistive Technology Specialist

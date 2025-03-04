@@ -9,7 +9,7 @@ Most of the content being added to the site will be files for the [exhibits page
 Front matter is indicated with a starting `---` and a closing `---`. For example, here's the front matter of the archive page
 ```
 ---
-title: archive
+title: A rchive
 layout: browse
 permalink: browse.html
 ---

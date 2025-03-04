@@ -1,7 +1,8 @@
 ---
 title: The Colored Branch of the Germantown YWCA
 description: A brief introduction to the history of the Colored Branch
-author: Katarina Hirschberg & Grace Diehl
+author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
+date: March 2025
 img: arc_008
 ---
 
@@ -16,5 +17,6 @@ Black people have lived in Germantown from as early as 1790, when records indica
 - 1850-1890: 5 black churches 
 - 1868-1886: 3 black public schools 
 - 1838-1894: 4 social welfare institutions
+
 The Germantown black community was excluded from most white institutions, and “in general, Black social welfare in Germantown would be kept in the Black community”[^fn1]. Examples of organizations. founded by and for Black people in Germantown include the Tabernacle Home Mission and Industrial School. Despite class diversity and conflict within the black community, racial solidarity took first priority and ultimately kept the community together[^fn1].
 [^fn1]: Source: *Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970*, [Dissertation], Stephanie Yvette Felix, 1999.

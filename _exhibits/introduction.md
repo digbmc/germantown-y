@@ -3,7 +3,7 @@ title: The Colored Branch of the Germantown YWCA
 description: A brief introduction to the history of the Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
-img: arc_008
+img: 24.3.f
 ---
 
 ## Location

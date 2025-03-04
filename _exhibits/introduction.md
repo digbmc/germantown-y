@@ -9,9 +9,10 @@ img: 24.3.f
 ## Location
 The Colored Branch was located in this building at 6128 Germantown Avenue.
 ![archive image of 6128 Germantown Ave](https://github.com/digbmc/germantown-y/blob/Harkness-House-Branch-Y/assets/pics/24.3.f.jpeg)
-Source: Temple Archives
+Source: [Image of Building at 6128 Germantown Avenue], [Box 24/folder 3], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
 
-## History of the Black Community of Germantown
+
+## History of Germantown's Black Community
 
 Black people have lived in Germantown from as early as 1790, when records indicate that Germantown had 26 “non-white” [^fn1] inhabitants, who were mostly enslaved. In 1850 this number increased to encompass 1-2% of the Germantown population, however the population really began growing in the 1870’s and 1880’s. During this time, the black community began building their own community enclaves since Germantown was a segregated community, with the black and white population having separate schools, churches, and “social welfare efforts”[^fn1]: 
 - 1850-1890: 5 black churches 

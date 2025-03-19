@@ -1,7 +1,7 @@
 ---
-title: The Women of Germantown
-description: Learn about the figures featured in David McShane's 2001 mural.
-author: Emma
+title: The Women of Germantown Mural
+description: Learn about the origins of David McShane's 2001 Mural
+authors: Estrella Pacheco and Krista Chan
 img: arc_008
 
 ---
@@ -10,7 +10,7 @@ On the side of the Germantown YWCA is a large mural with the faces of six women,
  
 While the mural itself is easily accessible for the public to view on the side of 5280 Germantown Ave, understanding the history and origins of the mural has been a lot less accessible. Students at Bryn Mawr and Haverford have begun to uncover the story behind the mural and the women it memorializes.  
 
-##### *Uncovering The Murals Orgins*
+##### *Uncovering The Murals Origins*
 
 This detective work started with emailing the most obvious people: the artist, David McShane, and Mural Arts Philadelphia. Mural Arts Philadelphia had no records of the mural other than the finished product. David McShane was able to talk to us and gave us his account of how he got involved with the mural. 
  
@@ -24,9 +24,15 @@ Pamphlets featured below reveal that the Y was creating curriculum that they hop
 
 With input from the Y’s mural committee the final version of the mural was designed and then painted onto the wall. The design features the six key women on a colorful and floral background, which “represents the seeds of these women’s works blossoming and being passed on to current and future women of Germantown to appreciate and to carry on.” Each of the women is depicted with a symbol representative of their contribution to the community and broader society. Sarah Ward McLean, who funded the Y’s building is represented with the entrance to the Y, Dinah is represented with a torch, Maggie Kuhn is represented with a large Gray Panthers button, Louisa May Alcott is represented by a book, Sadie Tanner is featured with scales of justice, and Clarice Herbert’s symbol is two girls of different races which represent the Y’s role integration and its racially diverse community. 
 
-##### *Beyond the Mural: Communnity Involvment*
+
+##### *Beyond the Mural: Community Involvement*
 
 While these testimonies give great insight into the early stages of the mural, pamphlets found at Germantown Historical Society have created more questions about the inception of the mural. 
+
+<img src="https://github.com/digbmc/germantown-y/blob/Mural/assets/pics/Listofwomensnames.jpg" Width="300" Height="400"> <img src="https://github.com/digbmc/germantown-y/blob/Mural/assets/pics/Muralphases.jpg" Width="300" Height="400"> 
+
+
+
 
 According to a Germantown Women’s Y pamphlet from the 2000, there was a program titled “The Big Picture – Mural Arts for Teens”. The program was supposed to run from October 2nd, 2000, until June 16th, 2001. The program was divided up into three phases. The first phase was meant to teach the basics of drawing, composition, space, and color. The second is where students were introduced to the process of creating a mural, and were taught lessons on teamwork, conflict resolution, and social responsibility. The last phase was the actual creation of a mural. Students were meant to select a wall, develop a sketch, and gain approval for their intended mural. In the pamphlet, the listed instructor was Jane Degenhardt, an artist associated with Mural Arts Philadelphia. 
 

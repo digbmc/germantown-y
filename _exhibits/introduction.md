@@ -8,8 +8,11 @@ img: 24.3.f
 
 ## Location
 The Colored Branch was located in this building at 6128 Germantown Avenue.
+{% comment%}
 ![archive image of 6128 Germantown Ave](https://github.com/digbmc/germantown-y/blob/Harkness-House-Branch-Y/assets/pics/24.3.f.jpeg)
-{% include feature/image.html objectid="24.3.f.jpeg" alt="archive image of 6128 Germantown Ave" %} 
+{% endcomment%}
+{% include feature/image.html objectid="apple.png" alt="archive image of 6128 Germantown Ave" %} 
+{% include feature/image.html objectid="assets/pics/24.3.f.jpeg" alt="archive image of 6128 Germantown Ave" %}
 Source: [Image of Building at 6128 Germantown Avenue], [Box 24/folder 3], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
 
 

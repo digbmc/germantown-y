@@ -2,6 +2,7 @@
 title: People
 layout: page 
 permalink: people.html
+img: /assets/pics/DSSF.jpg
 ---
 
 ## Project Team
@@ -23,8 +24,10 @@ permalink: people.html
 * Isbah Ameer
 * Nada Elshafey
 
-<img src="objects\DSSF.jpg" alt="picture of the DSSF team" class="">
-
+{% comment%}
+![The DSSF Fellows with Anne Doley](https://github.com/digbmc/germantown-y/assets/pics/DSSF.jpg)
+{% endcomment%}
+{% include feature/image.html objectid="/assets/pics/DSSF.jpg" alt="The DSSF Fellows with Anne Doley" %}
 ### Additional Contributors
 * Barbara Dowdall
 * Center in the Park

@@ -11,7 +11,8 @@
       "url": "{{ "objects/arc_008.jpg"| relative_url }}",
       "caption": {{ site.data.featured_item.title | jsonify }},
       "alt": "{% if item.alt %} {{ item.alt }} {% endif %}",
-      "credit": {{ site.title | jsonify }}
+      "credit": {{ site.title | jsonify }},
+      "link": "{{ '/item.html?id=arc_008' | relative_url}}"
     },
     "text": {
       "headline": {{ site.title | append: ' Timeline' | jsonify }},
@@ -32,7 +33,7 @@
           "url": "{{ item.image_small | default: item.image_thumb | default: item.object_location | relative_url }}",
           "caption": {{ item.caption | jsonify }},
           "alt": "{% if item.alt %} {{ item.alt }} {% endif %}",
-          "link": "{{ '/items/' | relative_url }}{% if item.parentid %}{{ item.parentid }}.html#{{ item.objectid }}{% else %}{{ item.objectid }}.html{% endif %}"
+          "link": "{% if item.objectid %}{{'/item.html?id='| append: item.objectid | relative_url }}{% else %}{{ item.object_location}}{% endif %}"
         },
         "text": {
           "headline": {{ item.title | jsonify }}

@@ -10,11 +10,9 @@ img: /assets/pics/24.3.f.jpeg
 
 ## Description of 6128 Germantown Ave. 
 
-[archive image of building: 24.3.f] 
-
-[archive image of house equipment: 24.3.b] 
-
-[archive image of appraisal document: 24.3.d] 
+{% include feature/image.html objectid="assets/pics/24.3.f.jpeg" alt="archive image of 6128 Germantown Ave" %} 
+{% include feature/image.html objectid="assets/pics/24.27.e.jpeg" alt="archive image of 6128 Germantown Ave" %} 
+{% include feature/image.html objectid="assets/pics/24.27.d.jpeg" alt="archive image of 6128 Germantown Ave" %} 
 
 The Colored Branch was housed in a relatively large, three story stone building on Germantown Avenue.  The property was approximately 40 x 125 feet large, containing the building, a lot behind it, a terrace, and tennis courts (TA, 24.3. Building - House Committee 1918 – 60). The building itself contained a variety of rooms, which included a living room, blue room, kitchen, third floor front and kitchen, club room, and a gymnasium (TA, 24.2. Building Correspondence 1926-55, 1945-1946). These spaces were used to host private parties, church groups, meetings, teas and receptions. Many of these spaces, including the tennis courts, were rented out for outside groups to use. Image 24.3.b. includes a list of the “house equipment” they had, which included dishes, glasses, linens, roller skates, and music equipment. 
 

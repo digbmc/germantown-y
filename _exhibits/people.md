@@ -30,7 +30,6 @@ Colored Branch standing committee officers at the end of 1918:
 1924:
 - Mrs. Olivia Taylor (formerly Yancy) is elected to lead the Colored Branch 
 - Sunie Steele (Warrick) - Secretary of the Younger Girls’ Department (1929-36). After integration, she served as the Camp Committee chair. 
-
 - Mrs. Isabel Calloway - Branch Chairman until 1932 
 - Mrs. Ruth P. Johnson - Chairman from 1932-1938 
 - Mrs. Olivia Y. Taylor - elected Chairman in 1938 

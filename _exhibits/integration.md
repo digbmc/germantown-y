@@ -1,3 +1,11 @@
+---
+title: Integration
+description:
+author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
+date: March 2025
+img: 
+---
+
 ## The Complicated Integration Process at the YWCA
 When looking at the path to the integration of the YWCA, the process was far from clean-cut. Legally speaking, the integration charter mandating that all YWCAs be integrated was not passed until 1946. However, as early as the 1920s, evidence of events and practices involving both black and white people are evident.  
 

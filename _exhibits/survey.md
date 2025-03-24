@@ -1,3 +1,11 @@
+---
+title: Survey
+description:
+author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
+date: March 2025
+img: 
+---
+
 ## Overview
 This questionnaire was used in November 1944, and includes various questions that shed light on the values and sentiments of the respondents and potentially the community at large. Important to note is the fact that the Interracial Charter that put in place the policy of integration was not adopted until 1946, so integrated events were not required.
 

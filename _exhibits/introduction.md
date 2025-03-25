@@ -9,7 +9,7 @@ img:
 
 # Introduction 
 
-{% include feature/image.html objectid="objects/24.3.f.jpeg" alt="archive image of 6128 Germantown Ave"}
+{% include feature/image.html objectid="objects/24.3.f.jpeg" alt="archive image of 6128 Germantown Ave" %}
 
 The Colored Branch was a segregated branch of the Germantown YWCA whose function was to: 
 >“eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115) [^fn1].

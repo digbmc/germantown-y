@@ -1,8 +1,8 @@
 field,display_name,btn,hidden,sort_name
 creator,Creator,,,Creator
 description,,,true,
-date,Date,,,Date(ascending)
-date,Date,,,Date(descending)
+date,Date,,,Date (ascending)
+date,Date,,true,Date (descending)
 location,,,true,Location
 subject,,,true,Subject
 identifier,,,true

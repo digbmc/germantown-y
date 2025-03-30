@@ -5,19 +5,47 @@ author:
 description: History of the YWCA Organization
 img: arc_001
 ---
+### **The Women of Germantown**
 
-**Note:** content is placeholder content for reference! It will be replaced.
-
-Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-
-{% include feature/image.html objectid="objects/arc_002.jpg" width="75" caption="an image" %}
-
-{% include feature/image.html objectid="objects/arc_008.jpg" width="55" %}
-
-<p>This showcases the Mural on the side of the building of significant women. 
-Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
-
-{% include feature/image.html objectid="objects/arc_001.jpg" width="8" caption="YWCA Building front perspective" %}
-
-{% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
-
+Sarah W. B McLean 
+Louisa May Alcott
+Sadie T. M Alexander 
+Maggie Kuhn 
+Betty Rotenberg 
+Clarice G. Herbert 
+Ann Preston 
+Sonya Sanchez 
+Rennie Cohen 
+Marguerite Riegle 
+Laura Nichols 
+Lucy Carner 
+Rt. Rv. Barbara Harris 
+Shelly Yanoff 
+Ada LaCount 
+Pauline H. Bernhard 
+Hannah Ann Zell 
+Betty Shellenberg 
+Dinah 
+Molly Rinker 
+Martha Redville 
+Violet Oakley 
+Jessie W. Smith 
+Deborah Kogan 
+Barbara Dunham 
+Eliz S. Green 
+Susan E Fund 
+Janet Bruin 
+Meta W. Fuller 
+Marietta Simpson 
+Clara Ward Singers 
+Elizabeth P. Martin 
+Kitty Minehart 
+Fanny Kemble 
+Lucretia Mott
+Grace Kelly 
+Lorain Cary 
+Allyson Schwartz
+Rosita Youngblood 
+Donner Miller 
+Rose Toll 
+Barbara Bloom

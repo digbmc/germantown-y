@@ -53,6 +53,8 @@ The mural’s origin story is a true testament to the nature of the Germantown c
 
 The mural was finished in August 2001. Clarice Herbert, the only living woman honored on the mural, was in attendance along with Irma Gardner-Hammond who posed for the portrait of Dinah.  
 
+![Clarcie Herbert at the Women of Germantown Mural unveiling](https://github.com/digbmc/germantown-y/blob/Mural/assets/pics/clariceatunveiling.jpg)
+
 If you have any further information on this mural project or the women featured on it we invite you to share it with us by emailing _______________. 
 
 [^fn1]: example footnote

@@ -32,6 +32,10 @@ With input from the Y’s mural committee the final version of the mural was des
 
 ![David McShane's Final Sketch of the Women of Germantown Mural](https://github.com/digbmc/germantown-y/blob/Mural/assets/pics/GriddedDraft[24].jpeg)
 
+{% include feature/image.html objectid="assets/img/FirstMuralVersion.jpeg" width="75" caption="repeat of first image" %}
+
+
+
 ##### *Beyond the Mural: Community Involvement*
 
 While these testimonies give great insight into the early stages of the mural, pamphlets found at Germantown Historical Society have created more questions about the inception of the mural. 

@@ -21,7 +21,7 @@ The results of this question particularly highlight the discrepancies between th
 ### Yes - 4, No - 12
 These two questions demonstrate the issue of planning versus executing projects. Most participants saw value in interracial projects, generally in favor of their occurrence. However, the same group mostly did not see the projects as practical, for various reasons. In theory, they would be in favor, but in reality, they do not believe that it makes sense to plan these events. It is easy to say that you support something but much more difficult to make the effort for it to happen. Along with that, it would be intersting to ask this question again 2 years from this point when interracial events became policy. With that, more structures were put into place that would make integrated projects more feasible, and potentially it could be more practical.  
 
-![archive questionnaire about integration at the YWCA](https://github.com/digbmc/germantown-y/blob/Harkness-House-Branch-Y/assets/pics/24.27.e.jpeg#:~:text=24.27.e.jpeg)
+![archive questionnaire about integration at the YWCA](https://github.com/digbmc/germantown-y/blob/Harkness-House-Branch-Y/assets/pics/arc_061.jpeg)
 ## Question 11: If a white girl and a Negro girl who have equal skills in typing and shorthand apply for the same job, who should be hired?
 ### White - 8, Negro - 0, Girl with additional qualities such as personality, good appearance, etc. - 4, Don’t know - 2, Depends on policy of employer - 1
 ## Question 12: If a white girl with good training and no experience and a Negro girl with good training and 3 years experience should apply for the same job, which should be hired?

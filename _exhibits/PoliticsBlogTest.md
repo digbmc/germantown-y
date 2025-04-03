@@ -22,8 +22,7 @@ Councilwoman Cindy Bass and her councilmanic power have played a significant rol
 
 **Act 135** 
 
-{% include feature/image.html objectid="objects/arc_040.jpeg" " caption="Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012" %}
-
+{% include feature/image.html objectid="objects/arc_040.jpeg" caption="Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012" %}
 
 However, there are ways the community can sidestep Councilwoman Bass to develop the building. Ken Weinstein, a local developer, has been working to get the building filed under Act 135 so development and repairs can finally begin on the building. 
 

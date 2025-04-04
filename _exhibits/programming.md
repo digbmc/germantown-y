@@ -3,7 +3,7 @@ title: Programming and Events
 description:
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
-img: 
+img: arc_066
 ---
 
 ## Programming and Events at the Colored Branch

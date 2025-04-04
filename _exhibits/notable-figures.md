@@ -6,7 +6,7 @@ date: March 2025
 img: 
 ---
 
-## Notable Figures Attached to the Colored Branch of the YWCA
+## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
 
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
 - 5 Black Affiliation Commitee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
@@ -34,4 +34,5 @@ img:
 - Mrs. Elizabeth Duplenssis - elected Chairman in 1943
 - Sibyl Gowdy - Colored Branch Program Director during integration
 - Jessie Pratt - one of 3 black board members in the integrated Committee of Management in 1948
-- Dorothy Warrick - chair of Integration Committee 
+- Dorothy Warrick - chair of Integration Committee
+[^fn1]: Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 

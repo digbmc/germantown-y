@@ -23,7 +23,8 @@ The Branch had a strong relationship to Christianity as well as to local black c
 The Colored Branch had its own leadership that was integrated and became increasingly black. Ultimately it was under the control of the main YWCA because of white YWCA members’ racist assumptions that they were incapable of leadership. In fact, until 1924, no black woman was allowed to be chair of the Colored Branch. 
 
 The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s [^fn2]. During this time, black people were still prohibited from joining the main YWCA and using their pool, which was a major point of conflict. However,starting in the 1940’s discussion about integration as well as interracial activities became increasingly common and in April 1946 the National YWCA passed an Interracial Charter to end racial segregation. This change was both applauded and criticized from members of both races. While integration was a step in the right direction, it also came with the reduction of Colored Branch activities and ultimately the sale of their building in 1952, marking the final end of the Colored Branch. This was a hard loss for the Germantown black community, who fought to keep their organization and their building. The Germantown YWCA and the Colored Branch were not alone in their struggle, many YWCA Colored Branches and other all-black institutions were being integrated and closed during this time all around the country [^fn1]. 
- 
+
+Here is a short introductory video, in which YWCA members reflect about the Colored Branch:
 [video](https://www.youtube.com/watch?v=jVVQdut2pCA)
 
 

@@ -48,3 +48,4 @@ Resources for Further Research:
 - “Battles of Germantown” by David W. Young 
 - https://www.youtube.com/watch?v=I2A2V3vh-2Q “A Story of Segregation and Diversity”
 - https://digital.library.temple.edu/digital/custom/ywcaphiladelphia
+- https://www.ywca.org/who-are-we/history  

@@ -1,8 +1,8 @@
 ---
 
-title: The YWCA Organization
-author: 
-description: History of the YWCA Organization
+title: The Pool
+author: Grace Roebuck and Augusta Clusen-Moses
+description: Pictures and Stories of the YWCA Pool
 img: arc_001
 ---
 

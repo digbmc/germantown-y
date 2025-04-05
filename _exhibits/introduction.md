@@ -3,7 +3,7 @@ title: Introduction
 description: Introduction to the Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
-img: arc_067
+img: arc_069
 ---
 
 
@@ -20,7 +20,6 @@ The YWCA’s racist policies prevented black members from joining the main YWCA,
 
 The Colored Branch, also known as the Germantown Colored Branch, Branch Y, or the Colored Y, was first founded in 1917 and in 1918 moved into a building at 6128 Germantown Avenue. The Colored Branch’s activities were similar to those of the main, all-white Germantown YWCA. They hosted club events, socials, dances, Christian religious services, service and volunteer work, educational classes, physical sports (they had a tennis court), as well as a variety of “race-pride” (Felix, 1999, 124) activities and events, such as supporting the NAACP and co-organizing Negro Achievement Week. 
 
-{ % arc_069 %} 
 {% include feature/image.html objectid="arc_069" alt="two members, Alyce Jackson and Bernice Murray on the tennis court" %}
 
 The Branch had a strong relationship to Christianity as well as to local black churches. In fact, many of the Colored Branch’s leadership, like Olivia (Yancy) Taylor, who was the “first elected and first Black Branch Chairman” (125), also had prominent church positions and sometimes meetings would start and end in prayer. 

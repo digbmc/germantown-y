@@ -24,7 +24,7 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 <p>This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear.
   
 Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
-
+.
 
 {% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}
 

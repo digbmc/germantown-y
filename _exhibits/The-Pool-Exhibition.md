@@ -43,7 +43,8 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 <p>An interview with Lyn Thompson Giles, TITLE, about how hard it got to upkeep of the pool and fond memories:
 
 <p>Lyn Thompson Giles: I remember getting a huge grant to refurbish some of the swimming pool because there was some fancy guy who had designed a swimming pool, but it was $400,000 which should have been enough. But it wasn't, I mean, it only took care of heating the pool. So the pool still needs to be cleaned. The pool still needs to be painted. 
-{% include feature/image.html objectid="objects/arc_076.jpeg" width="55"  caption="An image of the pool after the closing of YWCA" %}
+  
+<p>{% include feature/image.html objectid="objects/arc_076.jpeg" width="55"  caption="An image of the pool after the closing of YWCA" %}
 <p>An image of the pool after the closing of YWCA --- ASK ANN FOR CREDIT
 <p>It was such a fabulous place to be from when I was a young girl to right before it closed. Because we used to have, in the summer, the kids would come to go swimming because there wasn't a lot of outdoor pools, but you know, it was $1.50 to go swimming, and most people could afford $1.50 at that time. But then people would steal pipes. And it was just, it was just never enough money. 
 

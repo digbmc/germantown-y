@@ -13,7 +13,7 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 {% include feature/image.html objectid="objects/arc_074.jpeg" width="55" %} {% include feature/image.html objectid="objects/arc_075.jpeg" width="55" caption="The Importance of this Swimming Pool" %}
 
 <p>In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool in the year of 2000. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as it is one of the highest causes of death at the time of this being published. As shown by our oral history quotes, the pool was falling on hard times in the early 2000s, as financing became tighter and tighter. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many. 
-<p>YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000. 
+<p>*YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000.* 
 
 {% include feature/image.html objectid="objects/arc_083.jpeg" width="55" caption="Swimming Lessons at the YWCA Pool" %}
 {% include feature/image.html objectid="objects/arc_080.png" width="90" caption="YWCA Building gets damaged from fire" %}
@@ -29,9 +29,9 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 
 <p>This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear.
 
-Oral History Quotes About the Pool:
+Oral History Quotes About the Pool, Fall of 2023:
 
-An interview with Arleen Olshan about her experience with using the pool as a space to meet other LGBTQ women:
+An interview with Arleen Olshan, the former art director at the Y, about her experience with using the pool as a space to meet other LGBTQ women:
 
 Arleen Olshen: One thing I should tell you, too, that the pool, the swimming pool? On Tuesday nights, back in the day, when we were part of Radicalesbians, like in the 1970s, early 1970s, there was nude swimming there on Tuesday nights. 
 
@@ -43,7 +43,23 @@ Grace Roebuck: That sounds amazing. Yeah.
 
 Arleen Olshen: It's very important to gain access to it, and find out exactly what needs to be done. I mean, it's not just like, let's just unlock the doors and open the windows.  I know that there's all kinds of water damage and probably needs a new roof. The pool was falling apart back in the day, the floors were buckling. There's a lot of work to be done. If you can't get access, you can't know what the hell needs to be done.
 
-  
+
+An interview with Lyn Thompson Giles, TITLE, about how hard it got to upkeep of the pool and fond memories:
+
+Lyn Thompson Giles: I remember getting a huge grant to refurbish some of the swimming pool because there was some fancy guy who had designed a swimming pool, but it was $400,000 which should have been enough. But it wasn't, I mean, it only took care of heating the pool. So the pool still needs to be cleaned. The pool still needs to be painted. 
+{% include feature/image.html objectid="objects/arc_076.jpeg" width="55" %}
+<p>An image of the pool after the closing of YWCA --- ASK ANN FOR CREDIT
+It was such a fabulous place to be from when I was a young girl to right before it closed. Because we used to have, in the summer, the kids would come to go swimming because there wasn't a lot of outdoor pools, but you know, it was $1.50 to go swimming, and most people could afford $1.50 at that time. But then people would steal pipes. And it was just, it was just never enough money. 
+
+An interview with Ann Perrone, TITLE, where she shares her visual memories of the pool:
+
+Ann Perrone: I remember the smell of the swimming pool. You could smell the swimming pool as soon as you entered the front door. The swimming pool was down in the basement, it was under the gym, basically. And that sort of hot, humid chlorine smell. In my head, I see the pool. There's not enough pools. Now, it's not an Olympic sized pool. It's not, you know, it's not as big as the pool at the YMCA. It's not like the Kroc Center, which has this gigantic pool, you know, it's fine, whatever. But all those different rooms… I don't believe in ghosts. But if there were ghosts, the ghosts of the, of the people who created art, and who put on plays and had community dinners, and you know, all those, all the songs we used to sing and all the campers and all the tennis players and all the swimmers and all this synchronized swimming- which evidently is coming back, it's like an Olympic- 
+
+Grace Roebuck: It's an Olympic sport. 
+
+Ann Perrone: Right? I can remember synchronized swimming. I didn't do it. But they had synchronized swimming, and you'd have a performance and people would come and sit at the side of the pool and watch the ladies go *mimes synchronized swimmers and sings* ‘Ah dah dah dah!’
+
+
 Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
 .
 

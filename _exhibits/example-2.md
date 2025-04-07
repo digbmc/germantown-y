@@ -10,7 +10,7 @@ img: arc_001
 
 Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-{% include feature/image.html objectid="objects/arc_002.jpg" width="75" caption="an image" %}
+{% include feature/image.html objectid="objects/arc_071.jpeg" width="75" caption="an image" %}
 
 {% include feature/image.html objectid="objects/arc_008.jpg" width="55" %}
 

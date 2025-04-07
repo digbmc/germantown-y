@@ -10,7 +10,7 @@ img: arc_082
 
 Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-{% include feature/image.html objectid="objects/arc_080.jpeg" width="55" caption="Swimming Lessons at the YWCA Pool" %}
+{% include feature/image.html objectid="objects/arc_080.png" width="55" caption="Swimming Lessons at the YWCA Pool" %}
 
 <p>As seen in the image above, children in uniform swimsuits are taking part in swim lessons. This photo is from June 14th, 1966, and was utilized as publicity for the day camp that the YWCA housed. At this point in history, the YWCA had been an integrated space since 1946, a distinct and notable element of the organization, as they were on the forefront of the movement for integration. Women and children of all races shared the pool, and took part in programming that promoted women's advancement of opportunity in society. The act of learning to swim is one of privilege as it can be hard to locate and pay for swim lessons. The YWCA serviced middle class, working class Philadelphians, and it was only one of few public, indoor swimming pools this demographic had access to. 
 

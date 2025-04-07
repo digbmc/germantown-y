@@ -11,7 +11,6 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 {% include feature/image.html objectid="objects/arc_074.jpeg" width="55" %} {% include feature/image.html objectid="objects/arc_075.jpeg" width="55" caption="(1)The Importance of this Swimming Pool" %}
 
 <p>In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool in the year of 2000. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as it is one of the highest causes of death at the time of this being published. As shown by our oral history quotes, the pool was falling on hard times in the early 2000s, as financing became tighter and tighter. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many. 
-<p>*YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000.* 
 
 {% include feature/image.html objectid="objects/arc_083.jpeg" width="55" caption="Swimming Lessons at the YWCA Pool" %}
 
@@ -62,5 +61,6 @@ Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to 
 <p>Citations:
 <p>[Teen Swimming Lessons], [Box 44], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
 <p>[Day Camp Swimming Lessons], [Box 44], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
+<p>_YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000. _
 
 {% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}

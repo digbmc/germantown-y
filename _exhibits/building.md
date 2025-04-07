@@ -16,6 +16,12 @@ img: /assets/pics/24.3.f.jpeg
 
 The Colored Branch was housed in a relatively large, three story stone building on Germantown Avenue.  The property was approximately 40 x 125 feet large, containing the building, a lot behind it, a terrace, and tennis courts (TA, 24.3. Building - House Committee 1918 – 60). The building itself contained a variety of rooms, which included a living room, blue room, kitchen, third floor front and kitchen, club room, and a gymnasium (TA, 24.2. Building Correspondence 1926-55, 1945-1946). These spaces were used to host private parties, church groups, meetings, teas and receptions. Many of these spaces, including the tennis courts, were rented out for outside groups to use. Image 24.3.b. includes a list of the “house equipment” they had, which included dishes, glasses, linens, roller skates, and music equipment. 
 
+In a video for the project, Germantown Speaks, old members reflect on their positive experiences with the building: 
+
+> “it was a wonderful building, we never had to feel like we were deprived or separated because our building was lovely, we had no complaints because it was a handsome building” (02:42-02:52) 
+
+> “we also had the best tennis court there in Philadelphia. It was made of cork and everyone came there for their summer parties” (00:45-00:57) 
+
 Requests and work for improvement was constantly being done throughout the years. Since the Colored Branch was not an independent organization, it had to gain approval as well as funds from the main YWCA. It is unclear what exactly the nature of this relationship was, however, the power was clearly in favor of the white YWCA. A report from the 10th of January, 1945 complains about the poor state of the building:  
 
 >“With the exception of two rooms, the office and the gym, this three story building of twelve rooms and four halls has not been redecorated or refurnished in more than ten years ... The building as a whole is much worse because of constant use in an effort to meet new trends and needs for community service ... shabby and inadequately furnished in the beginning ... impossible to carry on a satisfactory summer program in the building during the hottest months.” (TA, 24.2. Building Correspondence 1926-55).  

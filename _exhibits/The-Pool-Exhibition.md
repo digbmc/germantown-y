@@ -8,7 +8,7 @@ img: arc_082
 
 Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-{% include feature/image.html objectid="objects/arc_074.jpeg" width="55" %} {% include feature/image.html objectid="objects/arc_075.jpeg" width="55" caption="The Importance of this Swimming Pool" %}
+{% include feature/image.html objectid="objects/arc_074.jpeg" width="55" %} {% include feature/image.html objectid="objects/arc_075.jpeg" width="55" caption="(1)The Importance of this Swimming Pool" %}
 
 <p>In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool in the year of 2000. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as it is one of the highest causes of death at the time of this being published. As shown by our oral history quotes, the pool was falling on hard times in the early 2000s, as financing became tighter and tighter. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many. 
 <p>*YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000.* 

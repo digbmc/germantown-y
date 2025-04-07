@@ -61,6 +61,6 @@ Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to 
 <p>Citations:
 <p>[Teen Swimming Lessons], [Box 44], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
 <p>[Day Camp Swimming Lessons], [Box 44], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-<p>_YWCA of Germantown, "The Swimming Pool" YWCA of Germantown, 2000-2001 Fall & Winter Schedule. Germantown Historical Society. 2000. _
+<p>YWCA of Germantown, "The Swimming Pool" _YWCA of Germantown, 2000-2001 Fall & Winter Schedule_. Germantown Historical Society. 2000. 
 
 {% include feature/image.html objectid="objects/arc_012.jpg" width="90" caption="YWCA Building gets damaged from fire" %}

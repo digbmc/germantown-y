@@ -20,7 +20,7 @@ Description of this exhibit: Lorem ipsum dolor sit amet, consectetur adipiscing 
 <p>This photo above is revolutionary for its time, as integrated swimming classes were almost unheard of. This exemplifies the YWCA’s long standing support for inclusivity and uplifting of minority communities, and further displays the importance that the space held. As seen in this photo, a majority of the students are teens, and the YWCA put a large emphasis on creating empowering programming for young women of all races. Not only were there significant efforts for women to learn and engage in swimming, but the YWCA also offered the opportunity to become a lifeguard. 
 
 
-{% include feature/image.html objectid="objects/arc_084.jpg" width="55" %}
+{% include feature/image.html objectid="objects/arc_084.jpeg" width="55" %}
 
 <p>This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear.
   

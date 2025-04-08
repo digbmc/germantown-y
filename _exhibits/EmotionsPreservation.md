@@ -13,7 +13,7 @@ If this fight to save the Germantown Y conveys anything, it is that preservation
 
 On February 12, 2025, the Philadelphia Redevelopment Authority (PRA) held a public meeting which was attended by several members of the Friends of the Germantown Y. The presence of the attendees, despite the accessibility barriers they had to overcome, spoke volumes. The majority of the women were aging, some disabled, which made attending this meeting particularly difficult. One woman called out the PRA for removing zoom options, explaining that she does not drive, and it would take three buses to attend this meeting, which she was not comfortable doing.  
 
-{% include feature/image.html vinceherb.png="*Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012*" %}
+image
 
 Attendees of the PRA meeting spoke lengthily about the repeated disappointments they had faced over the course of their pursuit, not to mention the number of their members of Friends of Germantown Y that have passed away since its inception in 2021. They felt that the continued delays and excuses demonstrated a lack of interest, not only in the building, but their voices. Some speakers teared up as they expressed how long they had been waiting for something to be done, waiting for anyone to care half as much as they did.  
 

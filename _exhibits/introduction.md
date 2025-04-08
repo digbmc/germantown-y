@@ -1,26 +1,25 @@
 ---
-title: Introduction
-description: An Overview of the Germantown YWCA Colored Branch
+title: The Colored Branch of the Germantown YWCA
+description: An Overview of the History of the Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
-date: March 2025
+date: April 2025
 img: arc_069
 ---
 
 
-# Introduction 
+# Overview 
 
 {% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" %}
 
 The Colored Branch was an all-black branch of the Germantown YWCA whose function was to: 
 >“eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115).
 
-The YWCA’s racist policies prevented black members from joining the main YWCA, forcing them to create their own branch. Furthermore, the racism and segregation black residents faced at this time created the need for an all-black space with community services, resources and support by and for the black community. The Colored Branch was important because it “was a center of the Black Germantown community” (Felix, 123) and a “focal point for Black heritage in Germantown and Philadelphia” (127) whose legacy still lasts today. Constance Ragsdale, a former member of the YWCA, reflects on the impact that the Colored Branch had: 
-
->“The Y was sort of guiding all of these women to [...] come in and contribute to society. [...] and that was the good thing about the African American Y, you know, don't let the color of your skin hold you back from doing what you want to do and not showcasing yourself. And I think this is what this was about.” (Constance Ragsdale, Oral History, October 25th, 2024) 
+The Germantown YWCA, together with the local black Germantown community, led by Eva Bowles, saw that there was a great need for a YWCA branch that served the black community. Black people were facing intense racism and segregation in Germantown and across the country and needed their own space that offered community services, resources and support. 
+The Colored Branch was important because it “was a center of the Black Germantown community” (Felix, 1999, 123) and a “focal point for Black heritage in Germantown and Philadelphia” (127) whose legacy still lasts today. Constance Ragsdale, a former member of the YWCA, reflects on its significance: 
+> “The Y was sort of guiding all of these women to [...] come in and contribute to society. [...] and that was the good thing about the African American Y, you know, don't let the color of your skin hold you back from doing what you want to do and not showcasing yourself. And I think this is what this was about.” (Constance Ragsdale, Oral History, October 25th, 2024) 
 
 The Colored Branch, also known as the Germantown Colored Branch, Branch Y, or the Colored Y, was first founded in 1917 and in 1918 moved into a building at 6128 Germantown Avenue. The Colored Branch’s activities were similar to those of the main, all-white Germantown YWCA. They hosted club events, socials, dances, Christian religious services, service and volunteer work, educational classes, physical sports (they had a tennis court), as well as a variety of “race-pride” (Felix, 1999, 124) activities and events, such as supporting the NAACP and co-organizing Negro Achievement Week. 
 
-{ % arc_069 %} 
 {% include feature/image.html objectid="arc_069" alt="two members, Alyce Jackson and Bernice Murray on the tennis court" %}
 
 The Branch had a strong relationship to Christianity as well as to local black churches. In fact, many of the Colored Branch’s leadership, like Olivia (Yancy) Taylor, who was the “first elected and first Black Branch Chairman” (125), also had prominent church positions and sometimes meetings would start and end in prayer. 

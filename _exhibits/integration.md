@@ -6,11 +6,11 @@ date: March 2025
 img: arc_062
 ---
 
-## The Complicated Integration Process at the YWCA
+## Introduction: The Complicated Integration Process at the YWCA
 When looking at the path to the integration of the YWCA, the process was far from clean-cut. Legally speaking, the integration charter mandating that all YWCAs be integrated was not passed until 1946. However, as early as the 1920s, evidence of events and practices involving both black and white people are evident.  
 
 ### An example of the non-linear process is seen in this letter from 1928, almost 20 years before integration became policy, which notes interracial proceedings but a lack of recognition.
-![archive letter regarding convention proceedings](https://github.com/digbmc/germantown-y/blob/Harkness-House-Branch-Y/objects/arc_062.jpg) [^fn1]
+{% include feature/image.html objectid="arc_062" alt="archive letter regarding convention proceedings" %} [^fn1]
 In 1928, a letter from the executive secretary of the 6128 Building was sent to the main branch concerning an upcoming convention. In the program for the convention, the executive secretary noted that there was “no time devoted to our group,” and went on to note that, “often it is forgotten that we are doing Interracial work because we act rather than talk of our activities” (25-8, Branches, Program Committee, 1939-46). With this letter, it is clear that integrated activities happened, but were not discussed or officially noted. Still, activities were not enough to give black leaders a seat at the table or for their proceedings to be highlighted at a convention
 
 ### The Interracial Charter and Beyond

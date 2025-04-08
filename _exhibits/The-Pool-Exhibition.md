@@ -8,7 +8,7 @@ img: arc_082
 
 Description of this exhibit: The swimming pool played a strong role in the community building that occurred at the YWCA. Due to its integration policies, extensive programming, and outreach, the pool served a large number of Germantown citizens. It also provided fundamental life skills such as swimming lessons, life saving lessons, and lifeguard certification classes. The idea that access to a swimming pool for everyone in the Philadelphia community and beyond may seem almost common now, but back when the pool opened in 1917, it was revolutionary for its time in providing a space for millions to swim through the years. Many hold fond memories of the pool and all of the experiences it provided. Through sharing its history and importance in the Philadelphia community we have collected archival images and oral history excerpts from past employees and members to honor its memory.  
 
-{% include feature/image.html objectid="objects/arc_073.png" width="55" caption="(1) An excerpt from "Announcement for Opening Week of the Young Women’s Christian Association New Administration Building," 1917 " %}
+{% include feature/image.html objectid="objects/arc_073.png" width="55" caption="(1) An excerpt from Announcement for Opening Week of the Young Women’s Christian Association New Administration Building, 1917 " %}
 
 <p>This is an excerpt from a pamphlet given out at the opening week of the YWCA’s new administration building (1917) that features goals set by the branch in how they want the pool to be used. This includes the mission to develop “strength” and “self-reliance and courage” in young women as well as instilling “good carriage and poise.” This also includes information about the shared swimsuits and rules for swimmers. 
 

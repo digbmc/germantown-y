@@ -1,8 +1,8 @@
 ---
 
 title: The Swimming Pool
-author: Grace Roebuck Bryn Mawr College Class of 2025 & Augusta Clusen Moses Bryn Mawr College Class of 2027
-description: History of the YWCA Organization
+author: _Grace Roebuck Bryn Mawr College Class of 2025 & Augusta Clusen Moses Bryn Mawr College Class of 2027
+description: History of the YWCA Organization_
 img: arc_082
 ---
 

@@ -16,16 +16,16 @@ Description of this exhibit: The swimming pool played a strong role in the commu
 
 <p>In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool in the year of 2000. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as it is one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many. Comparing this to the 1917 pamphlet above, we can see that these values held by the Y were unwavering for close to a century.
 
-{% include feature/image.html objectid="objects/arc_080.jpeg" width="55" caption="Swimming Lessons at the YWCA Pool" %}
+{% include feature/image.html objectid="objects/arc_080.jpeg" width="55" caption="(3)Swimming Lessons at the YWCA Pool" %}
 
 <p>As seen in the image above, children in uniform swimsuits are taking part in swim lessons. This photo is from June 14th, 1966, and was utilized as publicity for the day camp that the YWCA housed. At this point in history, the YWCA had been an integrated space since 1946, a distinct and notable element of the organization, as they were on the forefront of the movement for integration. Women and children of all races shared the pool, and took part in programming that promoted women's advancement of opportunity in society. The act of learning to swim is one of privilege as it can be hard to locate and pay for swim lessons. The YWCA serviced middle class, working class Philadelphians, and it was only one of few public, indoor swimming pools this demographic had access to. 
 
-{% include feature/image.html objectid="objects/arc_083.jpg" width="75" caption="Teen Swim Lessons" %}
+{% include feature/image.html objectid="objects/arc_083.jpg" width="75" caption="(4)Teen Swim Lessons" %}
 
 <p>This photo above is revolutionary for its time, as integrated swimming classes were almost unheard of. This exemplifies the YWCA’s long standing support for inclusivity and uplifting of minority communities, and further displays the importance that the space held. As seen in this photo, a majority of the students are teens, and the YWCA put a large emphasis on creating empowering programming for young women of all races. Not only were there significant efforts for women to learn and engage in swimming, but the YWCA also offered the opportunity to become a lifeguard. 
 
 
-{% include feature/image.html objectid="objects/arc_084.jpeg" width="55" caption="Swim Here Pamphlet" %}
+{% include feature/image.html objectid="objects/arc_084.jpeg" width="55" caption="(5)Swim Here Pamphlet" %}
 
 <p>This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear.
 
@@ -48,8 +48,6 @@ Description of this exhibit: The swimming pool played a strong role in the commu
 
 <p>Lyn Thompson Giles: I remember getting a huge grant to refurbish some of the swimming pool because there was some fancy guy who had designed a swimming pool, but it was $400,000 which should have been enough. But it wasn't, I mean, it only took care of heating the pool. So the pool still needs to be cleaned. The pool still needs to be painted. 
   
-<p>{% include feature/image.html objectid="objects/arc_076.jpeg" width="55"  caption="An image of the pool after the closing of YWCA" %}
-<p>An image of the pool after the closing of YWCA --- ASK ANN FOR CREDIT
 <p>It was such a fabulous place to be from when I was a young girl to right before it closed. Because we used to have, in the summer, the kids would come to go swimming because there wasn't a lot of outdoor pools, but you know, it was $1.50 to go swimming, and most people could afford $1.50 at that time. But then people would steal pipes. And it was just, it was just never enough money. 
 
 <p>An interview with Ann Perrone, TITLE, where she shares her visual memories of the pool:
@@ -60,6 +58,9 @@ Description of this exhibit: The swimming pool played a strong role in the commu
 
 <p>Ann Perrone: Right? I can remember synchronized swimming. I didn't do it. But they had synchronized swimming, and you'd have a performance and people would come and sit at the side of the pool and watch the ladies go *mimes synchronized swimmers and sings* ‘Ah dah dah dah!’
 
+<p>{% include feature/image.html objectid="objects/arc_076.jpg" width="55"  caption="(6)An image of the pool after the closing of YWCA" %}
+
+<p>This photo displays the pool after the YWCA was closed. The pool is drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
 Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
 

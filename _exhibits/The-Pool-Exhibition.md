@@ -64,7 +64,7 @@ The swimming pool played a strong role in the community building that occurred a
 
 <p>This photo displays the pool after the YWCA was closed. The pool is drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
-<p>Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more. EDIT THIS LINK</p>
+<p>Go to <a href="_exhibits/exhibit-example.md">Women of Germantown Exhibit</a> to learn more.</p>
 
 <p>Citations:
 <p>[Teen Swimming Lessons], [Box 44], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.

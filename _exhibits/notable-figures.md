@@ -6,7 +6,7 @@ date: March 2025
 img: 
 ---
 ## Introduction
-While there were many important people attached to the Colored Branch throughout it's history, knowing each and every story and person is incredibly difficult. Below are a selection of figures that were important to the Branch at various points. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.  
+While there were many important people attached to the Colored Branch throughout its history, knowing each story and person is incredibly difficult. Below is a selection of figures that were important to the Branch at various points. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.  
 
 ## Important Terms
 In order to understand the roles of these women, some details regarding positions must be outlined. 

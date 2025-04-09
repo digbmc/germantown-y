@@ -4,7 +4,7 @@
 */
 /* color */
 $primary: #255b77;
-$seconardy: #acd4dc;
+$secondary: #acd4dc;
 $success:  #f3c17b;
 $info: #bd8364;
 $danger: #c84b4e;
@@ -208,3 +208,9 @@ p, dd, tr {
     text-decoration: underline;
 }
 
+/* Blockquote styles */
+blockquote {
+    display: block;
+    border-left: 4px solid $secondary;
+    padding: 0 0 0 1.5rem;
+}

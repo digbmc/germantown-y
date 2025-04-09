@@ -5,9 +5,16 @@ author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn M
 date: March 2025
 img: 
 ---
+## Introduction
+While there were many important people attached to the Colored Branch throughout its history, knowing each story and person is incredibly difficult. Below is a selection of figures that were important to the Branch at various points. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.  
+
+## Important Terms
+In order to understand the roles of these women, some details regarding positions must be outlined. 
+- The "Committee of 22" was an all-white organization comprised of church women that were interested in creating a YWCA for the black community.
+- The position "General Secretary" is the same as "Executive Director"
+- The Committee of Management (COM) was responsible for supervising work in the branch, managing contracts, establishing rules and regulations, and organizing subcommittees. 
 
 ## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
-
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
 - 5 Black Affiliation Commitee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
 - Colored Branch Officers - Mrs. Leila Morris as Vice Chairman, Mrs. Mary Cowdery as Secretary

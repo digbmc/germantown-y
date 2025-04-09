@@ -86,7 +86,7 @@ Example 1,/exhibit-1,Exibits
 Example 2,/example-2.html,Exibits
 Map,/map.html,
 Building,/building.html,
-Archive,/browse.html,
+Archive,/archive.html,
 Data,/data.html,
 Credits,,
 About,/credits.html,Credits

@@ -25,4 +25,4 @@ Long-time community members fondly remember the Center's programs that once thri
 
 Despite the infrastructural limitations that marked the Center's tenure in the YWCA building, Germantown residents and members of the YWCA cherish their memories of the Center's programming. On November 10, 1978, the Center’s 10th Anniversary Party was held at the YWCA. House of Representatives member David Richardson and life-long resident of Germantown made an appearance, as well as Maggie Kuhn.  
 
-{% include feature/image.html objectid="arc_020" %}
+{% include feature/image.html objectid="objects/arc_020.jpg" width="" %}

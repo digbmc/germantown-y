@@ -12,7 +12,7 @@ img: arc_069
 {% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" %}
 
 The Colored Branch was an all-black branch of the Germantown YWCA whose function was to: 
->“eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115).
+> “eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115).
 
 The Germantown YWCA, together with the local black Germantown community, led by Eva Bowles, saw that there was a great need for a YWCA branch that served the black community. Black people were facing intense racism and segregation in Germantown and across the country and needed their own space that offered community services, resources and support. 
 The Colored Branch was important because it “was a center of the Black Germantown community” (Felix, 1999, 123) and a “focal point for Black heritage in Germantown and Philadelphia” (127) whose legacy still lasts today. Constance Ragsdale, a former member of the YWCA, reflects on its significance: 
@@ -28,9 +28,9 @@ The Colored Branch had its own leadership that was integrated and became increas
 
 The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. The branch was a strong source of community and is reflected positively on by old YWCA members in [this short video](https://www.youtube.com/watch?v=jVVQdut2pCA) from the project Germantown Speaks:  
 
->“we never had to feel like we were deprived or separated because our building was lovely [...] that Y was where we were allowed to go” 
+> “we never had to feel like we were deprived or separated because our building was lovely [...] that Y was where we were allowed to go” 
 
->“[Clarice Herbert] said you girls were something because we did everything” 
+> “[Clarice Herbert] said you girls were something because we did everything” 
 
 During this time, black people were still prohibited from joining the main YWCA and using their pool, which was a major point of conflict. However, starting in the 1940’s discussion about integration as well as interracial activities became increasingly common until in April 1946 the National YWCA passed an Interracial Charter to end racial segregation. This was a radical decision at the time, that was welcomed by the Colored Branch and the main Y, although problems with racism persisted. While integration was a necessary step in the right direction, it also came with the reduction of Colored Branch activities and ultimately the sale of their building in 1952, marking the final end of the Colored Branch. This was a hard loss for the Germantown black community, who fought to keep their organization and their building. The Germantown YWCA and it’s Colored Branch were not alone in this struggle, many YWCA Colored Branches and other all-black institutions were being integrated and closed during this time all around the country. 
 

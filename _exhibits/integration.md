@@ -2,7 +2,7 @@
 title: Integration
 description:
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
-date: March 2025
+date: April 2025
 img: arc_062
 ---
 
@@ -22,4 +22,3 @@ As early as 1949, current director Gladys Taylor reported integration as a succe
 As a whole, this process of integration was not linear, and far from perfect. Setbacks including the lack of positions given to black leaders as well as white directors projecting images that were not completely accurate led to struggles over power and community. In the end, the closure of the 6128 building was seen by the black community as a major loss, and although integration was successful on paper, lasting memories about the process vary drastically. Still, the choices of leaders of the YWCA to integrate much earlier than mandated worked to create community in Germantown that crossed racial barriers. 
 
 [^fn1]: [Letter regarding Convention proceedings, 3/12/1928], [Box 25, Folder 8], Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-

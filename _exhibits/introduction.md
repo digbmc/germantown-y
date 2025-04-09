@@ -26,16 +26,16 @@ The Branch had a strong relationship to Christianity as well as to local black c
 
 The Colored Branch had its own leadership that was integrated and became increasingly black, however was still ultimately under the control of the main YWCA because of white YWCA members’ racist assumptions that they were incapable of leadership. In fact, until 1924, no black woman was allowed to be chair of the Colored Branch. 
 
-The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. The branch was a strong source of community and is reflected positively on by old YWCA members in 
-The Colored Branch had a long, successful and busy career spanning from 1917 until around end of the 1940’s. The branch was a strong source of community and is reflected positively on by old YWCA members in [this short video](https://www.youtube.com/watch?v=jVVQdut2pCA) from the project Germantown Speaks: 
+The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. The branch was a strong source of community and is reflected positively on by old YWCA members in [this short video](https://www.youtube.com/watch?v=jVVQdut2pCA) from the project Germantown Speaks:  
 
 >“we never had to feel like we were deprived or separated because our building was lovely [...] that Y was where we were allowed to go” 
 
 >“[Clarice Herbert] said you girls were something because we did everything” 
 
-During this time, black people were still prohibited from joining the main YWCA and using their pool, which was a major point of conflict. However, starting in the 1940’s discussion about integration as well as interracial activities became increasingly common until in April 1946 the National YWCA passed an Interracial Charter to end racial segregation. This was a radical decision at the time that was welcomed by the Colored Branch and the main Y, although problems with racism persisted. While integration was a necessary step in the right direction, it also came with the reduction of Colored Branch activities and ultimately the sale of their building in 1955, marking the final end of the Colored Branch. This was a hard loss for the Germantown black community, who fought to keep their organization and their building. The Germantown YWCA and it’s Colored Branch were not alone in this struggle, many YWCA Colored Branches and other all-black institutions were being integrated and closed during this time all around the country.  
+During this time, black people were still prohibited from joining the main YWCA and using their pool, which was a major point of conflict. However, starting in the 1940’s discussion about integration as well as interracial activities became increasingly common until in April 1946 the National YWCA passed an Interracial Charter to end racial segregation. This was a radical decision at the time, that was welcomed by the Colored Branch and the main Y, although problems with racism persisted. While integration was a necessary step in the right direction, it also came with the reduction of Colored Branch activities and ultimately the sale of their building in 1952, marking the final end of the Colored Branch. This was a hard loss for the Germantown black community, who fought to keep their organization and their building. The Germantown YWCA and it’s Colored Branch were not alone in this struggle, many YWCA Colored Branches and other all-black institutions were being integrated and closed during this time all around the country. 
 
-Ultimately, the Germantown YWCA Colored Branch was an invaluable institution for the local black community as well as an important part of the Germantown YWCA . 
+Ultimately, the Germantown YWCA Colored Branch was an invaluable institution for the local black community and important member of the Germantown YWCA organization. 
+For more information check out the exhibits "6128 Germantown Avenue", "Integration", "Programming and Events", "Notable Figures", and "Survey".
 
 ## Timeline 
 
@@ -137,6 +137,7 @@ January 26th, 1955:
 
 - This marks the ultimate end of the Colored Branch 
 
+---
 
 ## Sources: 
 - Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 

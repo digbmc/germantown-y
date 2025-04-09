@@ -37,7 +37,6 @@ During this time, black people were still prohibited from joining the main YWCA 
 Ultimately, the Germantown YWCA Colored Branch was an invaluable institution for the local black community and important member of the Germantown YWCA organization. 
 For more information check out the exhibits "6128 Germantown Avenue", "Integration", "Programming and Events", "Notable Figures", and "Survey".
 
----
 ## Timeline 
 
 1917: 

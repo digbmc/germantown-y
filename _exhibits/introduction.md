@@ -35,7 +35,9 @@ The Colored Branch had a long, successful and busy career spanning from 1917 unt
 During this time, black people were still prohibited from joining the main YWCA and using their pool, which was a major point of conflict. However, starting in the 1940’s discussion about integration as well as interracial activities became increasingly common until in April 1946 the National YWCA passed an Interracial Charter to end racial segregation. This was a radical decision at the time, that was welcomed by the Colored Branch and the main Y, although problems with racism persisted. While integration was a necessary step in the right direction, it also came with the reduction of Colored Branch activities and ultimately the sale of their building in 1952, marking the final end of the Colored Branch. This was a hard loss for the Germantown black community, who fought to keep their organization and their building. The Germantown YWCA and it’s Colored Branch were not alone in this struggle, many YWCA Colored Branches and other all-black institutions were being integrated and closed during this time all around the country. 
 
 Ultimately, the Germantown YWCA Colored Branch was an invaluable institution for the local black community and important member of the Germantown YWCA organization. 
+For more information check out the exhibits "6128 Germantown Avenue", "Integration", "Programming and Events", "Notable Figures", and "Survey".
 
+---
 ## Timeline 
 
 1917: 
@@ -136,7 +138,7 @@ January 26th, 1955:
 
 - This marks the ultimate end of the Colored Branch 
 
-
+---
 
 ## Sources: 
 - Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 

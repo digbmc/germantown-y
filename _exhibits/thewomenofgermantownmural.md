@@ -28,13 +28,9 @@ Pamphlets featured below reveal that the Y was creating curriculum that they hop
 With input from the Y’s mural committee the final version of the mural was designed and then painted onto the wall. The design features the six key women on a colorful and floral background, which “represents the seeds of these women’s works blossoming and being passed on to current and future women of Germantown to appreciate and to carry on.” Each of the women is depicted with a symbol representative of their contribution to the community and broader society. Sarah Ward McLean, who funded the Y’s building is represented with the entrance to the Y, Dinah is represented with a torch, Maggie Kuhn is represented with a large Gray Panthers button, Louisa May Alcott is represented by a book, Sadie Tanner is featured with scales of justice, and Clarice Herbert’s symbol is two girls of different races which represent the Y’s role integration and its racially diverse community. 
 
 
-![David McShane's Final Sketch of the Women of Germantown Mural](https://github.com/digbmc/germantown-y/blob/Mural/assets/img/FirstMuralVersion.jpeg)
 
-![David McShane's Final Sketch of the Women of Germantown Mural](https://github.com/digbmc/germantown-y/blob/Mural/assets/pics/GriddedDraft[24].jpeg)
-
-{% include feature/image.html objectid="assets/img/FirstMuralVersion.jpeg" width="75" caption="repeat of first image" %}
-
-
+{% include feature/image.html objectid="assets/img/FirstMuralVersion.jpeg" width="75" caption="David McShane's Final Sketch of the Women of Germantown Mural" %}
+{% include feature/image.html objectid="assets/img/GriddedDraft[24].jpeg" width="75" caption="David McShane's Final Sketch of the Women of Germantown Mural" %}
 
 ##### *Beyond the Mural: Community Involvement*
 

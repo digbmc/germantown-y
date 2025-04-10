@@ -1,7 +1,7 @@
 ---
 title: The Women of Germantown Mural
 description: Learn about the origins of David McShane's 2001 Mural
-authors: Estrella Pacheco and Krista Chan
+author: Estrella Pacheco and Krista Chan
 img: arc_008
 
 ---

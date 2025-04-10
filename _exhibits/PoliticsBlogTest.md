@@ -1,5 +1,12 @@
-# The Politics of Preservation
-## *By Amelia Rono* 
+---
+
+title: The Politics of Preservation
+author: Amelia Rono
+description: Community, preservation, and local politics. 
+img: arc_040
+---
+
+
 
 The Germantown YWCA building, once a beloved community center, has now stood vacant for 20 years. Its future has sparked community involvement and action, yet the building remains undeveloped and in disrepair. The reasoning lies in the complicated relationship between the community, preservation, and local politics.  	 
 
@@ -15,7 +22,7 @@ Councilwoman Cindy Bass and her councilmanic power have played a significant rol
 
 **Act 135** 
 
-{% include feature/image.html vinceherb.png="*Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012*" %}
+![Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012](https://github.com/digbmc/germantown-preservation/blob/preservation/assets/pics/arc_040.jpg)
 
 However, there are ways the community can sidestep Councilwoman Bass to develop the building. Ken Weinstein, a local developer, has been working to get the building filed under Act 135 so development and repairs can finally begin on the building. 
 

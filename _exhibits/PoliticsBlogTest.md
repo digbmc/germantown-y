@@ -3,14 +3,12 @@
 title: The Politics of Preservation
 author: Amelia Rono
 description: Community, preservation, and local politics. 
-img: arc_040
+img: /objects/arc_040.jpg
 ---
-
-
 
 The Germantown YWCA building, once a beloved community center, has now stood vacant for 20 years. Its future has sparked community involvement and action, yet the building remains undeveloped and in disrepair. The reasoning lies in the complicated relationship between the community, preservation, and local politics.  	 
 
-**Councilmanic Prerogative**  
+## Councilmanic Prerogative
 
 Councilmanic prerogative is a contentious city council tradition that is steeped in the preservation efforts of the Germantown Y. What is Councilmanic prerogative? When land use decisions are brought to the 10 district council members in Philadelphia, the district member residing over the geographic area has final say on the decision. This unwritten agreement allows single council members to have significant power over their neighborhoods (Vadala, 2022).  
 
@@ -19,10 +17,9 @@ Councilmanic prerogative has also been criticized for allowing corruption. Most 
 
 Councilwoman Cindy Bass and her councilmanic power have played a significant role in the ongoing development efforts at the Germantown Y. Bass, who represents Philadelphia’s 8th Councilmanic District which includes Germantown, has politically backed KBK enterprises to develop the property, despite them not making progress on the building since 2016. Much of the community, including the Friends of the Y and Center in the Park have opposed KBK’s proposed development. Although KBK’s contract has since been terminated, the PRA has made it clear that any future development of the building would need Bass’s stamp of approval for it to proceed.  
 
+## Act 135
 
-**Act 135** 
-
-![Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012](https://github.com/digbmc/germantown-preservation/blob/preservation/assets/pics/arc_040.jpg)
+{% include feature/image.html objectid="objects/arc_040.jpg" caption="Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012" %}
 
 However, there are ways the community can sidestep Councilwoman Bass to develop the building. Ken Weinstein, a local developer, has been working to get the building filed under Act 135 so development and repairs can finally begin on the building. 
 
@@ -32,7 +29,7 @@ If Weinstein can become conservator of the building, it would trump the need for
 
 However, Weinstein has hit some roadblocks with the process. In November 2024, the judge found the building insufficient for Act 135 because it did not qualify as blighted or abandoned. With plans to have the judge reconsider, the future of the Germantown Y hangs in the balance.  
 
-**Works Cited** 
+## Works Cited
 
 https://www.inquirer.com/news/councilmanic-prerogative-philadelphia-city-council-20220321.html  
 

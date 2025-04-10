@@ -3,9 +3,8 @@
 title: The Emotions of Preservation
 author: Tessa Lippmann
 description: Community, preservation, and emotions. 
-img: arc_046
+img: /objects/arc_046.jpg
 ---
-
 
 The Germantown Y once offered a space for women to connect, play, learn, gather together, and watching this community, these women, continuously work to save it shows how rare and treasured it was – is. Since the early 2000s, this building has slowly fallen into disrepair, even since a developer took control in 2016. This story is one of a community fighting to preserve cultural memory and connection, to see their community prosper. It is one of women, primarily aging, refusing to be silenced, demanding that to be heard. Yvonne Haskins, at a PRA meeting in 2021, spoke to the board members, eloquently encapsulating the preservation issues: “I am looking into your eyes and hoping that I am reaching your heart” **(question: do I cite this to the date she told us she said it, or the date that she said it to us?)** .  	 
 
@@ -27,7 +26,7 @@ Most speakers expressed concern over KBK’s plan for the parking lot, which wou
 
 KBK is no longer the developer for this building, as clarified by the PRA on February 12, 2025. However, this meeting is essential to understanding the breadth of emotions and connections to this building. For those who feel no ties to what the Y once was, the future of this building has the potential to either support the Germantown elderly community, or seriously harm an already vulnerable, often overlooked population.
 
-**Works Cited** 
+## Works Cited
 
 Fearing Demolition, Community Advocates Of Germantown YWCA Call For Emergency Meeting. (2015, January 21). Hidden City Philadelphia. https://hiddencityphila.org/2015/01/fearing-demolition-community-advocates-of-germantown-ywca-call-for-emergency-meeting/
 

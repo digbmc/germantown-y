@@ -1,18 +1,18 @@
 ---
 title: Notable Figures
-description:
+description: Important Figures of the Colored Branch of the YWCA
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
 img: 
 ---
 ## Introduction
-While there were many important people attached to the Colored Branch throughout its history, knowing each story and person is incredibly difficult. Below is a selection of figures that were important to the Branch at various points. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.  
+There were a wide variety of important people attached to the Colored Branch throughout its history. Below we have listed a selection of figures. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.   
 
 ## Important Terms
 In order to understand the roles of these women, some details regarding positions must be outlined. 
-- The "Committee of 22" was an all-white organization comprised of church women that were interested in creating a YWCA for the Black community.
+- The "Committee of 22" was an all-white group comprised of church women from the Germantown YWCA that were interested in creating a YWCA for the Black community.
 - The position "General Secretary" is the same as "Executive Director"
-- The Committee of Management (COM) was responsible for supervising work in the branch, managing contracts, establishing rules and regulations, and organizing subcommittees. 
+- The Committee of Management (COM) was responsible for supervising work in the Colored Branch, including managing contracts, establishing rules and regulations, and organizing subcommittees. 
 
 ## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss

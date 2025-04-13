@@ -35,7 +35,7 @@ With input from the Y’s mural committee the final version of the mural was des
 
 While these testimonies give great insight into the early stages of the mural, pamphlets found at Germantown Historical Society have created more questions about the inception of the mural. 
 
-{% include feature/image.html objectid="assets/pics/Listofwomensnames.jpg" width="50" height="60" caption="" %}
+{% include feature/image.html objectid="object/arc_073.HEIC" width="50" height="60" caption="" %}
 
 According to a Germantown Women’s Y pamphlet from the 2000, there was a program titled “The Big Picture – Mural Arts for Teens”. The program was supposed to run from October 2nd, 2000, until June 16th, 2001. The program was divided up into three phases. The first phase was meant to teach the basics of drawing, composition, space, and color. The second is where students were introduced to the process of creating a mural, and were taught lessons on teamwork, conflict resolution, and social responsibility. The last phase was the actual creation of a mural. Students were meant to select a wall, develop a sketch, and gain approval for their intended mural. In the pamphlet, the listed instructor was Jane Degenhardt, an artist associated with Mural Arts Philadelphia. 
 
@@ -50,9 +50,9 @@ The mural’s origin story is a true testament to the nature of the Germantown c
 
 ##### *The Mural Dedication*
 
-The mural was finished in August 2001. Clarice Herbert, the only living woman honored on the mural, was in attendance along with Irma Gardner-Hammond who posed for the portrait of Dinah.  
+The mural was finished in August 2001. Clarice Gamble Herbert, the only living woman honored on the mural, was in attendance along with Irma Gardner-Hammond who posed for the portrait of Dinah.  
 
-{% include feature/image.html objectid="assets/pics/clariceatunveiling.jpg" width="50" height="60" caption="Clarcie Herbert at the Women of Germantown Mural unveiling" %}
+{% include feature/image.html objectid="objects/arc_072.jpg" width="50" height="60" caption="Clarcie Gamble Herbert at the Women of Germantown Mural unveiling.Photo courtesy of Ann B. Perrone" %}
 
 If you have any further information on this mural project or the women featured on it we invite you to share it with us by emailing _______________. 
 

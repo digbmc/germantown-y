@@ -38,6 +38,9 @@ This photo above is revolutionary for its time, as integrated swimming classes w
 
 This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear. <br/>
 
+{% include feature/image.html objectid="objects/arc_076.jpg" width="55"  caption="(6)An image of the pool after the closing of YWCA" %}
+
+This photo displays the pool after the YWCA was closed. The pool is drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
 
 **Oral History Quotes About the Pool, Fall of 2023:**
@@ -68,10 +71,6 @@ It was such a fabulous place to be from when I was a young girl to right before 
 **Grace Roebuck:** It's an Olympic sport. 
 
 **Ann Perrone:** Right? I can remember synchronized swimming. I didn't do it. But they had synchronized swimming, and you'd have a performance and people would come and sit at the side of the pool and watch the ladies go *mimes synchronized swimmers and sings* ‘Ah dah dah dah!’
-
-{% include feature/image.html objectid="objects/arc_076.jpg" width="55"  caption="(6)An image of the pool after the closing of YWCA" %}
-
-This photo displays the pool after the YWCA was closed. The pool is drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
 
 Citations:

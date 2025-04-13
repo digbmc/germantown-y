@@ -47,7 +47,7 @@ This photo displays the pool after the YWCA was closed. The pool is drained and 
 
 **An interview with Arleen Olshan, longtime Y member, part-time Art Director (1988-89) and Board Treasurer for a few years, talking about her experience using the pool as a safe space for lesbian and other women to meet and build community.**
 
-**Arleen Olshen:** One thing I should tell you, too, that the pool, the swimming pool? On Tuesday nights, back in the day, when we were part of Radicalesbians, like in the 1970s, early 1970s, there was nude swimming there on Tuesday nights. 
+**Arleen Olshen:** One thing I should tell you, too, that the pool, the swimming pool, on Tuesday nights, back in the day, when we were part of Radicalesbians in the early 1970s, there was nude swimming there on Tuesday nights. 
 
 **Grace Roebuck:** Just for women? 
 
@@ -55,22 +55,22 @@ This photo displays the pool after the YWCA was closed. The pool is drained and 
 
 **Grace Roebuck:** That sounds amazing. Yeah.
 
-**Arleen Olshen:** It's very important to gain access to it, and find out exactly what needs to be done. I mean, it's not just like, let's just unlock the doors and open the windows.  I know that there's all kinds of water damage and probably needs a new roof. The pool was falling apart back in the day, the floors were buckling. There's a lot of work to be done. If you can't get access, you can't know what the hell needs to be done.
+**Arleen Olshen:** It's very important to gain access to it [the building], and find out exactly what needs to be done. I mean, it's not just like, unlock the doors and open the windows.  I know that there's all kinds of water damage and it probably needs a new roof. The pool was falling apart back in the day; the floors were buckling. There's a lot of work to be done. If you can't get access, you can't know what the hell needs to be done.
 
 
 **An interview with Lyn Thompson Giles, longtime member and Assistant Director of YWCA in mid-to-late 1990’s during the Y’s decline and final years, expressing fond memories of the pool colored by the expense of maintaining it:**
 
-**Lyn Thompson Giles:** I remember getting a huge grant to refurbish some of the swimming pool because there was some fancy guy who had designed a swimming pool, but it was $400,000 which should have been enough. But it wasn't, I mean, it only took care of heating the pool. So the pool still needs to be cleaned. The pool still needs to be painted. 
+**Lyn Thompson Giles:** I remember getting a huge grant to refurbish some of the swimming pool because there was some fancy guy who had designed a swimming pool. It was $400,000, which should have been enough, but it wasn't. I mean, it only took care of heating the pool. So the pool still needs to be cleaned. The pool still needs to be painted. 
   
 It was such a fabulous place to be from when I was a young girl to right before it closed. Because we used to have, in the summer, the kids would come to go swimming because there wasn't a lot of outdoor pools, but you know, it was $1.50 to go swimming, and most people could afford $1.50 at that time. But then people would steal pipes. And it was just, it was just never enough money. 
 
 **An interview with Ann Perrone, who spent much of her child and teen years at the YWCA as the daughter of the late Clarice Gamble Herbert (Teen Director 1954 – 1963,  Executive Director 1968 – 1979.) Here, she shares her sensory memories of the YWCA and the pool:**
 
-**Ann Perrone:** I remember the smell of the swimming pool. You could smell the swimming pool as soon as you entered the front door. The swimming pool was down in the basement, it was under the gym, basically. And that sort of hot, humid chlorine smell. In my head, I see the pool. There's not enough pools. Now, it's not an Olympic sized pool. It's not, you know, it's not as big as the pool at the YMCA. It's not like the Kroc Center, which has this gigantic pool, you know, it's fine, whatever. But all those different rooms… I don't believe in ghosts. But if there were ghosts, the ghosts of the, of the people who created art, and who put on plays and had community dinners, and you know, all those, all the songs we used to sing and all the campers and all the tennis players and all the swimmers and all this synchronized swimming- which evidently is coming back, it's like an Olympic- 
+**Ann Perrone:** I remember the smell of the swimming pool. You could smell the swimming pool as soon as you entered the front door. The swimming pool was down in the basement, it was under the gym, basically. And that sort of hot, humid chlorine smell. In my head, I see the pool. There's not enough pools. Now, it's not an Olympic sized pool. It's not as big as the pool at the YMCA. It's not like the Kroc Center, which has this gigantic pool, you know, it's fine, whatever. But all those different rooms… I don't believe in ghosts. But if there were ghosts, the ghosts of the people who created art, and who put on plays and had community dinners, and all the songs we used to sing and all the campers and all the tennis players and all the swimmers and all this synchronized swimming- which evidently is coming back, it's like an Olympic... 
 
 **Grace Roebuck:** It's an Olympic sport. 
 
-**Ann Perrone:** Right? I can remember synchronized swimming. I didn't do it. But they had synchronized swimming, and you'd have a performance and people would come and sit at the side of the pool and watch the ladies go *mimes synchronized swimmers and sings* ‘Ah dah dah dah!’
+**Ann Perrone:** Right! I can remember synchronized swimming. I didn't do it. But they had synchronized swimming, and you'd have a performance and people would come and sit at the side of the pool and watch the ladies go (mimes synchronized swimmers and sings) ‘Ah dah dah dah!’
 
 
 Citations:

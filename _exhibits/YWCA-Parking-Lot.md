@@ -22,5 +22,3 @@ This legal limbo threatens CIP’s future access to their own building, attended
  
 In recent years, the future of the Germantown YWCA building has been taken up by local advocates determined to preserve its legacy and ensure its redevelopment serves the community. The Center has fought hard to defend their interests regarding the parking lot, often leaning on the intertwined histories of the Germantown YWCA and the Center’s programming. While the YWCA building’s future is uncertain, it is safe that threats to the Center’s operations are threats to the preservation of the building’s storied history.
 
-![image](https://github.com/user-attachments/assets/ae1f29d4-bd58-4d6b-a10c-fad6a22d972c)
-

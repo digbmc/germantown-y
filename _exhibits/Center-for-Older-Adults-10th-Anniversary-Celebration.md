@@ -13,7 +13,8 @@ On November 10th, 1978, the Center in the Park's 10th anniversary celebration wa
 In the photos that follow, view a snapshot of the celebratory atmosphere and aroma of friendship that permeated the event. All photos were obtained from the Center in the Park archives.
 
 {% include feature/image.html objectid="objects/arc_021.jpg" width="" %}[^2]
-{% include feature/image.html objectid="objects/arc_022.jpg" width="" %}[^3]
+{% include feature/image.html objectid="objects/arc_022.jpg" width="" %}
+{% include feature/image.html objectid="objects/arc_023.jpg" width="" %}[^3]
 
 
 
@@ -21,4 +22,5 @@ In the photos that follow, view a snapshot of the celebratory atmosphere and aro
 
 [^1]: Rennie Cohen, "Center in the Park: From a Grassroots Beginning to a National Senior Center Model."
 [^2]: From left to right: Maggie Kuhn, Rennie Cohen
+[^3]: Virginia Dreby on the left.
 

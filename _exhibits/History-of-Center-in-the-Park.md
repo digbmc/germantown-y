@@ -25,7 +25,7 @@ Riegel, the General Secretary of the Germantown YWCA from 1942 to 1946, played a
 
 Another prominent Germantown resident and elder rights advocate was Maggie Kuhn, founder of the Grey Panthers. It is often overlooked that Kuhn began her professional career working at the Germantown YWCA from 1930 to 1941. Kuhn was concerned with a multitude of challenges facing aging populations, including isolation and mental health, often referencing inadequacies of nursing homes and, indeed, senior centers. Yet, Kuhn was won over by the Center’s mission, observing how the organization enriched the lives of elders by engaging them with the arts, community service, trips, and much more: “Why do we have old people making baskets? Let’s have them gardening, getting fresh vegetables.”
 
-{% include feature/image.html objectid="objects/arc_021.jpg" width="" %}
+{% include feature/image.html objectid="objects/arc_021.jpg" width="300" %}
 
 ### Support to and from the YWCA
 The legacy of support from women connected to the YWCA was foundational to the Center’s early development. From the beginning, the potential for communal spaces for those aging was made a reality within the YWCA building. As Cunningham explains, “There were parts of the building that the Y didn’t even use that, as we were growing, they then all of a sudden could use.” Within a year of their founding, the Center had established two art classes, a sewing class, Bible study, and two lunch programs all within the YWCA building. 
@@ -44,7 +44,7 @@ Herbert was extremely supportive of the Center’s programing after the move, an
 ### Into the Future
 While the Center’s tenure has persisted long past the demise of the Germantown YWCA, the storyline connecting the two organizations continues to be written. In particular, figures like Harris remain actively involved in advocacy efforts around the Germantown YWCA building, and members of the Center’s administration are consistently securing their voices in the redevelopment plans of the long-vacant building.
 
-{% include feature/image.html objectid="objects/arc_029.jpg" width="" %}
+{% include feature/image.html objectid="objects/arc_029.jpg" width="300" %}
 
 One such group is the Friends for the Restoration of the Germantown YWCA Building, of which Renee Cunningham is an active member. Founded jointly by attorney Yvonne Haskins Ann Marie Doley, the group is committed preserving the YWCA Building and seeing it repurposed into affordable housing to honor the YWCA’s proud legacy of combining service with being a movement for social change. 
 

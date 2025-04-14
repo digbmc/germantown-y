@@ -15,8 +15,8 @@ In the photos that follow, view a snapshot of the celebratory atmosphere and aro
 {% include feature/image.html objectid="objects/arc_021.jpg" width="" %}[^2]
 {% include feature/image.html objectid="objects/arc_022.jpg" width="" %}
 {% include feature/image.html objectid="objects/arc_023.jpg" width="" %}[^3]
-
-
+{% include feature/image.html objectid="objects/arc_024.jpg" width="" %}
+{% include feature/image.html objectid="objects/arc_027.jpg" width="" %}
 
 
 

@@ -9,6 +9,8 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
+# Credits
+
 ## About the Project 
 
 **Land Acknowledgement:** The work for this project was largely conducted at Bryn Mawr College. The land on which Bryn Mawr College and Germantown YWCA stand on is part of the ancestral homeland and territory of the Lenape people. We openly recognize the Lenape Indian tribe as the original inhabitants of eastern Pennsylvania. We acknowledge the Lenape people as the indigenous stewards of their homelands and also the spiritual keepers of the Lenape Sippu, or Delaware River, and we do hereby commit to actively supporting our Lenape [siblings] in whatever way we are able, helping to maintain the cultural identity of Pennsylvania, Delaware, New Jersey and southern New York.

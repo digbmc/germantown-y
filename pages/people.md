@@ -5,7 +5,7 @@ permalink: people.html
 img: /assets/pics/DSSF.jpg
 ---
 
-## Project Team
+# Project Team
 * Alice McGrath, Senior Digital Scholarship Specialist
 * Cameron Boucher, Research Coordinator, Web Advisor, & EaST Assistant
 * Liv Raddatz, Director of Praxis
@@ -13,11 +13,11 @@ img: /assets/pics/DSSF.jpg
 * Sean Keenan, Project Manager & Educational Technology Specialist
 * Stella Fritzell, DSGA and Assistant Director of DSSF
 
-### Friends of Germantown YWCA
+## Friends of Germantown YWCA
 * Ann Doley
 * Renée Cunningham
 
-### Digital Scholarship Summer Fellows
+## Digital Scholarship Summer Fellows
 * Anna Nguyen
 * Emma Dermansky
 * Fiona Shen
@@ -28,7 +28,7 @@ img: /assets/pics/DSSF.jpg
 ![The DSSF Fellows with Anne Doley](https://github.com/digbmc/germantown-y/assets/pics/DSSF.jpg)
 {% endcomment%}
 {% include feature/image.html objectid="/assets/pics/DSSF.jpg" alt="The DSSF Fellows with Anne Doley" %}
-### Additional Contributors
+## Additional Contributors
 * Barbara Dowdall
 * Center in the Park
 * Friends for the Restoration of the Germantown YWCA
@@ -39,7 +39,7 @@ img: /assets/pics/DSSF.jpg
 * Tuomi Forrest
 * Zoe Kauffman
 
-#### Bryn Mawr College: 
+## Bryn Mawr College: 
 * Career & Civic Engagement
 * Library & Information Technology Services
 * Growth & Structure of Cities departments

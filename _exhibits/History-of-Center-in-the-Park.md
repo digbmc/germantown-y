@@ -25,7 +25,7 @@ Riegel, the General Secretary of the Germantown YWCA from 1942 to 1946, played a
 
 Another prominent Germantown resident and elder rights advocate was Maggie Kuhn, founder of the Grey Panthers. It is often overlooked that Kuhn began her professional career working at the Germantown YWCA from 1930 to 1941. Kuhn was concerned with a multitude of challenges facing aging populations, including isolation and mental health, often referencing inadequacies of nursing homes and, indeed, senior centers. Yet, Kuhn was won over by the Center’s mission, observing how the organization enriched the lives of elders by engaging them with the arts, community service, trips, and much more: “Why do we have old people making baskets? Let’s have them gardening, getting fresh vegetables.”
 
-
+{% include feature/image.html objectid="objects/arc_026.jpg" width="" %}
 
 ### Support to and from the YWCA
 The legacy of support from women connected to the YWCA was foundational to the Center’s early development. From the beginning, the potential for communal spaces for those aging was made a reality within the YWCA building. As Cunningham explains, “There were parts of the building that the Y didn’t even use that, as we were growing, they then all of a sudden could use.” Within a year of their founding, the Center had established two art classes, a sewing class, Bible study, and two lunch programs all within the YWCA building. 

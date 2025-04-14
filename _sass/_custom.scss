@@ -157,7 +157,7 @@ p, dd, tr {
     padding: 0.5rem;
     float: right;
 }
-@media (min-width: 400px) { 
+@media (min-width: 576px) { 
     .navbar-toggler {
         width: 3rem;
     }
@@ -176,7 +176,6 @@ p, dd, tr {
         font-family: Overpass;
     }
 }
-/* media query changes font once links are in dropdown mode */
 
 /* nav bar dropdown customization */
 .dropdown-item {
@@ -190,6 +189,7 @@ p, dd, tr {
     max-width: 20rem;
 }
 
+/* media query changes font once links are in dropdown mode */
 @media (min-width: 992px){
     .dropdown-menu {
         position: relative;

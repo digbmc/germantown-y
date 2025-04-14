@@ -6,13 +6,13 @@ img: arc_008
 #Note for future proofreaders:
 #Please double check images referced here present in the archives
 ---
-### **Unconvering and Rediscovering the Women of Germantown Mural**
+## **Uncovering and Rediscovering the Women of Germantown Mural**
 
 On the side of the Germantown YWCA is a large mural with the faces of six women, Maggie Kuhn, Louisa May Alcott, Sadie Tanner Alexander, Sarah B.W Warden McLean, Clarice Gamble Herbert, and Dinah. The mural was completed in 2001 by artist David McShane and was appropriately named *The Women of Germantown*. All of these women depicted on the mural have ties to Germantown and some to the Y itself. 
  
 While the mural itself is easily accessible for the public to view on the side of 5280 Germantown Ave, understanding the history and origins of the mural has been a lot less accessible. Students at Bryn Mawr and Haverford have begun to uncover the story behind the mural and the women it memorializes.  
 
-##### *Uncovering The Murals Origins*
+### *Uncovering The Murals Origins*
 
 This detective work started with emailing the most obvious people: the artist, David McShane, and Mural Arts Philadelphia. Mural Arts Philadelphia had no records of the mural other than the finished product. David McShane was able to talk to us and gave us his account of how he got involved with the mural. 
  
@@ -24,18 +24,18 @@ Pamphlets featured below reveal that the Y was creating curriculum that they hop
 
 
 
-###### *The Mural Design*
+### *The Mural Design*
 
 With input from the Y’s mural committee the final version of the mural was designed and then painted onto the wall. The design features the six key women on a colorful and floral background which, according to Dave McShane, “represents the seeds of these women’s works blossoming and being passed on to current and future women of Germantown to appreciate and to carry on.” Each of the women is depicted with a symbol representative of their contribution to the community and broader society. Sarah B.W. McLean, who funded the Y’s building is represented with the entrance to the Y, Dinah is represented with a torch, Maggie Kuhn is represented with a large Gray Panthers button, Louisa May Alcott is represented by a book, Sadie Tanner is featured with scales of justice, and Clarice Herbert’s symbol is two girls of different races which represent the Y’s historical precedence in integration and its racially diverse community. 
 
-{% include feature/image.html objectid="objects/arc_070.jpeg" width="75" caption="David McShane's First Sketch of the Women of Germantown Mural" %}
-{% include feature/image.html objectid="objects/arc_071.jpeg" width="75" caption="One of David McShane's Design Drafts of the Women of Germantown Mural" %}
+{% include feature/image.html objectid="objects/arc_100.jpeg" width="75" caption="David McShane's First Sketch of the Women of Germantown Mural" %}
+{% include feature/image.html objectid="objects/arc_101.jpeg" width="75" caption="One of David McShane's Design Drafts of the Women of Germantown Mural" %}
 
-##### *Beyond the Mural: Community Involvement*
+### *Beyond the Mural: Community Involvement*
 
 While these testimonies give great insight into the early stages of the mural, pamphlets found at Germantown Historical Society have created more questions about the inception of the mural. 
 
-{% include feature/image.html objectid="object/arc_073.HEIC" width="50" height="60" caption="" %}
+{% include feature/image.html objectid="objects/arc_103.HEIC" width="50" height="60" caption="" %}
 
 According to a Germantown Women’s Y pamphlet released in fall of 2000, there was a program titled “The Big Picture – Mural Arts for Teens”. The program was supposed to run from October 2nd, 2000, until June 16th, 2001. The program was divided up into three phases. The first phase was meant to teach the basics of drawing, composition, space, and color. The second is where students were introduced to the process of creating a mural, and were taught lessons on teamwork, conflict resolution, and social responsibility. The last phase was the actual creation of a mural. Students were meant to select a wall, develop a sketch, and gain approval for their intended mural. In the pamphlet, the listed instructor was Jane Degenhardt, an artist associated with Mural Arts Philadelphia. 
 
@@ -48,11 +48,11 @@ While the YWCA was not the conception point for the mural, it was readily identi
 The mural’s origin story is a true testament to the nature of the Germantown community. The project brought together people with various ties to Germantown, to honor the women who have helped shape the community throughout history.  
 
 
-##### *The Mural Dedication*
+### *The Mural Dedication*
 
 The mural was finished in August 2001. Clarice Gamble Herbert, the only living woman honored on the mural, was in attendance along with Irma Gardner-Hammond who posed for the portrait of Dinah.  
 
-{% include feature/image.html objectid="objects/arc_072.jpg" width="50" height="60" caption="Clarcie Gamble Herbert at the Women of Germantown Mural unveiling.Photo courtesy of Ann B. Perrone" %}
+{% include feature/image.html objectid="objects/arc_102.jpg" width="50" height="60" caption="Clarcie Gamble Herbert at the Women of Germantown Mural unveiling.Photo courtesy of Ann B. Perrone" %}
 
 If you have any further information on this mural project or the women featured on it we invite you to share it with us by emailing _______________. 
 

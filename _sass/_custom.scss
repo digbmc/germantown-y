@@ -281,4 +281,9 @@ blockquote {
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
+    h2.full-width-header {
+        max-width: 100%;
+        width: 100%;
+    }
 }

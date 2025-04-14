@@ -1,6 +1,6 @@
 ---
 title: Main Exhibit
-description: Center in the Park and the YWCA A Complex Relationship
+description: Dive into the fascinating and interconnected histories of the Center in the Park and the YWCA.
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img:

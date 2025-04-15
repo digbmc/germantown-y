@@ -24,7 +24,7 @@ The Colored Branch, also known as the Germantown Colored Branch, Branch Y, or th
 
 The Branch had a strong relationship to Christianity as well as to local Black churches. In fact, many of the Colored Branch’s leadership, like Olivia (Yancy) Taylor, who was the “first elected and first Black Branch Chairman” (125), also had prominent church positions and sometimes meetings would start and end in prayer. 
 
-The Colored Branch had its own leadership that was integrated and became increasingly Black, however, it was still ultimately under the control of the main YWCA because of white YWCA members’ racist assumptions that they were incapable of leadership. In fact, until 1924, no Black woman was allowed to be chair of the Colored Branch. 
+The Colored Branch had its own leadership that was mixed race and became increasingly Black over time. However, it was still ultimately under the control of the main YWCA because of white YWCA members’ prejudiced assumptions that they were incapable of leadership. In fact, until 1924, no Black woman was allowed to be chair of the Colored Branch. 
 
 The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. The branch was a strong source of community and is reflected positively on by old YWCA members in [this short video](https://www.youtube.com/watch?v=jVVQdut2pCA) (https://www.youtube.com/watch?v=jVVQdut2pCA) from the project Germantown Speaks:  
 

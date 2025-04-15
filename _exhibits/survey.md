@@ -1,8 +1,8 @@
 ---
-title: Survey
+title: Survey on Integration
 description:
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
-date: March 2025
+date: April 2025
 img: arc_060
 ---
 

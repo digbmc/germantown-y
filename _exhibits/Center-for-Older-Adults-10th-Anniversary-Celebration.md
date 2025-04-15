@@ -3,7 +3,7 @@ title: Center for Older Adults 10th Anniversary Celebration
 description: See the center's 10th anniversary celebration, a community event featuring prominent figures and YWCA community members.
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
-img: arc_021
+img: /objects/arc_021.jpg
 ---
 
 On November 10th, 1978, the Center in the Park's 10th anniversary celebration was held at the YWCA, featuring prominent community members and those who were instrumental in shaping the histories of the Center and the YWCA. Highlights included the appearance of Representative David Richardson and the presentation of a framed print of the invitation given to Maggie Kuhn, founder of the Gray Panthers. A paragraph from the Center's annual report that reiterated the Center's philosophy was read:

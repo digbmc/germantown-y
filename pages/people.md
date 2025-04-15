@@ -28,6 +28,7 @@ img: /assets/pics/DSSF.jpg
 ![The DSSF Fellows with Anne Doley](https://github.com/digbmc/germantown-y/assets/pics/DSSF.jpg)
 {% endcomment%}
 {% include feature/image.html objectid="/assets/pics/DSSF.jpg" alt="The DSSF Fellows with Anne Doley" %}
+
 ## Additional Contributors
 * Barbara Dowdall
 * Center in the Park

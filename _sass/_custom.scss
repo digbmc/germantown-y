@@ -312,8 +312,8 @@ blockquote {
     }
 
     h2.full-width-header {
-        max-width: 100%;
-        width: 100%;
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
 }

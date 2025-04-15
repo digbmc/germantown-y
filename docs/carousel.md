@@ -1,6 +1,6 @@
 # Carousel 
 
-The image carousel is a moving slide show of images from the[archive](https://digbmc.github.io/germantown-y/archive.html). Carousels can be found on the [building page](https://digbmc.github.io/germantown-y/building.html) and the [home page](https://digbmc.github.io/germantown-y/).
+The image carousel is a moving slide show of images from the[archive](https://digbmc.github.io/germantown-y/browse.html). Carousels can be found on the [building page](https://digbmc.github.io/germantown-y/building.html) and the [home page](https://digbmc.github.io/germantown-y/).
 
 A carousel looks like this:
 ![A screenshot of an image slideshow](screenshots/carousel-1.png)

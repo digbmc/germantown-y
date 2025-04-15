@@ -70,7 +70,7 @@ Barbara Bloom
 
 
 
-{% include feature/image.html objectid="objects/arc_103.HEIC" width="50" height="60" caption="" %}
+{% include feature/image.html objectid="arc_103" width="50" height="60" caption="" %}
 
 
 

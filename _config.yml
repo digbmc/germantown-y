@@ -9,7 +9,7 @@
 #
 # url is site domain, full URL to the production location of your collection
 # on GitHub Pages follows the pattern username.github.io
-#url: https://collectionbuilder.github.io 
+url: https://digbmc.github.io 
 # baseurl is path to location on the domain if necessary e.g. /digital/hjccc
 # on GitHub Pages it is your github repository's name prefixed with a /
 baseurl: /germantown-y
@@ -69,7 +69,7 @@ plugins:
 collections: 
   exhibits:
     output: true 
-    permalink: :collection/:name
+    permalink: histories/:name
 defaults:
   - scope:
       path: ""

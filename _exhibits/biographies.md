@@ -25,49 +25,48 @@ Dinah was a Black woman who is known for her bravery and quick wits to save the 
 
 
 ## Complete List of all Women Honored on the Mural
-Sarah W. B McLean 
-Louisa May Alcott
-Sadie T. M Alexander 
-Maggie Kuhn 
-Betty Rotenberg 
-Clarice G. Herbert 
-Ann Preston 
-Sonya Sanchez 
-Rennie Cohen 
-Marguerite Riegle 
-Laura Nichols 
-Lucy Carner 
-Rt. Rv. Barbara Harris 
-Shelly Yanoff 
-Ada LaCount 
-Pauline H. Bernhard 
-Hannah Ann Zell 
-Betty Shellenberg 
-Dinah 
-Molly Rinker 
-Martha Redville 
-Violet Oakley 
-Jessie W. Smith 
-Deborah Kogan 
-Barbara Dunham 
-Eliz S. Green 
-Susan E Fund 
-Janet Bruin 
-Meta W. Fuller 
-Marietta Simpson 
-Clara Ward Singers 
-Elizabeth P. Martin 
-Kitty Minehart 
-Fanny Kemble 
-Lucretia Mott
-Grace Kelly 
-Lorain Cary 
-Allyson Schwartz
-Rosita Youngblood 
-Donner Miller 
-Rose Toll 
-Barbara Bloom
-
+- Sarah W. B McLean 
+- Louisa May Alcott
+- Sadie T. M Alexander 
+- Maggie Kuhn 
+- Betty Rotenberg 
+- Clarice G. Herbert 
+- Ann Preston 
+- Sonya Sanchez 
+- Rennie Cohen 
+- Marguerite Riegle 
+- Laura Nichols 
+- Lucy Carner 
+- Rt. Rv. Barbara Harris 
+- Shelly Yanoff 
+- Ada LaCount 
+- Pauline H. Bernhard 
+- Hannah Ann Zell 
+- Betty Shellenberg 
+- Dinah 
+- Molly Rinker 
+- Martha Redville 
+- Violet Oakley 
+- Jessie W. Smith 
+- Deborah Kogan 
+- Barbara Dunham 
+- Eliz S. Green 
+- Susan E Fund 
+- Janet Bruin 
+- Meta W. Fuller 
+- Marietta Simpson 
+- Clara Ward Singers 
+- Elizabeth P. Martin 
+- Kitty Minehart 
+- Fanny Kemble 
+- Lucretia Mott
+- Grace Kelly 
+- Lorain Cary 
+- Allyson Schwartz
+- Rosita Youngblood 
+- Donner Miller 
+- Rose Toll 
+- Barbara Bloom
 
 
 {% include feature/image.html objectid="arc_103" width="50" height="60" caption="" %}

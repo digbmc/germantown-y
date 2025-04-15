@@ -19,6 +19,7 @@ home: true
 
         <div class="no-border card mb-3">
           <div class=" card-body">
+            <div style="background-color: #F3C17B; border-radius: .25rem; padding: 1rem; margin-bottom: 1rem; text-align: center;"><p style="margin: 0; text;"><strong>This site is under construction!</strong></p></div>
             <h2>About the Site</h2>
             <p class="card-text">{{ site.description }}</p>
             {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}

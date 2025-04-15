@@ -51,4 +51,13 @@ One such group is the Friends for the Restoration of the Germantown YWCA Buildin
 
 While these advocacy efforts fight the good fight, the future of the YWCA building is unknown. Whatever the future may hold for the YWCA building, the intertwined histories of the Center and the YWCA are a powerful force in determining the building’s fate. To learn more about how the Center's history is shaping the future of this building, read about the [parking lot](https://digbmc.github.io/germantown-y//histories/ywca-parking-lot).
 
+### Postscript from the Authors
+
+We wish to thank all the people who provided oral histories, comments and background information for our story. We appreciate the women we wrote about who have passed on. We wish all those who care about the YWCA Building past and future a positive outcome that honors the YWCA’s illustrious history and protects the Center’s position within this history. 
+
+**Questions?** Contact Ann Marie Doley of the Friends for the Restoration of the Germantown YWCA Building at adthyme@aol.com.
+
+
+
+
 

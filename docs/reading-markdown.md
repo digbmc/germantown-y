@@ -8,7 +8,7 @@ The above YAML is an example of how one would credit a page where they want to i
 The below example is taken from the history.html YAML front matter.
 ```
 ---
-title: history
+title: History
 layout: history
 permalink: history.html
 toc: true

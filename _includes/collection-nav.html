@@ -1,31 +1,31 @@
 
 
 
-
-<div class = "row nav-gutter">
-<div class = " gap-3 col-lg-6 col-md-12 text-light bg-dark blue p-4">
-
-
-    <div class = "container-fluid">
-    <div class = "nav-title">
-        <h1 class="display-4"><a class = "nav-title-link" href = "/germantown-y/">{{ site.title }}</a></h1>
-        {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+<nav>
+<div class = "row">
+    <div class = "col-12 col-sm-10 col-lg-6 text-light bg-dark blue p-4">
+        <div class = "container-fluid">
+        <div class = "nav-title">
+            <h1 class="display-5"><a class = "nav-title-link" href="/germantown-y/">{{ site.title }}</a></h1>
+            {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+        </div>
+        </div>
     </div>
+    <div class="col-12 col-sm-2 d-lg-none blue navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }} ">
+        <div id="nav-link-container" class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            {% if site.organization-logo-nav %}<span class="d-lg-none text-end">
+                <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
+                    <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
+                </a>
+            </span>{% endif %}
+        </div>
     </div>
-</div>
-<nav class="col-lg-6 col-md-12 blue navbar navbar-expand-md {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }} ">
-    <div class="container">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        {% if site.organization-logo-nav %}<span class="d-lg-none text-end">
-            <a href="{{ site.organization-link }}" target="_blank" rel="noopener">
-                <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name }} home" >
-            </a>
-        </span>{% endif %}
-
+    <div class="col-lg-6 blue navbar navbar-expand-lg {{ site.data.theme.navbar-color | default: 'navbar-dark' }} {{ site.data.theme.navbar-background | default: 'bg-dark' }}">
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="nav-font navbar-nav me-auto text-light" >
                 
@@ -36,7 +36,7 @@
                     <a class="nav-link{% if page.url == nav.stub %} active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
                 </li>
                 {%- else -%}
-                <li class="nav-item  dropdown">
+                <li class="nav-item dropdown">
                     {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
                     {%- assign childStubs = navChildren | map: 'stub' -%}
                     <a class="nav-link dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
@@ -50,9 +50,9 @@
                 {%- endfor -%}
             </ul>
 
-           <!-- {% include nav-search-lunr.html %} -->
+        <!-- {% include nav-search-lunr.html %} -->
 
         </div>
     </div>
-</nav>
 </div>
+</nav>

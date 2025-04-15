@@ -1,5 +1,5 @@
 ---
-title: archive
+title: Archive
 layout: browse
 permalink: archive.html
 # see _data/config-browse.csv for display options

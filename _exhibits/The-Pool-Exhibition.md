@@ -23,7 +23,7 @@ This is an excerpt from the pamphlet given out at the opening week of the YWCA�
 {% include feature/image.html objectid="objects/arc_074.png" width="30" %}
 {% include feature/image.html objectid="objects/arc_075.png" width="30" caption="(2)The Importance of this Swimming Pool" %}
 
-This 2000-2001 brochure is from the new group that took over the YWCA in 1999 when the former Board attempted to sell the building. The organization was renamed Germantown Women’s Y as it was disaffiliated by the national YWCA/USA the same year for owing $100,000 in dues. In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as drowning is cited as one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many. Comparing this to the 1917 pamphlet above, we can see that these values held by the Y were unwavering for close to a century.
+This 2000-2001 brochure is from the new group that took over the YWCA in 1999 when the former Board attempted to sell the building. The organization was renamed Germantown Women’s Y as it was disaffiliated by the national YWCA/USA the same year for owing $100,000 in dues. In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as drowning is cited as one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many.
 
 {% include feature/image.html objectid="objects/arc_080.jpeg" width="55" caption="(3)Swimming Lessons at the YWCA Pool" %}
 
@@ -36,11 +36,11 @@ This photo above is revolutionary for its time, as integrated swimming classes w
 
 {% include feature/image.html objectid="objects/arc_084.jpeg" width="55" caption="(5)Swim Here Pamphlet" %}
 
-This photograph displays the various swimming programming that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear. <br/>
+This photograph displays the various swimming programs that were available, including the option to enroll in life saving courses. It also includes the written detail that the pool provides sterilized swimwear. <br/>
 
 {% include feature/image.html objectid="objects/arc_076.jpg" width="55"  caption="(6)An image of the pool after the closing of YWCA" %}
 
-This photo displays the pool after the YWCA was closed and sold to local non-profit Germantown Settlement in 2006. Here, we see the pool  drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
+This photo displays the pool after the YWCA was closed and sold to the local non-profit, Germantown Settlement, in 2006. Here, we see the pool  drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
 
 **Oral History Quotes About the Pool, Fall of 2023, Conducted by Grace Roebuck:**

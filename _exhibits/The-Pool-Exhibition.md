@@ -20,8 +20,8 @@ The swimming pool played a strong role in the community building that occurred a
 
 This is an excerpt from the pamphlet given out at the opening week of the YWCA’s new administration building (1915) that features goals set by the branch about how they want the pool to be used. It includes the mission to develop “strength” and “self-reliance and courage” in young women as well as instilling “good carriage and poise.” It also includes information about the shared swimsuits which were required and sanitized as well as rules for swimmers. 
 
-{% include feature/image.html objectid="objects/arc_074.png" width="30" %}
-{% include feature/image.html objectid="objects/arc_075.png" width="30" caption="(2)The Importance of this Swimming Pool" %}
+{% include feature/image.html objectid="objects/arc_074.png" width="20" %}
+{% include feature/image.html objectid="objects/arc_075.png" width="20" caption="(2)The Importance of this Swimming Pool" %}
 
 This 2000-2001 brochure is from the new group that took over the YWCA in 1999 when the former Board attempted to sell the building. The organization was renamed Germantown Women’s Y as it was disaffiliated by the national YWCA/USA the same year for owing $100,000 in dues. In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as drowning is cited as one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many.
 

@@ -49,6 +49,27 @@ $air-force-blue: #507E96ff;
 
 
 /* browse */
+#browseItems .text-dark {
+    display: -webkit-box;               
+    -webkit-line-clamp: 3;              
+    -webkit-box-orient: vertical;      
+    overflow: hidden;                  
+    text-overflow: ellipsis;           
+    max-width: 100%;                   
+  }
+  .card-img-top {
+        max-height: 300px;
+        max-width: 300px;
+  }
+
+  .h4 + .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
 
 /* map */
 #map { height: 750px; z-index: 98; }

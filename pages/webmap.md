@@ -9,8 +9,6 @@ description: This map displays buildings connected to the history of the Germant
 <hr>
 
 ### References:
-
-
 #### Print Publications:
 
 1. Hopkins, G.M. ***City Atlas of Philadelphia, 25th Ward, 1875***. (Vols. 1-7). Philadelphia, PA: G. M. Hopkins Company. 1875.

@@ -26,4 +26,5 @@ Gemfile.lock
 #ignore bootstrap
 node_modules/
 
-
+# try ignoring _config.yml for now (not sure if this will work)
+_config.yml

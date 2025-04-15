@@ -1,7 +1,7 @@
 ---
 
 title: The Timeline of Preservation
-author: Amelia Rono and Tessa Lippman
+author: Amelia Rono and Tessa Lippmann
 description: Ownership, Politics and Community. 
 img: /objects/arc_042.jpg
 ---

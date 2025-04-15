@@ -286,4 +286,20 @@ blockquote {
         max-width: 100%;
         width: 100%;
     }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+/* custom styles for interview */
+
+.hanging-indent {
+    padding-left: 2rem;
+    text-indent: -2rem;
+
+    &.not-first {
+        text-indent: 0;
+    }
 }

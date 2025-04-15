@@ -1,7 +1,7 @@
 ---
-title: Exhibits
+title: Histories
 layout: exhibits
-permalink: exhibits.html
+permalink: histories.html
 cards: true
-description: Stories and digital exhibits related to the Germantown YWCA
+description: Histories of the Germantown YWCA
 ---

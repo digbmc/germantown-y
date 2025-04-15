@@ -1,4 +1,5 @@
 ---
+title: Credits
 layout: page
 permalink: credits.html
 
@@ -8,28 +9,15 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
+# Credits
+
 ## About the Project 
 
-**Land Acknowledgement:** The work for this project was largely conducted at Bryn Mawr College. The land on which Bryn Mawr College and Germantown YWCA stand on is part of the ancestral homeland and territory of the Lenape people. We openly recognize the Lenape Indian tribe as the original inhabitants of eastern Pennsylvania. We acknowledge the Lenape people as the indigenous stewards of their homelands and also the spiritual keepers of the Lenape Sippu, or Delaware River, and we do hereby commit to actively supporting our Lenape [siblings] in whatever way we are able, helping to maintain the cultural identity of Pennsylvania, Delaware, New Jersey and southern New York.
+*The work for this project was largely conducted at Bryn Mawr College. The land on which Bryn Mawr College and Germantown YWCA stand on is part of the ancestral homeland and territory of the Lenape people. We openly recognize the Lenape Indian tribe as the original inhabitants of eastern Pennsylvania. We acknowledge the Lenape people as the indigenous stewards of their homelands and also the spiritual keepers of the Lenape Sippu, or Delaware River, and we do hereby commit to actively supporting our Lenape [siblings] in whatever way we are able, helping to maintain the cultural identity of Pennsylvania, Delaware, New Jersey and southern New York.*
 
 
-The Germantown YWCA: A Social History of a Building is an ongoing project aiming to preserve Germantown’s rich history and share the stories of its residents, creating an interactive website to educate people about ‘the Y’ and provide a place of comfort for the Friends of Germantown. 
-
-First, led by Prof. Min Kyung Lee, working with the Praxis Program, continued its project with the Digital Scholarship Department to curate a website. The website provides background information on the social, political, and historical aspects of Germantown. It includes digital representations of the building's architectural plans, a timeline for significant events, a map of the Germantown neighborhood that highlights associated buildings, and visual aids to present the neighborhood's development over the years.
-
-...more content to be added
-
-
-### How it started/process
-It started with the Cities Department and Praxis Program holding courses related to the Germantown Y....(more content to be inputted later on) During the school year, students collected files and content for the Digital Scholarship students to take on the project. 
-
-...more content to be added
-
-## Site Development
-What technologies were used 
-
-## References
-Author Last Name, First Name. "Title of Web Page." *Title of Website*, Publisher, Date published, URL. Accessed Day Month Year.
-AuthorLastName, AuthorFirstName. itle of Book. Publisher, Year.
-AuthorLastName, AuthorFirstName. "Title of Article." Title of Periodical, vol. number, no. number, Year, pages. Database, DOI or URL.
-AuthorLastName, AuthorFirstName. "Title of Web Page." Website Name, Publisher (if different from website name), Date published, URL.
+The Germantown YWCA: A Social History of a Building is an on-going collaborative project aimed to preserve the neighborhood’s rich history, to nurture community relationship, and to share stories of the many people involved with the building and the organization. The intention is to create an interactive website to educate the public about “the Y” and understand the critical significance of the civic center in enriching and grounding the Germantown community.
+ 
+“Social history” refers to a foregrounding of the social relations that constitute the building’s significance over time. The term was first coined as a reaction to the kinds of history that centered “great men” as figures who caused and willed change. “Social histories” were meant to represent how historical events were part of a large context of people, communities, and societies. The idea is that a historical event is a result of many different social forces, actors, and everyday people. In this project, then, the focus is on the everyday people —often women—who used, lived and worked in the building, and many who hold memories of the place.
+ 
+The project was first conceived in 2022 by the Praxis office at Bryn Mawr College, through Dr. Liv Raddatz’s engagement with local community groups. It then grew into a series of courses taught by Professor Min Kyung Lee from the Department of the Growth and Structure of Cities in collaboration with many different residents and Germantown organizations and groups, including the Friends for the Restoration of the Germantown YWCA Building. Through the support of Education and Scholar Technology team, led by Dr. Alice McGrath, students worked to develop the platform of the website, which them other students filled in with materials, images, and writings.

@@ -10,7 +10,7 @@ gallery:
 
 <div class = "container my-4">
     <div class="col-md-12">
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
         {% include index/description.html %}
         
       </div>
@@ -20,7 +20,7 @@ gallery:
     </div>
     <div class="col-md-6 mx-auto">
         {% if page.carousel == true %}
-            {% include index/carousel-custom.html title="building archive"%}
+            {% include index/carousel-custom.html title="Related Collection Items"%}
         {% endif %}
     </div>
     <div class="col-md-12">

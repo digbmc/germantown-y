@@ -136,7 +136,7 @@ permalink: /building-js.html
     var currentHighlighted;
 
     // Function to create and add polygons to the map
-    function addPolygon(name, coordinates, layerGroup, description, imageUrl, imageTitle) {
+    function addPolygon(name, coordinates, layerGroup, description, hasImage, imageUrl, hasTitle, imageTitle) {
         var polygon = L.polygon(coordinates, polygonStyle)
             .on('mouseover', function (e) {
                 polygon.setStyle(highlight);
@@ -156,16 +156,37 @@ permalink: /building-js.html
                 console.log(imageUrl); // Debugging line
 
                 sidebar.show();
-                sidebar.setContent(
-                    '<div class="sidebar-content">' +
-                    '<h1>' + name + '</h1>' +
-                    '<div class="img-container">' +
-                    '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
-                    '</div>' +
-                    '<p style="font-size: smaller;">' + imageTitle + '</p>' +
-                    '<p>' + description + '</p>' +
-                    '</div>'
-                );
+                if (hasImage) {
+                    if (hasTitle) {
+                        sidebar.setContent(
+                            '<div class="sidebar-content">' +
+                            '<h1>' + name + '</h1>' +
+                            '<div class="img-container">' +
+                            '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                            '</div>' +
+                            '<p style="font-size: smaller;">' + imageTitle + '</p>' +
+                            '<p>' + description + '</p>' +
+                            '</div>'
+                        );
+                    } else {
+                        sidebar.setContent(
+                            '<div class="sidebar-content">' +
+                            '<h1>' + name + '</h1>' +
+                            '<div class="img-container">' +
+                            '<img src="' + imageUrl + '" class="imgclass" alt="' + name + '">' +
+                            '</div>' +
+                            '<p>' + description + '</p>' +
+                            '</div>'
+                        );
+                    }
+                } else {
+                    sidebar.setContent(
+                        '<div class="sidebar-content">' +
+                        '<h1>' + name + '</h1>' +
+                        '<p>' + description + '</p>' +
+                        '</div>'
+                    );
+                }
             });
         layerGroup.addLayer(polygon);
     }
@@ -177,14 +198,34 @@ permalink: /building-js.html
         {% capture groupLayer %}
             {% assign floorData = floor.items %}
             {% for row in floorData %}
+                {% if row.objectid contains "arc_" %}
+                    {% assign hasImage = true %}
+                    {% assign hasTitle = true %}
+                    {% assign metadata = site.data.germantown-y-metadata | where: "objectid", row.objectid | first %}
+                    {% assign imageSrc = metadata.object_location | relative_url %}
+                    {% assign imageTitle = metadata.title | escape %}
+                {% elsif row.objectid contains ".jpg" or row.objectid contains ".jpeg" or row.objectid contains ".png" %}
+                    {% comment %}this handles images in /objects that are not in site collection metadata{% endcomment %}
+                    {% assign hasImage = true %}
+                    {% assign hasTitle = false %}
+                    {% assign imageSrc = row.objectid | prepend: "/objects/" | relative_url %}
+                    {% assign imageTitle = 'No title' %}
+                {% else %}
+                    {% assign hasImage = false %}
+                    {% assign hasTitle = false %}
+                    {% assign imageSrc = 'No image' %}
+                    {% assign imageTitle = 'No title' %}
+                {% endif %}
                 {% assign metadata = site.data.germantown-y-metadata | where: "objectid", row.objectid | first %}
                 addPolygon(
                     '{{ row.name }}',
                     {{ row.coordinates | replace: '\"', '\\"' | replace: "\'", "\\\'" | replace: '"', '\"' | replace: "'", "\'" }},
                     floorGroups['{{ floor.name }}'],
                     '{{ row.description | escape }}',
-                    '{{ metadata.object_location | relative_url }}',
-                    '{{ metadata.title | escape }}',
+                    {{ hasImage }},
+                    '{{ imageSrc }}',
+                    {{ hasTitle }},
+                    '{{ imageTitle }}',
                 );
             {% endfor %}
         {% endcapture %}

@@ -85,7 +85,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
             var browseLinks = "";
             for (var i = 0, len = topics.length; i < len; i++) {
                 if (topics[i] != "") {
-                    browseLinks += '<a class="btn btn-link" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(topics[i].trim()) + '">' + topics[i].trim() + '</a> ';
+                    browseLinks += '<a class="btn btn-link" href="{{ '/archive.html' | relative_url }}#' + encodeURIComponent(topics[i].trim()) + '">' + topics[i].trim() + '</a> ';
                 }
             }
             fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value">' + browseLinks + '</dd>';
@@ -390,7 +390,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
         </div>`;
     /* add bottom buttons to page */
     document.getElementById("browse-buttons").innerHTML = `<a id="prev-button" class="btn btn-secondary" href="${backUrl}">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}">Back to browse</a>
+        <a class="btn btn-secondary" href="{{ '/archive.html' | relative_url }}">Back to browse</a>
         <a id="for-button" class="btn btn-secondary" href="${forwardUrl}">Next &raquo;</a>`;
 
     /* add back forward key functionality for modal arrows */
@@ -508,7 +508,7 @@ if (record_index != -1 && cb_items[record_index].parentid) {
 } else {
     /* no item with that ID */
     document.getElementById("bc-title").innerHTML = 'Not found?';
-    document.getElementById("item-title").innerHTML = 'Sorry, item not found. Please visit <a href="{{ "/browse.html" | relative_url }}">Browse page</a> to find an item.';
+    document.getElementById("item-title").innerHTML = 'Sorry, item not found. Please visit <a href="{{ "/archive.html" | relative_url }}">Browse page</a> to find an item.';
 }
 
 /* all done, so hide loading animation */

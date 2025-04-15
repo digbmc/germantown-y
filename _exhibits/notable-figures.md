@@ -1,18 +1,18 @@
 ---
 title: Notable Figures
-description:
+description: Important Figures of the Colored Branch of the YWCA
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
 img: 
 ---
 ## Introduction
-While there were many important people attached to the Colored Branch throughout its history, knowing each story and person is incredibly difficult. Below is a selection of figures that were important to the Branch at various points. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.  
+There were a wide variety of important people attached to the Colored Branch throughout its history. Below we have listed a selection of figures. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.   
 
 ## Important Terms
 In order to understand the roles of these women, some details regarding positions must be outlined. 
-- The "Committee of 22" was an all-white organization comprised of church women that were interested in creating a YWCA for the black community.
+- The "Committee of 22" was an all-white group comprised of church women from the Germantown YWCA that were interested in creating a YWCA for the Black community.
 - The position "General Secretary" is the same as "Executive Director"
-- The Committee of Management (COM) was responsible for supervising work in the branch, managing contracts, establishing rules and regulations, and organizing subcommittees. 
+- The Committee of Management (COM) was responsible for supervising work in the Colored Branch, including managing contracts, establishing rules and regulations, and organizing subcommittees. 
 
 ## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
@@ -27,7 +27,7 @@ In order to understand the roles of these women, some details regarding position
   - Mrs. Leila Morris - Vice Chairman
   - Mrs. Mary Cowdery - Secretary
   - Mrs. William E. Shipley - Chair (only white member)  
-- Until 1924, black women could not be the chair of the Colored Branch
+- Until 1924, Black women could not be the chair of the Colored Branch
 - 1924: Mrs. Olivia Taylor (formerly Yancy) is elected to lead the Colored Branch
 - Sunie Steele (Warrick) - Secretary of the Younger Girls’ Department (1929-36). After integration, she served as the Camp Committee chair.
 - Mrs. Isabel Calloway - Branch Chairman until 1932
@@ -40,6 +40,6 @@ In order to understand the roles of these women, some details regarding position
 - Mrs. Mabel Rawlins and Mrs. Elizabeth Duplessis - co-chairs in 1942
 - Mrs. Elizabeth Duplenssis - elected Chairman in 1943
 - Sibyl Gowdy - Colored Branch Program Director during integration
-- Jessie Pratt - one of 3 black board members in the integrated Committee of Management in 1948
+- Jessie Pratt - one of 3 Black board members in the integrated Committee of Management in 1948
 - Dorothy Warrick - chair of Integration Committee
 [^fn1]: Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 

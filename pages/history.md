@@ -3,10 +3,9 @@ title: History
 layout: history
 permalink: history.html
 toc: true
-description:  This timeline showcases significant events associated with the building, but also the social, political, and institutional events. It is an example timeline so Praxis course and community members have an idea on how it should look and can add their own content. The timeline features the Pool, The Young Women's Christian Association (YWCA) established to provide safe housing and support for young women, and multiple events held at the building.
+description:  This timeline showcases significant events associated with the Germantown YWCA building.
 ---
-
-
+{% comment %}
 ## Germantown YWCA Organization
 
 ## Germantown YWCA Buildings
@@ -20,3 +19,4 @@ Not only was it a place for educational courses, but The Germantown YWCA provide
 The building has sat vacant for a few years now and developers have been working to redevelop the Germantown YWCA into affordable housing.
 
 ## Resources
+{% endcomment %}

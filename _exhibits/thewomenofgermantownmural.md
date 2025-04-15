@@ -20,7 +20,7 @@ Students reached out to Sue Leary, Maggie Kuhn’s personal assistant and a dono
 
 In notes shared with students, Dave McShane reveals that the mural’s origins were community-engaged and collaborative in nature with Germantown Y members advocating for their vision. While Dave was initially under the impression that the mural had been commissioned to honor Maggie Kuhn, founder of the Gray Panthers and influential leader at the Germantown YWCA, after meeting with the Y’s mural committee the plan quickly changed. The YWCA mural committee had come up with a list of 50 or so women of Germantown compiled and researched by local Germantown historian, and former *Germantown Crier* editor,  Judith Callard. The mural committee hoped to honor all 50 women, who had been instrumental to the history of Germantown! Dave notes, “We reached a compromise:  Six women would have their portraits in the mural and the rest of the list would have their names included at the bottom of the mural.” 
 
-Pamphlets featured below reveal that the Y was creating curriculum that they hoped to have taught in Germantown schools about the 42 women whose likeness or names appear on the mural. The newsletter also mentions a potential book, likely related to the research of Judith Callard.  The newsletter calls for recommendations of more women to include, listing its only requirements to be that they lived in Germantown and/or contributed to the community at one point or another. A list of the 42 names listed can be found here: https:github.com/digbmc/germantowny/blob/Mural/exhibits/listofwomenmentioned  
+Pamphlets featured below reveal that the Y was creating curriculum that they hoped to have taught in Germantown schools about the 42 women whose likeness or names appear on the mural. The newsletter also mentions a potential book, likely related to the research of Judith Callard.  The newsletter calls for recommendations of more women to include, listing its only requirements to be that they lived in Germantown and/or contributed to the community at one point or another. A list of the 42 names listed can be found here: [The Women of Germantown](https:github.com/digbmc/germantowny/blob/Mural/exhibits/listofwomenmentioned).  
 
 
 
@@ -28,8 +28,9 @@ Pamphlets featured below reveal that the Y was creating curriculum that they hop
 
 With input from the Y’s mural committee the final version of the mural was designed and then painted onto the wall. The design features the six key women on a colorful and floral background which, according to Dave McShane, “represents the seeds of these women’s works blossoming and being passed on to current and future women of Germantown to appreciate and to carry on.” Each of the women is depicted with a symbol representative of their contribution to the community and broader society. Sarah B.W. McLean, who funded the Y’s building is represented with the entrance to the Y, Dinah is represented with a torch, Maggie Kuhn is represented with a large Gray Panthers button, Louisa May Alcott is represented by a book, Sadie Tanner is featured with scales of justice, and Clarice Herbert’s symbol is two girls of different races which represent the Y’s historical precedence in integration and its racially diverse community. 
 
-{% include feature/image.html objectid="objects/arc_100.jpeg" width="75" caption="David McShane's First Sketch of the Women of Germantown Mural" %}
-{% include feature/image.html objectid="objects/arc_101.jpeg" width="75" caption="One of David McShane's Design Drafts of the Women of Germantown Mural" %}
+{% include feature/image.html objectid="arc_100" width="75" caption="David McShane's First Sketch of the Women of Germantown Mural" %}
+
+{% include feature/image.html objectid="arc_101" width="75" caption="One of David McShane's Design Drafts of the Women of Germantown Mural" %}
 
 ### *Beyond the Mural: Community Involvement*
 
@@ -52,7 +53,7 @@ The mural’s origin story is a true testament to the nature of the Germantown c
 
 The mural was finished in August 2001. Clarice Gamble Herbert, the only living woman honored on the mural, was in attendance along with Irma Gardner-Hammond who posed for the portrait of Dinah.  
 
-{% include feature/image.html objectid="objects/arc_102.jpg" width="50" height="60" caption="Clarcie Gamble Herbert at the Women of Germantown Mural unveiling.Photo courtesy of Ann B. Perrone" %}
+{% include feature/image.html objectid="arc_102" width="50" height="60" caption="Clarcie Gamble Herbert at the Women of Germantown Mural unveiling.Photo courtesy of Ann B. Perrone" %}
 
 If you have any further information on this mural project or the women featured on it we invite you to share it with us by emailing _______________. 
 

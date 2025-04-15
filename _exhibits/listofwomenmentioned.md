@@ -3,7 +3,7 @@ title: The Women of Germantown
 authors: Krista Chan and Estrella Pacheco
 description: Learn more about the women depicted on the mural 
 img: arc_102
-published: false
+published: true
 ---
 
 ## *Maggie Kuhn*: 

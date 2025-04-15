@@ -46,7 +46,7 @@ This photo displays the pool after the YWCA was closed and sold to the local non
 
 <br>
 
-## Oral History Quotes About the Pool, Fall of 2023, Conducted by Grace Roebuck:
+## Oral History Quotes About the Pool, Conducted in the Fall of 2023 by Grace Roebuck:
 
 <hr>
 

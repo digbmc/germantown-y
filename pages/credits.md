@@ -22,4 +22,4 @@ The Germantown YWCA: A Social History of a Building is an on-going collaborative
  
 The project was first conceived in 2022 by the Praxis office at Bryn Mawr College, through Dr. Liv Raddatz’s engagement with local community groups. It then grew into a series of courses taught by Professor Min Kyung Lee from the Department of the Growth and Structure of Cities in collaboration with many different residents and Germantown organizations and groups, including the Friends for the Restoration of the Germantown YWCA Building. Through the support of Education and Scholar Technology team, led by Dr. Alice McGrath, students worked to develop the platform of the website, which them other students filled in with materials, images, and writings.
 
-If you wish to take the survey about the website, use the link here https://bit.ly/germantownYWCA 
+If you wish to take the survey about the website, [use the link here](https://bit.ly/germantownYWCA)

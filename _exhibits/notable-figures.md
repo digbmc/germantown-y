@@ -3,7 +3,7 @@ title: Notable Figures
 description: Important Figures of the Colored Branch of the YWCA
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
-img: 
+img: arc_069
 ---
 ## Introduction
 There were a wide variety of important people attached to the Colored Branch throughout its history. Below we have listed a selection of figures. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.   

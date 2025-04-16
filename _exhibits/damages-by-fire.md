@@ -3,7 +3,7 @@ title: What the Fires Left Behind
 description: A Look Inside the YWCA Germantown
 author: Kripa Khatiwada and Sara Pratt
 date: April 2025
-img: arc_090
+img: arc_098
 
 ---
 

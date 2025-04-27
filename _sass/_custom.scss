@@ -144,7 +144,9 @@ p, dd, tr {
 .nav-gutter {
     --bs-gutter-x: 0rem;
 }
-
+.row {
+    --bs-gutter-x: 0rem;
+}
 #nav-link-container {
     justify-content: right;
     margin-right: 0;

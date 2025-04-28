@@ -36,7 +36,7 @@ h1 {
     font-size: 1.75rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 h3 {
     font-size: 1.25rem;
@@ -144,9 +144,9 @@ p, dd, tr {
 .nav-gutter {
     --bs-gutter-x: 0rem;
 }
-.row {
+.gutter {
     --bs-gutter-x: 0rem;
-}
+} 
 #nav-link-container {
     justify-content: right;
     margin-right: 0;
@@ -289,7 +289,7 @@ blockquote {
     }
 
     h2 {
-        font-size: x-large;
+        font-size: 1.7rem;
     }
 
     h3 {

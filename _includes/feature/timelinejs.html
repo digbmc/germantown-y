@@ -27,5 +27,7 @@
     // and the element must have CSS styling to give it width and height
     // optionally, a third argument with configuration options can be passed.
     // See below for more about options.
-    timeline = new TL.Timeline('timeline-embed', '{{ json }}');
+    timeline = new TL.Timeline('timeline-embed', '{{ json }}', {
+        initial_zoom: 2
+    });
 </script>

@@ -330,3 +330,10 @@ blockquote {
         text-indent: 0;
     }
 }
+
+/* recolor scroll-to-top button for contrast */
+#scroll-to-top {
+    .bi {
+        color: $info;
+    }
+}

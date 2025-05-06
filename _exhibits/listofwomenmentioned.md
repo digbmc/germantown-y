@@ -4,6 +4,7 @@ authors: Krista Chan and Estrella Pacheco
 description: Learn more about the women depicted on the mural 
 img: arc_102
 published: true
+tag: people
 ---
 
 ## *Maggie Kuhn*: 

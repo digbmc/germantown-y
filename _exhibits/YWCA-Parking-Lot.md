@@ -4,6 +4,7 @@ description: Learn how the YWCA building's parking lot plays an instrumental rol
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img: arc_025
+tag: places
 ---
 
 {% include feature/image.html objectid="objects/arc_025.jpg" width="" %}

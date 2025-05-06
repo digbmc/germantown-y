@@ -3,6 +3,7 @@ title: Biographies
 author: Estrella Pacheco and Krista Chan
 description: Short biographies of the women depicted on the Women of Germantown Mural
 img: arc_102
+tag: people
 ---
 
 ## *Maggie Kuhn*: 

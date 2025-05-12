@@ -4,13 +4,8 @@ description: Dive into the fascinating and interconnected histories of the Cente
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img: arc_026
-
 ---
 
-
-
- 
- 
 ### Introduction 
 Home to countless historic sites, Germantown also has the pleasure of being home to Center in the Park, a community-minded organization serving the local older population. Originally the “Center for Older Adults Northwest,” the award-winning senior center, whose motto and practice is “aging positively,” was born in 1968 inside the Germantown YWCA building at 5820 Germantown Avenue. Although the Center departed from the building in 1986, meaning the organization’s tenure in the YWCA building marked only a brief snippet of the YWCA’s extensive history, this partnership has made and continues to make a significant impact on Germantown history.
 

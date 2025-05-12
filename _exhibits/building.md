@@ -12,7 +12,7 @@ img: arc_067
 
 {% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" %}
 
-The Germantown YWCA owned multiple buildings. The main one, often called the Administrative Building, was located at 5820 Germantown Avenue and hosted the main YWCA. The Colored Branch was located in a building at 6128 Germantown Avenue. The two buildings are often referred to by their street numbers: ‘5820’ and ‘6128’.  
+The Germantown YWCA operated several buildings across the area. One of the most prominent was the Administrative Building, located at 5820 Germantown Avenue, which served as the main YWCA. In addition, the Colored Branch was situated at 6128 Germantown Avenue. These two buildings are often referred to simply by their street numbers: ‘5820’ and ‘6128’.
 
 The property at 6128 Germantown Ave for the Colored Branch was approximately 40 x 125 feet large, containing a relatively large, three story building, a lot behind it, a terrace, and tennis courts. The building itself contained a variety of rooms, which included a living room, blue room, kitchen, third floor front and kitchen, club room, and a gymnasium. Unlike the 5820 building, they did not have a pool. Their spaces were used to host a variety of activities, including private parties, church groups, meetings, teas and receptions. Many of these spaces, including the tennis courts, were rented out for outside groups to use. The image below is a photograph of a list of their “house equipment” which included dishes, glasses, linens, roller skates, and music equipment.  
 {% include feature/image.html objectid="arc_068" alt="list of house equipment" %}

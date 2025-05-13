@@ -4,6 +4,7 @@ description:
 author:
 img:
 tag: places
+tag: histories
 # I added .md to the filename and this YAML header, so this page will build as part of the site.
 # Please also rename this file, as the filename will be part of the URL for this page.
 ---

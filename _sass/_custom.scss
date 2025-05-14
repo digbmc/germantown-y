@@ -36,7 +36,7 @@ h1 {
     font-size: 1.75rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 h3 {
     font-size: 1.25rem;
@@ -144,7 +144,9 @@ p, dd, tr {
 .nav-gutter {
     --bs-gutter-x: 0rem;
 }
-
+.gutter {
+    --bs-gutter-x: 0rem;
+} 
 #nav-link-container {
     justify-content: right;
     margin-right: 0;
@@ -287,7 +289,7 @@ blockquote {
     }
 
     h2 {
-        font-size: x-large;
+        font-size: 1.7rem;
     }
 
     h3 {
@@ -298,7 +300,7 @@ blockquote {
         font-size: large;
     }
 
-    p, blockquote, ul, ol, div#item-format, div#item-metadata {
+    p, blockquote, ul, ol, div#item-format, div#item-metadata, div#item-content, .modal-body .metadata {
         margin-bottom: 1rem !important;
         max-width: 45rem;
         margin-left: auto;
@@ -326,5 +328,12 @@ blockquote {
 
     &.not-first {
         text-indent: 0;
+    }
+}
+
+/* recolor scroll-to-top button for contrast */
+#scroll-to-top {
+    .bi {
+        color: $info;
     }
 }

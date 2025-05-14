@@ -241,7 +241,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
 
                                 <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col">
                                             <div class="card mb-4 text-center">
                                                 <div class="m-2">
                                                     ${itemDisplay}
@@ -252,8 +252,9 @@ function displayItem(record, prev_id, next_id, compound_object) {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-4">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mx-4">
                                             <div class="metadata">
                                                 ${generateMetadata(compoundItem[i])}
                                             </div>

@@ -17,12 +17,12 @@ In order to understand the roles of these women, some details regarding position
 
 ## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
-- 5 Black Affiliation Commitee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
+- 5 Black Affiliation Committee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
 - Colored Branch Officers - Mrs. Leila Morris as Vice Chairman, Mrs. Mary Cowdery as Secretary
 - End of 1918 - Colored Branch standing committee officers
   - Mrs. Carrie Fariera - Chairman of the Finance
   - Mrs. Carrie Manley - Chairman of the House
-  - Mrs. Mary Vaughan - Charman of the Membership and Social
+  - Mrs. Mary Vaughan - Chairman of the Membership and Social
   - Mrs. Olivia Yancy - Chairman of the Education
   - Mrs. Mayme Dyke Turner - General Secretary
   - Mrs. Leila Morris - Vice Chairman

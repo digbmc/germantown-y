@@ -10,7 +10,7 @@ tag: places
 
 # Overview 
 
-{% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" %}
+{% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" width="100%" %}
 
 The Colored Branch was an all-Black branch of the Germantown YWCA whose function was to: 
 > “eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115).
@@ -27,7 +27,7 @@ The Branch had a strong relationship to Christianity as well as to local Black c
 
 The Colored Branch had its own leadership that was mixed race and became increasingly Black over time. However, it was still ultimately under the control of the main YWCA because of white YWCA members’ prejudiced assumptions that they were incapable of leadership. In fact, until 1924, no Black woman was allowed to be chair of the Colored Branch. 
 
-The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. The branch was a strong source of community and is reflected positively on by old YWCA members in [this short video](https://www.youtube.com/watch?v=jVVQdut2pCA) (https://www.youtube.com/watch?v=jVVQdut2pCA) from the project Germantown Speaks:  
+The Colored Branch had a long, successful and busy career spanning from 1917 until the early 1950’s. It served as a strong source of community and is reflected positively on by old YWCA members. This is highlighted in this [short video from the project Germantown Speaks](https://www.youtube.com/watch?v=jVVQdut2pCA). 
 
 > “we never had to feel like we were deprived or separated because our building was lovely [...] that Y was where we were allowed to go” 
 

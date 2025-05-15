@@ -25,4 +25,4 @@ In the photos that follow, view a snapshot of the celebratory atmosphere and aro
 [^2]: From left to right: Maggie Kuhn, Rennie Cohen.
 [^3]: Virginia Dreby on the left.
 [^4]: Kathryn Noonan (right) gives a speech next to Virginia Dreby.
-[^5]: Regina Brunner Holmes giving a speech nex to Marjorie Farmer (middle).
+[^5]: Regina Brunner Holmes giving a speech next to Marjorie Farmer (middle).

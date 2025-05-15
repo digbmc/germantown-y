@@ -39,12 +39,12 @@ The different stakeholders making claims for the building and its property demon
 
 ## Works Cited
 
-https://www.inquirer.com/news/councilmanic-prerogative-philadelphia-city-council-20220321.html  
+- https://www.inquirer.com/news/councilmanic-prerogative-philadelphia-city-council-20220321.html  
 
-https://billypenn.com/2024/02/01/philly-councilmanic-prerogative-explained/ 
+- https://billypenn.com/2024/02/01/philly-councilmanic-prerogative-explained/ 
 
-https://whyy.org/articles/kenyatta-johnson-corruption-trial-jury-selection-city-council/  
+- https://whyy.org/articles/kenyatta-johnson-corruption-trial-jury-selection-city-council/  
 
-https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2008&sessInd=0&act=135  
+- https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2008&sessInd=0&act=135  
 
-https://www.law.upenn.edu/live/news/16299-the-disproportionate-impact-of-act-135
+- https://www.law.upenn.edu/live/news/16299-the-disproportionate-impact-of-act-135

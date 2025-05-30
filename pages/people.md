@@ -17,7 +17,7 @@ img: /assets/pics/DSSF.jpg
  
  
 ## Project Courses
-- Digital Fellowship Summer 2023
+- Digital Scholarship Summer Fellows 2024
 - Praxis Class Fall 2023
 - Praxis Independent Study Fall 2024
 - Praxis Class Spring 2025
@@ -37,14 +37,13 @@ img: /assets/pics/DSSF.jpg
 - Desiree Thompson
 - Kathleen Watkins
  
- 
 ## Digital Scholarship Summer 2024 Fellows
 - Isbah Amer
 - Emma Dermansky
 - Nada Elshafey
 - Anna Nyugen
 - Fiona Shen
- 
+
  
 ## Organizational Collaborators
 - Friends for the Restoration of the Germantown YWCA Building

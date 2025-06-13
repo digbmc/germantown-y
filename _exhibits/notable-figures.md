@@ -15,7 +15,7 @@ In order to understand the roles of these women, some details regarding position
 - The position "General Secretary" is the same as "Executive Director"
 - The Committee of Management (COM) was responsible for supervising work in the Colored Branch, including managing contracts, establishing rules and regulations, and organizing subcommittees. 
 
-## Notable Figures Attached to the Colored Branch of the YWCA [^fn1]
+## Notable Figures Attached to the Colored Branch of the YWCA  [^fn1]
 - Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
 - 5 Black Affiliation Committee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
 - Colored Branch Officers - Mrs. Leila Morris as Vice Chairman, Mrs. Mary Cowdery as Secretary
@@ -43,4 +43,5 @@ In order to understand the roles of these women, some details regarding position
 - Sibyl Gowdy - Colored Branch Program Director during integration
 - Jessie Pratt - one of 3 Black board members in the integrated Committee of Management in 1948
 - Dorothy Warrick - chair of Integration Committee
+
 [^fn1]: Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 

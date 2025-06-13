@@ -94,10 +94,12 @@ permalink: /building-js.html
 <div id="sidebar">
     <div class="expand">[+]</div>
 </div>
+<!--
 <div class="floor-info" id="floor-info">
     <h3>Floor Information</h3>
     <p id="floor-details">Details about the selected floor will appear here.</p>
 </div>
+-->
 <script>
     // Style for the polygons
     var polygonStyle = {
@@ -271,11 +273,14 @@ permalink: /building-js.html
         }
     });
 
+    /*
     map.on('overlayadd', function (eventLayer) {
         // Update floor details when layer is changed
         var floorDetails = document.getElementById('floor-details');
         floorDetails.innerHTML = 'Currently viewing: ' + eventLayer.name;
+        console.log("Floor information updated."); // added to check if this function runs at all (it doesn't)
     });
+    */
 
     // Allow dragging the map within its bounds
     map.setMaxBounds(bounds);

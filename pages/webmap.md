@@ -39,6 +39,4 @@ description: This map displays buildings connected to the history of the Germant
 5. The Greater Philadelphia Geohistory Network. ***HistoricLandUse_1962 (Map Service).*** Philadelphia: Greater Philadelphia GeoHistory Network. The Athenaeum of Philadelphia. [URL](https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer?cacheKey=a254ca448c5947e4) (accessed February 20th, 2025).
 
 
-<hr>
-
 

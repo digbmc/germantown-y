@@ -19,7 +19,8 @@ gallery:
             {% include index/description.html %}
         </div>
     </div>
-     <div class = "row my-4 justify-content-center">
+    {% comment %} The div.row element containing the leaflet iframe could be moved here. {% endcomment %}
+    <div class = "row my-4 justify-content-center">
         <div class="col-10 col-md-6 mx-auto">
             {% if page.carousel == true %}
                 {% include index/carousel-custom.html title="Related Collection Items"%}

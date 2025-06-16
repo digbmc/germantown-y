@@ -4,7 +4,7 @@ description: A Look Inside the YWCA Germantown
 author: Kripa Khatiwada, Haverford College '26 and Sara Pratt, Bryn Mawr College'26
 date: April 2025
 img: arc_098
-tag: places
+tag: Preservation
 
 ---
 

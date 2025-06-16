@@ -4,7 +4,7 @@ description: Learn how the YWCA building's parking lot plays an instrumental rol
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img: arc_025
-tag: places
+tag: 5820 Germantown Ave
 ---
 
 _Note_: This history is best understood in the context of the Center in the Park's and the YWCA's intertwined histories, which can be read about [here](https://digbmc.github.io/germantown-y//histories/history-of-center-in-the-park).

@@ -10,8 +10,23 @@ source "https://rubygems.org"
 # uncomment gem "github-pages" 
 # and delete the lines below.
 
-gem "jekyll"
 
-gem "webrick", "~> 1.8"
+# frozen_string_literal: true
 
+# needed for Jekyll
+gem 'jekyll'
+gem 'webrick'
+gem 'logger'
+gem 'base64'
+gem 'ostruct'
 gem 'jekyll-toc'
+
+# needed for Rake tasks
+gem 'rake'
+gem 'csv'
+gem 'fileutils'
+gem 'mini_magick'
+unless Gem.win_platform?
+  gem 'image_optim'
+  gem 'image_optim_pack'
+end

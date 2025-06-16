@@ -3,16 +3,14 @@ title: The Colored Branch of the Germantown YWCA
 description: An Overview of the History of the YWCA Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
-img: arc_069
+img: arc_067
 tag: places
 ---
 
 
 # Overview 
 
-{% include feature/image.html objectid="arc_067" alt="image of 6128 Germantown Ave" width="100%" %}
-
-The Colored Branch was an all-Black branch of the Germantown YWCA whose function was to: 
+The Colored Branch, at 6128 Germantown Ave, was an all-Black branch of the Germantown YWCA whose function was to: 
 > “eventually make possible for every colored girl and woman the advantages so long enjoyed by the white girls and women of our community and to serve the present day need from the point of view of both the individual and the community” (115).
 
 The Germantown YWCA, together with the local Black Germantown community, led by Eva Bowles, saw that there was a great need for a YWCA branch that served the Black community. Black people were facing intense racism and segregation in Germantown and across the country and needed their own space that offered community services, resources and support. 
@@ -21,7 +19,7 @@ The Colored Branch was important because it “was a center of the Black Germant
 
 The Colored Branch, officially called Germantown Branch YWCA, but also known as the Germantown Colored Branch, Branch Y, or the Colored Y, was first founded in 1917 and in 1918 moved into a building at 6128 Germantown Avenue. The Colored Branch’s activities were similar to those of the main, all-white Germantown YWCA. They hosted club events, socials, dances, Christian religious services, service and volunteer work, educational classes, sports (including a tennis court), as well as a variety of “race-pride” (Felix, 1999, 124) activities and events, such as supporting the NAACP and co-organizing Negro Achievement Week. 
 
-{% include feature/image.html objectid="arc_069" alt="two members, Alyce Jackson and Bernice Murray on the tennis court" %}
+{% include feature/image.html objectid="arc_069" alt="two members, Alyce Jackson and Bernice Murray on the tennis court" style="width: 50%;" %}
 
 The Branch had a strong relationship to Christianity as well as to local Black churches. In fact, many of the Colored Branch’s leadership, like Olivia (Yancy) Taylor, who was the “first elected and first Black Branch Chairman” (125), also had prominent church positions and sometimes meetings would start and end in prayer. 
 

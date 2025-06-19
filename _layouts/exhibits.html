@@ -8,69 +8,39 @@ layout: page
     <h1>Histories</h1>
     {% include index/description.html %}
     <div style ="background-color: #255b77; padding: 10px; color: white; border-radius: .25rem; margin-bottom: 10px;">
-    <h3>View histories on</h3>
-      <a href="#people" class="btn text-dark btn-secondary">People</a>
-      <a href="#places" class="btn text-dark btn-secondary">Places</a>
-      <a href="#misc" class="btn text-dark btn-secondary">Other histories</a>
+      <h3>View histories on</h3>
+      {% for category in page.categories %}
+        <a href="#{{ category | slugify }}" class="btn text-dark btn-secondary">{{ category }}</a>
+      {% endfor %}
     </div>
   </div>
 </div>
-  <div class = "row gx-4">
-      <h2 class = "people">People</h2>
-      {% assign people_exhibits = site.exhibits | where:"tag","people" %}
-      {% for exhibit in people_exhibits %}
+
+<div class = "row gx-4">
+    {% for category in page.categories %}
+      <h2 id="{{ category | slugify }}">{{ category }}</h2>
       
-        <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
-          <div class="card">
-            <div class = "rounded-top img-card">
-            {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
-            </div>
-          
-            <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
-            <div class="card-body">
-              <h2 class="card-title">{{ exhibit.title }}</h2>
-              <p class="card-text"> {{ exhibit.description }} </p>
-              <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-secondary text-dark ">Read</a>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-      <h2 id="places">Places</h2>
-      {% assign places_exhibits = site.exhibits | where:"tag","places" %}
-      {% for exhibit in places_exhibits %}
-        <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
-          <div class="card">
-            <div class = "rounded-top img-card">
-            {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
-            </div>
-          
-            <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
-            <div class="card-body">
-              <h2 class="card-title">{{ exhibit.title }}</h2>
-              <p class="card-text"> {{ exhibit.description }} </p>
-              <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-secondary text-dark ">Read</a>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-      <h2 id="misc">Other Histories</h2>
-      {% assign other_exhibits = site.exhibits | where:"tag","histories" %}
-      {% for exhibit in places_exhibits %}
-        <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
-          <div class="card">
-            <div class = "rounded-top img-card">
-            {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
-            </div>
-          
-            <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
-            <div class="card-body">
-              <h2 class="card-title">{{ exhibit.title }}</h2>
-              <p class="card-text"> {{ exhibit.description }} </p>
-              <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-secondary text-dark ">Read</a>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
+        {% assign category_projects = site.exhibits | where: 'tag', category %} 
+        {% for exhibit in category_projects %}
         
-  </div>
+        <div class = "col-lg-6 col-md-12 col-sm-12 my-2 homepage-card ">
+          <div class="card">
+            <div class = "rounded-top img-card">
+            {% include feature/image.html objectid=exhibit.img caption=false width=100 class=card-img-top %}
+            </div>
+          
+            <!-- <img class="card-img-top py-2" src="{{site.baseurl}}/objects/{{ exhibit.img }} " alt="{{ exhibit.alt }}">  -->
+            <div class="card-body">
+              <h2 class="card-title">{{ exhibit.title }}</h2>
+              <p class="card-text"> {{ exhibit.description }} </p>
+              <a href="{{ site.baseurl }}/{{ exhibit.url }}" class="btn btn-secondary text-dark ">Read</a>
+            </div>
+          </div>
+        </div>
+        
+        {% endfor %}
+    
+    {% endfor %}
+      
+</div>
   

@@ -4,7 +4,7 @@ title: The Politics of Preservation
 author: Amelia Rono
 description: Community, preservation, and local politics. 
 img: /objects/arc_040.jpg
-tag: preservation
+tag: Preservation
 ---
 
 The Germantown YWCA building, once a beloved community center, has now stood vacant for 20 years. Its future has sparked community involvement and action, yet the building remains undeveloped and in disrepair. The reasoning lies in the complicated relationship between the community, preservation, and local politics.  	 

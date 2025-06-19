@@ -3,7 +3,7 @@ title: Biographies
 author: Estrella Pacheco and Krista Chan
 description: Short biographies of the women depicted on the Women of Germantown Mural
 img: arc_102
-tag: people
+tag: Integration
 ---
 ## *Maggie Kuhn*: 
 Maggie Kuhn (1905-1995) is primarily known for her work as the founder of the Gray Panthers, an organization dedicated to combating age discrimination and providing support for the elderly in community with others (National Women’s Hall of Fame).  Maggie Kuhn had deep ties to the Germantown YWCA and also served for nearly a decade on the national YWCA board. Her time at the YWCA fostered her passion for social activism as she witnessed the working conditions and efforts to unionize that many of the women around her were engaged with. To learn more about Maggie Kuhn visit [Gray Panthers](https://www.graypanthersnyc.org/maggie-kuhn).

@@ -3,8 +3,8 @@ title: Programming and Events
 description: An Overview of Programming and Events of the Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
-img: arc_066
-tag: places
+img: arc_066_thumb
+tag: Integration
 ---
 
 ## Programming and Events at the Colored Branch

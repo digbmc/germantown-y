@@ -4,7 +4,7 @@ description: Exploring the Colored Branch Building
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
 img: arc_067
-tag: places
+tag: Integration
 ---
 
 # The Colored Branch Building 

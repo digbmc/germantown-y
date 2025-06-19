@@ -5,9 +5,9 @@ permalink: histories.html
 cards: true
 description: Histories of the Germantown YWCA
 categories:
-    - Center in the Park
+    - 5820 Germantown Ave
     - Integration
     - Preservation
-    - 5820 Germantown Ave
+    - Center in the Park
     - Mural
 ---

@@ -2,7 +2,7 @@
 title: Social Presence of the YWCA as a Mode of Fostering Community
 description:
 author:
-img:
+img: arc_118
 tag: places
 tag: 5820 Germantown Ave
 # I added .md to the filename and this YAML header, so this page will build as part of the site.

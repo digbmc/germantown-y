@@ -3,7 +3,7 @@
 title: The Emotions of Preservation
 author: Tessa Lippmann
 description: Community, preservation, and emotions. 
-img: /objects/arc_046.jpg
+img: /objects/arc_046_thumb.jpg
 tag: Preservation
 ---
 

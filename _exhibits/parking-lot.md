@@ -3,7 +3,7 @@ title: A Parking Lot's Impact on the Future of the YWCA
 description: The role of a parking lot in the operations of Center in the Park and shaping advocacy for the building's future.
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
-img: arc_025
+img: /objects/arc_025_thumb.jpg
 tag: 5820 Germantown Ave
 ---
 

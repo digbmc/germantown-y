@@ -3,7 +3,7 @@
 title: The Politics of Preservation
 author: Amelia Rono
 description: Community, preservation, and local politics. 
-img: /objects/arc_040.jpg
+img: /objects/arc_040_thumb.jpg
 tag: Preservation
 ---
 

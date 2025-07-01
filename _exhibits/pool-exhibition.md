@@ -2,7 +2,7 @@
 title: The Swimming Pool
 author: Grace Roebuck Bryn Mawr College Class of 2025 & Augusta Clusen Moses Bryn Mawr College Class of 2027
 description: History of the YWCA Organization
-img: arc_082
+img: /objects/arc_082_thumb.jpeg
 tag: places
 tag: 5820 Germantown Ave
 ---

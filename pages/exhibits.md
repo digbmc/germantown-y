@@ -1,9 +1,9 @@
 ---
-title: Histories
+title: Stories
 layout: exhibits
-permalink: histories.html
+permalink: stories.html
 cards: true
-description: Histories of the Germantown YWCA
+description: Histories of the Germantown YWCA, written by Praxis students at Bryn Mawr and Haverford Colleges and sorted by theme.
 categories:
     - 5820 Germantown Ave
     - Integration

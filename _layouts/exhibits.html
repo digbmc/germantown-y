@@ -11,7 +11,7 @@ layout: default
           {% include index/description.html %}
           {{ content }}
         </div>
-        
+        <!-- Vertical theme menu option -->
         <div class="col-lg-4">
           <div class="card">
             <h2 class="card-title bg-secondary rounded-top pt-3 pb-1 ps-3 mb-0 fs-4">Themes</h2>
@@ -25,17 +25,18 @@ layout: default
           </div>
         </div>
         
-        <!-- Horizontal theme menu option
+        <!-- Horizontal theme menu option (not responsive)
         <div class="col-12">
             <h2>Themes</h2>
             <div class="w-100 list-group list-group-horizontal">
             {% for category in page.categories %}
-              <a class="list-group-item list-group-item-action text-center" href="#{{ category | slugify }}">{{ category }}</a>
+              <a class="list-group-item list-group-item-action text-center fs-6" href="#{{ category | slugify }}">{{ category }}</a>
             {% endfor %}
             </div>
         </div>
         -->
       </div>
+
 
       {% for category in page.categories %}
       <div class = "row mt-4">

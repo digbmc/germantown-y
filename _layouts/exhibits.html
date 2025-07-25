@@ -22,8 +22,8 @@ layout: default
     {% assign category_projects = site.exhibits | where: 'tag', category %} 
     {% for exhibit in category_projects %}
     <div class = "col-6 col-lg-3 col-md-4 my-2 px-0 pe-2">
-      <a class="card story-card {% if exhibit.description %}has-desc{% endif %}" href="{{ site.baseurl }}/{{ exhibit.url }}">
-        <div class="story-card-img w-100" style="background-image: url({{ exhibit.img | relative_url }});"></div>
+      <a class="card story-card {% if exhibit.description %}has-desc{% endif %}" href="{{ exhibit.url | relative_url }}">
+        <div class="story-card-img w-100" style="background-image: url({{ exhibit.img | absolute_url }});"></div>
         <div class="story-card-body p-2 text-dark">
           <h3 class="story-card-title fs-5">{{ exhibit.title }}</h3>
           <p class="story-card-description fs-6"> {{ exhibit.description }}</p>

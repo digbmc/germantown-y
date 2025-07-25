@@ -3,38 +3,22 @@
 layout: default
 ---
 <div class="container my-4">
-  <div class="row">
-    <div class = "col-12 col-md-10 mx-auto">
-      <div class = "row">
-        <div class="col-lg-8">
+    <div class = "col-12 mx-auto">
+      <div class="row">
+        <div>
           <h1>{{ page.title }}</h1>
-          {% include index/description.html %}
+          <p>{{ page.description }}</p>
           {{ content }}
         </div>
-        <!-- Vertical theme menu option -->
-        <div class="col-lg-4">
-          <div class="card">
-            <h2 class="card-title bg-secondary rounded-top pt-3 pb-1 ps-3 mb-0 fs-4">Themes</h2>
-            <div class="card-body bg-light p-0 fs-6">
-              <div class="w-100 list-group list-group-flush">
-              {% for category in page.categories %}
-                <a class="list-group-item list-group-item-action" href="#{{ category | slugify }}">{{ category }}</a>
-              {% endfor %}
-              </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div>
+          {% for category in page.categories %}
+            <a class="btn btn-secondary btn-lg mb-2" href="#{{ category | slugify }}">{{ category }}</a>
+          {% endfor %}
           </div>
         </div>
-        
-        <!-- Horizontal theme menu option (not responsive)
-        <div class="col-12">
-            <h2>Themes</h2>
-            <div class="w-100 list-group list-group-horizontal">
-            {% for category in page.categories %}
-              <a class="list-group-item list-group-item-action text-center fs-6" href="#{{ category | slugify }}">{{ category }}</a>
-            {% endfor %}
-            </div>
-        </div>
-        -->
       </div>
 
 
@@ -44,11 +28,13 @@ layout: default
         {% assign category_projects = site.exhibits | where: 'tag', category %} 
         {% for exhibit in category_projects %}
         <div class = "col-6 col-lg-3 col-md-4 my-2 px-0 pe-2">
-          <a title="{{ exhibit.title }}" class="story-card {% if exhibit.description %}has-desc{% endif %}" href="{{ site.baseurl }}/{{ exhibit.url }}">
-            <img class="story-card-img w-100" src="{{ exhibit.img | relative_url }}" alt="{{ exhibit.alt }}">
-            <div class="story-card-body p-2 text-white">
-              <h2 class="story-card-title fs-5">{{ exhibit.title }}</h2>
+          <a class="card story-card {% if exhibit.description %}has-desc{% endif %}" href="{{ site.baseurl }}/{{ exhibit.url }}">
+            <div class="story-card-img w-100" style="background-image: url({{ exhibit.img | relative_url }});"></div>
+            <div class="story-card-body p-2 text-dark">
+              <h3 class="story-card-title fs-5">{{ exhibit.title }}</h3>
               <p class="story-card-description fs-6"> {{ exhibit.description }}</p>
+              <hr>
+              <div class="text-center"><span class="btn btn-light">Read Story</span></div>
             </div>
           </a>
         </div>
@@ -56,55 +42,4 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  </div>
 </div>
-
-<style>
-  .story-card {
-    display: block;
-    height: 200px;
-    background-color: black;
-    border-radius: 10px;
-  }
-
-  .story-card-img {
-    position: relative;
-    height: 200px;
-    object-fit: cover;
-    filter: brightness(50%);
-    border-radius: 10px;
-    transition: all 0.1s ease-in-out;
-  }
-
-  .story-card-body {
-    position: relative;
-    top: -200px;
-    height: 0;
-  }
-
-  .story-card-title {
-    display: block;
-  }
-
-  .story-card-description {
-    display: none;
-  }
-
-  .story-card:hover {
-    .story-card-img {
-      filter: brightness(25%);
-    }
-  }
-
-  /* for stories with descriptions, hides title and shows desc on hover */
-  .story-card.has-desc:hover {
-    .story-card-title {
-      display: none;
-    }
-
-    .story-card-description {
-      display: block;
-    }
-  }
-
-</style>

@@ -69,7 +69,7 @@ plugins:
 collections: 
   exhibits:
     output: true 
-    permalink: histories/:name
+    permalink: /stories/:name
 defaults:
   - scope:
       path: ""

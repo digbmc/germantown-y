@@ -6,5 +6,4 @@ permalink: archive.html
 # the Browse visualization will be added below the content in this file
 ---
 
-## Browse Items
-Welcome to the archive! You can explore the contents in the archive using the search function, the sort buttons, or by using the [data page](data.html)
+Welcome to the archive! You can explore the contents in the archive using the search function, the sort buttons, or by using the [data page](data.html).

@@ -37,11 +37,9 @@
     #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
 
-<div class="card mb-3">
-    {% if include.header %}<h2 class="card-header">{{ include.header }}</h2>{% endif %}
-    <div class="card-body">
-        {% if include.title %}<h2 class="card-title">{{ include.title }}</h2>{% endif %}
-
+<div class="justify-content-center text-center mb-3">
+    {% if include.title %}<h2>{{ include.title }}</h2>{% endif %}
+    <div class="col-12 col-lg-10 mx-auto">
         
         <div id="imageCarousel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">
             <div id="carouselIndicators" class="carousel-indicators">

@@ -1,6 +1,9 @@
 ---
 layout: page 
 ---
-{% include feature/jumbotron.html objectid=page.img heading=page.title text=page.author %}
+{% assign full-image = page.img | replace: "_thumb", "" %}
+{% include feature/jumbotron.html objectid=full-image heading=page.title text=page.author padding="5em" %}
 
-{{ content }}
+<div class="col-12 col-lg-8 mx-auto">
+    {{ content }}
+</div>

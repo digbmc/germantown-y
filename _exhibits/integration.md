@@ -12,7 +12,7 @@ When looking at the path to the integration of the YWCA, the process was far fro
 
 ### This 1928 letter (nearly 20 years before integration became policy) reflects interracial activity without formal recognition.
 
-{% include feature/image.html objectid="arc_062" alt="archive letter regarding convention proceedings" width=300px %} [^fn1]
+{% include feature/image.html objectid="arc_062" alt="archive letter regarding convention proceedings" width="50" %} [^fn1]
 In 1928, a letter from the executive secretary of the 6128 Building was sent to the main branch concerning an upcoming convention. In the program for the convention, the executive secretary noted that there was “no time devoted to our group,” and went on to note that, “often it is forgotten that we are doing Interracial work because we act rather than talk of our activities." With this letter, it is clear that integrated activities happened, but were not discussed or officially noted. Still, activities were not enough to give Black leaders a seat at the table or for their proceedings to be highlighted at a convention. At the same time, it is important to acknowledge the advanced work that was being done in terms of interracial projects and the fact that 1928 is incredibly early to see evidence of integrated proceedings. 
 
 ### The Interracial Charter and Beyond

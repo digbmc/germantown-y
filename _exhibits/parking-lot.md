@@ -7,7 +7,7 @@ img: /objects/arc_025_thumb.jpg
 tag: 5820 Germantown Ave
 ---
 
-_Note_: This history is best understood in the context of the Center in the Park's and the YWCA's intertwined histories, which can be read about [here](https://digbmc.github.io/germantown-y//histories/history-of-center-in-the-park).
+_Note_: This history is best understood in the context of the Center in the Park's and the YWCA's intertwined histories, [which can be read about here](https://digbmc.github.io/germantown-y/stories/cip-history).
 
 In 1986, the Center for Older Adults departed from the YWCA building and moved into its new home at the Vernon Park Library, rebranding itself as “Center in the Park.” Despite the physical separation, the Center and the YWCA organization had one key infrastructural element for which continued partnership was essential: the parking lot. Within a year of the Center’s departure, the two organizations came to terms on a ten-year easement granting the Center the right to use parking spaces on the YWCA building’s parking lot, providing much-needed accessible parking for the Center.
 

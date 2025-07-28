@@ -28,16 +28,16 @@ Records of this week-long event represent the scale and influence of the YWCA, a
 
 
 ### Activities Secretary Job Posting
-{% include feature/image.html objectid="arc_063" alt="activities secretary job posting" %} [^fn2]
-{% include feature/image.html objectid="arc_064" alt="activities secretary job posting page 2" %} [^fn3]
+{% include feature/image.html objectid="arc_063" alt="activities secretary job posting"width="50" %} [^fn2]
+{% include feature/image.html objectid="arc_064" alt="activities secretary job posting page 2" width="50" %} [^fn3]
 This document is a job posting for the Activities Secretary at the Branch YWCA. By looking at the requirements for this position, we can get a look into the general activities offered at the Colored Branch. Badminton, tennis, horseback riding, and skating are highlighted in this application, potentially alluding to popular activities or ones frequently offered. Teaching tennis and badminton class is also a necessary skill, which aligns with the fact that there were tennis courts at the 6128 Building. Finally, it is interesting to note the fact that the applicant should have experience working with interracial groups, since this was in 1942 and although the Interracial Charter had not yet been put into place, the organization was already working towards integration.  
 
 ### YWCA Open House 1947
-{% include feature/image.html objectid="arc_065" alt="Open House announcement at the YWCA in 1947" %} [^fn4]
+{% include feature/image.html objectid="arc_065" alt="Open House announcement at the YWCA in 1947" width="50" %} [^fn4]
 This notecard includes information regarding Open Houses at both the 5820 and 6128 buildings. There are multiple instances of invitations similar to this one, opening the buildings to the public to talk and get to know one another. These events are evidence of community outreach initiatives to allow participating members to branch out and talk to new people. Furthermore, it is interesting to see events happening at both branches of the YWCA in light of the policy change in 1946 leading towards integration.  
 
 ### Second Annual Business Exhibit
-{% include feature/image.html objectid="arc_066" alt="Advertisement for the Second Annual Business Exhibit at the YWCA" %} [^fn5]
+{% include feature/image.html objectid="arc_066" alt="Advertisement for the Second Annual Business Exhibit at the YWCA" width="50" %} [^fn5]
 This notice outlines a Business Exhibit that occurred yearly at the Colored Branch. Included in the proceedings are exhibits about dresses, ways to save money, laundry, cooking, and more. All of these events were meant to serve and inform the community and offer outreach to improve small parts of their lives and foster relationships with members. Furthermore, the fashion show also offered a place for members to view an exciting show and attend an event. 
 
 [^fn1]: David Young, "When the Harlem Renaissance Came to Germantown: Negro Achievement Week April 1928," Germantown Crier, Spring 2009

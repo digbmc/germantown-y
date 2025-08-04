@@ -1,6 +1,6 @@
 ---
 title: People
-layout: page 
+layout: page-narrow
 permalink: people.html
 img: /assets/pics/DSSF.jpg
 ---

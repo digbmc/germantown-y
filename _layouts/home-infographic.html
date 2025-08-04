@@ -13,10 +13,8 @@ home: true
     {% include collection-nav.html %}
     {% include collection-banner.html %}
     <main id="maincontent" role="main" class="flex-shrink-0 page container my-3">
-    <div class="row mx-2">
-
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8">
           <div style="background-color: #F3C17B; border-radius: .25rem; padding: 1rem; margin-bottom: 1rem; text-align: center;"><p style="margin: 0 !important;"><strong>This site is under construction!</strong></p></div>
           <h1>Germantown YWCA: A Social History of a Building</h1>
           <p class="card-text">{{ site.description }}</p>
@@ -24,20 +22,17 @@ home: true
           {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
         </div>
       </div>
-      <div class="row">
-        <div class = "col-md-8 text-center mx-auto">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
           {% include index/carousel-random.html title="Sample Items" height="300" %}
         </div>
       </div>
-    </div>
     <div class = "row gx-4 mx-2">
       <h2 class="text-center full-width-header">Explore the Site</h2>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card ">
         
           <div class="card">
-
-            <img class="card-img-top display-card" src="https://digbmc.github.io/germantown-y/objects/arc_118.jpg" alt="A group of young people, some with roller skates.">
-
+            <div class="story-card-img" style="background-image: url({{ '/objects/arc_118.jpg' | absolute_url }});"></div>
             <div class="card-body">
               <h2 class="card-title">Timeline</h2>
               <p class="card-text">Important dates from the history of the YWCA</p>
@@ -48,19 +43,17 @@ home: true
         
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top display-card" src="https://digbmc.github.io/germantown-y/objects/arc_001.jpg" alt="A front view picture of the YWCA in Germantown looking upwards from the entance.">
+            <div class="story-card-img" style="background-image: url({{ '/objects/arc_001.jpg' | absolute_url }});"></div>
             <div class="card-body">
-
               <h2 class="card-title">Building</h2>
               <p class="card-text">Explore the inside of the YWCA with an interactive floor plan</p>
               <a href="{{ site.baseurl }}/building.html" class="btn light-blue text-dark btn-secondary">Building</a>
-
             </div>
           </div>
         </div>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top display-card" src="assets\pics\map.jpg" alt="Maps" style="height:200px" >
+            <div class="story-card-img" style="background-image: url({{ 'assets/pics/map.jpg' | absolute_url }});"></div>
             <div class="card-body">
               <h2 class="card-title">Map</h2>
               <p class="card-text">A map of Germantown featuring significant buildings
@@ -71,7 +64,7 @@ home: true
         </div>
         <div class = "col-lg-3 col-md-6 col-sm-12 my-2 homepage-card">
           <div class="card">
-            <img class="card-img-top display-card" src="https://digbmc.github.io/germantown-y/objects/arc_067.jpg" alt="A building exterior">
+            <div class="story-card-img" style="background-image: url({{ '/objects/arc_067.jpg' | absolute_url }});"></div>
             <div class="card-body">
               <h2 class="card-title">Histories</h2>
               <p class="card-text">Read stories and features about the Germantown YWCA

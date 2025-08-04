@@ -1,6 +1,6 @@
 ---
 title: Credits
-layout: page
+layout: page-narrow
 permalink: credits.html
 
 # include CollectionBuilder info at bottom

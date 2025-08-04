@@ -3,7 +3,7 @@ title: Center for Older Adults 10th Anniversary Celebration
 description: A community event featuring prominent figures and YWCA community members.
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
-img: /objects/arc_021_thumb.jpg
+img: /arc_021_thumb
 tag: Center in the Park
 ---
 
@@ -13,10 +13,10 @@ On November 10th, 1978, the Center in the Park's 10th anniversary celebration wa
 
 In the photos that follow, view a snapshot of the celebratory atmosphere and aroma of friendship that permeated the event. All photos were obtained from the Center in the Park archives.
 
-{% include feature/image.html objectid="objects/arc_021.jpg" width="" %}
-{% include feature/image.html objectid="objects/arc_022.jpg" width="" %}
-{% include feature/image.html objectid="objects/arc_023.jpg" width="" %}
-{% include feature/image.html objectid="objects/arc_024.jpg" width="" %}
-{% include feature/image.html objectid="objects/arc_027.jpg" width="" %}
-{% include feature/image.html objectid="objects/arc_028.jpg" width="" %}
+{% include feature/image.html objectid="arc_021" width="" %}
+{% include feature/image.html objectid="arc_022" width="" %}
+{% include feature/image.html objectid="arc_023" width="" %}
+{% include feature/image.html objectid="arc_024" width="" %}
+{% include feature/image.html objectid="arc_027" width="" %}
+{% include feature/image.html objectid="arc_028" width="" %}
 

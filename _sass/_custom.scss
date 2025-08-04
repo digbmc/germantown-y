@@ -263,7 +263,7 @@ p, dd, tr {
     text-decoration: underline;
 }
 
-/* Blockquote styles */
+/* blockquote styles */
 blockquote {
     display: block;
     border-left: 4px solid $secondary;
@@ -307,8 +307,29 @@ blockquote {
 }
 
 /* recolor scroll-to-top button for contrast */
+
 #scroll-to-top {
     .bi {
         color: $info;
     }
+}
+
+/* styles for cards on stories page */
+
+.story-card {
+display: block;
+position: relative;
+border-radius: .25rem;
+transition: all .2s ease-in-out;
+}
+// the story-card-img class is also used on the images on the homepage cards
+.story-card-img {
+position: relative;
+height: 200px;
+width: 100%;
+background-color: $secondary;
+background-position: center;
+background-size: cover;
+border-radius: .25rem .25rem 0 0;
+transition: all 0.1s ease-in-out;
 }

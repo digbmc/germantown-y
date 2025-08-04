@@ -38,10 +38,10 @@
     #imageCarousel .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
 
-<div class="card no-border mb-3">
+<div class="my-4">
 
-    {% if include.header %}<h2 class="card-header">{{ include.header }}</h2>{% endif %}
-    <div class="card-body">
+    {% if include.header %}<h2>{{ include.header }}</h2>{% endif %}
+    <div>
         {% if include.title %}<h2 class="card-title">{{ include.title }}</h2>{% endif %}
         
         <div id="imageCarousel" class="carousel slide bg-dark rounded mb-3" data-bs-ride="carousel">

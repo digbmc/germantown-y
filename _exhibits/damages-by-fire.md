@@ -10,7 +10,7 @@ tag: Redevelopment
 
 The YWCA at 5820 Germantown Ave once stood as a vibrant community hub, its hallways filled with activity. But by 2012, after two devastating fires and years of abandonment, it had become something else entirely: a shell of memory, caught in a cycle of neglect and silence.
 
-{% include feature/image.html objectid="arc_090" alt="Outside Damage to the Building" width="50" %}
+{% include feature/image.html objectid="arc_090" alt="Outside Damage to the Building" width="25" %}
 {% include feature/image.html objectid="arc_091" alt="Entrance to the Building" %}
 
 The damage was overwhelming. The third and fourth floors, in particular, were in ruins. Damage to the roof left the building open. Elegant wood floors were scorched beyond recognition. Pottery wheels, gym equipment, even art supplies were left scattered. In one photo we see an empty pool in the basement. In another, a sign for the Germantown Pottery Guild sits abandoned on the fourth floor. These inside photographs, taken in 2012 by photographers John Webster and Vince Herbe, reveal the aftermath of not just fire, but a failure of city agencies to protect a space that once served generations.

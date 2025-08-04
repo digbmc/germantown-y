@@ -4,7 +4,7 @@ description: Overview of the Integration Process at the Y.
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
 img: /objects/arc_062_thumb.jpg
-tag: Integration
+tag: Branch Y
 ---
 
 ## Introduction: The Complicated Integration Process at the YWCA

@@ -4,7 +4,7 @@ description: An Overview of the History of the YWCA Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
 img: /objects/arc_067_thumb.jpg
-tag: Integration
+tag: Branch Y
 ---
 
 

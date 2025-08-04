@@ -4,7 +4,7 @@ title: The Emotions of Preservation
 author: Tessa Lippmann
 description: Community, preservation, and emotions. 
 img: /objects/arc_046_thumb.jpg
-tag: Preservation
+tag: Redevelopment
 ---
 
 The Germantown Y once offered a space for women to connect, play, learn, gather together, and watching this community, these women, continuously work to save it shows how rare and treasured it was – is. Since the early 2000s, this building has slowly fallen into disrepair, even since a developer, Keith B. Key Enterprises based in Ohio won control in 2016. This story is one of a community fighting to preserve cultural memory and connection, and to ensure their community prospers. It is one of women, primarily elderly, refusing to be silenced, demanding to be heard. Yvonne Haskins, at a PRA meeting in 2021, spoke to the board members, eloquently encapsulating the preservation issues: “I am looking into your eyes and hoping that I am reaching your heart” (Haskins, 2025).   	 

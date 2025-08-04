@@ -4,7 +4,7 @@ description: Important Figures of the Colored Branch of the YWCA
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: March 2025
 img: /objects/arc_069_thumb.jpg
-tag: Integration
+tag: Branch Y
 ---
 ## Introduction
 There were a wide variety of important people attached to the Colored Branch throughout its history. Below we have listed a selection of figures. This list is far from exhaustive, and it is crucial to note that there were many more people involved in a variety of ways.   
@@ -17,7 +17,7 @@ In order to understand the roles of these women, some details regarding position
 
 ## Notable Figures Attached to the Colored Branch of the YWCA [^1]
 
-- Eva Bowles - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
+- [Eva Bowles] (https://en.wikipedia.org/wiki/Eva_del_Vakia_Bowles) - National Secretary for Colored Work, invited to help found the Branch YWCA, meets with “Committee of 22” to discuss
 - 5 Black Affiliation Committee Representatives - Mrs. Robinson, Mrs. Olivia Yancy, Mrs. A. L. Manley, Mrs. Hobson, and Mrs. Carrie Fareira
 - Colored Branch Officers - Mrs. Leila Morris as Vice Chairman, Mrs. Mary Cowdery as Secretary
 - End of 1918 - Colored Branch standing committee officers

@@ -28,7 +28,7 @@ Records of this week-long event represent the scale and influence of the YWCA, a
 
 
 ### Activities Secretary Job Posting
-{% include feature/image.html objectid="arc_063" alt="activities secretary job posting"width="50" %} [^fn2]
+{% include feature/image.html objectid="arc_063" alt="activities secretary job posting" width="50" %}
 {% include feature/image.html objectid="arc_064" alt="activities secretary job posting page 2" width="50" %} [^fn3]
 This document is a job posting for the Activities Secretary at the Branch YWCA. By looking at the requirements for this position, we can get a look into the general activities offered at the Colored Branch. Badminton, tennis, horseback riding, and skating are highlighted in this application, potentially alluding to popular activities or ones frequently offered. Teaching tennis and badminton class is also a necessary skill, which aligns with the fact that there were tennis courts at the 6128 Building. Finally, it is interesting to note the fact that the applicant should have experience working with interracial groups, since this was in 1942 and although the Interracial Charter had not yet been put into place, the organization was already working towards integration.  
 

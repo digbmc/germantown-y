@@ -11,10 +11,10 @@ credits: true
 
 # Credits
 
+
+{% include feature/card.html text="The work for this project was largely conducted at Bryn Mawr College. The land on which Bryn Mawr College and Germantown YWCA stand on is part of the ancestral homeland and territory of the Lenape people. We openly recognize the Lenape Indian tribe as the original inhabitants of eastern Pennsylvania. We acknowledge the Lenape people as the indigenous stewards of their homelands and also the spiritual keepers of the Lenape Sippu, or Delaware River, and we do hereby commit to actively supporting our Lenape [siblings] in whatever way we are able, helping to maintain the cultural identity of Pennsylvania, Delaware, New Jersey and southern New York." header="Land Acknowledgement" %}
+
 ## About the Project 
-
-*The work for this project was largely conducted at Bryn Mawr College. The land on which Bryn Mawr College and Germantown YWCA stand on is part of the ancestral homeland and territory of the Lenape people. We openly recognize the Lenape Indian tribe as the original inhabitants of eastern Pennsylvania. We acknowledge the Lenape people as the indigenous stewards of their homelands and also the spiritual keepers of the Lenape Sippu, or Delaware River, and we do hereby commit to actively supporting our Lenape [siblings] in whatever way we are able, helping to maintain the cultural identity of Pennsylvania, Delaware, New Jersey and southern New York.*
-
 
 Germantown YWCA: A Social History of a Building is an on-going collaborative project aimed to preserve the neighborhood’s rich history, to nurture community relationship, and to share stories of the many people involved with the building and the organization. The intention is to create an interactive website to educate the public about “the Y” and understand the critical significance of the civic center in enriching and grounding the Germantown community.
 

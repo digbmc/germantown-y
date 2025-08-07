@@ -402,13 +402,13 @@ permalink: /map-js.html
                             popupContent += '<img src="' + feature.properties.image + '" alt="' + feature.properties.altText + '" style="max-width:100%;height:auto;">';
 
                             if (feature.properties.imageAttribution && feature.properties.imageAttribution.trim() !== "") {
-                                popupContent += '<p style="font-size: smaller; color: gray;">Image by: ' + feature.properties.imageAttribution + '</p>';
+                                popupContent += '<p style="font-size: smaller; color: gray;">Image source: ' + feature.properties.imageAttribution + '</p>';
                             }
                         }
 
                         popupContent += '<p><b>Address:</b> ' + feature.properties.address + '</p>' +
                             '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
-                            '<p><b>Year:</b> ' + feature.properties.date + '</p>';
+                            '<p><b>Dates:</b> ' + feature.properties.date + '</p>';
 
                         layer.bindPopup(popupContent);
                     } else {

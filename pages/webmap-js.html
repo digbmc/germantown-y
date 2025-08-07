@@ -327,9 +327,9 @@ permalink: /map-js.html
                         properties: {
                             title: feature.title || "Unknown",
                             address: feature.address || "Unknown",
-                            date: feature.date || "Unknown",
+                            date: feature.date || "",
                             category: feature.category,
-                            description: feature.description || "No description provided",
+                            description: feature.description || "",
                             relevance: feature.relevance || "Unknown",
                             image: feature.image || "",
                             imageAttribution: feature.imageAttribution || "",
@@ -406,9 +406,14 @@ permalink: /map-js.html
                             }
                         }
 
-                        popupContent += '<p><b>Address:</b> ' + feature.properties.address + '</p>' +
-                            '<p><b>Description:</b> ' + feature.properties.description + '</p>' +
-                            '<p><b>Dates:</b> ' + feature.properties.date + '</p>';
+                        popupContent += '<p><b>Address:</b> ' + feature.properties.address + '</p>';
+
+                        if (feature.properties.description && feature.properties.description.trim() !== "") {
+                            popupContent += '<p><b>Description:</b> ' + feature.properties.description + '</p>';
+                        }
+                        if (feature.properties.date && feature.properties.date.trim() !== "") {
+                            popupContent += '<p><b>Dates:</b> ' + feature.properties.date + '</p>';
+                        }
 
                         layer.bindPopup(popupContent);
                     } else {

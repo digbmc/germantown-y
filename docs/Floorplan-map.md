@@ -1,14 +1,17 @@
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-- [The CSV](#the-csv)
-- [Adding More Rooms](#adding-more-rooms)
-    - [Understanding Coordinates in Leaflet](#understanding-coordinates-in-leaflet)
-    - [Finding the Coordinates for a Room](#finding-the-coordinates-for-a-room)
+- [Adding Rooms](#adding-rooms)
+- [Room Coordinates](#room-coordinates)
+  - [Understanding Coordinates in Leaflet](#understanding-coordinates-in-leaflet)
+  - [Finding Room Coordinates](#finding-room-coordinates)
 - [Adding Pictures](#adding-pictures)
 - [Editing Floor Descriptions](#editing-floor-descriptions)
 - [Advanced](#advanced)
-    - [Changing the Base Map](#changing-the-base-map)
+  - [Changing the Base Map](#changing-the-base-map)
+    - [Step 1: Replace Base Map Images](#step-1-replace-base-map-images)
+    - [Step 2: Adjust Map Bounds](#step-2-adjust-map-bounds)
 
 ## Introduction
 
@@ -88,11 +91,11 @@ Please note: Although the current floorplans are oriented vertically, the vision
 ```
 // Define image URLs for each floor
     var footprints = {
-        'L0': '{{site.baseurl}}/objects/basement.png',
-        'L1': '{{site.baseurl}}/objects/floor1.png',
-        'L2': '{{site.baseurl}}/objects/floor2.png',
-        'L3': '{{site.baseurl}}/objects/floor3.png',
-        'L4': '{{site.baseurl}}/objects/floor4.png'
+        'L0': '{{site.baseurl}}/objects/plans/basement.png',
+        'L1': '{{site.baseurl}}/objects/plans/floor1.png',
+        'L2': '{{site.baseurl}}/objects/plans/floor2.png',
+        'L3': '{{site.baseurl}}/objects/plans/floor3.png',
+        'L4': '{{site.baseurl}}/objects/plans/floor4.png'
     };
 ```
 

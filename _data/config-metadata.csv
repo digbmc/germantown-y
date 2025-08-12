@@ -1,10 +1,10 @@
 field,display_name,browse_link,external_link
 title,Title,
-creator,Creator,
+creator,Creator,true
 interviewer,Interviewer
 interviewee,Interviewee
 description,Description,
-date,Date Created,
+date,Date,
 location,Location
 latitude,Latitude
 longitude,Longitude

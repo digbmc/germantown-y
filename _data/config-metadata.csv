@@ -1,6 +1,6 @@
 field,display_name,browse_link,external_link
 title,Title,
-creator,Creator,true
+creator,Creator,
 interviewer,Interviewer
 interviewee,Interviewee
 description,Description,

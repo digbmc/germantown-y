@@ -110,34 +110,6 @@ permalink: /map-js.html
             border-radius: 10px;
         }
 
-        .ywca {
-            filter: hue-rotate(0) saturate(1);
-            /*red*/
-        }
-        .main-building {
-            filter: hue-rotate(305deg)saturate(2);
-            /*green*/
-        }
-        .branch {
-            filter: hue-rotate(210deg)saturate(7);
-            /*purple*/
-        }
-        .lodgings {
-            filter: hue-rotate(0deg)saturate(1);
-            /*green*/
-        }
-        .industry {
-            filter: hue-rotate(130deg) saturate(3);
-            /*pink*/
-        }
-        .landmark {
-            filter: hue-rotate(175deg)saturate(3);
-            /*brown*/
-        }
-        .other {
-            filter: hue-rotate(5deg)saturate(0);
-            /*blue*/
-        }
         .custom-color {
             filter: var(--hue-rotate);
         }
@@ -213,18 +185,60 @@ permalink: /map-js.html
         sidebar.show();*/
 
         var icon = L.icon({
-            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-main.svg',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
             iconSize: [20, 30], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
         });
-        // Custom icon for the main YWCA building
+        // Colored icons for each named layer + a bigger one for the main YWCA building
         var ywcaIcon = L.icon({
             className: 'ywca',
-            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-ywca.svg',
             shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
             iconSize: [30, 45], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var mainIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-main.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var branchIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-branch.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var lodgingsIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-lodging.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var industryIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-industry.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var landmarkIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-landmark.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
+            iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
+            popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
+        });
+        var otherIcon = L.icon({
+            iconUrl: '{{site.baseurl}}/assets/img/round-pushpin-other.svg',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [20, 30], // size of the icon
             iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
             popupAnchor: [-4.75, -58] //point of the icon corresponding to where popup appears
         });
@@ -232,7 +246,7 @@ permalink: /map-js.html
         //create custom icon for dynamically added layers
         function createCustomIcon(color) {
             return L.icon({
-                iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.png',
+                iconUrl: '{{site.baseurl}}/assets/img/round-pushpin.svg',
                 shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
                 iconSize: [20, 30], // size of the icon
                 iconAnchor: [15, 60], // point of the icon which will correspond to marker's location
@@ -424,12 +438,12 @@ permalink: /map-js.html
         }
 
         var unknownLayer = createLayer('unknown', icon);
-        var otherLayer = createLayer('other', icon);
-        var landmarkLayer = createLayer('landmark', icon);
-        var industryLayer = createLayer('industry', icon);
-        var lodgingsLayer = createLayer('lodgings', icon);
-        var branchLayer = createLayer('branch', icon);
-        var mainBuildingLayer = createLayer('main-building', icon);
+        var otherLayer = createLayer('other', otherIcon);
+        var landmarkLayer = createLayer('landmark', landmarkIcon);
+        var industryLayer = createLayer('industry', industryIcon);
+        var lodgingsLayer = createLayer('lodgings', lodgingsIcon);
+        var branchLayer = createLayer('branch', branchIcon);
+        var mainBuildingLayer = createLayer('main-building', mainIcon);
         var ywcaLayer = createLayer('ywca', ywcaIcon);
 
         //Add layers to map
@@ -560,13 +574,13 @@ permalink: /map-js.html
             "1962 Philadelphia Land Use": landUse1962,
         };
         var overlayLayers = {
-            '<span class="color-indicator" style="background-color: rgb(255, 63, 73);"></span>YWCA': ywcaLayer,
-            '<span class="color-indicator" style="background-color: rgb(0, 154, 108);"></span>Main Buildings': mainBuildingLayer,
-            '<span class="color-indicator" style="background-color: rgb(166, 96, 213);"></span>YWCA Branches': branchLayer,
-            '<span class="color-indicator" style="background-color: rgb(42, 126, 0);"></span>YWCA Provided Lodgings': lodgingsLayer,
-            '<span class="color-indicator" style="background-color: rgb(229, 86, 136);"></span>Industries': industryLayer,
-            '<span class="color-indicator" style="background-color: rgb(168, 89, 15);"></span>Landmarks': landmarkLayer,
-            '<span class="color-indicator" style="background-color: rgb(35, 108, 190);"></span>Others': otherLayer,
+            '<span class="color-indicator" style="background-color: #c84b4e;"></span>YWCA': ywcaLayer,
+            '<span class="color-indicator" style="background-color: #f3c17b;"></span>Main Buildings': mainBuildingLayer,
+            '<span class="color-indicator" style="background-color: #255b77;"></span>YWCA Branches': branchLayer,
+            '<span class="color-indicator" style="background-color: #bd8364;"></span>YWCA Provided Lodgings': lodgingsLayer,
+            '<span class="color-indicator" style="background-color: #443934;"></span>Industries': industryLayer,
+            '<span class="color-indicator" style="background-color: #acd4dc;"></span>Landmarks': landmarkLayer,
+            '<span class="color-indicator" style="background-color: #b6ada8;"></span>Others': otherLayer,
             'Germantown Boundary': germantownBoundary,
             'Germantown East Boundary': eastGermantownPolyline,
             'Germantown Morton Boundary': germantownMortonPolyline,

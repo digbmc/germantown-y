@@ -19,7 +19,7 @@ gallery:
 - arc_090
 - arc_091
 - arc_092
-- arc_093
+- arc_076
 - arc_094
 - arc_095
 - arc_096

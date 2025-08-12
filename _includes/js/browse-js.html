@@ -148,7 +148,7 @@ function shuffle(array) {
 /* init browse page */
 
 /* randomize items once at page load */
-shuffle(items);
+// shuffle(items);
 
 /* set some elements */ 
 var loadingIcon = document.querySelector("#loadingIcon");
@@ -198,6 +198,7 @@ function sorting(json_object, key_to_sort_by) {
         return ((x==null) ? 1: (y==null) ? -1: (x < y) ? -1 : ((x > y) ? 1 : 0));
     }
     json_object.sort(sortByKey);
+    console.log(key_to_sort_by);
 };
 
 function desc(json_object, key_to_sort_by) {
@@ -239,5 +240,9 @@ sortOptions.forEach((button) => {
         filterItems(items, query);
     }
   });
-}); 
+});
+
+/* sort items by 'Date (ascending)' at page load */
+sorting(items, 'date');
+filterItems(items, query);
 </script>

@@ -12,7 +12,6 @@ This questionnaire was used in November 1944 for YWCA administration and "partic
 
 {% include feature/image.html objectid="arc_060" alt="archive questionnaire about integration at the YWCA" %} [^fn1]
 ## Question 2: Do you think the Germantown YWCA discriminates against Negroes? 
- 
 - Administration: 
     - Yes – 2
     - No – 13

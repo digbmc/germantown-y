@@ -36,6 +36,9 @@ However, Weinstein has hit some roadblocks with the process. In November 2024, t
 
 The different stakeholders making claims for the building and its property demonstrate the complex matrix of laws, regulations, and practices as well as the negotiations required to ensure public representation. The politics raise critical questions about who has a right to this space and for what purpose.
 
+Below is a comprehensive timeline detailing the preservation efforts at the Germantown YWCA, tracing key moments, community initiatives, and advocacy that have shaped the building’s ongoing story.
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vSoNoHSFmOq663BVHUmiUYaMCaiiRO9y94F2OymyjV1n4GBqMYpics5jClAwJVAFAHusAQfJjfhSXdH&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
   
 
 ## Works Cited

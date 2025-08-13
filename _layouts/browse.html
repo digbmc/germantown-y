@@ -24,14 +24,18 @@ custom-foot: js/browse-js.html
     <div class="col-md-4">
         <div class="dropdown">
             <button class="btn py-2 btn-secondary text-dark  dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sort by <span class="font-weight-bold" id="sortFilter">Random</span>
+                Sort by <span class="font-weight-bold" id="sortFilter">Date (ascending)</span>
             </button>
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
-                <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
+                <button class="dropdown-item browse-sort-item" data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
                 {% assign sort_options = site.data.config-browse | where_exp: 'i','i.sort_name != nil' %}
                 {% for o in sort_options %}
+                {% if o.sort_name == 'Date (ascending)' %}
+                <button class="dropdown-item browse-sort-item active" data-filter="{{ o.field | escape }}">{{ o.sort_name }}</button>
+                {% else %}
                 <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{{ o.sort_name }}</button>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

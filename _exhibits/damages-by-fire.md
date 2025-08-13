@@ -16,7 +16,7 @@ The YWCA at 5820 Germantown Ave once stood as a vibrant community hub, its hallw
 The damage was overwhelming. The third and fourth floors, in particular, were in ruins. Damage to the roof left the building open. Elegant wood floors were scorched beyond recognition. Pottery wheels, gym equipment, even art supplies were left scattered. In one photo we see an empty pool in the basement. In another, a sign for the Germantown Pottery Guild sits abandoned on the fourth floor. These inside photographs, taken in 2012 by photographers John Webster and Vince Herbe, reveal the aftermath of not just fire, but a failure of city agencies to protect a space that once served generations.
 
 {% include feature/image.html objectid="arc_092" alt="Damages to the upper gymnasium area" %}
-{% include feature/image.html objectid="arc_093" alt="Damages to the pool" %}
+{% include feature/image.html objectid="arc_076" alt="Damages to the pool" %}
 {% include feature/image.html objectid="arc_094" alt="Abandoned Germantown Pottery Guild" width="300px" %}
 {% include feature/image.html objectid="arc_095" alt="Abandoned Ceramics Room" width="50" %}
 But what haunts the most is what was left behind: not just furniture and file cabinets, but records, photo frames, artwork, remnants of community life once thriving in this building. 

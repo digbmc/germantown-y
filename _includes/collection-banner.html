@@ -29,7 +29,7 @@
         </div>
         {% unless site.data.theme.featured-image contains '/' %}
         <div class=" mural-link bottom-0 end-0 px-5 py-2 bg-info bg-opacity-100">
-            <a class="text-white fs-6" href="{% if featuredItem.parentid %}{{ site.data.theme.featured-image | prepend: '#' | prepend: featuredItem.parentid | prepend: '/item.html?id=' | relative_url }}{% else %}{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}{% endif %}" title="{{ featuredItem.title | escape }}">The Mural</a>
+            <a class="text-white fs-6" href="{% if featuredItem.parentid %}{{ site.data.theme.featured-image | prepend: '#' | prepend: featuredItem.parentid | prepend: '/item.html?id=' | relative_url }}{% else %}{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}{% endif %}" title="{{ featuredItem.title | escape }}">Image details</a>
         </div>{% endunless %}
     </div>
 </div>

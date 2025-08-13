@@ -1,15 +1,16 @@
 ---
-title: Webmap
+title: Map
 layout: leaflet
-permalink: webmap.html
+permalink: map.html
 carousel: false
-description: This map displays buildings connected to the history of the Germantown YWCA. It includes YWCA buildings and other associated buildings that have played a role in its story throughout history. Use the + and - buttons on the top left or your cursor to zoom in and out, use your keyboard arrow keys or pinch and zoom from your cursor to move the map around.
+description: This map displays buildings connected to the history of the Germantown YWCA organization, including those used by organization as well as other locations that have played a role in its history. Use the + and - buttons on the top left or your cursor to zoom in and out, use your keyboard arrow keys or pinch and zoom from your cursor to move the map around.
 ---
 
 <hr>
 
-### References:
-#### Print Publications:
+## References
+
+### Print Publications
 
 1. Hopkins, G.M. ***City Atlas of Philadelphia, 25th Ward, 1875***. (Vols. 1-7). Philadelphia, PA: G. M. Hopkins Company. 1875.
 [Source.](https://libwww.freelibrary.org/digital/item/46178)
@@ -26,7 +27,7 @@ description: This map displays buildings connected to the history of the Germant
 5. Plans & Registry Division, Bureau of Engineering Surveys & Zoning, Department of Public Works, Federal Works Progress Administration for Pennsylvania. ***Philadelphia Land Use Map 1962***. Philadelphia, PA: Federal Works Progress Administration for Pennsylvania. 1962. 
 [Source.](https://libwww.freelibrary.org/digital/item/12030)
 
-#### Georeferenced Tiles:
+### Georeferenced Tiles
 
 1. The Greater Philadelphia Geohistory Network. ***HistoricBromleyAtlas_1895 (Map Service).*** Philadelphia: Greater Philadelphia GeoHistory Network. The Athenaeum of Philadelphia. [URL](https://tiles1.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer?cacheKey=a24a8bf901a9708a) (accessed February 20th, 2025).
 

@@ -52,7 +52,7 @@ This photo displays the pool after the YWCA was closed and sold to the local non
 
 <br>
 
-Oral History Quotes About the Pool, Conducted in the Fall of 2023 by Grace Roebuck:
+In Fall 2023, a group of Praxis students at Bryn Mawr College conducted oral history interviews about the Germantown YWCA. Selected excerpts are shared here, highlighting personal memories and reflections about the YWCA’s pool. These excerpts were compiled by Grace Roebuck.
 
 <hr>
 

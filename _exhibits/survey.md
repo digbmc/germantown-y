@@ -10,7 +10,7 @@ tag: Branch Y
 ## Overview
 This questionnaire was used in November 1944 for YWCA administration and "participants", it is unclear who exactly these participants are, although they are most likely either members of the public or the YWCA. The questionnaire includes various questions about race and integration that shed light on the values and sentiments of the respondents and potentially the community at large. Important to note is the fact that the Interracial Charter that put in place the policy of integration was not adopted until 1946, two years later, so integrated events were yet not required at this time.
 
-{% include feature/image.html objectid="arc_060" alt="archive questionnaire about integration at the YWCA" %} [^fn1]
+{% include feature/image.html objectid="arc_060" alt="archive questionnaire about integration at the YWCA" width="50" % %} [^fn1]
 ## Question 2: Do you think the Germantown YWCA discriminates against Negroes? 
 - Administration: 
     - Yes – 2
@@ -27,13 +27,14 @@ The results of this question particularly highlight the discrepancies between th
 - Yes – 15  
 - No – 2  
 - Don’t know – 1 
+
 ## Question 6: Do you think it practical for the club to plan a project together with girls at the branch?
 - Yes - 4
 - No - 12
 
 These two questions demonstrate the issue of planning versus executing projects. Most participants saw value in interracial projects, generally in favor of their occurrence. However, the same group mostly did not see the projects as practical, for various reasons. In theory, they would be in favor, but in reality, they do not believe that it makes sense to plan these events. It is easy to say that you support something but much more difficult to make the effort for it to happen. Along with that, it would be interesting to ask this question again 2 years from this point when interracial events became policy. With that, more structures were put into place that would make integrated projects more feasible, and potentially it could be more practical.  
 
-{% include feature/image.html objectid="arc_061" alt="archive questionnaire about integration at the YWCA page 2" %} [^fn2]
+{% include feature/image.html objectid="arc_061" alt="archive questionnaire about integration at the YWCA page 2" width=50 %} [^fn2]
 ## Question 11: If a white girl and a Negro girl who have equal skills in typing and shorthand apply for the same job, who should be hired?
 - White – 8  
 - Negro – 0  

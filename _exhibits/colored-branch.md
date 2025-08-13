@@ -139,16 +139,30 @@ January 26th, 1955:
 ---
 
 ## Sources: 
-- Stephanie Yvette Felix, Committed to Their Own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870–1970 (PhD diss., 1999).
-Ann M. Doley, “Historic Background of Germantown YWCA and Building(s) Draft Outline,” January 21, 2025, prepared for Friends for the Germantown YWCA Building, with assistance from Zoe A. Kaufmann, Bryn Mawr College student.
-Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Book, 1917–1918, 24/12, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Document, 1955, 24/3, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-"A History of Fun 2 – The Branch YWCA", YouTube video.
-Constance Ragsdale, Oral History Interview, October 25, 2024.
+- Stephanie Yvette Felix, *Committed to Their Own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870–1970* (PhD diss., 1999).  
 
-## Resources for Further Research
-Lucy Perkins Carner, YWCA: The First 100 Years in Germantown, 1870–1970.
-David W. Young, Battles of Germantown.
-"A Story of Segregation and Diversity", YouTube video.
-YWCA Philadelphia Digital Collection.
-“Who We Are: History”, YWCA USA
+Ann M. Doley, “Historic Background of Germantown YWCA and Building(s) Draft Outline,” January 21, 2025, prepared for Friends for the Germantown YWCA Building, with assistance from Zoe A. Kaufmann, Bryn Mawr College student.  
+
+Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Book, 1917–1918, 24/12, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
+
+Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Document, 1955, 24/3, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
+
+["A History of Fun 2 – The Branch YWCA"](https://www.youtube.com/watch?v=jVVQdut2pCA), YouTube video.  
+
+Constance Ragsdale, Oral History Interview, October 25, 2024.  
+
+Rennie Cohen, *Center in the Park: From a Grassroots Beginning to a National Senior Center Model*.  
+
+---
+
+**Resources for Further Research**  
+
+Lucy Perkins Carner, *YWCA: The First 100 Years in Germantown, 1870–1970*.  
+
+David W. Young, *Battles of Germantown*.  
+
+["A Story of Segregation and Diversity"](https://www.youtube.com/watch?v=I2A2V3vh-2Q), YouTube video.  
+
+[YWCA Philadelphia Digital Collection](https://digital.library.temple.edu/digital/custom/ywcaphiladelphia).  
+
+[“Who We Are: History”](https://www.ywca.org/who-are-we/history), YWCA USA.  

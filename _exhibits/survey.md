@@ -10,7 +10,7 @@ tag: Branch Y
 ## Overview
 This questionnaire was used in November 1944 for YWCA administration and "participants", it is unclear who exactly these participants are, although they are most likely either members of the public or the YWCA. The questionnaire includes various questions about race and integration that shed light on the values and sentiments of the respondents and potentially the community at large. Important to note is the fact that the Interracial Charter that put in place the policy of integration was not adopted until 1946, two years later, so integrated events were yet not required at this time.
 
-{% include image.html objectid="arc_060" alt="archive questionnaire about integration at the YWCA" width="50" %} [^fn1]
+{% include feature/image.html objectid="arc_060" alt="archive questionnaire about integration at the YWCA" width="50" %} [^fn1]
 ## Question 2: Do you think the Germantown YWCA discriminates against Negroes? 
 - Administration: 
     - Yes – 2

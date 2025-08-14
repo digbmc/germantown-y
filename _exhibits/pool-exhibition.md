@@ -1,7 +1,7 @@
 ---
 title: The Swimming Pool
 author: Grace Roebuck Bryn Mawr College Class of 2025 & Augusta Clusen Moses Bryn Mawr College Class of 2027
-description: History of the YWCA Organization
+description: The story of the swimming Pool at 5820 Germantown Avenue
 img: /objects/arc_082_thumb.jpeg
 tag: places
 tag: 5820 Germantown Ave
@@ -106,7 +106,8 @@ It was such a fabulous place to be from when I was a young girl to right before 
 
 <hr>
 
-## Citations:
-“Teen Swimming Lessons,” Box 44, Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-“Day Camp Swimming Lessons,” Box 44, Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
-YWCA of Germantown, “The Swimming Pool,” YWCA of Germantown, 2000–2001 Fall & Winter Schedule (Philadelphia: Germantown Historical Society, 2000).
+## Citations
+
+- “Teen Swimming Lessons,” Box 44, Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
+- “Day Camp Swimming Lessons,” Box 44, Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 280, 877, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.
+- YWCA of Germantown, “The Swimming Pool,” YWCA of Germantown, 2000–2001 Fall & Winter Schedule (Philadelphia: Germantown Historical Society, 2000).

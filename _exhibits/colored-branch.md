@@ -3,7 +3,8 @@ title: The Colored Branch of the Germantown YWCA
 description: An Overview of the History of the YWCA Colored Branch
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
-img: /objects/arc_067_thumb.jpg
+img: https://digital.library.temple.edu/digital/api/singleitem/image/p16002coll2/92/default.jpg
+
 tag: Branch Y
 ---
 
@@ -36,7 +37,7 @@ During this time, Black people were still prohibited from joining the main YWCA 
 Ultimately, the Germantown YWCA Colored Branch was an invaluable institution for the local Black community and important member of the Germantown YWCA organization. 
 For more information, check out the exhibits "6128 Germantown Avenue", "Integration", "Programming and Events", "Notable Figures", and "Survey".
 
-# Timeline 
+## Timeline 
 
 1917: 
 
@@ -138,31 +139,33 @@ January 26th, 1955:
 
 ---
 
-## Sources: 
-- Stephanie Yvette Felix, *Committed to Their Own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870–1970* (PhD diss., 1999).  
+## Sources 
 
-Ann M. Doley, “Historic Background of Germantown YWCA and Building(s) Draft Outline,” January 21, 2025, prepared for Friends for the Germantown YWCA Building, with assistance from Zoe A. Kaufmann, Bryn Mawr College student.  
+- Stephanie Yvette Felix, "Committed to Their Own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870–1970" (PhD diss., Temple University, 1999).  
 
-Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Book, 1917–1918, 24/12, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
+- Ann M. Doley, “Historic Background of Germantown YWCA and Building(s) Draft Outline,” January 21, 2025, prepared for Friends for the Germantown YWCA Building, with assistance from Zoe A. Kaufmann, Bryn Mawr College student.  
 
-Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Document, 1955, 24/3, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
+- Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Book, 1917–1918, 24/12, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
 
-["A History of Fun 2 – The Branch YWCA"](https://www.youtube.com/watch?v=jVVQdut2pCA), YouTube video.  
+- Young Women’s Christian Association of Philadelphia (Pa.), Germantown Branch Records, Document, 1955, 24/3, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania.  
 
-Constance Ragsdale, Oral History Interview, October 25, 2024.  
+- GermantownSpeaks, dir. [A History of Fun 2 - The Branch YWCA](https://www.youtube.com/watch?v=jVVQdut2pCA). 2010. YouTube video, 03:28.
 
-Rennie Cohen, *Center in the Park: From a Grassroots Beginning to a National Senior Center Model*.  
+- Constance Ragsdale, Oral History Interview, October 25, 2024.  
+
+- Rennie Cohen, *Center in the Park: From a Grassroots Beginning to a National Senior Center Model*.  
+
 
 ---
 
-**Resources for Further Research**  
+### Resources for Further Research  
 
-Lucy Perkins Carner, *YWCA: The First 100 Years in Germantown, 1870–1970*.  
+- Lucy Perkins Carner. *The First One Hundred Years of the Young Women’s Christian Association of Germantown, 1870-1970*. Press of International Printing Company, 1969.
 
-David W. Young, *Battles of Germantown*.  
+- David W. Young, *Battles of Germantown*.  
 
-["A Story of Segregation and Diversity"](https://www.youtube.com/watch?v=I2A2V3vh-2Q), YouTube video.  
+- GermantownSpeaks, dir. ["A Story of Segregation and Diversity"](https://www.youtube.com/watch?v=I2A2V3vh-2Q),  2010. YouTube video, 05:21. 
 
-[YWCA Philadelphia Digital Collection](https://digital.library.temple.edu/digital/custom/ywcaphiladelphia).  
+- [YWCA Philadelphia Digital Collection](https://digital.library.temple.edu/digital/custom/ywcaphiladelphia).  
 
-[“Who We Are: History”](https://www.ywca.org/who-are-we/history), YWCA USA.  
+- [“Who We Are: History”](https://www.ywca.org/who-are-we/history), YWCA USA.  

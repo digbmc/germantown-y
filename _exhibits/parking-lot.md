@@ -4,7 +4,7 @@ description: The role of a parking lot in the operations of Center in the Park a
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img: /objects/arc_025_thumb.jpg
-tag: Center in The Park
+tag: Center in the Park
 ---
 
 _Note_: This history is best understood in the context of the Center in the Park's and the YWCA's intertwined histories, [which can be read about here](https://digbmc.github.io/germantown-y/stories/cip-history).

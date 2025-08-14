@@ -3,13 +3,13 @@ title: 6128 Germantown Avenue
 description: Exploring the Colored Branch Building
 author: Katarina Hirschberg Bryn Mawr College Class of 2025 & Grace Diehl Bryn Mawr College Class of 2027
 date: April 2025
-img: arc_067
+img: /objects/arc_067_thumb.jpg
 tag: Branch Y
 ---
 
-### The Colored Branch Building 
+## The Colored Branch Building 
 
-#### Description of 6128 Germantown Ave. 
+### Description of 6128 Germantown Ave. 
 
 The Germantown YWCA operated several buildings across the area. One of the most prominent was the Administrative Building, located at 5820 Germantown Avenue, which served as the main YWCA. In addition, the Colored Branch was situated at 6128 Germantown Avenue. These two buildings are often referred to simply by their street numbers: ‘5820’ and ‘6128’.
 
@@ -35,12 +35,14 @@ It appears that the building was not kept in good condition, especially towards 
 
 An appraisal of the building from 1952 lists the building as being worth $26,500, and the land as $30,000 for a total sum of $56,500. The appraisal recommends that, since the building is not as valuable as the land, it be torn down and converted into parking. The YWCA did not follow this advice and instead searched for someone who would buy and keep the building. In 1953 they received a request from the Y*M*CA on Rittenhouse Street to consider them as potential buyers. Despite initial interest the YWCA ultimately turned them down because “in view of the committments that the YWCA has made to the community as well as to its constituents, we felt it advisable not to sell to an agency community supported as we were, whose programme is set up on a segregated basis” (Temple Archives, Box 24/3). On January 26th, 1955, the 6128 building was sold to the Philadelphia Turners Association. Shortly thereafter, it was sold again to the Settlement Music School, who are still located there today. The building now also has a historic designation marker for one of it's members, Ora Washington, who was a famous tennis player ([read more here](https://explorepahistory.com/hmarker.php?markerId=1-A-35A)). 
 
-## Sources: 
+## Sources
+
 - Appraisal document, 1952, 24/3, Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania. 
 - Letter, 1953, 24/3, Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania. 
 - Document, 24/3, Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania. 
 - Image from appraisal document, 1952, 24/3, Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania. 
 - Document, 1948, 24/3, Young Women's Christian Association of Philadelphia (Pa.), Germantown Branch Records, Acc. 877, 280, PC-46, PC-89, Special Collections Research Center, Temple University Libraries, Philadelphia, Pennsylvania. 
-- Committed to their own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870-1970 [Dissertation], Stephanie Yvette Felix, 1999 
-- https://www.youtube.com/watch?v=jVVQdut2pCA “A History of Fun 2 - The Branch YWCA” 
-- https://explorepahistory.com/hmarker.php?markerId=1-A-35A 
+- Stephanie Yvette Felix, "Committed to Their Own: African American Women Leaders in the YWCA: The YWCA of Germantown, Philadelphia, Pennsylvania, 1870–1970" (PhD diss., Temple University, 1999).  
+- GermantownSpeaks, dir. [A History of Fun 2 - The Branch YWCA](https://www.youtube.com/watch?v=jVVQdut2pCA). 2010. YouTube video, 03:28.
+- ExplorePAhistory.Com: Historical Markers. [“Ora Washington (1899-1971) Historical Marker.”](https://explorepahistory.com/hmarker.php%3FmarkerId=1-A-35A.html).
+

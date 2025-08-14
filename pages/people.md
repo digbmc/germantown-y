@@ -4,48 +4,51 @@ layout: page-narrow
 permalink: people.html
 img: /assets/pics/DSSF.jpg
 ---
-# Project Team
 
-## Lead Members
-- Cameron Boucher
-- Ann Doley
-- Stella Fritzell
-- Sean Keenan
-- Min Kyung Lee
-- Alice McGrath
-- Liv Raddatz
- 
- 
-## Project Courses
+## People
+
+### Core Team
+
+- Isbah Ameer, Digital Scholarship Summer Fellow
+- Cameron Boucher, EaST Assistant
+- Renée Cunningham, Community Liaison
+- Emma Dermansky, Digital Scholarship Summer Fellow
+- Ann Doley, Lead Community Liaison
+- Nada Elshafey, Digital Scholarship Summer Fellow
+- Stella Fritzell, Digital Scholarship Graduate Assistant
+- Zoë Kauffman, Digital Scholarship Project Assistant
+- Sean Keenan, Project Manager & Educational Technology Specialist
+- Kripa Khatiwada, Digital Scholarship Project Assistant
+- Min Kyung Lee, Project Director & Associate Professor of Growth and Structure of Cities
+- Alice McGrath, Senior Digital Scholarship Specialist
+- Anna Nyugen, Digital Scholarship Summer Fellow
+- Liv Raddatz, Senior Associate Director of Praxis
+- Fiona Shen, Digital Scholarship Summer Fellow
+
+### Bryn Mawr Courses and Programs
+
 - Digital Scholarship Summer Fellows 2024
 - Praxis Class Fall 2023
 - Praxis Independent Study Fall 2024
 - Praxis Class Spring 2025
- 
- 
-## Oral History Narrators
+
+### Oral History Narrators
+
 - Rennie Cohen
 - Renee Cunningham
-- Barbara Dowdell
+- Barbara McDowell Dowdell
 - Ruth Feulleborn
 - Anita Foeman
-- Giles Lyn Thompson
+- Lynn Thompson Giles
 - Lynn Fields Harris
-- Arleen Olsen
+- Arleen Olshan
+- Greg Paulmier
 - Ann Perrone
 - Constance Ragsdale
 - Desiree Thompson
-- Kathleen Watkins
- 
-## Digital Scholarship Summer 2024 Fellows
-- Isbah Amer
-- Emma Dermansky
-- Nada Elshafey
-- Anna Nyugen
-- Fiona Shen
+- Kathleen Pullan Watkins
 
- 
-## Organizational Collaborators
+### Organizational Collaborators
 - Friends for the Restoration of the Germantown YWCA Building
 - Center in the Park
 - Temple University - Special Collections Research Center
@@ -53,52 +56,16 @@ img: /assets/pics/DSSF.jpg
 - Career & Civic Engagement, Bryn Mawr College
 - Library & Information Technology Services, Bryn Mawr College
 - Department of the Growth and Structure of Cities, Bryn Mawr College
- 
- 
-## Additional Contributors
+
+### Special Thanks
+
+- Don Maedche
+- Patricia Burks
 - Jessica Bright
 - Grace Cipressi
 - Tuomi Forrest
-- Zoë Kauffman
+- Josue Hurtado
 - Laura Keim
 - David Young
 
-
-{% comment %}
-# Project Team
-* Alice McGrath, Senior Digital Scholarship Specialist
-* Cameron Boucher, Research Coordinator, Web Advisor, & EaST Assistant
-* Liv Raddatz, Director of Praxis
-* Min Kyung Lee, Project Director
-* Sean Keenan, Project Manager & Educational Technology Specialist
-* Stella Fritzell, DSGA and Assistant Director of DSSF
-
-## Friends of Germantown YWCA
-* Ann Doley
-* Renée Cunningham
-
-## Digital Scholarship Summer Fellows
-* Anna Nguyen
-* Emma Dermansky
-* Fiona Shen
-* Isbah Ameer
-* Nada Elshafey
-
-{% include feature/image.html objectid="/assets/pics/DSSF.jpg" alt="The DSSF Fellows with Anne Doley" %}
-
-## Additional Contributors
-* Barbara Dowdall
-* Center in the Park
-* Friends for the Restoration of the Germantown YWCA
-* Grace Cipressi, Assistive Technology Specialist
-* Historic Germantown
-* Jessica Bright, Digital Collections and Metadata Librarian
-* Temple University Special Collections
-* Tuomi Forrest
-* Zoe Kauffman
-
-## Bryn Mawr College: 
-* Career & Civic Engagement
-* Library & Information Technology Services
-* Growth & Structure of Cities departments
-{% endcomment %}
+This project has been supported by Digital Bryn Mawr Project Grant funding.

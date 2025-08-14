@@ -12,13 +12,14 @@ Praxis students at Bryn Mawr College collected oral histories related to the Ger
 
 - Rennie Cohen
 - Renee Cunningham
-- Barbara Dowdell
+- Barbara McDowell
 - Ruth Feulleborn
 - Anita Foeman
-- Giles Lyn Thompson
+- Lynn Thompson Giles
 - Lynn Fields Harris
-- Arleen Olsen
+- Arleen Olshan
+- Greg Paulmier
 - Ann Perrone
 - Constance Ragsdale
 - Desiree Thompson
-- Kathleen Watkins
+- Kathleen Pullan Watkins

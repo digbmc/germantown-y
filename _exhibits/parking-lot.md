@@ -1,10 +1,10 @@
 ---
-title: A Parking Lot's Impact on the Future of the YWCA
+title: A Parking Lot's Impact on the Future of Center in The Park
 description: The role of a parking lot in the operations of Center in the Park and shaping advocacy for the building's future.
 author: Peter LaRochelle, Haverford College Class of 2025 & Isabella Rivera, Bryn Mawr College Class of 2025
 date: April 2025
 img: /objects/arc_025_thumb.jpg
-tag: 5820 Germantown Ave
+tag: Center in The Park
 ---
 
 _Note_: This history is best understood in the context of the Center in the Park's and the YWCA's intertwined histories, [which can be read about here](https://digbmc.github.io/germantown-y/stories/cip-history).
@@ -27,7 +27,5 @@ In recent years, the future of the Germantown YWCA building has been taken up by
 ### Postscript from the Authors
 
 We wish to thank all the people who provided oral histories, comments and background information for our story. We appreciate the women we wrote about who have passed on. We wish all those who care about the YWCA Building past and future a positive outcome that honors the YWCA’s illustrious history and protects the Center’s position within this history. 
-
-**Questions?** Contact Ann Marie Doley of the Friends for the Restoration of the Germantown YWCA Building at adthyme@aol.com.
 
 

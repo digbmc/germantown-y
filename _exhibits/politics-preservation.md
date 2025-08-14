@@ -23,7 +23,7 @@ Councilwoman Cindy Bass and her councilmanic power have played a significant rol
 
 ## Act 135
 
-{% include feature/image.html objectid="objects/arc_040.jpg" caption="Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012" %}
+{% include feature/image.html objectid="objects/arc_040.jpg" caption="Photo of interior of the Germantown Y from Vince Herb, “Thumbnails”, circa 2012" width = 50%}
 
 However, there are ways the community has tried to sidestep Councilwoman Bass to develop the building. Ken Weinstein, a local real estate developer has been working to get the building filed under Act 135 so that development and repairs can begin on the building.
 
@@ -36,16 +36,7 @@ However, Weinstein has hit some roadblocks with the process. In November 2024, t
 
 The different stakeholders making claims for the building and its property demonstrate the complex matrix of laws, regulations, and practices as well as the negotiations required to ensure public representation. The politics raise critical questions about who has a right to this space and for what purpose.
 
+Below is a comprehensive timeline detailing the preservation efforts at the Germantown YWCA, tracing key moments, community initiatives, and advocacy that have shaped the building’s ongoing story.
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vSoNoHSFmOq663BVHUmiUYaMCaiiRO9y94F2OymyjV1n4GBqMYpics5jClAwJVAFAHusAQfJjfhSXdH&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
   
-
-## Works Cited
-
-- https://www.inquirer.com/news/councilmanic-prerogative-philadelphia-city-council-20220321.html  
-
-- https://billypenn.com/2024/02/01/philly-councilmanic-prerogative-explained/ 
-
-- https://whyy.org/articles/kenyatta-johnson-corruption-trial-jury-selection-city-council/  
-
-- https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2008&sessInd=0&act=135  
-
-- https://www.law.upenn.edu/live/news/16299-the-disproportionate-impact-of-act-135

@@ -1,6 +1,6 @@
 ---
-title: Social Presence of the YWCA as a Mode of Fostering Community
-description:
+title: Social Presence of the YWCA 
+description: An overview of how the Germantown Y’s social presence fostered community
 author: Sara Pratt Bryn Mawr College Class of 2026 and Kripa Khatiwada Haverford College Class of 2026
 img: /objects/arc_118.jpg
 tag: 5820 Germantown Ave

@@ -2,7 +2,7 @@
 title: Social Presence of the YWCA 
 description: An overview of how the Germantown Y’s social presence fostered community
 author: Sara Pratt Bryn Mawr College Class of 2026 and Kripa Khatiwada Haverford College Class of 2026
-img: /objects/arc_118.jpg
+img: /objects/arc_123.jpg
 tag: 5820 Germantown Ave
 # I added .md to the filename and this YAML header, so this page will build as part of the site.
 # Please also rename this file, as the filename will be part of the URL for this page.

@@ -70,6 +70,23 @@ collections:
   exhibits:
     output: true 
     permalink: /stories/:name
+    order:
+      - social-presence.md
+      - pool-exhibition.md
+      - colored-branch.md
+      - branch-y-building.md
+      - programming.md
+      - notable-figures.md
+      - integration.md
+      - survey.md
+      - damages-by-fire.md
+      - emotions-preservation.md
+      - politics-preservation.md
+      - cip-history.md
+      - parking-lot.md
+      - center-10th-anniversary.md
+      - women-of-germantown-mural.md
+      - women-mentioned.md
 defaults:
   - scope:
       path: ""

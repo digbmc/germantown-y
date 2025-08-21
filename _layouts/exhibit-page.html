@@ -1,9 +1,49 @@
 ---
 layout: page 
 ---
+<a id="return-to-all" class="btn btn-outline-primary mb-2" href="{{ '/stories.html' | relative_url }}"><svg class="bi icon-sprite" aria-hidden="true"><use xlink:href="{{ '/assets/lib/icons/arrow-left.svg' | relative_url }}"/></svg> Back to all Stories</a>
 {% assign full-image = page.img | replace: "_thumb", "" %}
-{% include feature/jumbotron.html objectid=full-image heading=page.title text=page.author padding="5em" %}
+{% include feature/jumbotron.html objectid=full-image heading=page.title padding="5em" %}
 
 <div class="col-12 col-lg-8 mx-auto">
+    {% if page.author %}<div class="by-line opacity-75 mb-4"><em>By {{ page.author }}</em></div>{% endif %}
     {{ content }}
+</div>
+
+{%- comment -%} 
+  Previous / Next functions
+  Assign variables from the entire exhibits collection
+{%- endcomment -%}
+{%- assign items = site.exhibits -%}
+
+{%- if items.size > 1 -%}
+  {%- comment -%}
+    Store the index position of the matching items
+  {%- endcomment -%}
+  {%- for item in items -%}
+    {%- if item.title == page.title -%}
+      {%- assign item_index = forloop.index -%}
+    {%- endif -%}
+  {%- endfor -%}
+  
+  {%- assign prev_index = item_index | minus: 1 -%}
+  {%- assign next_index = item_index | plus: 1 -%}
+  {%- assign items_length = items.size -%}
+  
+  {%- for item in items -%}
+    {%- if forloop.index == prev_index -%}
+      {%- assign prev = item -%}
+    {%- endif -%}
+    {%- if forloop.index == next_index -%}
+      {%- assign next = item -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+<div class="row justify-content-between">
+    <div class="col text-start">
+        <a id="previous-story" href="{{ prev.url | relative_url }}" title="{{ prev.title }}" class="btn btn-outline-primary {% if prev_index == 0 %}disabled{% endif %}"><svg class="bi icon-sprite" aria-hidden="true"><use xlink:href="{{ '/assets/lib/icons/chevron-double-left.svg' | relative_url }}"/></svg> Previous Story</a>
+    </div>
+    <div class="col text-end">
+        <a id="next-story" href="{{ next.url | relative_url }}" title="{{ next.title }}" class="btn btn-outline-primary {% if next_index > items_length %}disabled{% endif %}"><svg class="bi icon-sprite" aria-hidden="true"><use xlink:href="{{ '/assets/lib/icons/chevron-double-right.svg' | relative_url }}"/></svg> Next Story</a>
+    </div>
 </div>

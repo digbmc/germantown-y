@@ -43,6 +43,9 @@ h3 {
 }
 
 /* general links */
+a {
+    color: $primary;
+}
 p, dd, tr {
     a {
         color: $primary;
@@ -332,4 +335,16 @@ background-position: center;
 background-size: cover;
 border-radius: .25rem .25rem 0 0;
 transition: all 0.1s ease-in-out;
+}
+
+/* style svg icons in links */
+a svg {
+    height: 1rem;
+    position: relative;
+    top: 1px;
+}
+
+/* fix color of disabled btn-outline-primary */
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: $primary;
 }

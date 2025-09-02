@@ -17,7 +17,8 @@ home: true
         <div class="col-12 col-lg-8">
           <div style="background-color: #F3C17B; border-radius: .25rem; padding: 1rem; margin-bottom: 1rem; text-align: center;"><p style="margin: 0 !important;"><strong>This site is under construction!</strong></p></div>
           <h1>Germantown YWCA: A Social History of a Building</h1>
-          <p class="card-text">{{ site.description }}</p>
+          {{ content }}
+          <!-- <p class="card-text">{{ site.description }}</p> -->
           {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
           {% if about > 0 %}<a class="btn light-blue btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
         </div>

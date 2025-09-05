@@ -24,7 +24,7 @@ This is an excerpt from the pamphlet given out at the opening week of the YWCA�
 
 {% include feature/image.html objectid="arc_074;arc_075" width="20" caption="The Importance of this Swimming Pool (page 1);The Importance of this Swimming Pool (page 2)" %}
 
-This 2000-2001 brochure is from the new group that took over the YWCA in 1999 when the former Board attempted to sell the building. The organization was renamed Germantown Women’s Y as it was disaffiliated by the national YWCA/USA the same year for owing $100,000 in dues. In this brochure from the YWCA, we see the dates, employees, times, and plans for the pool. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as drowning is cited as one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many.
+This 2000-2001 brochure is from the new group that took over the YWCA in 1999 when the former Board attempted to sell the building. The organization was renamed Germantown Women’s Y as it was disaffiliated by the national YWCA/USA the same year for owing $100,000 in dues. In this brochure from the GWY, we see the dates, employees, times, and plans for the pool. Additionally, the pamphlet discusses the importance of children learning how to swim, especially for “minority” children, as drowning is cited as one of the highest causes of death at the time of this being published. As they say in the pamphlet “almost anyone who has lived in Germantown learned to swim in this pool,” showing that its need in the community is felt by many.
 
 <br>
 
@@ -48,7 +48,7 @@ This photograph displays the various swimming programs that were available, incl
 
 {% include feature/image.html objectid="arc_076" width="55"  caption="An image of the pool after the closing of YWCA" %}
 
-This photo displays the pool after the YWCA was closed and sold to the local non-profit, Germantown Settlement, in 2006. Here, we see the pool  drained and abandoned, and is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
+This photo displays the pool after the YWCA was closed and sold to the local non-profit, Germantown Settlement, in 2006. Here, we see the pool  drained and abandoned, and it is filled with garbage. The windows in the background are boarded up, and the whole building generally appears dilapidated. Although there are copious amounts of repairs that would need to be done, the pool’s tiling and overall structure remains intact. 
 
 <br>
 
@@ -59,7 +59,7 @@ In Fall 2023, a group of Praxis students at Bryn Mawr College conducted oral his
 *An interview with Arleen Olshan, longtime Y member, part-time Art Director (1988-89) and Board Treasurer for a few years, talking about her experience using the pool as a safe space for lesbian and other women to meet and build community.*
 
 <p class="hanging-indent" markdown="1">
-**Arleen Olshen:** One thing I should tell you, too, that the pool, the swimming pool, on Tuesday nights, back in the day, when we were part of Radicalesbians in the early 1970s, there was nude swimming there on Tuesday nights. 
+**Arleen Olshan:** One thing I should tell you, too, that the pool, the swimming pool, on Tuesday nights, back in the day, when we were part of Radicalesbians in the early 1970s, there was nude swimming there on Tuesday nights. 
 </p>
 
 <p class="hanging-indent" markdown="1">
@@ -67,7 +67,7 @@ In Fall 2023, a group of Praxis students at Bryn Mawr College conducted oral his
 </p>
 
 <p class="hanging-indent" markdown="1">
-**Arleen Olshen:** Just for women. And it was wonderful. I mean, we'd all be with our towels, and everything was really cool, and we'd all hang out. And it was both Lesbian and Straight women that went and maybe there would be like, 20 women there every Tuesday night, and it was fabulous! That Y was wonderful back in the day and it would be great to see it open again. It really would.
+**Arleen Olshan:** Just for women. And it was wonderful. I mean, we'd all be with our towels, and everything was really cool, and we'd all hang out. And it was both Lesbian and Straight women that went and maybe there would be like, 20 women there every Tuesday night, and it was fabulous! That Y was wonderful back in the day and it would be great to see it open again. It really would.
 </p>
 
 <p class="hanging-indent" markdown="1">
@@ -75,7 +75,7 @@ In Fall 2023, a group of Praxis students at Bryn Mawr College conducted oral his
 </p>
 
 <p class="hanging-indent" markdown="1">
-**Arleen Olshen:** It's very important to gain access to it [the building], and find out exactly what needs to be done. I mean, it's not just like, unlock the doors and open the windows.  I know that there's all kinds of water damage and it probably needs a new roof. The pool was falling apart back in the day; the floors were buckling. There's a lot of work to be done. If you can't get access, you can't know what the hell needs to be done.
+**Arleen Olshan:** It's very important to gain access to it [the building], and find out exactly what needs to be done. I mean, it's not just like, unlock the doors and open the windows.  I know that there's all kinds of water damage and it probably needs a new roof. The pool was falling apart back in the day; the floors were buckling. There's a lot of work to be done. If you can't get access, you can't know what the hell needs to be done.
 </p>
 
 <hr>

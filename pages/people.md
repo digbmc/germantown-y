@@ -19,7 +19,7 @@ img: /assets/pics/DSSF.jpg
 - Zoë Kauffman, Digital Scholarship Project Assistant
 - Sean Keenan, Project Manager & Educational Technology Specialist
 - Kripa Khatiwada, Digital Scholarship Project Assistant
-- Min Kyung Lee, Project Director & Associate Professor of Growth and Structure of Cities
+- Min Kyung Lee, Project Director & Associate Professor of Growth and Structure of Cities Department
 - Alice McGrath, Senior Digital Scholarship Specialist
 - Anna Nyugen, Digital Scholarship Summer Fellow
 - Liv Raddatz, Senior Associate Director of Praxis
@@ -28,9 +28,10 @@ img: /assets/pics/DSSF.jpg
 ### Bryn Mawr Courses and Programs
 
 - Digital Scholarship Summer Fellows 2024
-- Praxis Class Fall 2023
-- Praxis Independent Study Fall 2024
-- Praxis Class Spring 2025
+- Praxis Class Fall 2023 (Urban Projects CITY 350)
+- Praxis Independent Study Fall 2024 (CITY 450)
+- Praxis Class Spring 2025 (Urban Projects CITY 350)
+
 
 ### Oral History Narrators
 
@@ -49,9 +50,11 @@ img: /assets/pics/DSSF.jpg
 - Kathleen Pullan Watkins
 
 ### Organizational Collaborators
+
 - Friends for the Restoration of the Germantown YWCA Building
 - Center in the Park
 - Temple University - Special Collections Research Center
+- Germantown Historical Society
 - Historic Germantown
 - Career & Civic Engagement, Bryn Mawr College
 - Library & Information Technology Services, Bryn Mawr College

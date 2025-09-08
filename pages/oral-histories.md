@@ -6,7 +6,8 @@ permalink: oral-histories.html
 
 # Oral Histories
 
-Praxis students at Bryn Mawr College collected oral histories related to the Germantown YWCA. Full recordings and transcripts of the oral histories are to be held in the Germantown Historical Society's archive, but excerpts from some of the interviews will be available here. See below for a list of interviewees.
+As part of the site’s goal to preserve the stories of the YWCA building as well as to support continued research on the building and its social history, several oral histories of former members and residents were conducted by Bryn Mawr and Haverford College students. We are working with the Germantown Historical Society to process and archive these narratives. Excerpts from those interviews will be exhibited on this page. If you are interested in being interviewed, please [contact Professor Min Kyung Lee](mailto:mlee9@brynmawr.edu).
+ 
 
 ## Oral History Narrators
 

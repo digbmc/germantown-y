@@ -15,15 +15,15 @@ GEM
     eventmachine (1.2.7)
     exifr (1.4.1)
     ffi (1.17.2)
-    ffi (1.17.2-aarch64-linux-gnu)
+    ffi (1.17.2-aarch64-linux)
     ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
+    ffi (1.17.2-arm-linux)
     ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86-linux-gnu)
+    ffi (1.17.2-x86-linux)
     ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.2-x86_64-linux)
     ffi (1.17.2-x86_64-linux-musl)
     fileutils (1.7.3)
     forwardable-extended (2.6.0)
@@ -110,24 +110,8 @@ GEM
       benchmark
       logger
     mini_portile2 (2.8.9)
-    nokogiri (1.19.4)
+    nokogiri (1.18.10)
       mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
-    nokogiri (1.19.4-aarch64-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.19.4-aarch64-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.19.4-arm-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.19.4-arm-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.19.4-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.1)
     pathutil (0.16.2)
@@ -145,33 +129,33 @@ GEM
     sass-embedded (1.87.0)
       google-protobuf (~> 4.30)
       rake (>= 13)
-    sass-embedded (1.87.0-aarch64-linux-android)
+    sass-embedded (1.87.0-aarch64-linux)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-aarch64-linux-gnu)
+    sass-embedded (1.87.0-aarch64-linux-android)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-aarch64-linux-musl)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-aarch64-mingw-ucrt)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-arm-linux-androideabi)
+    sass-embedded (1.87.0-arm-linux)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-arm-linux-gnueabihf)
+    sass-embedded (1.87.0-arm-linux-androideabi)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-arm-linux-musleabihf)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-arm64-darwin)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-riscv64-linux-android)
+    sass-embedded (1.87.0-riscv64-linux)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-riscv64-linux-gnu)
+    sass-embedded (1.87.0-riscv64-linux-android)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-riscv64-linux-musl)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-x86_64-darwin)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-x86_64-linux-android)
+    sass-embedded (1.87.0-x86_64-linux)
       google-protobuf (~> 4.30)
-    sass-embedded (1.87.0-x86_64-linux-gnu)
+    sass-embedded (1.87.0-x86_64-linux-android)
       google-protobuf (~> 4.30)
     sass-embedded (1.87.0-x86_64-linux-musl)
       google-protobuf (~> 4.30)
@@ -182,27 +166,27 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  aarch64-linux
   aarch64-linux-android
-  aarch64-linux-gnu
   aarch64-linux-musl
   aarch64-mingw-ucrt
+  arm-linux
+  arm-linux
   arm-linux-androideabi
-  arm-linux-gnu
-  arm-linux-gnueabihf
   arm-linux-musl
   arm-linux-musleabihf
   arm64-darwin
+  riscv64-linux
   riscv64-linux-android
-  riscv64-linux-gnu
   riscv64-linux-musl
   ruby
   x86-linux
-  x86-linux-gnu
+  x86-linux
   x86-linux-musl
   x86_64-darwin
   x86_64-linux
+  x86_64-linux
   x86_64-linux-android
-  x86_64-linux-gnu
   x86_64-linux-musl
 
 DEPENDENCIES
